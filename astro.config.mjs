@@ -6,9 +6,8 @@ export default defineConfig({
   output: 'static',
 
   // Site configuration for GitHub Pages
-  // Update 'username' and 'repo-name' with your actual GitHub username and repository name
-  site: 'https://username.github.io',
-  base: '/repo-name'
+  site: 'https://vanmarkic.github.io',
+  base: '/how-not-to-diet',
 
   // Build configuration
   build: {
