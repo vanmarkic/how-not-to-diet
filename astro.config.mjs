@@ -5,8 +5,10 @@ export default defineConfig({
   // Enable static site generation (default mode)
   output: 'static',
 
-  // Site configuration
-  site: 'https://example.com', // Update with your actual domain
+  // Site configuration for GitHub Pages
+  // Update 'username' and 'repo-name' with your actual GitHub username and repository name
+  site: 'https://username.github.io',
+  base: '/repo-name'
 
   // Build configuration
   build: {
