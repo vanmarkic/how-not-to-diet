@@ -1,0 +1,41 @@
+{
+  "id": "food-68",
+  "name": "Nori (Seaweed)",
+  "categories": [
+    "low-calorie-density",
+    "high-fiber",
+    "low-in-salt",
+    "rich-in-vegetables"
+  ],
+  "properties": [
+    "Sea vegetable rich in minerals",
+    "Natural source of iodine",
+    "Contains unique umami flavor",
+    "Used in traditional Japanese cuisine",
+    "Low in calories, high in nutrients"
+  ],
+  "benefits": "Nori is a nutrient-dense sea vegetable that provides minerals including iodine. It adds umami flavor and nutritional value to plant-based dishes. The natural salt-free form provides minerals without added sodium.",
+  "synergies": [
+    "quinoa",
+    "vegetables",
+    "sesame-seeds",
+    "rice-vinegar"
+  ],
+  "conflicts": [
+    "added-salt"
+  ],
+  "timing": [
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Use as garnish or wrapper, typically 1-2 sheets",
+  "sources": {
+    "pages": [
+      91,
+      92
+    ],
+    "quotes": [
+      "The refreshing Japanese scattered sushi salad known as chirashi-zushi typically calls for raw fish on a bed of rice. This lighter version features vegetables instead of fish, and quinoa replaces the sticky rice. The salad is topped with nori strips as a nod to the sea."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "food-74",
+  "name": "Peas (Fresh or Frozen)",
+  "categories": [
+    "rich-in-vegetables",
+    "rich-in-legumes",
+    "high-fiber",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of legume family when dried (split peas)",
+    "Good source of protein and fiber",
+    "Low calorie density when fresh/frozen",
+    "Part of Daily Dozen vegetables or legumes",
+    "Calories trapped within cell walls"
+  ],
+  "benefits": "Peas provide plant protein and fiber while being low in calories. When eaten whole, their intact cell walls help trap calories and deliver sustenance to friendly gut flora. Support microbiome health and weight management.",
+  "synergies": [
+    "greens",
+    "asparagus",
+    "beans"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of vegetable or legume servings",
+  "sources": {
+    "pages": [
+      9,
+      32,
+      33
+    ],
+    "quotes": [
+      "When you eat structurally intact plant foods, though, you can chew all you want, but you'll still end up with calories completely encapsulated by fibre, which then blunts the glycemic impact, activates what's called the ileal brake that dials down appetite, and delivers sustenance to your friendly flora.",
+      "1 cup/150g fresh or thawed frozen peas"
+    ]
+  }
+}

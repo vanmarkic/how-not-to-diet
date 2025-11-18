@@ -1,0 +1,41 @@
+{
+  "id": "food-51",
+  "name": "Greens (Low-Oxalate)",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "anti-inflammatory",
+    "high-water-rich"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 2 servings daily",
+    "Contains fat-blocking thylakoids",
+    "High in calcium",
+    "Low calorie density",
+    "Should be eaten earlier in the meal"
+  ],
+  "benefits": "Fat-blocking thylakoids and calcium support weight loss. Vegetables represent the healthiest class of foods with the fewest calories. Boost absorption of fat-soluble nutrients when paired with nuts.",
+  "synergies": [
+    "nuts",
+    "seeds",
+    "beans",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "earlier-in-meal",
+    "any-meal"
+  ],
+  "amount": "2 servings daily",
+  "sources": {
+    "pages": [
+      15,
+      18,
+      22
+    ],
+    "quotes": [
+      "Fat-blocking thylakoids and calcium are covered with my recommendation to eat lots of low-oxalate greens.",
+      "Since vegetables represent the healthiest class of foods with the fewest calories, we should aim to eat them earlier in the meal."
+    ]
+  }
+}

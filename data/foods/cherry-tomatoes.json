@@ -1,0 +1,52 @@
+{
+  "id": "food-124",
+  "name": "Cherry Tomatoes",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen - vegetables category",
+    "Very high water content (approximately 95% water)",
+    "Extremely low in calorie density",
+    "Rich in lycopene antioxidant",
+    "Higher concentration of nutrients than larger tomatoes",
+    "Ideal for raw consumption"
+  ],
+  "benefits": "Cherry tomatoes have approximately 95% water content, making them one of the most water-rich vegetables. Their small size and concentrated flavor make them perfect for salads and raw consumption, which provides maximum orosensory stimulation. The high lycopene content provides anti-inflammatory benefits crucial for weight management.",
+  "synergies": [
+    "cucumber",
+    "rocket-arugula",
+    "green-papaya",
+    "romaine-lettuce",
+    "red-kidney-beans",
+    "spring-onions-scallions"
+  ],
+  "conflicts": [
+    "added-oils",
+    "added-salt"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "1 cup/150g cherry tomatoes, halved lengthways (serves 4)",
+  "sources": {
+    "pages": [
+      35,
+      50,
+      81,
+      85,
+      106
+    ],
+    "quotes": [
+      "6 firm yellow cherry tomatoes, thinly sliced (optional)",
+      "2 cups/300g cherry tomatoes, quartered",
+      "1 cup/150g cherry tomatoes, halved lengthways"
+    ]
+  }
+}

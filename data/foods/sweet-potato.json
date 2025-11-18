@@ -1,0 +1,39 @@
+{
+  "id": "food-99",
+  "name": "Sweet Potato",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Underground vegetable",
+    "Lower glycemic load than white potatoes",
+    "Rich in beta-carotene",
+    "High satiation index",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Preferable to white potatoes based on glycemic load. Highly satiating while providing important nutrients. Helps with appetite control and weight management.",
+  "synergies": [
+    "kale",
+    "lentils",
+    "curry-spices",
+    "ginger"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of vegetable servings",
+  "sources": {
+    "pages": [
+      18,
+      42,
+      72
+    ],
+    "quotes": [
+      "If you want to go underground, on the basis of what we learned about glycemic load, sweet potatoes would be preferable to white.",
+      "2 cups/270g diced sweet potato or de-seeded butternut squash"
+    ]
+  }
+}

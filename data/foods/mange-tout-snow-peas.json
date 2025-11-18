@@ -1,0 +1,42 @@
+{
+  "id": "food-61",
+  "name": "Mange Tout (Snow Peas)",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-calorie-density",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Edible pod peas",
+    "High in water content",
+    "Low in calories",
+    "Quick cooking time",
+    "Retains bright green color when properly cooked"
+  ],
+  "benefits": "Mange tout are water-rich, low-calorie vegetables that provide fiber, vitamins, and minerals. Their high water content and low calorie density make them ideal for weight loss. Best prepared by brief steaming or blanching to preserve nutrients and color.",
+  "synergies": [
+    "mushrooms",
+    "carrots",
+    "quinoa",
+    "sesame-seeds"
+  ],
+  "conflicts": [
+    "overcooking",
+    "deep-frying"
+  ],
+  "timing": [
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Part of vegetable servings, typically 1-2 cups",
+  "sources": {
+    "pages": [
+      91,
+      92
+    ],
+    "quotes": [
+      "Add the mange tout and bean sprouts and cook until the mange tout turn bright green, about 1 minute longer."
+    ]
+  }
+}

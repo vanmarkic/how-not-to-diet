@@ -1,0 +1,41 @@
+{
+  "id": "food-65",
+  "name": "Napa Cabbage",
+  "categories": [
+    "cruciferous",
+    "greens",
+    "high-fiber",
+    "high-water-rich",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Asian green vegetable",
+    "Cruciferous vegetable",
+    "High in water content",
+    "Low calorie density",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Napa cabbage is an Asian green that provides the benefits of cruciferous vegetables. High water content and low calorie density make it ideal for weight loss. Can be used in hot and sour soups and Asian-inspired dishes.",
+  "synergies": [
+    "bok-choy",
+    "shiitake-mushrooms",
+    "ginger",
+    "garlic",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "4 cups thinly sliced. Part of Daily Dozen - 2 servings cruciferous vegetables daily",
+  "sources": {
+    "pages": [
+      50
+    ],
+    "quotes": [
+      "Add the bok choy, napa cabbage or other Asian greens"
+    ]
+  }
+}

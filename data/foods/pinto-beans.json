@@ -1,0 +1,52 @@
+{
+  "id": "food-148",
+  "name": "Pinto Beans",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Beige beans with reddish-brown speckles (pinto means 'painted' in Spanish)",
+    "One of the most popular beans in Mexican and Southwestern cuisine",
+    "Excellent source of plant-based protein, fiber, and folate",
+    "Benefits excess body weight and insulin resistance",
+    "Rich in antioxidants, vitamins, and minerals",
+    "Creamy texture when cooked makes them ideal for mashing or refried beans"
+  ],
+  "benefits": "Pinto beans are nutritional powerhouses providing excellent fiber (15g per cooked cup) and protein for weight management. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Their low insulin index and high satiety rating make them particularly effective for appetite control and blood sugar regulation, supporting the Daily Dozen's recommendation of three daily servings of legumes for heart disease prevention.",
+  "synergies": [
+    "vegetables",
+    "whole-grains",
+    "peppers",
+    "onions",
+    "garlic",
+    "cumin",
+    "herbs-spices"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked pinto beans",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress."
+    ]
+  }
+}

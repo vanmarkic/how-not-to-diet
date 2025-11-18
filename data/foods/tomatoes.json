@@ -1,0 +1,41 @@
+{
+  "id": "food-105",
+  "name": "Tomatoes",
+  "categories": [
+    "rich-in-fruits",
+    "rich-in-vegetables",
+    "anti-inflammatory",
+    "high-water-rich",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Rich in lycopene antioxidant",
+    "High water content",
+    "Low calorie density",
+    "Part of Daily Dozen fruits/vegetables",
+    "Both fruit and vegetable classification"
+  ],
+  "benefits": "Contains lycopene which has anti-inflammatory properties and supports prostate health. Tomato sauce-based interventions decrease free radical damage. The whole fruit is more powerful than isolated lycopene supplements.",
+  "synergies": [
+    "garlic",
+    "basil",
+    "beans",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of fruit/vegetable servings",
+  "sources": {
+    "pages": [
+      50,
+      94,
+      144
+    ],
+    "quotes": [
+      "2 cups/300g cherry tomatoes, quartered",
+      "TOMATO SAUCE FOR PROSTATE CANCER - A tomato sauce-based intervention decreased PSA concentrations in prostate cancer patients and free radical damage of their DNA. The whole may be more powerful than its parts when it comes to whole fruits and vegetables, compared to supplementing with an isolated single compound."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "food-153",
+  "name": "Edamame (Young Soybeans)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Whole immature soybeans harvested while still green and sweet",
+    "Excellent source of complete plant-based protein with all essential amino acids",
+    "Rich in isoflavones with potential anti-cancer properties",
+    "Benefits excess body weight and insulin resistance",
+    "High in vitamins K and folate, manganese, and fiber",
+    "Quick to prepare - typically steamed or boiled in 5 minutes",
+    "Can be eaten as snack or added to salads and grain bowls"
+  ],
+  "benefits": "Edamame provides exceptional complete protein (17g per cup) and fiber (8g per cup) making it highly satiating for weight management. As a whole soy food, it benefits excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. The isoflavones may support hormone balance and reduce cancer risk. Their low insulin index and high protein content promote satiety and stable blood sugar, perfectly fulfilling the Daily Dozen's three daily servings of legumes for optimal metabolic and cardiovascular health.",
+  "synergies": [
+    "vegetables",
+    "whole-grains",
+    "herbs-spices",
+    "ginger",
+    "garlic",
+    "greens",
+    "sesame"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "any-meal"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked edamame (shelled)",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+    ]
+  }
+}

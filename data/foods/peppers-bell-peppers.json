@@ -1,0 +1,39 @@
+{
+  "id": "food-75",
+  "name": "Peppers (Bell Peppers)",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "High water content",
+    "Low in calorie density",
+    "Rich in vitamin C",
+    "Part of Daily Dozen vegetables",
+    "Contains nicotine-like compounds that may boost metabolism"
+  ],
+  "benefits": "Peppers have a nicotine edge described in the Amping AMPK section that may help with weight loss. High water content and low calorie density make them ideal for weight loss. Featured in multiple recipes including ratatouille and gazpacho.",
+  "synergies": [
+    "onions",
+    "tomatoes",
+    "zucchini",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of Daily Dozen vegetables - multiple servings daily",
+  "sources": {
+    "pages": [
+      18,
+      62,
+      156
+    ],
+    "quotes": [
+      "Peppers have that nicotine edge I described in Amping AMPK."
+    ]
+  }
+}

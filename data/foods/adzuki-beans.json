@@ -1,0 +1,43 @@
+{
+  "id": "food-1",
+  "name": "Adzuki Beans (Aduki Beans)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Small red beans popular in Asian cuisine",
+    "Excellent source of vitamins, minerals, fiber and antioxidants",
+    "Naturally sweet flavor",
+    "Benefits excess body weight and insulin resistance"
+  ],
+  "benefits": "Adzuki beans are small red beans that provide excellent nutrition density with vitamins, minerals, fiber and antioxidants. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention and weight loss.",
+  "synergies": [
+    "rocket",
+    "vegetables",
+    "mango",
+    "vinegar"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt"
+  ],
+  "timing": [
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen)",
+  "sources": {
+    "pages": [
+      106
+    ],
+    "quotes": [
+      "1½ cups/260g cooked or 1 (400g) BPA-free tin or Tetra Pak salt-free red kidney beans or adzuki beans, drained and rinsed"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "food-60",
+  "name": "Lentils (Brown/Puy)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Excellent source of vitamins, minerals, fiber and antioxidants",
+    "Calories trapped within cell walls",
+    "Part of Daily Dozen legumes",
+    "Low glycemic load",
+    "High in nutrition density"
+  ],
+  "benefits": "Lentils are part of the legume family which gives the biggest bang for the buck in nutrition density. Benefits excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Featured in multiple weight-loss soups due to low calorie density and high fiber.",
+  "synergies": [
+    "turmeric",
+    "vegetables",
+    "kale",
+    "spinach",
+    "beans"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen - 3 servings of legumes daily",
+  "sources": {
+    "pages": [
+      53,
+      54,
+      62,
+      63
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "food-150",
+  "name": "Lima Beans (Butter Beans)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Large, flat, pale green or white beans with buttery texture",
+    "Also known as butter beans due to their creamy consistency",
+    "Excellent source of plant-based protein, fiber, and molybdenum",
+    "Benefits excess body weight and insulin resistance",
+    "Rich in manganese, folate, and resistant starch",
+    "Particularly high in soluble fiber for cholesterol reduction"
+  ],
+  "benefits": "Lima beans provide exceptional nutrition with high fiber (13g per cooked cup) and protein that promote satiety and weight loss. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Their abundant soluble fiber specifically helps lower LDL cholesterol while their resistant starch feeds beneficial gut bacteria and improves insulin sensitivity, making them essential for the Daily Dozen's three daily servings of legumes.",
+  "synergies": [
+    "vegetables",
+    "greens",
+    "whole-grains",
+    "herbs-spices",
+    "onions",
+    "garlic",
+    "tomatoes"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked lima beans",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress."
+    ]
+  }
+}

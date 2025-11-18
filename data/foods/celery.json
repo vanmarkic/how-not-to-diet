@@ -1,0 +1,42 @@
+{
+  "id": "food-31",
+  "name": "Celery",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-glycemic",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Extremely low calorie density",
+    "Very high water content",
+    "Provides crunch and texture",
+    "Part of Daily Dozen vegetables",
+    "Nearly zero calorie food"
+  ],
+  "benefits": "One of the lowest calorie-density foods available. High water content and crunch provides satiation with minimal calories. Excellent for appetite control and weight loss.",
+  "synergies": [
+    "onions",
+    "carrots",
+    "beans",
+    "soups"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "snacks"
+  ],
+  "amount": "Use freely",
+  "sources": {
+    "pages": [
+      59,
+      83,
+      88
+    ],
+    "quotes": [
+      "1 celery stalk, chopped",
+      "1½ cups/150g finely chopped celery",
+      "1 celery stalk, finely chopped"
+    ]
+  }
+}

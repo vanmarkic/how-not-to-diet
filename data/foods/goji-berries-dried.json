@@ -1,0 +1,38 @@
+{
+  "id": "food-48",
+  "name": "Goji Berries (Dried)",
+  "categories": [
+    "fruits",
+    "weight-loss-booster",
+    "anti-inflammatory",
+    "metabolic-booster"
+  ],
+  "properties": [
+    "AMPK activation",
+    "Better choice than raisins for weight loss",
+    "Anti-inflammatory properties",
+    "Rich in antioxidants",
+    "Mentioned in Inflammation Quenchers section"
+  ],
+  "benefits": "Goji berries are highlighted in the Amping AMPK and Inflammation Quenchers sections as a better dried fruit choice than raisins for weight loss optimization. They activate AMPK, a metabolic master switch that promotes fat burning. Rich in antioxidants and have anti-inflammatory properties.",
+  "synergies": [
+    "oatmeal",
+    "breakfast-foods",
+    "salads"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "daily"
+  ],
+  "amount": "Small amounts to replace raisins in oatmeal or salads",
+  "sources": {
+    "pages": [
+      18,
+      88
+    ],
+    "quotes": [
+      "If we did want to use dried, as we learned in the Amping AMPK and Inflammation Quenchers sections, barberries or gojis might be a better choice."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "food-123",
+  "name": "Red Bell Peppers",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of Daily Dozen - vegetables category",
+    "High water content (approximately 92% water)",
+    "Very low in calorie density",
+    "Contains nicotine-like compounds that boost AMPK",
+    "Rich in vitamin C, beta-carotene, and antioxidants",
+    "Provides orosensory stimulation when raw"
+  ],
+  "benefits": "Red bell peppers contain approximately 92% water and are highlighted in the cookbook as aboveground vegetables highest on the water scale. They contain beneficial nicotine-like compounds that may activate AMPK for enhanced fat burning. Raw red peppers offer maximum orosensory stimulation which can slow eating rate and enhance satiety signals.",
+  "synergies": [
+    "cucumber",
+    "romaine-lettuce",
+    "tomatoes",
+    "onions",
+    "sweet-potato",
+    "tempeh"
+  ],
+  "conflicts": [
+    "added-oils",
+    "excessive-cooking"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "1 red pepper, de-seeded and chopped or thinly sliced",
+  "sources": {
+    "pages": [
+      18,
+      35,
+      36,
+      118,
+      123,
+      124
+    ],
+    "quotes": [
+      "Peppers have that nicotine edge I described in Amping AMPK, and uncooked vegetables in general offer more orosensory stimulation.",
+      "1 red pepper, de-seeded and chopped",
+      "1 red pepper, de-seeded and thinly sliced",
+      "1 yellow pepper, de-seeded and chopped"
+    ]
+  }
+}

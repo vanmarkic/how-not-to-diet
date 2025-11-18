@@ -1,0 +1,37 @@
+{
+  "id": "food-58",
+  "name": "Lemon",
+  "categories": [
+    "rich-in-fruits",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen other fruits",
+    "High in vitamin C",
+    "Acidic flavor enhancer",
+    "Can be used as juice or zest",
+    "Prevents oxidation of cut fruits"
+  ],
+  "benefits": "Lemons are citrus fruits rich in vitamin C and antioxidants. Lemon juice helps prevent browning of cut fruits and adds bright flavor to dishes. As part of the Daily Dozen fruits category, lemons contribute to overall health and support the ideal weight-loss diet.",
+  "synergies": [
+    "greens-low-oxalate",
+    "berries",
+    "vinegar",
+    "green-tea"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "with-meals"
+  ],
+  "amount": "Part of Daily Dozen - counts toward other fruits (3 servings daily), typically 1-2 tablespoons juice or 1 teaspoon zest",
+  "sources": {
+    "pages": [
+      15,
+      83
+    ],
+    "quotes": [
+      "OTHER FRUITS checkbox in Daily Dozen. Place the diced apples in a large bowl and toss lightly with the lemon juice to coat. Add 2 tablespoons of water, the apple cider vinegar to create dressing."
+    ]
+  }
+}

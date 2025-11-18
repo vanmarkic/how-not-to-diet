@@ -1,0 +1,37 @@
+{
+  "id": "food-30",
+  "name": "Cayenne Pepper",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Alternative to ground ginger",
+    "Contains capsaicin",
+    "Thermogenic properties",
+    "Metabolism-boosting"
+  ],
+  "benefits": "Cayenne pepper contains capsaicin, which has thermogenic properties that boost metabolism and increase fat burning. It can help suppress appetite and increase energy expenditure. Spicier alternative to ground ginger for weight loss support.",
+  "synergies": [
+    "meals",
+    "soups",
+    "vegetables"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "1/2 teaspoon daily (or 1 tsp ground ginger as alternative)",
+  "sources": {
+    "pages": [
+      21,
+      24
+    ],
+    "quotes": [
+      "GROUND GINGER (1 tsp) or CAYENNE PEPPER (½ tsp) - Mix in any cold beverage, such as unsweetened fruit-infused water, or sprinkle on a meal."
+    ]
+  }
+}

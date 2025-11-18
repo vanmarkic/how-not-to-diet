@@ -1,0 +1,37 @@
+{
+  "id": "food-86",
+  "name": "Red Pepper Powder",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "metabolic-booster",
+    "thermogenic"
+  ],
+  "properties": [
+    "BAT (Brown Adipose Tissue) activation",
+    "Contains capsaicin for thermogenesis",
+    "Alternative to jalapeño peppers",
+    "Can be mixed into soups or smoothies",
+    "Metabolism-boosting"
+  ],
+  "benefits": "Red pepper powder activates brown adipose tissue (BAT) which increases metabolism and calorie burning. Half a teaspoon daily provides thermogenic effects similar to eating a whole jalapeño pepper. The capsaicin stimulates fat oxidation and energy expenditure.",
+  "synergies": [
+    "soups",
+    "vegetable-smoothies",
+    "meals-in-general"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "1/2 teaspoon daily",
+  "sources": {
+    "pages": [
+      24
+    ],
+    "quotes": [
+      "Alternately, for BAT activation, you can add one raw jalapeño pepper or ½ teaspoon of red pepper powder (or, presumably, crushed red pepper flakes) into your daily diet."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "food-117",
+  "name": "Green Papaya",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Unripe papaya used as vegetable",
+    "High water content (approximately 88-90% water)",
+    "Very low in calorie density",
+    "Rich in digestive enzymes",
+    "Low glycemic compared to ripe papaya"
+  ],
+  "benefits": "Green papaya is a water-rich vegetable (when unripe) with approximately 88-90% water content. Featured in Thai cuisine, it provides volume and hydration while being very low in calories. The digestive enzymes in green papaya may aid in nutrient absorption and digestion.",
+  "synergies": [
+    "carrots",
+    "green-beans",
+    "spring-onions-scallions",
+    "ginger",
+    "garlic",
+    "lemon",
+    "vinegar"
+  ],
+  "conflicts": [
+    "added-sugar"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "1 large green papaya per salad serving (serves 4)",
+  "sources": {
+    "pages": [
+      79,
+      85,
+      86
+    ],
+    "quotes": [
+      "THAI GREEN PAPAYA SALAD",
+      "1 large green papaya, peeled, de-seeded and grated",
+      "If you can't get hold of green papaya, you could try cucumber and/or shredded cabbage."
+    ]
+  }
+}

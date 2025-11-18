@@ -1,0 +1,41 @@
+{
+  "id": "food-166",
+  "name": "Cardamom",
+  "categories": [
+    "herbs-and-spices",
+    "digestive-support",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Aids digestion and reduces bloating",
+    "Anti-inflammatory properties",
+    "Rich in antioxidants",
+    "Part of Ras el Hanout spice blend",
+    "Traditional in Middle Eastern and Indian cuisine"
+  ],
+  "benefits": "Cardamom is an aromatic spice known for its digestive benefits, helping to reduce bloating and support healthy digestion. It contains powerful anti-inflammatory and antioxidant compounds. Featured in the Ras el Hanout blend, cardamom adds a distinctive sweet-spicy flavor to dishes and may help support metabolic health.",
+  "synergies": [
+    "cinnamon",
+    "ginger",
+    "cumin",
+    "coriander",
+    "cloves",
+    "sweet-potatoes",
+    "legumes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1/4 to 1/2 teaspoon per recipe, as part of daily herb and spice servings",
+  "sources": {
+    "pages": [
+      100
+    ],
+    "quotes": [
+      "½ teaspoon ground cardamom - Ras el Hanout Moroccan spice blend (page 100)"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "food-170",
+  "name": "Evening Hydration Timing",
+  "categories": [
+    "circadian-rhythm-support",
+    "hydration-strategy",
+    "timing-strategy"
+  ],
+  "properties": [
+    "Hydrate earlier in the day",
+    "Reduce fluids close to bedtime",
+    "Supports uninterrupted sleep",
+    "Prevents sleep disruption from urination",
+    "Maintains hydration status",
+    "Complements evening fasting"
+  ],
+  "benefits": "Strategic hydration timing supports both weight loss and sleep quality. While staying hydrated is crucial (pale yellow urine throughout the day), reducing fluid intake in the hours before bed prevents sleep disruption from nighttime urination. Front-loading hydration earlier in the day, combined with the water preload strategy before meals (ending before 7 PM), ensures adequate hydration while allowing for uninterrupted restorative sleep. This aligns with circadian-optimized eating patterns.",
+  "synergies": [
+    "water-preload",
+    "sufficient-sleep",
+    "evening-fasting",
+    "front-load-calories",
+    "stay-hydrated-daily"
+  ],
+  "conflicts": [
+    "excessive-evening-fluids",
+    "late-night-drinking"
+  ],
+  "timing": [
+    "morning-to-afternoon-emphasis",
+    "reduced-evening"
+  ],
+  "amount": "Emphasize hydration earlier in day; 9 cups total for women, 13 for men",
+  "sources": {
+    "pages": [
+      25,
+      27
+    ],
+    "quotes": [
+      "STAY HYDRATED - Check this box if your urine never appears darker than a pale yellow. Note that if you're eating riboflavin-fortified foods (such as nutritional yeast), then base this instead on getting 9 cups of unsweetened beverages a day for women (which would be taken care of by the green tea and water preloading recommendations) or 13 cups a day for men.",
+      "FAST AFTER 7:00 PM - Because of our circadian rhythm, food eaten at night is more fattening than the exact same food eaten earlier in the day, so fast every night for at least twelve hours starting before 7:00 p.m."
+    ]
+  }
+}

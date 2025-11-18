@@ -1,0 +1,47 @@
+{
+  "id": "food-120",
+  "name": "Peaches (Fresh)",
+  "categories": [
+    "high-water-rich",
+    "rich-in-fruits",
+    "low-calorie-density",
+    "particularly-satiating"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of other fruits",
+    "High water content (approximately 89% water)",
+    "Low in calorie density",
+    "Rich in vitamin C and antioxidants",
+    "Provides dietary fiber for satiety"
+  ],
+  "benefits": "Fresh peaches are highly water-rich fruits with approximately 89% water content. This makes them particularly effective for weight loss when choosing fresh over dried fruit. Their natural sweetness combined with high volume provides satisfaction with relatively few calories. As highlighted in the cookbook, switching dried fruit for fresh (like swapping strawberries for raisins) optimizes meals for weight loss.",
+  "synergies": [
+    "watermelon",
+    "blueberries-fresh",
+    "watercress",
+    "strawberries-fresh",
+    "lemon"
+  ],
+  "conflicts": [
+    "dried-fruits",
+    "added-sugar"
+  ],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "dessert",
+    "salads"
+  ],
+  "amount": "3 ripe peaches, pitted and cut into thin wedges or diced (serves 4)",
+  "sources": {
+    "pages": [
+      18,
+      111
+    ],
+    "quotes": [
+      "switching the dried fruit for fresh – for example, swapping in strawberries for the raisins",
+      "3 ripe peaches, pitted and cut into thin wedges or diced",
+      "In a large bowl, combine the watermelon, peaches, blueberries and lemon juice."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "food-87",
+  "name": "Rocket (Arugula)",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "greens",
+    "anti-inflammatory",
+    "high-fiber"
+  ],
+  "properties": [
+    "Cruciferous green",
+    "Peppery, slightly bitter flavor",
+    "Part of Daily Dozen greens and cruciferous vegetables",
+    "Very low calorie density",
+    "High in vitamins A, C, and K"
+  ],
+  "benefits": "Rocket (arugula) is a cruciferous green vegetable that provides both greens and cruciferous vegetable benefits. It offers powerful antioxidants and anti-inflammatory compounds. The peppery flavor adds interest to salads and soups without calories.",
+  "synergies": [
+    "watercress",
+    "mustard-greens",
+    "vinegar",
+    "beans-legumes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups",
+    "earlier-in-meal"
+  ],
+  "amount": "Part of Daily Dozen - counts toward both greens (2 servings) and cruciferous (1 serving) daily, typically 2 cups coarsely chopped",
+  "sources": {
+    "pages": [
+      15,
+      32,
+      33
+    ],
+    "quotes": [
+      "GREENS checkbox in Daily Dozen. CRUCIFEROUS VEGETABLES checkbox in Daily Dozen",
+      "2 cups/50g coarsely chopped rocket, watercress or mustard greens - Stir in the spinach, rocket, peas and spring onions"
+    ]
+  }
+}

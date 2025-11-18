@@ -1,0 +1,42 @@
+{
+  "id": "food-101",
+  "name": "Tahini (Sesame Seed Butter)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Made from ground sesame seeds",
+    "Source of healthy fats",
+    "Rich in minerals",
+    "Use in moderation for weight loss",
+    "Better as whole seeds for structure",
+    "Provides creaminess without dairy"
+  ],
+  "benefits": "Tahini is made from ground sesame seeds and provides healthy fats, calcium, and minerals. While not unhealthy, for weight-loss acceleration, structurally intact sesame seeds would be better as the grinding releases calories from cell walls. Use tahini in small amounts for flavor in dressings and sauces.",
+  "synergies": [
+    "lemon",
+    "garlic",
+    "chickpeas",
+    "vegetables",
+    "barley"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "in-cooking"
+  ],
+  "amount": "2-3 tablespoons for dressings serving 4 people. Use sparingly for weight loss",
+  "sources": {
+    "pages": [
+      18,
+      19,
+      103,
+      117
+    ],
+    "quotes": [
+      "This is not to say something like almond butter or tahini is unhealthy by any stretch, but for weight-loss acceleration, structurally intact nuts and seeds would be better.",
+      "3 tablespoons tahini"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "food-88",
+  "name": "Rye Grains (Whole Intact)",
+  "categories": [
+    "rich-in-whole-grains",
+    "high-fiber",
+    "particularly-satiating",
+    "low-glycemic",
+    "low-insulin-index"
+  ],
+  "properties": [
+    "Whole, intact grain kernels",
+    "Calories trapped within cell walls",
+    "Part of Daily Dozen - 3 servings of whole grains daily",
+    "Hearty, chewy texture",
+    "Better than refined rye flour",
+    "Requires soaking overnight before cooking"
+  ],
+  "benefits": "Hearty, chewy rye grains are whole intact grains that provide fiber-encased calories which blunts glycemic impact and insulin response. The intact cell walls activate the ileal brake that dials down appetite and delivers sustenance to friendly gut flora. Well worth the cooking time for both palate and health.",
+  "synergies": [
+    "chickpeas",
+    "vegetables",
+    "goji-berries",
+    "almonds",
+    "vinegar"
+  ],
+  "conflicts": [
+    "rye-flour",
+    "refined-grains"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "meal-prep"
+  ],
+  "amount": "Part of 3 daily servings of whole grains (Daily Dozen)",
+  "sources": {
+    "pages": [
+      88
+    ],
+    "quotes": [
+      "Hearty, chewy rye grains are featured in this salad made with chickpeas, veggies and a zesty mustard dressing. They may take a moment to cook, but rye grains are well worth the time. Your palate and your health will thank you."
+    ]
+  }
+}

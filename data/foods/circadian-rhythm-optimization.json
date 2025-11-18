@@ -1,0 +1,52 @@
+{
+  "id": "food-171",
+  "name": "Circadian Rhythm Optimization",
+  "categories": [
+    "circadian-rhythm-support",
+    "weight-loss-booster",
+    "chronobiology"
+  ],
+  "properties": [
+    "Fundamental weight-loss strategy",
+    "Based on chronobiology science",
+    "Affects how calories are metabolized",
+    "Same food has different effects at different times",
+    "Coordinates multiple timing strategies",
+    "Integrates sleep, eating, and activity timing"
+  ],
+  "benefits": "Circadian rhythm optimization is a cornerstone of the How Not to Diet approach. The science of chronobiology reveals that when we eat matters as much as what we eat - the same number of calories eaten at different times of day, after different amounts of sleep, or in different meal distributions can translate into different amounts of body fat. Optimizing circadian rhythms involves: eating earlier (front-loaded calories), fasting after 7 PM, getting sufficient sleep at regular times, avoiding caffeine near bedtime, and time-restricting eating windows. These strategies leverage the body's natural metabolic rhythms for enhanced weight loss.",
+  "synergies": [
+    "sufficient-sleep",
+    "evening-fasting",
+    "front-load-calories",
+    "time-restricted-eating",
+    "regular-bedtime",
+    "pistachios",
+    "morning-exercise"
+  ],
+  "conflicts": [
+    "late-night-eating",
+    "irregular-sleep",
+    "shift-work-eating",
+    "evening-caffeine"
+  ],
+  "timing": [
+    "daily-rhythm-alignment",
+    "consistent-schedule"
+  ],
+  "amount": "Comprehensive timing strategy integrating multiple tweaks",
+  "sources": {
+    "pages": [
+      20,
+      22,
+      26,
+      27
+    ],
+    "quotes": [
+      "The same number of calories eaten at a different time of the day, in a different meal distribution or after different amounts of sleep can translate into different amounts of body fat.",
+      "Because of our circadian rhythm, food eaten at night is more fattening than the exact same food eaten earlier in the day",
+      "Given the circadian benefits of reducing evening food intake, the window should end before 7:00 p.m.",
+      "Finally, there are options that show theoretical promise but haven't been sufficiently vetted in clinical trials, such as pistachios for circadian synchronization"
+    ]
+  }
+}

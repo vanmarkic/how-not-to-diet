@@ -1,0 +1,44 @@
+{
+  "id": "food-84",
+  "name": "Red Lentils",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of legume family",
+    "High in protein and fiber",
+    "Quick cooking compared to other legumes",
+    "Calories trapped within cell walls",
+    "Part of Daily Dozen - 3 servings of legumes daily"
+  ],
+  "benefits": "Excellent source of protein, vitamins, minerals, fiber and antioxidants. Benefits excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Part of heart disease prevention.",
+  "synergies": [
+    "kale",
+    "sweet-potato",
+    "turmeric",
+    "ginger",
+    "curry-spices"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 servings of legumes daily",
+  "sources": {
+    "pages": [
+      53,
+      54,
+      72
+    ],
+    "quotes": [
+      "THREE-BEAN SOUP WITH TURMERIC AND LENTILS - Turmeric casts a gorgeous golden glow on this hearty soup featuring lentils and three kinds of beans.",
+      "½ cup/100g dried brown lentils",
+      "1 cup/200g dried red lentils, picked over and rinsed"
+    ]
+  }
+}

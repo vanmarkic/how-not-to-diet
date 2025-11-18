@@ -1,0 +1,53 @@
+{
+  "id": "food-152",
+  "name": "Mung Beans",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Small green beans widely used in Asian cuisine",
+    "Can be eaten whole, split, or sprouted",
+    "Excellent source of plant-based protein, fiber, and antioxidants",
+    "Benefits excess body weight and insulin resistance",
+    "Rich in folate, manganese, magnesium, and vitamins B1, B2, B3, B5, B6",
+    "Easily digestible compared to other legumes",
+    "Quick-cooking legume that doesn't require pre-soaking"
+  ],
+  "benefits": "Mung beans provide excellent nutrition with high fiber (15g per cooked cup) and protein while being notably easy to digest. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Their rich antioxidant content and low glycemic index support metabolic health and stable blood sugar. The abundant resistant starch feeds beneficial gut bacteria, making them ideal for meeting the Daily Dozen's three daily servings of legumes for cardiovascular and metabolic protection.",
+  "synergies": [
+    "vegetables",
+    "whole-grains",
+    "herbs-spices",
+    "ginger",
+    "garlic",
+    "onions",
+    "greens"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked mung beans",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress."
+    ]
+  }
+}

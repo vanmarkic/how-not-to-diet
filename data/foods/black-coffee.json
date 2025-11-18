@@ -1,0 +1,43 @@
+{
+  "id": "food-16",
+  "name": "Black Coffee",
+  "categories": [
+    "beverages",
+    "weight-loss-booster",
+    "metabolism-boosting",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Metabolism-boosting beverage",
+    "Contains chlorogenic acid",
+    "Rich in antioxidants",
+    "Caffeine for appetite suppression",
+    "Calorie-free when black",
+    "Acceptable during meals",
+    "Reinforcing effect with healthy foods"
+  ],
+  "benefits": "Black coffee is a powerful weight-loss beverage rich in chlorogenic acid and antioxidants that boost metabolism and fat burning. The caffeine provides appetite suppression and increased energy expenditure. Coffee has a reinforcing effect, meaning when consumed with healthy foods you want to like more, it can help build positive associations. Avoid large amounts within 6 hours of bedtime to prevent sleep disruption.",
+  "synergies": [
+    "meals-in-general",
+    "healthy-foods",
+    "morning-routine"
+  ],
+  "conflicts": [
+    "bedtime-within-6-hours"
+  ],
+  "timing": [
+    "morning",
+    "during-meals",
+    "not-within-6-hours-of-bedtime"
+  ],
+  "amount": "As desired, but avoid late consumption",
+  "sources": {
+    "pages": [
+      25
+    ],
+    "quotes": [
+      "During meals, drink water, black coffee or hibiscus tea mixed 6:1 with lemon verbena.",
+      "Take advantage of the reinforcing effect of caffeine by drinking your green tea along with something healthy you wish you liked more, but don't consume large amounts of caffeine within six hours of bedtime."
+    ]
+  }
+}

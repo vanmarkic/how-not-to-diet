@@ -1,0 +1,39 @@
+{
+  "id": "food-104",
+  "name": "Time-Restricted Eating",
+  "categories": [
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Part of 21 Tweaks - chronobiology strategy",
+    "Restrict eating window to specific hours",
+    "Fast after 7:00 PM",
+    "Minimum 12-hour daily fast",
+    "Supports circadian rhythm"
+  ],
+  "benefits": "Restricting eating to specific time windows aligns with circadian rhythms and enhances weight loss. Confining eating to earlier hours (ending before 7:00 PM) takes advantage of the body's natural metabolic patterns. The nightly fast of at least 12 hours supports fat burning and metabolic health.",
+  "synergies": [
+    "breakfast-foods-large",
+    "exercise-fasted-state"
+  ],
+  "conflicts": [
+    "late-night-eating"
+  ],
+  "timing": [
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Eat within a restricted window, fast for at least 12 hours starting before 7:00 PM",
+  "sources": {
+    "pages": [
+      21,
+      26,
+      27
+    ],
+    "quotes": [
+      "TIME-RESTRICT YOUR EATING - Confine eating to a daily window of time of your choosing under 12 hours in length, which you should eat within consistently every week. Given the circadian benefits of reducing evening food intake, the window should end before 7:00 p.m.",
+      "FAST AFTER 7:00 PM - Because of our circadian rhythm, food eaten at night is more fattening than the exact same food eaten earlier in the day, so fast every night for at least twelve hours starting before 7:00 p.m. The fewer calories after sundown, the better."
+    ]
+  }
+}

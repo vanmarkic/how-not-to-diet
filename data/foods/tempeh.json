@@ -1,0 +1,44 @@
+{
+  "id": "food-102",
+  "name": "Tempeh",
+  "categories": [
+    "rich-in-legumes",
+    "low-insulin-index",
+    "high-fiber",
+    "microbiome-friendly",
+    "particularly-satiating"
+  ],
+  "properties": [
+    "Fermented whole soybean product",
+    "Contains probiotics from fermentation",
+    "Whole food form of soy",
+    "High in protein and fiber",
+    "Steam before using to improve digestibility"
+  ],
+  "benefits": "Tempeh is a fermented whole soybean product that provides complete protein with intact fiber. The fermentation process adds beneficial probiotics for gut health. Studies show soy phytoestrogens have no significant effect on fibroid frequency or growth, making it safe for regular consumption.",
+  "synergies": [
+    "chickpeas",
+    "curry-spices",
+    "vegetables",
+    "vinegar"
+  ],
+  "conflicts": [
+    "deep-frying"
+  ],
+  "timing": [
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Can be part of regular meals, typically 4-8 ounces per serving",
+  "sources": {
+    "pages": [
+      108,
+      109,
+      123
+    ],
+    "quotes": [
+      "If you make the curried tempeh and chickpeas in advance of when you want to serve this dish, the flavours will have time to merge and get even bolder.",
+      "About one in four women will suffer from fibroids, most commonly with excessively heavy periods and pain or pressure. Is there a link to soya? No. The amount of soya phytoestrogen in three to five cups of soya milk a day had no significant effect on the frequency or growth of fibroids."
+    ]
+  }
+}

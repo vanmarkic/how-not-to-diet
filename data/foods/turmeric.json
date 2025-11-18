@@ -1,0 +1,35 @@
+{
+  "id": "food-106",
+  "name": "Turmeric",
+  "categories": [
+    "anti-inflammatory",
+    "herbs-and-spices"
+  ],
+  "properties": [
+    "Part of Daily Dozen herbs and spices",
+    "Contains curcumin",
+    "Anti-inflammatory properties",
+    "Common in spice blends like Ras el Hanout",
+    "Used in daily cooking"
+  ],
+  "benefits": "Powerful anti-inflammatory properties. Supports weight loss and metabolic health. Contains curcumin which has numerous health benefits.",
+  "synergies": [
+    "black-pepper",
+    "ginger",
+    "other-spices"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "Daily use in cooking (part of herbs and spices serving)",
+  "sources": {
+    "pages": [
+      100
+    ],
+    "quotes": [
+      "Ras el Hanout spice blend contains: 1 teaspoon ground turmeric (among other anti-inflammatory spices)"
+    ]
+  }
+}

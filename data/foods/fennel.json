@@ -1,0 +1,40 @@
+{
+  "id": "food-41",
+  "name": "Fennel",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Slightly anise flavor",
+    "Low calorie density",
+    "High in fiber",
+    "Can be eaten raw or roasted",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Low calorie vegetable with unique flavor profile. High fiber content supports satiation and microbiome health. Both the bulb and fronds are edible and nutritious.",
+  "synergies": [
+    "beans",
+    "garlic",
+    "lemon"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of vegetable servings",
+  "sources": {
+    "pages": [
+      31,
+      74,
+      75
+    ],
+    "quotes": [
+      "TUSCAN WHITE BEAN SOUP WITH ROASTED FENNEL - The slightly anise flavour of fennel is a welcome addition to this soup.",
+      "1 large fennel bulb",
+      "½ teaspoon ground fennel seeds"
+    ]
+  }
+}

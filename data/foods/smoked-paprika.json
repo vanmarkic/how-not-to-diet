@@ -1,0 +1,39 @@
+{
+  "id": "food-168",
+  "name": "Smoked Paprika",
+  "categories": [
+    "herbs-and-spices",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Rich in antioxidants including carotenoids",
+    "Anti-inflammatory properties",
+    "Adds depth and smoky flavor without adding fat",
+    "Contains vitamin A precursors",
+    "Enhances savory dishes"
+  ],
+  "benefits": "Smoked paprika is rich in carotenoids and other antioxidants, providing anti-inflammatory benefits and vitamin A precursors. It adds a distinctive smoky, savory flavor to dishes without adding fat or calories, making it perfect for plant-based cooking. Featured in the cookbook's Cheesy Broccoli Soup for depth of flavor.",
+  "synergies": [
+    "broccoli",
+    "cauliflower",
+    "beans",
+    "nutritional-yeast",
+    "cashews",
+    "vegetables"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "1/2 to 1 teaspoon per recipe, as part of daily herb and spice servings",
+  "sources": {
+    "pages": [
+      59
+    ],
+    "quotes": [
+      "1 teaspoon smoked paprika - Cheesy Broccoli Soup (page 59)"
+    ]
+  }
+}

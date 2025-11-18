@@ -1,0 +1,42 @@
+{
+  "id": "food-162",
+  "name": "Bay Leaves",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Aromatic herb used for depth of flavor",
+    "Traditional in soups and stews",
+    "Anti-inflammatory properties",
+    "Aids digestion",
+    "Used in Mediterranean and European cooking"
+  ],
+  "benefits": "Bay leaves add a subtle, complex flavor to long-cooking dishes like soups, stews, and bean dishes. They contain anti-inflammatory compounds and have been traditionally used to support digestion. Bay leaves are removed before serving but infuse dishes with their aromatic properties during cooking.",
+  "synergies": [
+    "beans",
+    "lentils",
+    "vegetables",
+    "cabbage",
+    "tomatoes",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking"
+  ],
+  "amount": "1-2 bay leaves per pot of soup or stew (remove before serving)",
+  "sources": {
+    "pages": [
+      41,
+      44,
+      47
+    ],
+    "quotes": [
+      "2 bay leaves - Red Bean and Butternut Caldo Verde (page 41)",
+      "1 bay leaf - Borscht with Cabbage and Dill (page 44)",
+      "1 bay leaf - Ribollita with White Beans and Cavolo Nero (page 47)"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "food-63",
+  "name": "Mushrooms (Shiitake)",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-glycemic",
+    "low-glycemic"
+  ],
+  "properties": [
+    "High water content",
+    "Low in calorie density",
+    "Source of umami flavor",
+    "Part of Daily Dozen vegetables",
+    "Particularly good in soups"
+  ],
+  "benefits": "Mushrooms, especially shiitake, are low in calorie density and high in water content. Featured in hot and sour soup which is particularly satiating. Part of the optimal weight-loss diet due to low glycemic load and high water content.",
+  "synergies": [
+    "asian-greens",
+    "ginger",
+    "garlic",
+    "vinegar",
+    "lemongrass"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen vegetables - aim for multiple servings daily",
+  "sources": {
+    "pages": [
+      50,
+      51
+    ],
+    "quotes": [
+      "This soup is easily customizable to please your palate... And if you prefer as heartier soup, add some cooked whole grains or 100% buckwheat noodles just before serving."
+    ]
+  }
+}

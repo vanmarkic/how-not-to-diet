@@ -1,0 +1,41 @@
+{
+  "id": "food-66",
+  "name": "Negative Calorie Foods",
+  "categories": [
+    "rich-in-vegetables",
+    "rich-in-fruits",
+    "weight-loss-booster",
+    "high-water-rich",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Preload strategy for appetite control",
+    "Low calorie density",
+    "High water content",
+    "Includes raw vegetables and fruits"
+  ],
+  "benefits": "Preloading with negative calorie foods (raw vegetables or fruits) before meals significantly reduces overall caloric intake. The high water and fiber content increases satiety while providing minimal calories. Eating these first helps crowd out more calorie-dense foods.",
+  "synergies": [
+    "water-preload",
+    "vinegar",
+    "salads"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "Preload with raw vegetables or fruit before each meal",
+  "sources": {
+    "pages": [
+      21,
+      23
+    ],
+    "quotes": [
+      "PRELOAD WITH 'NEGATIVE CALORIE' FOODS - Start each meal with an apple, light salad, or a soup (broth-based or puréed vegetables, but not a cream soup)."
+    ]
+  }
+}

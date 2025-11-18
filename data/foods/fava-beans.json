@@ -1,0 +1,52 @@
+{
+  "id": "food-151",
+  "name": "Fava Beans (Broad Beans)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Large, flat green beans popular in Mediterranean and Middle Eastern cuisine",
+    "Also known as broad beans or faba beans",
+    "Excellent source of plant-based protein, fiber, and L-dopa",
+    "Benefits excess body weight and insulin resistance",
+    "Rich in folate, manganese, copper, and resistant starch",
+    "One of the oldest cultivated legumes dating back thousands of years"
+  ],
+  "benefits": "Fava beans are nutritional powerhouses providing exceptional protein and fiber (9g per cooked cup) that support weight management and satiety. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Uniquely, they contain L-dopa which may support brain health. Their low glycemic index and high resistant starch content promote beneficial gut bacteria and stable blood sugar, fulfilling the Daily Dozen's three daily servings of legumes for optimal health.",
+  "synergies": [
+    "vegetables",
+    "greens",
+    "whole-grains",
+    "herbs-spices",
+    "lemon",
+    "garlic",
+    "fresh-herbs"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked fava beans",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+    ]
+  }
+}

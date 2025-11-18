@@ -1,0 +1,50 @@
+{
+  "id": "food-147",
+  "name": "Black-Eyed Peas (Black-Eyed Beans)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Cream-colored beans with distinctive black spot",
+    "Excellent source of plant-based protein and fiber",
+    "Rich in folate, iron, and potassium",
+    "Benefits excess body weight and insulin resistance",
+    "Quick-cooking legume with mild, earthy flavor",
+    "Versatile in salads, soups, and side dishes"
+  ],
+  "benefits": "Black-eyed peas are an excellent source of vitamins, minerals, fiber and antioxidants that support weight loss and metabolic health. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Their high fiber content promotes satiety and feeds beneficial gut bacteria, making them ideal for meeting the Daily Dozen's three daily servings of legumes and supporting heart disease prevention.",
+  "synergies": [
+    "sweetcorn",
+    "vegetables",
+    "greens",
+    "whole-grains",
+    "peppers",
+    "herbs-spices"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "any-meal"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked black-eyed peas",
+  "sources": {
+    "pages": [
+      103
+    ],
+    "quotes": [
+      "SWEETCORN AND BLACK-EYED BEAN SALAD - A variety of textures, colours and flavours makes this salad a hit at potlucks and picnics."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "food-42",
+  "name": "Flaxseeds (Ground)",
+  "categories": [
+    "high-fiber",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 1 serving daily",
+    "Should be ground for optimal absorption",
+    "Rich in omega-3 fatty acids",
+    "Helps with appetite suppression",
+    "Contains lignans"
+  ],
+  "benefits": "Appetite suppression benefits. Provides essential omega-3 fatty acids and fiber. Supports digestive health and weight loss efforts.",
+  "synergies": [
+    "oatmeal",
+    "smoothies",
+    "berries"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "any-meal"
+  ],
+  "amount": "1 serving daily (1 tablespoon ground)",
+  "sources": {
+    "pages": [
+      15,
+      18
+    ],
+    "quotes": [
+      "In the Appetite Suppression section, we learned yet another reason to include ground flaxseeds in our daily diet."
+    ]
+  }
+}

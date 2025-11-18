@@ -1,0 +1,38 @@
+{
+  "id": "food-85",
+  "name": "Red Pepper Flakes (Crushed Red Pepper)",
+  "categories": [
+    "weight-loss-booster",
+    "fat-burner",
+    "thermogenic",
+    "herbs-and-spices"
+  ],
+  "properties": [
+    "BAT (brown adipose tissue) activation",
+    "Contains capsaicin for thermogenesis",
+    "Fat burning properties",
+    "Metabolism-boosting",
+    "Convenient alternative to fresh jalapeño"
+  ],
+  "benefits": "Red pepper flakes activate brown adipose tissue (BAT), turning white fat into metabolically active brown fat that burns calories to generate heat. The capsaicin triggers thermogenesis, significantly increasing metabolic rate and fat oxidation. This is a convenient, shelf-stable way to get BAT-activating compounds daily. Can be easily mixed into soups, stews, or vegetable dishes.",
+  "synergies": [
+    "soups",
+    "vegetable-dishes",
+    "beans-legumes",
+    "whole-grains"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "any-meal"
+  ],
+  "amount": "1/2 teaspoon daily (equivalent to 1 jalapeño)",
+  "sources": {
+    "pages": [
+      24
+    ],
+    "quotes": [
+      "For BAT activation, you can add one raw jalapeño pepper or ½ teaspoon of red pepper powder (or, presumably, crushed red pepper flakes) into your daily diet."
+    ]
+  }
+}

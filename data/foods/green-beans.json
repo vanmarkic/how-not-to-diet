@@ -1,0 +1,49 @@
+{
+  "id": "food-122",
+  "name": "Green Beans",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "particularly-satiating"
+  ],
+  "properties": [
+    "Part of Daily Dozen - vegetables and beans categories",
+    "High water content (approximately 90% water)",
+    "Very low in calorie density",
+    "Rich in vitamins K, C, and folate",
+    "Provides dietary fiber for satiety",
+    "Contains beneficial plant compounds"
+  ],
+  "benefits": "Green beans contain approximately 90% water, making them one of the most water-rich vegetables for weight loss. Lightly steamed green beans retain their crisp texture, providing orosensory stimulation that may slow eating rate. As an aboveground vegetable high on the water scale, green beans are ideal for optimizing weight loss meals.",
+  "synergies": [
+    "green-papaya",
+    "carrots",
+    "sweet-potato",
+    "tempeh",
+    "ginger",
+    "garlic"
+  ],
+  "conflicts": [
+    "added-oils",
+    "overcooking"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "1½ cups/165g green beans, cut into 1½-inch/4cm pieces and lightly steamed",
+  "sources": {
+    "pages": [
+      85,
+      123,
+      124
+    ],
+    "quotes": [
+      "1½ cups/165g green beans, cut into 1½-inch/4cm pieces and lightly steamed",
+      "8 ounces/225g green beans, trimmed and cut into 1½-inch/4cm pieces",
+      "Add the green beans and carrots and steam until just tender, about 3 minutes."
+    ]
+  }
+}

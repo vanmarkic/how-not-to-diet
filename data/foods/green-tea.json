@@ -1,0 +1,38 @@
+{
+  "id": "food-50",
+  "name": "Green Tea",
+  "categories": [
+    "weight-loss-booster",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Contains catechins for fat burning",
+    "Metabolism-boosting beverage",
+    "Rich in antioxidants",
+    "Supports hydration"
+  ],
+  "benefits": "Green tea has been shown to boost metabolism and enhance fat burning. The catechins in green tea, particularly EGCG, support weight loss efforts. Regular consumption throughout the day maximizes metabolic benefits.",
+  "synergies": [
+    "water",
+    "meals-in-general"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "3 cups daily",
+  "sources": {
+    "pages": [
+      21,
+      24
+    ],
+    "quotes": [
+      "GREEN TEA (3 cups) - Tea bags can be used if desired, but to maximize the polyphenol content, use caffeinated loose-leaf green tea and steep at 80°C for 3 minutes."
+    ]
+  }
+}

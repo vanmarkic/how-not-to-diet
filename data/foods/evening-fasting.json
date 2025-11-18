@@ -1,0 +1,47 @@
+{
+  "id": "food-167",
+  "name": "Evening Fasting (After 7:00 PM)",
+  "categories": [
+    "weight-loss-booster",
+    "circadian-rhythm-support",
+    "timing-strategy"
+  ],
+  "properties": [
+    "Part of 21 Tweaks - EVERY NIGHT category",
+    "Fast for minimum 12 hours starting before 7:00 PM",
+    "Leverages circadian rhythm for fat loss",
+    "Evening calories are more fattening",
+    "Supports overnight fat burning",
+    "Reduces total daily calorie intake"
+  ],
+  "benefits": "Fasting after 7:00 PM is a critical circadian-based weight-loss strategy. Because of our circadian rhythm, food eaten at night is more fattening than the exact same food eaten earlier in the day. By fasting every night for at least 12 hours starting before 7:00 PM, you align eating with optimal metabolic windows. The fewer calories consumed after sundown, the better for weight loss. This practice supports natural overnight fat burning and metabolic repair processes.",
+  "synergies": [
+    "time-restricted-eating",
+    "front-load-calories",
+    "breakfast-large-meal",
+    "sufficient-sleep",
+    "circadian-alignment"
+  ],
+  "conflicts": [
+    "late-night-eating",
+    "evening-snacks",
+    "dinner-after-7pm"
+  ],
+  "timing": [
+    "evening",
+    "nightly",
+    "before-7pm-cutoff"
+  ],
+  "amount": "Fast for at least 12 hours starting before 7:00 PM daily",
+  "sources": {
+    "pages": [
+      22,
+      26,
+      27
+    ],
+    "quotes": [
+      "FAST AFTER 7:00 PM - Because of our circadian rhythm, food eaten at night is more fattening than the exact same food eaten earlier in the day, so fast every night for at least twelve hours starting before 7:00 p.m. The fewer calories after sundown, the better.",
+      "Given the circadian benefits of reducing evening food intake, the window should end before 7:00 p.m."
+    ]
+  }
+}

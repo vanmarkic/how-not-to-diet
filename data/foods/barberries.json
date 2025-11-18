@@ -1,0 +1,36 @@
+{
+  "id": "food-7",
+  "name": "Barberries",
+  "categories": [
+    "rich-in-fruits",
+    "anti-inflammatory",
+    "weight-loss-booster",
+    "high-fiber"
+  ],
+  "properties": [
+    "AMPK-activating dried fruit",
+    "Anti-inflammatory properties",
+    "Better choice than raisins for weight loss",
+    "Rich in antioxidants",
+    "Tart flavor"
+  ],
+  "benefits": "Barberries are highlighted as a superior choice to raisins for weight loss optimization. They have AMPK-activating properties that help boost metabolism. Their anti-inflammatory compounds support overall health while providing natural sweetness to breakfast dishes.",
+  "synergies": [
+    "oat-groats-whole-intact-oats",
+    "steel-cut-oats",
+    "breakfast-foods-large"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast"
+  ],
+  "amount": "Use as dried fruit alternative in breakfast dishes",
+  "sources": {
+    "pages": [
+      18
+    ],
+    "quotes": [
+      "If we did want to use dried, as we learned in the Amping AMPK and Inflammation Quenchers sections, barberries or gojis might be a better choice."
+    ]
+  }
+}

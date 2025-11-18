@@ -1,0 +1,39 @@
+{
+  "id": "food-2",
+  "name": "Almonds",
+  "categories": [
+    "high-fiber",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "High in healthy fats",
+    "Source of vitamin E",
+    "High in fiber",
+    "Part of Daily Dozen nuts and seeds",
+    "Best eaten raw and whole"
+  ],
+  "benefits": "Almonds are nutrient-dense nuts that score thirteen out of seventeen optimal weight-loss criteria. Best eaten raw and whole or coarsely chopped rather than as almond butter for weight-loss acceleration. Complement greens to boost absorption of fat-soluble nutrients.",
+  "synergies": [
+    "greens",
+    "berries",
+    "oats"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "snacks"
+  ],
+  "amount": "Part of Daily Dozen - 1 serving of nuts and seeds daily (about 1/4 cup or 1 ounce)",
+  "sources": {
+    "pages": [
+      14,
+      17,
+      88
+    ],
+    "quotes": [
+      "Legumes, whole grains, and nuts and seeds together would hit fifteen, fourteen and thirteen [out of seventeen optimal weight-loss criteria], respectively.",
+      "Nuts are a great complement to greens to boost the absorption of fat-soluble nutrients, but, ideally, they should be eaten raw and whole or coarsely chopped rather than blended into butters."
+    ]
+  }
+}

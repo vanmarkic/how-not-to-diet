@@ -1,0 +1,39 @@
+{
+  "id": "food-5",
+  "name": "Asparagus",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Spring vegetable",
+    "High in vitamins and minerals",
+    "Low calorie density",
+    "Can be roasted or used in soups",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Low calorie, nutrient-dense vegetable that supports weight loss. Excellent source of fiber and vitamins. Helps create satisfying, low-calorie meals.",
+  "synergies": [
+    "greens",
+    "peas",
+    "nigella-seeds"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of vegetable servings",
+  "sources": {
+    "pages": [
+      31,
+      32,
+      33
+    ],
+    "quotes": [
+      "SPRING GREENS SOUP WITH ROASTED ASPARAGUS - This bright and comforting soup is packed with fresh greens, peas and roasted asparagus. Enjoy it hot, warm or chilled.",
+      "8 ounces/225g thin asparagus, trimmed and cut into 1½-inch (4cm) pieces (reserve the tips)"
+    ]
+  }
+}

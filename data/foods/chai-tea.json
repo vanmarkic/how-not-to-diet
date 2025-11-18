@@ -1,0 +1,43 @@
+{
+  "id": "food-32",
+  "name": "Chai Tea",
+  "categories": [
+    "beverages",
+    "weight-loss-booster",
+    "metabolism-boosting",
+    "thermogenic"
+  ],
+  "properties": [
+    "Combines green tea and ginger benefits",
+    "Metabolism-boosting",
+    "Thermogenic properties from spices",
+    "Contains catechins and gingerols",
+    "Multiple weight-loss compounds in one beverage",
+    "Traditional spices support digestion"
+  ],
+  "benefits": "Chai tea is highlighted as a way to combine the green tea and ginger weight-loss tricks into a single tasty beverage. It delivers the metabolism-boosting catechins from green tea along with the thermogenic gingerols from ginger. Traditional chai spices like cinnamon, cardamom, and black pepper add additional metabolic benefits. This makes it an efficient way to get multiple weight-loss boosters simultaneously.",
+  "synergies": [
+    "green-tea",
+    "ginger-ground",
+    "cinnamon",
+    "black-pepper",
+    "morning-routine"
+  ],
+  "conflicts": [
+    "bedtime-within-6-hours"
+  ],
+  "timing": [
+    "morning-preferred",
+    "between-meals",
+    "not-within-6-hours-of-bedtime"
+  ],
+  "amount": "Can count toward 3 cups of green tea daily",
+  "sources": {
+    "pages": [
+      24
+    ],
+    "quotes": [
+      "Ginger may work better in the morning than evening, and consider chai tea as a tasty way to combine the green tea and ginger tricks into a single beverage."
+    ]
+  }
+}

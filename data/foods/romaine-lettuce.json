@@ -1,0 +1,50 @@
+{
+  "id": "food-116",
+  "name": "Romaine Lettuce",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of Daily Dozen - greens category",
+    "High water content (approximately 95% water)",
+    "Very low in calorie density",
+    "Rich in vitamins A, K, and folate",
+    "Provides dietary fiber for satiety"
+  ],
+  "benefits": "Romaine lettuce is one of the most water-rich vegetables available with approximately 95% water content. This extremely low calorie density combined with high volume makes it particularly effective for weight loss. Being an aboveground vegetable, it ranks highest on the water scale for optimizing weight loss meals.",
+  "synergies": [
+    "cucumber",
+    "tomatoes",
+    "radishes",
+    "bell-peppers",
+    "rocket-arugula",
+    "watercress"
+  ],
+  "conflicts": [
+    "high-calorie-dressings",
+    "added-oils"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "Part of daily greens servings (Daily Dozen); use as base for salads",
+  "sources": {
+    "pages": [
+      18,
+      79,
+      98,
+      117
+    ],
+    "quotes": [
+      "Similarly, when choosing vegetables, we can steer toward aboveground veggies highest on the water scale.",
+      "Chopped romaine lettuce and rocket",
+      "1 head romaine lettuce, chopped into bite-size pieces"
+    ]
+  }
+}

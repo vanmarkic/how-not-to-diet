@@ -1,0 +1,40 @@
+{
+  "id": "food-167",
+  "name": "Cloves",
+  "categories": [
+    "herbs-and-spices",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Extremely high in antioxidants",
+    "Anti-inflammatory properties",
+    "Antimicrobial compounds",
+    "Supports digestive health",
+    "Part of Ras el Hanout spice blend"
+  ],
+  "benefits": "Cloves are one of the most antioxidant-rich spices available, containing eugenol and other powerful compounds with anti-inflammatory and antimicrobial properties. They add warmth and depth to spice blends like Ras el Hanout and support digestive health. Used sparingly due to their intense flavor.",
+  "synergies": [
+    "cinnamon",
+    "cardamom",
+    "ginger",
+    "cumin",
+    "coriander",
+    "allspice"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "with-meals"
+  ],
+  "amount": "1/4 teaspoon or less per recipe (use sparingly), as part of spice blends",
+  "sources": {
+    "pages": [
+      100
+    ],
+    "quotes": [
+      "¼ teaspoon ground cloves - Ras el Hanout Moroccan spice blend (page 100)"
+    ]
+  }
+}

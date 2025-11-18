@@ -1,0 +1,42 @@
+{
+  "id": "food-35",
+  "name": "Collard Greens",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "greens",
+    "anti-inflammatory",
+    "high-fiber"
+  ],
+  "properties": [
+    "Cruciferous green",
+    "Hearty, robust texture",
+    "Part of Daily Dozen greens and cruciferous vegetables",
+    "Very low calorie density",
+    "High in vitamins A, C, and K",
+    "Can be used interchangeably with kale"
+  ],
+  "benefits": "Collard greens are cruciferous green vegetables that provide both greens and cruciferous vegetable benefits. They offer powerful antioxidants and anti-inflammatory compounds. The hearty texture makes them excellent for soups and stews.",
+  "synergies": [
+    "kale",
+    "beans-legumes",
+    "vinegar",
+    "whole-grains"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen - counts toward both greens (2 servings) and cruciferous (1 serving) daily, typically 6 cups chopped fresh",
+  "sources": {
+    "pages": [
+      15,
+      41
+    ],
+    "quotes": [
+      "GREENS checkbox in Daily Dozen. CRUCIFEROUS VEGETABLES checkbox in Daily Dozen",
+      "6 cups/220g chopped fresh kale, collards or other dark greens - Stir in the kale, kidney beans and Super-Charged Spice Blend"
+    ]
+  }
+}

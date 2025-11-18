@@ -1,0 +1,39 @@
+{
+  "id": "food-92",
+  "name": "Shiitake Mushrooms",
+  "categories": [
+    "rich-in-vegetables",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Asian medicinal mushroom",
+    "Rich in umami flavor",
+    "Very low calorie density",
+    "High in B vitamins",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Extremely low in calories while providing rich flavor and satisfaction. Contains beneficial compounds with anti-inflammatory properties. Helps create filling, savory dishes without added fat.",
+  "synergies": [
+    "asian-greens",
+    "garlic",
+    "ginger",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of vegetable servings",
+  "sources": {
+    "pages": [
+      31,
+      50,
+      51
+    ],
+    "quotes": [
+      "HOT AND SOUR SOUP WITH SHIITAKES AND ASIAN GREENS",
+      "3 cups/225g sliced shiitake mushroom caps"
+    ]
+  }
+}

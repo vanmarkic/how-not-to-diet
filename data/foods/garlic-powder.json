@@ -1,0 +1,37 @@
+{
+  "id": "food-44",
+  "name": "Garlic Powder",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Daily dose recommendation",
+    "Metabolism-boosting",
+    "Cardiovascular benefits",
+    "Anti-inflammatory properties"
+  ],
+  "benefits": "Garlic powder provides metabolic benefits and supports weight loss efforts. It has cardiovascular benefits and helps with inflammation reduction. Daily consumption as part of the weight-loss optimization strategy.",
+  "synergies": [
+    "vegetables",
+    "beans-legumes",
+    "salads"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "1/4 teaspoon daily",
+  "sources": {
+    "pages": [
+      21,
+      24
+    ],
+    "quotes": [
+      "GARLIC POWDER (¼ tsp) - Sprinkle ¼ teaspoon on any meal."
+    ]
+  }
+}

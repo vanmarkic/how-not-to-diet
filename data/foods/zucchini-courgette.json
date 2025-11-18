@@ -1,0 +1,39 @@
+{
+  "id": "food-115",
+  "name": "Zucchini (Courgette)",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Very high water content",
+    "Low in calorie density",
+    "Low glycemic load",
+    "Part of Daily Dozen vegetables",
+    "Featured in ratatouille"
+  ],
+  "benefits": "Zucchini has very high water content and extremely low calorie density. Featured in ratatouille-inspired Puy lentil soup. Part of the optimal weight-loss diet with low glycemic load and high water content.",
+  "synergies": [
+    "tomatoes",
+    "peppers",
+    "onions",
+    "lentils"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen vegetables - multiple servings daily",
+  "sources": {
+    "pages": [
+      62,
+      72
+    ],
+    "quotes": [
+      "The famous French vegetable stew is the inspiration for this lentil soup, made with Puy lentils, of course."
+    ]
+  }
+}

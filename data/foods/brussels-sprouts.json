@@ -1,0 +1,38 @@
+{
+  "id": "food-23",
+  "name": "Brussels Sprouts",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Cruciferous vegetable",
+    "High in fiber",
+    "Low calorie density",
+    "Rich in vitamins C and K",
+    "Part of Daily Dozen cruciferous vegetables"
+  ],
+  "benefits": "Brussels sprouts are cruciferous vegetables that score sixteen out of seventeen optimal weight-loss criteria. They are low in calorie density, have a low glycemic load, and are anti-inflammatory. Part of the optimal weight-loss diet.",
+  "synergies": [
+    "cabbage",
+    "kale",
+    "vinegar",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of Daily Dozen - aim for cruciferous vegetables daily",
+  "sources": {
+    "pages": [
+      14
+    ],
+    "quotes": [
+      "Most fruits and vegetables would top the list at sixteen out of seventeen [optimal weight-loss ingredients]."
+    ]
+  }
+}

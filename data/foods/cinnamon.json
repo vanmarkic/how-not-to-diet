@@ -1,0 +1,42 @@
+{
+  "id": "food-165",
+  "name": "Cinnamon",
+  "categories": [
+    "herbs-and-spices",
+    "metabolic-booster",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Helps regulate blood sugar levels",
+    "Metabolic booster",
+    "Powerful antioxidant",
+    "Anti-inflammatory properties",
+    "Part of Ras el Hanout spice blend"
+  ],
+  "benefits": "Cinnamon is a powerful metabolic booster that helps regulate blood sugar levels and improve insulin sensitivity. It's one of the most antioxidant-rich spices available and has significant anti-inflammatory properties. Featured in the Ras el Hanout Moroccan spice blend, it adds warmth and depth to both sweet and savory dishes.",
+  "synergies": [
+    "ginger",
+    "turmeric",
+    "cumin",
+    "coriander",
+    "cardamom",
+    "cloves",
+    "apples",
+    "sweet-potatoes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1/4 to 1 teaspoon per recipe, as part of daily herb and spice servings",
+  "sources": {
+    "pages": [
+      100
+    ],
+    "quotes": [
+      "1 teaspoon ground cinnamon - Ras el Hanout Moroccan spice blend (page 100): 'Meaning head of the shop, this Moroccan spice blend is available in spice shops and online, or you can make your own.'"
+    ]
+  }
+}

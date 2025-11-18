@@ -1,0 +1,37 @@
+{
+  "id": "food-97",
+  "name": "Strawberries (Fresh)",
+  "categories": [
+    "fruits",
+    "berries",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "High water content",
+    "Lower calorie density than dried fruit",
+    "Better choice than raisins for oatmeal",
+    "Rich in antioxidants",
+    "Anti-inflammatory properties"
+  ],
+  "benefits": "Fresh strawberries are recommended over dried fruit like raisins for optimizing weight loss. They have high water content and lower calorie density, which helps with satiety and calorie control. Rich in antioxidants and vitamin C, they support overall health while promoting weight loss.",
+  "synergies": [
+    "oatmeal",
+    "breakfast-foods",
+    "salads"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "daily"
+  ],
+  "amount": "1 serving (about 1 cup) - swap for raisins in oatmeal",
+  "sources": {
+    "pages": [
+      18
+    ],
+    "quotes": [
+      "We could optimize that meal for weight loss by making the oatmeal from steel-cut or whole groats rather than rolled or instant, cooking it thick, and switching the dried fruit for fresh – for example, swapping in strawberries for the raisins."
+    ]
+  }
+}

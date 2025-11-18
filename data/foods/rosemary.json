@@ -1,0 +1,38 @@
+{
+  "id": "food-163",
+  "name": "Rosemary",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Powerful anti-inflammatory properties",
+    "Rich in antioxidants",
+    "Traditional Mediterranean herb",
+    "Contains compounds that may support cognitive function",
+    "Enhances bean and vegetable dishes"
+  ],
+  "benefits": "Rosemary is a potent anti-inflammatory herb rich in antioxidants. It's traditionally used in Mediterranean cooking, especially with beans, vegetables, and tomato-based dishes. Rosemary contains rosmarinic acid and other compounds with potential neuroprotective and anti-inflammatory benefits.",
+  "synergies": [
+    "white-beans",
+    "cannellini-beans",
+    "tomatoes",
+    "cavolo-nero",
+    "garlic",
+    "bay-leaves"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking"
+  ],
+  "amount": "1 sprig fresh rosemary per pot of soup or stew, or 1/2 to 1 teaspoon dried",
+  "sources": {
+    "pages": [
+      47
+    ],
+    "quotes": [
+      "1 sprig rosemary - Ribollita with White Beans and Cavolo Nero (page 47)"
+    ]
+  }
+}

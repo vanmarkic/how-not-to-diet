@@ -1,0 +1,47 @@
+{
+  "id": "food-119",
+  "name": "Plum Tomatoes",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen - vegetables category",
+    "High water content (approximately 94% water)",
+    "Very low in calorie density",
+    "Rich in lycopene antioxidant",
+    "Lower seed content than regular tomatoes"
+  ],
+  "benefits": "Plum tomatoes (also called Roma tomatoes) contain approximately 94% water, making them highly effective for weight loss through calorie dilution. They're particularly rich in lycopene, a powerful antioxidant with anti-inflammatory properties. Their meatier texture compared to regular tomatoes makes them ideal for chopping in salads.",
+  "synergies": [
+    "cucumber",
+    "romaine-lettuce",
+    "bell-peppers",
+    "onions",
+    "garlic",
+    "fresh-herbs"
+  ],
+  "conflicts": [
+    "added-oils",
+    "added-salt"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "2 ripe plum tomatoes, chopped, for tabbouleh serving 4",
+  "sources": {
+    "pages": [
+      103,
+      117
+    ],
+    "quotes": [
+      "2 ripe plum tomatoes, chopped",
+      "1 large ripe tomato, chopped"
+    ]
+  }
+}

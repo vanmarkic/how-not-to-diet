@@ -1,0 +1,38 @@
+{
+  "id": "food-52",
+  "name": "Hibiscus Tea",
+  "categories": [
+    "beverages",
+    "anti-inflammatory",
+    "weight-loss-booster",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Rich in anthocyanins and antioxidants",
+    "Anti-inflammatory properties",
+    "Supports cardiovascular health",
+    "Calorie-free beverage",
+    "Can be mixed with lemon verbena",
+    "Acceptable meal beverage"
+  ],
+  "benefits": "Hibiscus tea is rich in anthocyanins and powerful antioxidants that support weight loss and cardiovascular health. Unlike some teas, it can be consumed during meals without interfering with nutrient absorption. When mixed 6:1 with lemon verbena, it creates a synergistic blend. Hibiscus has been shown to support healthy blood pressure and may help with fat metabolism.",
+  "synergies": [
+    "lemon-verbena",
+    "meals-in-general",
+    "water-preload"
+  ],
+  "conflicts": [],
+  "timing": [
+    "during-meals",
+    "daily"
+  ],
+  "amount": "Can be consumed during meals, mixed 6:1 with lemon verbena",
+  "sources": {
+    "pages": [
+      25
+    ],
+    "quotes": [
+      "During meals, drink water, black coffee or hibiscus tea mixed 6:1 with lemon verbena, but never exceed 3 cups of fluid per hour."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "food-45",
+  "name": "Garlic",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Weight-loss booster proven in clinical trials",
+    "Reduces body fat",
+    "Costs pennies per day",
+    "Part of 21 Tweaks for weight loss",
+    "Can be used as powder or fresh"
+  ],
+  "benefits": "Randomized, double-blind, placebo-controlled studies have found that as little as a daily 1/4 teaspoon of garlic powder can reduce body fat at a cost of a few pence a day. Featured prominently in soups and vegetable dishes for weight loss.",
+  "synergies": [
+    "broccoli",
+    "vegetables",
+    "beans",
+    "mushrooms",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "daily",
+    "in-cooking"
+  ],
+  "amount": "1/4 teaspoon of garlic powder daily (or equivalent fresh garlic)",
+  "sources": {
+    "pages": [
+      21,
+      24
+    ],
+    "quotes": [
+      "Garlic Powder (¼ teaspoon) Randomized, double-blind, placebo-controlled studies have found that as little as a daily ¼ teaspoon of garlic powder can reduce body fat at a cost of a few pence a day."
+    ]
+  }
+}

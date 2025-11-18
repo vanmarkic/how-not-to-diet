@@ -1,0 +1,40 @@
+{
+  "id": "food-103",
+  "name": "Thylakoids (from Greens)",
+  "categories": [
+    "weight-loss-booster",
+    "fat-blocker",
+    "appetite-suppression",
+    "rich-in-greens"
+  ],
+  "properties": [
+    "Fat-blocking compounds found in green leaves",
+    "Slow fat digestion and absorption",
+    "Increase satiety hormones",
+    "Trigger ileal brake mechanism",
+    "Found in low-oxalate greens",
+    "Chloroplast membranes that inhibit lipase"
+  ],
+  "benefits": "Thylakoids are chloroplast membranes found in all green leaves that act as fat blockers. They slow down fat digestion by inhibiting pancreatic lipase, allowing fats to travel further down the digestive tract. This triggers the ileal brake - a powerful satiety mechanism that releases appetite-suppressing hormones. Eating low-oxalate greens daily provides these fat-blocking thylakoids naturally, without need for supplements.",
+  "synergies": [
+    "greens-low-oxalate",
+    "spinach",
+    "kale",
+    "collard-greens",
+    "calcium-rich-foods"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "with-meals-containing-fat"
+  ],
+  "amount": "Covered by Daily Dozen recommendation for greens",
+  "sources": {
+    "pages": [
+      22
+    ],
+    "quotes": [
+      "Some of the weight-loss boosters are automatically taken care of with the Daily Dozen. For example, fat-blocking thylakoids and calcium are covered with my recommendation to eat lots of low-oxalate greens."
+    ]
+  }
+}

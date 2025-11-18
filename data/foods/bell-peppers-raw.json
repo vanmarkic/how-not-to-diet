@@ -1,0 +1,37 @@
+{
+  "id": "food-12",
+  "name": "Bell Peppers (Raw)",
+  "categories": [
+    "vegetables",
+    "weight-loss-booster",
+    "metabolic-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "AMPK activation through nicotine-like compounds",
+    "High water content vegetable",
+    "Better raw for maximum metabolic benefit",
+    "Provides orosensory stimulation",
+    "Anti-inflammatory properties"
+  ],
+  "benefits": "Bell peppers have a nicotine edge that activates AMPK, a metabolic master switch for fat burning. They are high on the water scale and provide more orosensory stimulation when eaten raw. The AMPK activation helps boost metabolism and promote weight loss.",
+  "synergies": [
+    "salads",
+    "raw-vegetable-dishes",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "preferably-raw"
+  ],
+  "amount": "Include in daily vegetable servings, preferably raw",
+  "sources": {
+    "pages": [
+      18
+    ],
+    "quotes": [
+      "Peppers have that nicotine edge I described in Amping AMPK, and uncooked vegetables in general offer more orosensory stimulation."
+    ]
+  }
+}

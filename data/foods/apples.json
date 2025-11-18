@@ -1,0 +1,42 @@
+{
+  "id": "food-3",
+  "name": "Apples",
+  "categories": [
+    "rich-in-fruits",
+    "high-fiber",
+    "high-water-rich",
+    "low-glycemic"
+  ],
+  "properties": [
+    "High in fiber and water",
+    "Low calorie density",
+    "Part of Daily Dozen fruits",
+    "Contains polyphenols",
+    "Natural sweetness without added sugar"
+  ],
+  "benefits": "High water and fiber content provides satiation with relatively few calories. The fiber helps slow sugar absorption and feeds beneficial gut bacteria. Excellent for weight management and appetite control.",
+  "synergies": [
+    "walnuts",
+    "celery",
+    "cabbage",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "snacks",
+    "any-meal"
+  ],
+  "amount": "Part of fruit servings (Daily Dozen)",
+  "sources": {
+    "pages": [
+      23,
+      50,
+      51,
+      83
+    ],
+    "quotes": [
+      "3 to 4 Gala or Fuji apples, cored and cut into ½-inch/1cm dice",
+      "2 tablespoons apple cider vinegar"
+    ]
+  }
+}

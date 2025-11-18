@@ -1,0 +1,43 @@
+{
+  "id": "food-77",
+  "name": "Portobello Mushrooms (Baby Portobello)",
+  "categories": [
+    "rich-in-vegetables",
+    "low-glycemic",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Meaty texture",
+    "Low calorie density",
+    "High in umami flavor",
+    "Particularly satisfying",
+    "Good in bolognese and stroganoff",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Portobello mushrooms provide a meaty texture and umami flavor that makes them particularly satiating in plant-based dishes. Low in calories but high in satisfaction, they're excellent for weight loss when prepared without added fats. Featured in Italian-inspired dishes like bolognese sauce.",
+  "synergies": [
+    "lentils",
+    "tomatoes",
+    "garlic",
+    "onions",
+    "barley",
+    "whole-grain-pasta"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "8 ounces (225g) finely chopped or sliced per 4 servings",
+  "sources": {
+    "pages": [
+      67,
+      120,
+      134
+    ],
+    "quotes": [
+      "1 pound/450g baby portobello or white button mushrooms, sliced or diced",
+      "8 ounces/225g baby portobello mushrooms, finely chopped"
+    ]
+  }
+}

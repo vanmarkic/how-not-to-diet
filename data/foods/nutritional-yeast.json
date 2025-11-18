@@ -1,0 +1,38 @@
+{
+  "id": "food-69",
+  "name": "Nutritional Yeast",
+  "categories": [
+    "weight-loss-booster",
+    "high-fiber",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Rich in B vitamins",
+    "Cheesy flavor without dairy",
+    "Appetite suppressant",
+    "Complete protein source"
+  ],
+  "benefits": "Nutritional yeast provides appetite suppression benefits and is rich in B vitamins. The beta-glucan fiber content helps with satiety. It adds a savory, cheesy flavor to meals without added calories.",
+  "synergies": [
+    "vegetables",
+    "salads",
+    "soups",
+    "grains"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "2 teaspoons daily",
+  "sources": {
+    "pages": [
+      21,
+      24
+    ],
+    "quotes": [
+      "NUTRITIONAL YEAST (2 tsp) - Sprinkle on any savoury meal."
+    ]
+  }
+}

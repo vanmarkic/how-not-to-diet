@@ -1,0 +1,46 @@
+{
+  "id": "food-126",
+  "name": "Round Lettuce (Butterhead/Butter Lettuce)",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of Daily Dozen - greens category",
+    "Very high water content (approximately 96% water)",
+    "Extremely low in calorie density",
+    "Soft, tender leaves ideal for lettuce cups",
+    "Rich in vitamins A, K, and folate",
+    "Mild, slightly sweet flavor"
+  ],
+  "benefits": "Round lettuce (butterhead or butter lettuce) has approximately 96% water content, making it one of the most water-rich vegetables available. Its soft, cup-shaped leaves make it ideal for holding salad mixtures, as featured in the cookbook's Lettuce Cups recipe. As an aboveground vegetable highest on the water scale, it's perfect for optimizing weight loss meals.",
+  "synergies": [
+    "tempeh",
+    "chickpeas",
+    "celery",
+    "carrots",
+    "apples",
+    "spring-onions-scallions"
+  ],
+  "conflicts": [
+    "added-oils",
+    "high-calorie-dressings"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "8 to 10 whole leaves round lettuce for cups",
+  "sources": {
+    "pages": [
+      108
+    ],
+    "quotes": [
+      "8 to 10 whole leaves round lettuce",
+      "small, soft lettuce leaves make the best cups for holding the salad"
+    ]
+  }
+}

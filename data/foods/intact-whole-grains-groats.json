@@ -1,0 +1,46 @@
+{
+  "id": "food-53",
+  "name": "Intact Whole Grains (Groats)",
+  "categories": [
+    "whole-grains",
+    "weight-loss-booster",
+    "high-fiber",
+    "low-glycemic",
+    "microbiome-friendly"
+  ],
+  "properties": [
+    "Calories trapped within intact cell walls",
+    "Lower glycemic impact than flour",
+    "Feeds beneficial gut bacteria",
+    "Includes oat groats, wheat berries, rye berries",
+    "Structure provides satiety",
+    "Part of 'Wall Off Your Calories' strategy",
+    "Resistant starch reaches colon"
+  ],
+  "benefits": "Intact whole grains (groats) represent the 'wholiest of grains' with calories trapped within unbroken cell walls. This structural integrity slows digestion, lowers glycemic impact, activates the ileal brake for appetite suppression, and delivers resistant starch to beneficial gut bacteria. Former Harvard nutrition chair Walter Willett argues the term 'whole grain' should be reserved only for intact kernels. Examples include oat groats, wheat berries, rye berries, and other whole, uncut grain kernels.",
+  "synergies": [
+    "beans-legumes",
+    "vegetables",
+    "greens",
+    "microbiome-health"
+  ],
+  "conflicts": [
+    "flour-based-foods"
+  ],
+  "timing": [
+    "breakfast",
+    "any-meal"
+  ],
+  "amount": "Part of Daily Dozen whole grain servings - prioritize intact over flour",
+  "sources": {
+    "pages": [
+      17,
+      18,
+      25
+    ],
+    "quotes": [
+      "Eating whole grains is good, but eating whole-grain kernels is better. Former Harvard nutrition chair Walter Willett has argued that the term whole grain should probably be reserved for only whole, intact grain kernels. So, eat the wholiest of grains: intact grains, also known as groats.",
+      "DEFLOUR YOUR DIET: Check this box every day your whole-grain servings are in the form of intact grains. The powdering of even 100% whole grains robs our microbiome of the starch that would otherwise be ferried down to our colon enclosed in unbroken cell walls."
+    ]
+  }
+}

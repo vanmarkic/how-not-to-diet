@@ -1,0 +1,44 @@
+{
+  "id": "food-113",
+  "name": "White Potatoes (Floury Potatoes)",
+  "categories": [
+    "particularly-satiating",
+    "high-water-rich",
+    "low-calorie-density",
+    "low-in-added-fat"
+  ],
+  "properties": [
+    "One of the most satiating foods ever tested",
+    "High satiety index score",
+    "Naturally low in calories when not fried",
+    "Good source of potassium",
+    "Contains resistant starch when cooled"
+  ],
+  "benefits": "Plain potatoes rank as one of the most satiating foods ever tested. When prepared without added fats or salt, they provide high satiety with low calorie density. The resistant starch formed when potatoes are cooked and cooled may benefit gut bacteria.",
+  "synergies": [
+    "herbs-spices",
+    "vinegar",
+    "greens",
+    "beans-legumes"
+  ],
+  "conflicts": [
+    "added-oils",
+    "added-salt",
+    "frying"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Use as part of whole food, plant-based meals",
+  "sources": {
+    "pages": [
+      42,
+      47
+    ],
+    "quotes": [
+      "I left white potatoes out of my How Not to Die Cookbook because there are healthier choices, such as sweet potatoes, but, as I noted in How Not to Diet, plain potatoes rank as one of the most satiating foods ever tested, so they made the cut for this collection of recipes."
+    ]
+  }
+}

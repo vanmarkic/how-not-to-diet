@@ -1,0 +1,38 @@
+{
+  "id": "food-14",
+  "name": "Berries",
+  "categories": [
+    "rich-in-fruits",
+    "anti-inflammatory",
+    "high-fiber",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 1 serving daily",
+    "High in antioxidants",
+    "Low glycemic load",
+    "Rich in phytonutrients",
+    "High water content"
+  ],
+  "benefits": "High antioxidant content helps reduce inflammation and oxidative stress. Supports heart health and weight management. Low calorie density with high nutrient density.",
+  "synergies": [
+    "oatmeal",
+    "flaxseeds",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "any-meal"
+  ],
+  "amount": "1 serving daily",
+  "sources": {
+    "pages": [
+      15
+    ],
+    "quotes": [
+      "Dr Greger's Daily Dozen: ✓ BERRIES"
+    ]
+  }
+}

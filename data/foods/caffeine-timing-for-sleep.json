@@ -1,0 +1,45 @@
+{
+  "id": "food-168",
+  "name": "Caffeine Timing (Avoid 6 Hours Before Bed)",
+  "categories": [
+    "circadian-rhythm-support",
+    "sleep-optimization",
+    "timing-strategy"
+  ],
+  "properties": [
+    "Avoid caffeine within 6 hours of bedtime",
+    "Supports sleep quality",
+    "Prevents sleep disruption",
+    "Allows natural melatonin production",
+    "Critical for circadian rhythm health",
+    "Mentioned in green tea guidelines"
+  ],
+  "benefits": "Avoiding caffeine within 6 hours of bedtime is essential for sleep quality and circadian rhythm optimization. Caffeine blocks adenosine receptors, interfering with natural sleep signals and melatonin production. While caffeinated beverages like green tea and chai tea offer metabolic benefits earlier in the day, consuming them too close to bedtime disrupts sleep architecture and reduces the restorative benefits of sleep, which are critical for weight management.",
+  "synergies": [
+    "sufficient-sleep",
+    "regular-bedtime",
+    "evening-fasting",
+    "circadian-alignment"
+  ],
+  "conflicts": [
+    "green-tea-evening",
+    "chai-tea-evening",
+    "black-coffee-evening",
+    "caffeinated-beverages-late"
+  ],
+  "timing": [
+    "morning-to-midday",
+    "avoid-6-hours-before-bed"
+  ],
+  "amount": "No caffeine within 6 hours of bedtime",
+  "sources": {
+    "pages": [
+      24,
+      25
+    ],
+    "quotes": [
+      "Ginger may work better in the morning than evening, and consider chai tea as a tasty way to combine the green tea and ginger tricks into a single beverage.",
+      "Take advantage of the reinforcing effect of caffeine by drinking your green tea along with something healthy you wish you liked more, but don't consume large amounts of caffeine within six hours of bedtime."
+    ]
+  }
+}

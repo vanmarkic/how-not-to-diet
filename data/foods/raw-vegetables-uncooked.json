@@ -1,0 +1,44 @@
+{
+  "id": "food-81",
+  "name": "Raw Vegetables (Uncooked)",
+  "categories": [
+    "rich-in-vegetables",
+    "weight-loss-booster",
+    "high-water-rich",
+    "enzyme-rich"
+  ],
+  "properties": [
+    "Higher orosensory stimulation",
+    "Intact cell structure",
+    "More chewing required",
+    "Slows eating rate",
+    "Triggers 20-minute satiety rule",
+    "Above-ground vegetables preferred",
+    "Preserved enzymes and nutrients"
+  ],
+  "benefits": "Uncooked vegetables provide more orosensory stimulation than cooked ones, requiring more chewing and slowing eating rate. This helps trigger natural satiety signals by extending meal duration beyond 20 minutes. The intact cell structure means more calories remain trapped and unavailable for absorption. Raw vegetables also preserve heat-sensitive nutrients and enzymes. Prioritize above-ground vegetables highest on the water scale for maximum satiation with minimum calories.",
+  "synergies": [
+    "vinegar",
+    "lemon",
+    "negative-calorie-foods",
+    "salads",
+    "water-preload"
+  ],
+  "conflicts": [],
+  "timing": [
+    "meal-preload",
+    "any-meal",
+    "eat-early-in-meal"
+  ],
+  "amount": "Part of Daily Dozen vegetables, emphasize raw preparation when possible",
+  "sources": {
+    "pages": [
+      18,
+      23
+    ],
+    "quotes": [
+      "Uncooked vegetables in general offer more orosensory stimulation.",
+      "FOLLOW THE TWENTY-MINUTE RULE: Whether through increasing viscosity or the number of chews or decreasing bite size and eating rate, dozens of studies have demonstrated that no matter how we boost the amount of time food is in our mouths, it can result in lower caloric intake. Think bulkier, harder, chewier foods in smaller, well-chewed bites."
+    ]
+  }
+}

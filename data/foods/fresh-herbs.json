@@ -1,0 +1,46 @@
+{
+  "id": "food-43",
+  "name": "Fresh Herbs (Parsley, Cilantro, Basil, Mint)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Part of Daily Dozen - herbs and spices",
+    "Rich in antioxidants",
+    "Add flavor without calories",
+    "Anti-inflammatory properties",
+    "Support microbiome health"
+  ],
+  "benefits": "Fresh herbs add vibrant flavor and nutrients without any calories. Rich in phytonutrients and antioxidants. Help create satisfying dishes without added salt or fat. Part of optimal weight-loss ingredient profile.",
+  "synergies": [
+    "beans",
+    "greens",
+    "vegetables",
+    "lemon"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "Use freely - part of herbs and spices serving",
+  "sources": {
+    "pages": [
+      35,
+      36,
+      50,
+      51,
+      53,
+      54
+    ],
+    "quotes": [
+      "3 tablespoons finely chopped fresh parsley",
+      "2 tablespoons chopped fresh coriander or basil",
+      "¼ cup/4 tablespoons chopped fresh coriander or Thai basil",
+      "1 cup/60g chopped fresh parsley",
+      "2 tablespoons chopped fresh mint, or 2 teaspoons dried"
+    ]
+  }
+}

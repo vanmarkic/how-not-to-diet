@@ -1,0 +1,36 @@
+{
+  "id": "food-6",
+  "name": "Avocado",
+  "categories": [
+    "rich-in-fruits",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Rich in healthy fats",
+    "High in phytonutrients",
+    "Does not produce oxidative or inflammatory activity",
+    "Fat comes pre-packaged with phytochemicals",
+    "Part of Daily Dozen fruits"
+  ],
+  "benefits": "Despite being packed with calories and fat, avocado does not produce a rise in oxidative or inflammatory activity. The fat in whole plant foods like avocados comes pre-packaged with a rich matrix of phytochemicals and therefore does not demonstrate the same potential for oxidative damage as processed fats.",
+  "synergies": [
+    "greens",
+    "beans",
+    "vegetables"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Use in moderation as part of fruit servings",
+  "sources": {
+    "pages": [
+      94,
+      95
+    ],
+    "quotes": [
+      "EFFECTS OF AVOCADOS ON INFLAMMATION - Researchers compared ice cream to the same calories of avocado. Unlike the ice cream, the avocado, despite being packed with calories and fat, did not produce a rise in oxidative or inflammatory activity.",
+      "The fat in whole plant foods, such as nuts and avocados, comes pre-packaged with 'a rich matrix of phytochemicals and therefore does not demonstrate the same potential for oxidative damage.'"
+    ]
+  }
+}

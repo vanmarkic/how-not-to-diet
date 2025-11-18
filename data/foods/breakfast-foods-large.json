@@ -1,0 +1,39 @@
+{
+  "id": "food-21",
+  "name": "Front-Loaded Calories (Large Breakfast)",
+  "categories": [
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Part of 21 Tweaks - chronobiology strategy",
+    "Eat more calories earlier in day",
+    "Breakfast should be largest meal",
+    "Supports circadian rhythm alignment",
+    "More calories burned when eaten early"
+  ],
+  "benefits": "Due to circadian rhythms, the same calories eaten at breakfast are less fattening than when eaten at dinner. Front-loading calories by eating a larger breakfast optimizes metabolism and reduces fat storage. This aligns eating with the body's natural circadian patterns for better weight management.",
+  "synergies": [
+    "oat-groats-whole-intact-oats",
+    "berries",
+    "flaxseeds-ground",
+    "negative-calorie-foods"
+  ],
+  "conflicts": [
+    "late-night-eating"
+  ],
+  "timing": [
+    "breakfast"
+  ],
+  "amount": "Make breakfast the largest meal of the day",
+  "sources": {
+    "pages": [
+      21,
+      25,
+      26
+    ],
+    "quotes": [
+      "FRONT-LOAD CALORIES - Eat more calories earlier in the day. Breakfast like a king, lunch like a prince, dinner like a pauper. Make breakfast or lunch your largest meal of the day, and eat a light dinner or skip it entirely.",
+      "Because of our circadian rhythm, food eaten at night is more fattening than the exact same food eaten earlier in the day"
+    ]
+  }
+}

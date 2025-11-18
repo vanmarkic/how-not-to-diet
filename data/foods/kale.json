@@ -1,0 +1,40 @@
+{
+  "id": "food-56",
+  "name": "Kale",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "greens",
+    "anti-inflammatory",
+    "high-fiber"
+  ],
+  "properties": [
+    "Cruciferous vegetable",
+    "High in antioxidants",
+    "Low-oxalate green",
+    "Contains fat-blocking thylakoids",
+    "Part of Daily Dozen - 2 servings of greens daily"
+  ],
+  "benefits": "Increased antioxidant capacity of blood, significant reductions of total cholesterol, LDL cholesterol, blood sugar levels, and oxidized LDL. Helps reduce risk of heart disease and strokes.",
+  "synergies": [
+    "cabbage",
+    "beans",
+    "vinegar",
+    "nuts"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "earlier-in-meal-for-maximum-benefit"
+  ],
+  "amount": "Daily consumption recommended (part of 2 servings of greens)",
+  "sources": {
+    "pages": [
+      13,
+      94
+    ],
+    "quotes": [
+      "Study subjects ate kale and cabbage every day for two weeks and got increased antioxidant capacity of their blood and significant reductions of total cholesterol, LDL cholesterol, blood sugar levels, and oxidized LDL."
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "food-80",
+  "name": "Quinoa",
+  "categories": [
+    "rich-in-whole-grains",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Complete protein source",
+    "Whole intact grain",
+    "Low glycemic load",
+    "High in fiber",
+    "Part of Daily Dozen whole grains"
+  ],
+  "benefits": "Quinoa is a whole grain with low glycemic load and provides complete protein. As an intact grain, it keeps calories trapped within cell walls, which activates the ileal brake that dials down appetite.",
+  "synergies": [
+    "vegetables",
+    "beans",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of Daily Dozen - 3 servings of whole grains daily",
+  "sources": {
+    "pages": [
+      91,
+      92,
+      246
+    ],
+    "quotes": [
+      "Eating whole grains is good, but eating whole-grain kernels is better."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "food-107",
+  "name": "Vinegar",
+  "categories": [
+    "anti-inflammatory",
+    "low-glycemic",
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Metabolism-boosting",
+    "Helps control blood sugar",
+    "Part of 21 Tweaks for weight loss",
+    "Can be sweet or savoury varieties",
+    "Should never be consumed straight"
+  ],
+  "benefits": "Helps with weight loss and metabolism boosting. Incorporates into meals to enhance the ideal weight-loss diet. Provides metabolic benefits when consumed with meals.",
+  "synergies": [
+    "salads",
+    "vegetables",
+    "meals-in-general"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals"
+  ],
+  "amount": "2 teaspoons with each meal (mixed in water or as dressing)",
+  "sources": {
+    "pages": [
+      21,
+      23,
+      94
+    ],
+    "quotes": [
+      "INCORPORATE VINEGAR (2 TEASPOONS WITH EACH MEAL) - Never drink vinegar straight. Instead, flavour meals or dress a side salad with any of the sweet or savoury vinegars out there. If you want to drink it, make sure to mix it in a glass of water, and afterwards, be sure to rinse your mouth out with water to protect your tooth enamel."
+    ]
+  }
+}

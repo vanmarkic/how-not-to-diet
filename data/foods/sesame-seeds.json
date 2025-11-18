@@ -1,0 +1,36 @@
+{
+  "id": "food-91",
+  "name": "Sesame Seeds",
+  "categories": [
+    "high-fiber",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen nuts and seeds",
+    "Rich in calcium and minerals",
+    "Contains lignans",
+    "Best when structurally intact (not as tahini)",
+    "Adds texture and nutrition"
+  ],
+  "benefits": "Sesame seeds are nutrient-dense seeds that provide calcium, minerals, and beneficial lignans. As part of the Daily Dozen nuts and seeds category, they contribute to the ideal weight-loss diet. They add nutritional value and texture to dishes.",
+  "synergies": [
+    "vegetables",
+    "whole-grains",
+    "greens-low-oxalate"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "Part of 1 serving nuts/seeds daily (1 tablespoon seeds), typically used as garnish",
+  "sources": {
+    "pages": [
+      91,
+      92
+    ],
+    "quotes": [
+      "1 tablespoon sesame seeds - Sprinkle with the spring onion, sesame seeds and nori strips"
+    ]
+  }
+}

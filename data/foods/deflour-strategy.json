@@ -1,0 +1,41 @@
+{
+  "id": "food-39",
+  "name": "Deflour Your Diet Strategy",
+  "categories": [
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Part of 21 Tweaks",
+    "Avoid flour-based products",
+    "Choose intact grains over flour",
+    "Better food structure for satiety",
+    "Slower digestion and absorption"
+  ],
+  "benefits": "The deflour strategy emphasizes choosing whole, intact grains over flour-based products. Flour disrupts the cellular structure that helps trap calories and slow digestion. By avoiding flour and choosing intact grains, you maintain better blood sugar control and increased satiety.",
+  "synergies": [
+    "oat-groats-whole-intact-oats",
+    "steel-cut-oats",
+    "beans-legumes"
+  ],
+  "conflicts": [
+    "bread",
+    "flour-products"
+  ],
+  "timing": [
+    "daily",
+    "any-meal"
+  ],
+  "amount": "Avoid flour-based products; choose intact grains instead",
+  "sources": {
+    "pages": [
+      17,
+      18,
+      21,
+      25
+    ],
+    "quotes": [
+      "With all the new data on the importance of food form, I'm starting to sour on flour, so I advise not living by bread alone.",
+      "DEFLOUR YOUR DIET - Replace flour products with intact grains."
+    ]
+  }
+}

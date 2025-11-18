@@ -1,0 +1,42 @@
+{
+  "id": "food-9",
+  "name": "Bean Sprouts",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-calorie-density",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Living vegetables with enhanced nutrients",
+    "Very low in calories",
+    "High in water content",
+    "Crisp, fresh texture",
+    "Quick to prepare"
+  ],
+  "benefits": "Bean sprouts are extremely low in calories and high in water content, making them ideal for weight loss. Sprouting enhances nutrient availability and provides fresh, living food. Their crisp texture adds satisfaction to meals without adding calories.",
+  "synergies": [
+    "vegetables",
+    "tempeh",
+    "Asian-greens",
+    "ginger"
+  ],
+  "conflicts": [
+    "overcooking"
+  ],
+  "timing": [
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Part of vegetable servings, use freely",
+  "sources": {
+    "pages": [
+      91,
+      92,
+      123
+    ],
+    "quotes": [
+      "Add the mange tout and bean sprouts and cook until the mange tout turn bright green, about 1 minute longer."
+    ]
+  }
+}

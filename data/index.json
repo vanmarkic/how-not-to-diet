@@ -1,0 +1,117 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-11-18",
+    "source_document": "The How Not to Diet Cookbook -- Michael Greger, MD",
+    "focus_areas": [
+      "Anti-inflammatory foods",
+      "High fiber-rich foods",
+      "High water-rich foods",
+      "Low glycemic load",
+      "Rich in fruits and vegetables",
+      "Rich in legumes"
+    ]
+  },
+  "extraction_index": [
+    {
+      "food": "Beans (Legumes)",
+      "pages": [
+        15,
+        54,
+        94
+      ]
+    },
+    {
+      "food": "Kale",
+      "pages": [
+        13,
+        94
+      ]
+    },
+    {
+      "food": "Cabbage",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "food": "Cruciferous Vegetables",
+      "pages": [
+        15,
+        18
+      ]
+    },
+    {
+      "food": "Vinegar",
+      "pages": [
+        21,
+        23
+      ]
+    },
+    {
+      "food": "Oats (Oat Groats)",
+      "pages": [
+        17,
+        18
+      ]
+    },
+    {
+      "food": "Flaxseeds",
+      "pages": [
+        15,
+        18
+      ]
+    },
+    {
+      "food": "Berries",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "food": "Greens",
+      "pages": [
+        15,
+        18,
+        22
+      ]
+    },
+    {
+      "food": "Turmeric",
+      "pages": [
+        100
+      ]
+    },
+    {
+      "food": "Ginger",
+      "pages": [
+        21,
+        24,
+        100
+      ]
+    },
+    {
+      "food": "Nigella Seeds",
+      "pages": [
+        21,
+        23,
+        24
+      ]
+    },
+    {
+      "food": "Garlic",
+      "pages": [
+        21,
+        24
+      ]
+    },
+    {
+      "food": "Cumin",
+      "pages": [
+        21,
+        24
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "total_foods": 10
+}

@@ -1,0 +1,42 @@
+{
+  "id": "food-24",
+  "name": "Butternut Squash",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Orange vegetable rich in beta-carotene",
+    "Natural sweetness",
+    "Low glycemic load",
+    "High in fiber",
+    "Preferable to white potatoes",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Butternut squash is featured as a healthier alternative to white potatoes in traditional soups. Rich in beta-carotene and fiber, it provides natural sweetness while maintaining a low glycemic load. Excellent for weight loss when prepared without added fats.",
+  "synergies": [
+    "red-kidney-beans",
+    "kale",
+    "greens",
+    "onions",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "1 butternut squash, halved and diced (about 3.5 cups/490g)",
+  "sources": {
+    "pages": [
+      41,
+      72
+    ],
+    "quotes": [
+      "This elevated, healthier version keeps the greens while swapping in butternut squash for potatoes (though you can add potatoes, too, if you'd like) and replaces the sausage with red kidney beans.",
+      "2 cups/270g diced sweet potato or de-seeded butternut squash"
+    ]
+  }
+}

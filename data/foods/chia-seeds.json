@@ -1,0 +1,40 @@
+{
+  "id": "food-33",
+  "name": "Chia Seeds",
+  "categories": [
+    "high-fiber",
+    "appetite-suppression",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "High in fiber",
+    "Appetite suppressant",
+    "Source of omega-3 fatty acids",
+    "Can be used in various dishes",
+    "Part of Daily Dozen nuts and seeds"
+  ],
+  "benefits": "Chia seeds are high in fiber and act as an appetite suppressant. They provide omega-3 fatty acids and can be added to smoothies, oatmeal, and baked goods. Part of the optimal weight-loss diet.",
+  "synergies": [
+    "flaxseeds",
+    "oats",
+    "berries",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "Part of Daily Dozen - 1 serving of nuts and seeds daily",
+  "sources": {
+    "pages": [
+      146,
+      147
+    ],
+    "quotes": [
+      "In the Appetite Suppression section, we learned yet another reason to include ground flaxseeds in our daily diet."
+    ]
+  }
+}

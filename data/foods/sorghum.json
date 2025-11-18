@@ -1,0 +1,45 @@
+{
+  "id": "food-93",
+  "name": "Sorghum (Whole Grain)",
+  "categories": [
+    "rich-in-whole-grains",
+    "high-fiber",
+    "particularly-satiating",
+    "low-glycemic",
+    "low-insulin-index",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Whole, intact grain kernels",
+    "Part of Daily Dozen - 3 servings of whole grains daily",
+    "Gluten-free ancient grain",
+    "Calories trapped within cell walls",
+    "Chewy texture when cooked",
+    "Rich in antioxidants"
+  ],
+  "benefits": "Sorghum is an ancient whole grain that provides fiber-encased calories which blunts glycemic impact and insulin response. As an intact grain, the cell walls activate the ileal brake that dials down appetite and delivers sustenance to friendly gut flora. Being gluten-free, it is suitable for those with celiac disease.",
+  "synergies": [
+    "apricots",
+    "mint",
+    "vegetables",
+    "herbs-spices"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "flour"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "salads"
+  ],
+  "amount": "Part of 3 daily servings of whole grains (Daily Dozen)",
+  "sources": {
+    "pages": [
+      82
+    ],
+    "quotes": [
+      "MARRAKECH SORGHUM SALAD WITH FRESH APRICOTS AND MINT"
+    ]
+  }
+}

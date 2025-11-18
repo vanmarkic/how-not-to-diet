@@ -1,0 +1,38 @@
+{
+  "id": "food-59",
+  "name": "Lemongrass",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "low-calorie-density"
+  ],
+  "properties": [
+    "Part of Daily Dozen - herbs and spices",
+    "Aromatic herb used in Asian cuisine",
+    "Contains citral with antimicrobial properties",
+    "Adds flavor without salt",
+    "Used in broths and soups"
+  ],
+  "benefits": "Lemongrass is an aromatic herb that adds bright, citrusy flavor to dishes without adding salt or calories. It contains beneficial compounds with potential antimicrobial and anti-inflammatory properties. Using herbs and spices like lemongrass helps reduce reliance on added salt.",
+  "synergies": [
+    "ginger",
+    "garlic",
+    "vegetables",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "lunch",
+    "dinner",
+    "broths"
+  ],
+  "amount": "Part of Daily Dozen herbs and spices, typically 1-2 stalks crushed",
+  "sources": {
+    "pages": [
+      50
+    ],
+    "quotes": [
+      "In a large pot, combine the Light Vegetable Broth, lemongrass, ginger and garlic. Bring to the boil, then lower the heat to low, cover and simmer for 20 minutes."
+    ]
+  }
+}

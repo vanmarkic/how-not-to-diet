@@ -1,0 +1,39 @@
+{
+  "id": "food-72",
+  "name": "Parsnips",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Root vegetable",
+    "High in fiber",
+    "Natural sweetness when roasted",
+    "Low calorie density when not fried",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Parsnips are a nutritious root vegetable that adds natural sweetness and fiber to soups and stews. Unlike white potatoes, they maintain their nutritional integrity when used in soups without adding excessive glycemic load.",
+  "synergies": [
+    "beetroot",
+    "carrots",
+    "onions",
+    "cabbage",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "1 parsnip chopped per serving in soups",
+  "sources": {
+    "pages": [
+      44
+    ],
+    "quotes": [
+      "Add the celery, parsnip, carrot and beetroot."
+    ]
+  }
+}

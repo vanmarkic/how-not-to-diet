@@ -1,0 +1,40 @@
+{
+  "id": "food-164",
+  "name": "Thyme (Dried)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Antimicrobial properties",
+    "Rich in antioxidants",
+    "Supports respiratory health",
+    "Traditional culinary herb",
+    "Enhances mushroom and vegetable dishes"
+  ],
+  "benefits": "Thyme contains thymol and other compounds with antimicrobial and antioxidant properties. It's particularly effective in mushroom-based dishes and adds depth to soups and salads. Thyme has been traditionally used to support respiratory health and contains anti-inflammatory compounds.",
+  "synergies": [
+    "mushrooms",
+    "barley",
+    "cabbage",
+    "vegetables",
+    "beans"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "1/2 to 1 1/2 teaspoons dried per recipe, or as part of daily herb servings",
+  "sources": {
+    "pages": [
+      67,
+      117
+    ],
+    "quotes": [
+      "1½ teaspoons dried thyme - Mushroom Barley Soup (page 67)",
+      "1 teaspoon dried basil or another herb of your choice, such as thyme, marjoram or tarragon - Chopped Salad Bowl (page 117)"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "food-67",
+  "name": "Nigella Seeds (Black Cumin)",
+  "categories": [
+    "appetite-suppression",
+    "herbs-and-spices",
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Should be ground for use",
+    "Also known as black cumin or black seed",
+    "Clinically studied for weight loss",
+    "Very small amount needed"
+  ],
+  "benefits": "Systematic review and meta-analysis of randomized, controlled weight-loss trials found that about 1/4 teaspoon of nigella seed powder every day appears to reduce body mass index within a span of a couple of months.",
+  "synergies": [
+    "salads",
+    "soups",
+    "vegetables"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "1/4 teaspoon daily",
+  "sources": {
+    "pages": [
+      21,
+      23,
+      24,
+      94
+    ],
+    "quotes": [
+      "Nigella Seeds (Nigella sativa) (1/4 teaspoon) - As noted in the Appetite Suppression section of How Not to Diet, a systematic review and meta-analysis of randomized, controlled weight-loss trials found that about 1/4 teaspoon of nigella seed powder every day appears to reduce body mass index within a span of a couple of months."
+    ]
+  }
+}

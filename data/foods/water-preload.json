@@ -1,0 +1,37 @@
+{
+  "id": "food-109",
+  "name": "Water (Preload)",
+  "categories": [
+    "weight-loss-booster",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Zero calories",
+    "Appetite suppressant when consumed before meals",
+    "Part of 21 Tweaks for weight loss",
+    "Enhances satiety",
+    "Cold water may have metabolic benefits"
+  ],
+  "benefits": "Preloading with water before meals helps with appetite suppression and reduces caloric intake. Studies show that drinking water before meals can enhance weight loss. Also helps with hydration and metabolic function.",
+  "synergies": [
+    "negative-calorie-foods",
+    "meals-in-general"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "2 cups (500ml) before each meal",
+  "sources": {
+    "pages": [
+      21,
+      23
+    ],
+    "quotes": [
+      "PRELOAD WITH WATER - Consume 2 cups of cold or room-temperature water before each meal."
+    ]
+  }
+}

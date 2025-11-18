@@ -1,0 +1,40 @@
+{
+  "id": "food-13",
+  "name": "Bell Peppers (Red Peppers)",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "High in vitamin C",
+    "Rich in antioxidants",
+    "Low calorie density",
+    "High water content",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Excellent source of vitamins and antioxidants with very low calories. High water content provides satiation. Red peppers are particularly high in vitamin C and carotenoids.",
+  "synergies": [
+    "beans",
+    "greens",
+    "tomatoes",
+    "onions"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Part of vegetable servings",
+  "sources": {
+    "pages": [
+      24,
+      35,
+      94
+    ],
+    "quotes": [
+      "1 red pepper, de-seeded and chopped",
+      "1 small red pepper, de-seeded and diced"
+    ]
+  }
+}

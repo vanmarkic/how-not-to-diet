@@ -1,0 +1,43 @@
+{
+  "id": "food-34",
+  "name": "Chickpeas",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Part of legume family",
+    "High in protein and fiber",
+    "Calories trapped within cell walls",
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Different impact on microbiome than animal protein"
+  ],
+  "benefits": "One hundred calories of chickpeas have a different impact than one hundred calories of chicken or chocolate, based on their different effects on such factors as absorption, appetite or our microbiome. Benefits excess body weight, insulin resistance, and inflammation.",
+  "synergies": [
+    "vegetables",
+    "whole-grains",
+    "greens",
+    "curry-spices"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 servings of legumes daily",
+  "sources": {
+    "pages": [
+      9,
+      53,
+      54,
+      88
+    ],
+    "quotes": [
+      "One hundred calories of chickpeas have a different impact than one hundred calories of chicken or chocolate, based on their different effects on such factors as absorption, appetite or our microbiome.",
+      "1½ cups/250g cooked* or 1 (400g) BPA-free tin or Tetra Pak salt-free chickpeas, drained and rinsed"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "food-20",
+  "name": "Bok Choy",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "greens",
+    "anti-inflammatory",
+    "high-fiber"
+  ],
+  "properties": [
+    "Asian green vegetable",
+    "Cruciferous family member",
+    "Low calorie density",
+    "High in vitamins and minerals",
+    "Part of Daily Dozen greens"
+  ],
+  "benefits": "Bok choy is a cruciferous green vegetable that provides antioxidants, fiber, and essential nutrients. As a cruciferous vegetable, it offers anti-inflammatory benefits and supports weight loss as part of a whole food, plant-based diet.",
+  "synergies": [
+    "shiitake-mushrooms",
+    "ginger-ground",
+    "garlic-powder",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "As desired (typically 4 cups sliced in soups)",
+  "sources": {
+    "pages": [
+      50,
+      51
+    ],
+    "quotes": [
+      "This soup is easily customizable to please your palate. 4 cups/400g thinly sliced bok choy, napa cabbage or other Asian greens. Add the bok choy, mushrooms, shallots, chillies and carrot. Lower the heat to low and cook for 5 minutes."
+    ]
+  }
+}

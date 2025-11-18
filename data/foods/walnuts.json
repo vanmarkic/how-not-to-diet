@@ -1,0 +1,37 @@
+{
+  "id": "food-108",
+  "name": "Walnuts",
+  "categories": [
+    "high-fiber",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen nuts and seeds",
+    "Rich in omega-3 fatty acids",
+    "Structurally intact when whole",
+    "Best consumed whole rather than as butter",
+    "Contains beneficial fats and protein"
+  ],
+  "benefits": "Walnuts are nutrient-dense nuts that provide healthy fats, protein, and fiber. As part of the Daily Dozen, nuts and seeds hit thirteen of the seventeen ideal weight-loss diet criteria. Walnuts specifically are rich in omega-3 fatty acids and support heart health and weight management.",
+  "synergies": [
+    "cabbage",
+    "greens-low-oxalate",
+    "berries"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "snacks"
+  ],
+  "amount": "Part of 1 serving nuts/seeds daily (1/4 cup or 1 ounce)",
+  "sources": {
+    "pages": [
+      14,
+      15,
+      83
+    ],
+    "quotes": [
+      "Legumes, whole grains, and nuts and seeds together would hit fifteen, fourteen and thirteen, respectively. NUTS AND SEEDS checkbox in Daily Dozen. The classic Waldorf salad reimagined includes 1/2 cup/60g chopped walnuts."
+    ]
+  }
+}

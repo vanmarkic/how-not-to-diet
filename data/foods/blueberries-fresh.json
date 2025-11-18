@@ -1,0 +1,43 @@
+{
+  "id": "food-19",
+  "name": "Blueberries (Fresh)",
+  "categories": [
+    "rich-in-fruits",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory",
+    "microbiome-friendly"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 1 serving of berries",
+    "High in antioxidants",
+    "Supports artery function",
+    "Boosts natural killer cells",
+    "Feeds beneficial gut bacteria"
+  ],
+  "benefits": "Eating blueberries provides chronic benefits including reduced artery stiffness and a boost in natural killer cells, one of our natural defenses against viral infections and cancer. When we eat blueberries, we are not only improving our artery function, but also feeding our good bacteria. Win-win!",
+  "synergies": [
+    "watermelon",
+    "peaches",
+    "watercress",
+    "oat-groats"
+  ],
+  "conflicts": [
+    "added-sugar"
+  ],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "any-meal"
+  ],
+  "amount": "Part of 1 daily serving of berries (Daily Dozen)",
+  "sources": {
+    "pages": [
+      111,
+      112
+    ],
+    "quotes": [
+      "Eating blueberries provides chronic benefits in terms of reduced artery stiffness and a boost in natural killer cells, one of our natural defences against viral infections and cancer. And, when we eat blueberries, we are not only improving our artery function, but we are also feeding our good bacteria. Win-win!"
+    ]
+  }
+}

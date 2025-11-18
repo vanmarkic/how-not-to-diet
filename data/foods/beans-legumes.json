@@ -1,0 +1,39 @@
+{
+  "id": "food-10",
+  "name": "Beans (Legumes)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Excellent source of vitamins, minerals, fiber and antioxidants",
+    "Highest nutrition density - biggest bang for the buck",
+    "Calories trapped within cell walls",
+    "Part of Daily Dozen - 3 servings daily",
+    "Includes beans, chickpeas, split peas, and lentils"
+  ],
+  "benefits": "Benefits excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Makes them an important part of heart disease prevention and peripheral vascular disease prevention.",
+  "synergies": [
+    "vegetables",
+    "whole-grains",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "3 servings daily (Daily Dozen requirement)",
+  "sources": {
+    "pages": [
+      15,
+      54,
+      94
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention. Meet my Daily Dozen requirement of a minimum of three daily servings, and your heart will thank you."
+    ]
+  }
+}

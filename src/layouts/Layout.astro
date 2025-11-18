@@ -5,6 +5,9 @@ interface Props {
 }
 
 const { title, description = 'Weekly menu planner based on food science principles' } = Astro.props;
+
+// Base URL for GitHub Pages
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -13,20 +16,23 @@ const { title, description = 'Weekly menu planner based on food science principl
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>{title}</title>
   </head>
   <body>
     <div class="layout">
       <header>
         <nav>
-          <a href="/" class="logo">How Not To Diet - Menu Planner</a>
+          <a href={base} class="logo">How Not To Diet - Menu Planner</a>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/planner">Weekly Planner</a></li>
-            <li><a href="/menu-builder">Menu Builder</a></li>
-            <li><a href="/recipes">Recipes</a></li>
+            <li><a href={base}>Home</a></li>
+            <li><a href={`${base}planner`}>Weekly Planner</a></li>
+            <li><a href={`${base}menu-builder`}>Menu Builder</a></li>
+            <li><a href={`${base}recipes`}>Recipes</a></li>
           </ul>
         </nav>
       </header>
@@ -42,16 +48,60 @@ const { title, description = 'Weekly menu planner based on food science principl
   </body>
 </html>
 
-<style>
+<style is:global>
   :root {
-    --color-primary: #2d5016;
-    --color-secondary: #5a8c2f;
-    --color-accent: #8bc34a;
-    --color-bg: #fafafa;
-    --color-text: #333;
-    --color-border: #e0e0e0;
-    --max-width: 1200px;
-    --spacing: 1rem;
+    /* Scientific Garden Color Palette */
+    --color-forest-deep: #1a3d2e;
+    --color-forest-mid: #2d5a3d;
+    --color-kale: #5b8c5a;
+    --color-sage: #a8b5a0;
+    --color-beet: #8b2e3f;
+    --color-carrot: #e67e22;
+    --color-golden: #d4a574;
+
+    /* Neutrals */
+    --color-cream: #faf8f3;
+    --color-sand: #f0ede5;
+    --color-stone: #e8e4dc;
+    --color-charcoal: #2c2c2c;
+    --color-slate: #5a5a5a;
+
+    /* Semantic Colors */
+    --color-primary: var(--color-forest-deep);
+    --color-secondary: var(--color-kale);
+    --color-accent: var(--color-carrot);
+    --color-bg: var(--color-cream);
+    --color-bg-elevated: #ffffff;
+    --color-text: var(--color-charcoal);
+    --color-text-muted: var(--color-slate);
+
+    /* Typography */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+
+    /* Spacing */
+    --max-width: 1280px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+
+    /* Borders & Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(26, 61, 46, 0.08);
+    --shadow-md: 0 4px 16px rgba(26, 61, 46, 0.12);
+    --shadow-lg: 0 8px 32px rgba(26, 61, 46, 0.16);
+
+    /* Animations */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   * {
@@ -61,29 +111,75 @@ const { title, description = 'Weekly menu planner based on food science principl
   }
 
   html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    background: var(--color-bg);
     color: var(--color-text);
-    line-height: 1.6;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  /* Subtle paper grain texture */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
   }
 
   .layout {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    z-index: 2;
   }
 
+  /* Header with organic shape */
   header {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--color-forest-deep) 0%, var(--color-forest-mid) 100%);
+    color: var(--color-cream);
+    padding: 1.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Organic blob decoration */
+  header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(91, 140, 90, 0.15) 0%, transparent 70%);
+    border-radius: 43% 57% 48% 52% / 39% 43% 57% 61%;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+      transform: translate(30px, -30px) rotate(5deg);
+    }
+    66% {
+      transform: translate(-20px, 20px) rotate(-5deg);
+    }
   }
 
   nav {
@@ -93,30 +189,73 @@ const { title, description = 'Weekly menu planner based on food science principl
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--spacing-md);
+    position: relative;
+    z-index: 10;
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: 700;
-    color: white;
+    color: var(--color-cream);
     text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: all var(--transition-base);
+    position: relative;
+  }
+
+  .logo::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-carrot);
+    transition: width var(--transition-base);
+  }
+
+  .logo:hover::after {
+    width: 100%;
   }
 
   nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    flex-wrap: wrap;
   }
 
-  nav a {
-    color: white;
+  nav ul li a {
+    color: var(--color-cream);
     text-decoration: none;
-    transition: color 0.2s;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color var(--transition-base);
   }
 
-  nav a:hover {
-    color: var(--color-accent);
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--color-carrot);
+    transition: width var(--transition-base);
+  }
+
+  nav ul li a:hover {
+    color: var(--color-carrot);
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
   }
 
   main {
@@ -124,29 +263,74 @@ const { title, description = 'Weekly menu planner based on food science principl
     max-width: var(--max-width);
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+    animation: fadeIn var(--transition-slow);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   footer {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--color-forest-mid) 0%, var(--color-forest-deep) 100%);
+    color: var(--color-sand);
+    padding: var(--spacing-lg) var(--spacing-md);
     text-align: center;
     margin-top: auto;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    border-top: 3px solid var(--color-kale);
   }
 
+  /* Global Typography Styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  /* Responsive Design */
   @media (max-width: 768px) {
+    header {
+      padding: 1.25rem 1rem;
+    }
+
     nav {
-      flex-direction: column;
-      align-items: flex-start;
+      gap: var(--spacing-sm);
     }
 
     nav ul {
-      gap: 1rem;
+      width: 100%;
+      gap: var(--spacing-sm);
+      justify-content: center;
     }
 
     main {
-      padding: 1rem;
+      padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    footer {
+      padding: var(--spacing-md) var(--spacing-sm);
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    nav ul li a {
+      font-size: 1rem;
     }
   }
 </style>

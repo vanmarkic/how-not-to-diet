@@ -1,0 +1,33 @@
+{
+  "id": "food-40",
+  "name": "Exercise Timing (Fasted State)",
+  "categories": [
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Part of 21 Tweaks - chronobiology strategy",
+    "Exercise at least 6 hours after last meal",
+    "Typically before breakfast",
+    "Enhances fat burning",
+    "90 minutes daily moderate activity recommended"
+  ],
+  "benefits": "Exercising in a fasted state (at least 6 hours after eating) may have advantages for weight loss and fat burning. This typically means exercising before breakfast, but could also be before a late lunch or before dinner if lunch was early. The timing maximizes metabolic benefits and fat oxidation.",
+  "synergies": [
+    "time-restricted-eating",
+    "water"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast"
+  ],
+  "amount": "90 minutes of moderate activity daily, ideally in fasted state (6+ hours after last meal)",
+  "sources": {
+    "pages": [
+      21,
+      26
+    ],
+    "quotes": [
+      "OPTIMIZE EXERCISE TIMING - The Daily Dozen's recommendation for optimum exercise duration for longevity is ninety minutes of moderately intense activity a day, which is also the optimum exercise duration for weight loss. Anytime is good, and the more the better, but there may be an advantage to exercising in a fasted state, at least six hours after your last meal. Typically, this would mean before breakfast"
+    ]
+  }
+}

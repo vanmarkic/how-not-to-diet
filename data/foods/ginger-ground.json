@@ -1,0 +1,38 @@
+{
+  "id": "food-46",
+  "name": "Ginger (Ground)",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of 21 Tweaks for weight loss",
+    "Alternative to cayenne pepper",
+    "Digestive aid",
+    "Anti-inflammatory",
+    "Thermogenic properties"
+  ],
+  "benefits": "Ground ginger helps boost metabolism and supports digestive health. It has thermogenic properties that may aid in fat burning. Can be used as an alternative to cayenne pepper for those who prefer milder heat.",
+  "synergies": [
+    "tea",
+    "smoothies",
+    "meals"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "breakfast",
+    "any-meal"
+  ],
+  "amount": "1 teaspoon daily (or 1/2 tsp cayenne pepper as alternative)",
+  "sources": {
+    "pages": [
+      21,
+      24
+    ],
+    "quotes": [
+      "GROUND GINGER (1 tsp) or CAYENNE PEPPER (½ tsp) - Mix in any cold beverage, such as unsweetened fruit-infused water, or sprinkle on a meal."
+    ]
+  }
+}

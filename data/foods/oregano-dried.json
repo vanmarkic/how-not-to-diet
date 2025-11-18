@@ -1,0 +1,43 @@
+{
+  "id": "food-161",
+  "name": "Oregano (Dried)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Powerful antioxidant properties",
+    "Anti-inflammatory compound",
+    "Commonly used in Mediterranean cooking",
+    "Featured in multiple soup and vegetable recipes",
+    "Can be used as alternative to herbes de Provence"
+  ],
+  "benefits": "Oregano is one of the most antioxidant-rich herbs available. It contains compounds with anti-inflammatory properties and adds robust flavor to bean soups, vegetable dishes, and Mediterranean recipes. Used in traditional dishes like Caldo Verde and various bean soups throughout the cookbook.",
+  "synergies": [
+    "beans",
+    "lentils",
+    "vegetables",
+    "tomatoes",
+    "garlic",
+    "bay-leaves"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "with-meals"
+  ],
+  "amount": "1/2 to 1 teaspoon dried per recipe, or as part of daily herb and spice servings",
+  "sources": {
+    "pages": [
+      41,
+      62,
+      94
+    ],
+    "quotes": [
+      "½ teaspoon dried oregano - Red Bean and Butternut Caldo Verde (page 41)",
+      "1 teaspoon herbes de Provence, or ½ teaspoon dried oregano and ½ teaspoon dried basil - Ratatouille-Inspired Puy Lentil Soup (page 62)",
+      "½ teaspoon dried oregano - Southwest Kale Salad with Cumin-Tomato Dressing (page 94)"
+    ]
+  }
+}

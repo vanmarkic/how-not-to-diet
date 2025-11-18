@@ -1,0 +1,46 @@
+{
+  "id": "food-169",
+  "name": "Regular Bedtime Schedule",
+  "categories": [
+    "circadian-rhythm-support",
+    "sleep-optimization",
+    "behavior-tweak"
+  ],
+  "properties": [
+    "Part of sufficient sleep strategy",
+    "Consistent sleep-wake timing",
+    "Supports circadian rhythm entrainment",
+    "Optimizes metabolic hormones",
+    "Enhances sleep quality",
+    "Critical for weight management"
+  ],
+  "benefits": "Maintaining a regular bedtime schedule is essential for circadian rhythm optimization and weight management. Going to bed at the same time each night entrains the body's internal clock, improving sleep quality and metabolic function. Irregular sleep schedules disrupt circadian rhythms, leading to metabolic dysfunction and increased fat storage. A consistent bedtime works synergistically with the 7-hour sleep minimum and evening fasting to maximize weight-loss benefits.",
+  "synergies": [
+    "sufficient-sleep",
+    "evening-fasting",
+    "time-restricted-eating",
+    "avoid-caffeine-evening",
+    "circadian-alignment"
+  ],
+  "conflicts": [
+    "irregular-sleep-times",
+    "shift-work",
+    "late-night-screen-time"
+  ],
+  "timing": [
+    "evening",
+    "nightly",
+    "consistent-time"
+  ],
+  "amount": "Same bedtime every night, aiming for 7+ hours of sleep",
+  "sources": {
+    "pages": [
+      22,
+      27
+    ],
+    "quotes": [
+      "GET SUFFICIENT SLEEP - Check this box if you get at least seven hours of sleep at your regular bedtime.",
+      "The same number of calories eaten at a different time of the day, in a different meal distribution or after different amounts of sleep can translate into different amounts of body fat."
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "food-112",
+  "name": "White Beans (Cannellini)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen legumes",
+    "Excellent source of fiber and protein",
+    "Calories trapped within cell walls",
+    "Mild, creamy flavor",
+    "Can be used to create creamy textures in soups"
+  ],
+  "benefits": "White beans (cannellini) are legumes that provide excellent fiber, protein, vitamins, and minerals. Like all legumes, they benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Used in soups and as a base for creamy sauces.",
+  "synergies": [
+    "greens-low-oxalate",
+    "whole-grains",
+    "vegetables",
+    "nutritional-yeast"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen - 3 servings legumes daily (1/4 cup hummus, 1/2 cup cooked beans, or 1 cup fresh peas or sprouted lentils)",
+  "sources": {
+    "pages": [
+      15,
+      31,
+      59,
+      60
+    ],
+    "quotes": [
+      "BEANS checkbox in Daily Dozen (3 servings). TUSCAN WHITE BEAN SOUP WITH ROASTED FENNEL. CHEESY BROCCOLI SOUP - 1 cup/175g cooked salt-free cannellini beans used to create creamy cheese-like texture."
+    ]
+  }
+}

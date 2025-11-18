@@ -1,0 +1,43 @@
+{
+  "id": "food-94",
+  "name": "Spinach",
+  "categories": [
+    "rich-in-vegetables",
+    "greens",
+    "high-fiber",
+    "anti-inflammatory",
+    "high-water-rich"
+  ],
+  "properties": [
+    "Dark leafy green",
+    "High in vitamins and minerals",
+    "Part of Daily Dozen - 2 servings of greens daily",
+    "Can be used fresh or cooked",
+    "Low calorie density"
+  ],
+  "benefits": "Packed with nutrients while being very low in calories. Excellent source of vitamins and minerals. Supports weight loss through high nutrient density and low calorie content.",
+  "synergies": [
+    "beans",
+    "lentils",
+    "turmeric",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "earlier-in-meal"
+  ],
+  "amount": "Part of 2 servings of greens daily",
+  "sources": {
+    "pages": [
+      32,
+      33,
+      53,
+      54
+    ],
+    "quotes": [
+      "6 cups/150g coarsely chopped spinach or chard",
+      "Add the spinach, parsley, spring onions, mint, black pepper and Super-Charged Spice Blend to taste and continue to cook for 10 minutes."
+    ]
+  }
+}

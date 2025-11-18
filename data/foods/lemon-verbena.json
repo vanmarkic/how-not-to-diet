@@ -1,0 +1,38 @@
+{
+  "id": "food-57",
+  "name": "Lemon Verbena",
+  "categories": [
+    "herbs-and-spices",
+    "beverages",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Aromatic herb for tea",
+    "Digestive support properties",
+    "Anti-inflammatory compounds",
+    "Calming effects",
+    "Synergistic with hibiscus tea",
+    "Rich in antioxidants"
+  ],
+  "benefits": "Lemon verbena is an aromatic herb traditionally used for digestive support and its calming properties. When mixed with hibiscus tea (1 part lemon verbena to 6 parts hibiscus), it creates a synergistic beverage blend that can be consumed during meals. The herb contains powerful antioxidants and anti-inflammatory compounds that support overall health and weight management.",
+  "synergies": [
+    "hibiscus-tea",
+    "meals-in-general",
+    "digestive-health"
+  ],
+  "conflicts": [],
+  "timing": [
+    "during-meals",
+    "daily"
+  ],
+  "amount": "Mix 1 part with 6 parts hibiscus tea",
+  "sources": {
+    "pages": [
+      25
+    ],
+    "quotes": [
+      "During meals, drink water, black coffee or hibiscus tea mixed 6:1 with lemon verbena."
+    ]
+  }
+}

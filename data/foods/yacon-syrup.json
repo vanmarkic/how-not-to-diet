@@ -1,0 +1,38 @@
+{
+  "id": "food-114",
+  "name": "Yacon Syrup",
+  "categories": [
+    "weight-loss-booster",
+    "low-glycemic",
+    "prebiotic",
+    "sweetener-alternative"
+  ],
+  "properties": [
+    "Low glycemic sweetener",
+    "Contains fructooligosaccharides (FOS)",
+    "Prebiotic properties",
+    "Alternative to honey or sugar",
+    "Supports gut microbiome",
+    "Reduced caloric impact"
+  ],
+  "benefits": "Yacon syrup is a natural sweetener derived from the yacon root that contains prebiotic fructooligosaccharides. Unlike regular sugar or honey, it has a minimal glycemic impact and supports beneficial gut bacteria. The FOS in yacon syrup is not fully digested, providing sweetness with fewer absorbed calories. It's recommended as a healthier alternative for sweetening tea or other beverages.",
+  "synergies": [
+    "green-tea",
+    "beverages",
+    "oat-groats-whole-intact-oats"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-beverages",
+    "breakfast"
+  ],
+  "amount": "Use as needed to replace honey or sugar in tea",
+  "sources": {
+    "pages": [
+      25
+    ],
+    "quotes": [
+      "Taking your tea without sweetener is best, but if you typically sweeten your tea with honey or sugar, try yacón syrup instead."
+    ]
+  }
+}

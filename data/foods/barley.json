@@ -1,0 +1,39 @@
+{
+  "id": "food-8",
+  "name": "Barley (Whole Grain)",
+  "categories": [
+    "rich-in-whole-grains",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Whole intact grain",
+    "Low glycemic load",
+    "High in fiber",
+    "Part of Daily Dozen whole grains",
+    "Particularly good in soups"
+  ],
+  "benefits": "Barley is a whole grain with low glycemic load. Featured in mushroom barley soup. As an intact grain, it keeps calories trapped within cell walls, which activates the ileal brake that dials down appetite and delivers sustenance to friendly gut flora.",
+  "synergies": [
+    "mushrooms",
+    "vegetables",
+    "beans",
+    "soups"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen - 3 servings of whole grains daily",
+  "sources": {
+    "pages": [
+      31,
+      67
+    ],
+    "quotes": [
+      "Plant cells, on the other hand, have cell walls that are made out of fibre which acts as an indigestible physical barrier, so many of the calories remain trapped."
+    ]
+  }
+}

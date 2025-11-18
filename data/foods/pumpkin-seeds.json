@@ -1,0 +1,39 @@
+{
+  "id": "food-79",
+  "name": "Pumpkin Seeds",
+  "categories": [
+    "high-fiber",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "High in minerals (zinc, magnesium)",
+    "Source of healthy fats",
+    "High in fiber",
+    "Part of Daily Dozen nuts and seeds",
+    "Can be eaten raw or roasted"
+  ],
+  "benefits": "Pumpkin seeds are nutrient-dense seeds that provide minerals and healthy fats. Best eaten raw and whole or coarsely chopped rather than as butter for weight-loss acceleration. Part of the optimal weight-loss diet.",
+  "synergies": [
+    "chia-seeds",
+    "flaxseeds",
+    "salads",
+    "oats"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "snacks",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "Part of Daily Dozen - 1 serving of nuts and seeds daily",
+  "sources": {
+    "pages": [
+      295,
+      318
+    ],
+    "quotes": [
+      "Nuts are a great complement to greens to boost the absorption of fat-soluble nutrients, but, ideally, they should be eaten raw and whole or coarsely chopped rather than blended into butters."
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "food-78",
+  "name": "Pot Barley (Groats)",
+  "categories": [
+    "rich-in-whole-grains",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Whole intact grain",
+    "Calories trapped in cell walls",
+    "Low glycemic load",
+    "High in fiber",
+    "Preferred over pearl barley for nutrients",
+    "Part of Daily Dozen whole grains"
+  ],
+  "benefits": "Pot barley (groats) is the most intact form of barley with only the inedible outer husk removed. It keeps calories trapped within cell walls, which activates the ileal brake that dials down appetite and delivers sustenance to friendly gut flora. Superior to pearl barley which has been processed more.",
+  "synergies": [
+    "mushrooms",
+    "vegetables",
+    "cabbage",
+    "soups"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "3/4 cup dry groats makes 4-6 servings in soup. Part of Daily Dozen - 3 servings of whole grains daily",
+  "sources": {
+    "pages": [
+      17,
+      18,
+      67,
+      103
+    ],
+    "quotes": [
+      "Be sure to use pot barley (groats) instead of pearl barley to get the most nutrients.",
+      "Groats can then be sliced into two to four pieces to make steel-cut oats, coarsely ground into Scottish oatmeal, or steamed and flattened into 'old-fashioned' rolled oats.",
+      "Plant cells, on the other hand, have cell walls that are made out of fibre which acts as an indigestible physical barrier, so many of the calories remain trapped."
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "food-38",
+  "name": "Cumin",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Weight-loss booster proven in clinical trials",
+    "Helps reduce body weight and waist circumference",
+    "Very inexpensive",
+    "Part of 21 Tweaks for weight loss",
+    "Featured in multiple soups and dishes"
+  ],
+  "benefits": "Overweight women randomized to add 1/2 teaspoon of ground cumin to each lunch and dinner beat the control group by four more pounds and an extra inch off their waist. There is also evidence to support the use of the spice saffron, but a pinch a day would cost a lot, whereas a teaspoon of cumin costs very little.",
+  "synergies": [
+    "vegetables",
+    "beans",
+    "lentils",
+    "gazpacho",
+    "soups"
+  ],
+  "conflicts": [],
+  "timing": [
+    "lunch",
+    "dinner",
+    "with-meals"
+  ],
+  "amount": "1/2 teaspoon with lunch and dinner daily",
+  "sources": {
+    "pages": [
+      21,
+      24,
+      35
+    ],
+    "quotes": [
+      "Cumin (Cuminum cyminum) (½ teaspoon with lunch and dinner) Overweight women randomized to add ½ teaspoon of ground cumin to each lunch and dinner beat the control group by four more pounds and an extra inch off their waist. There is also evidence to support the use of the spice saffron, but a pinch a day would cost a lot, whereas a teaspoon of cumin costs very little."
+    ]
+  }
+}

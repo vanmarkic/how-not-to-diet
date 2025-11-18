@@ -1,0 +1,41 @@
+{
+  "id": "food-11",
+  "name": "Beetroot",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Root vegetable",
+    "Rich in antioxidants",
+    "Anti-inflammatory compounds",
+    "Natural nitrates for circulation",
+    "Featured in traditional soups like borscht",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Beetroot is the star of borscht soup and provides powerful anti-inflammatory benefits. Rich in natural nitrates that support circulation and cardiovascular health. The fiber and nutrients make it excellent for weight management when prepared without added fats.",
+  "synergies": [
+    "cabbage",
+    "parsnips",
+    "carrots",
+    "onions",
+    "dill",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "3 beetroot chopped per 4 servings of soup",
+  "sources": {
+    "pages": [
+      44
+    ],
+    "quotes": [
+      "Beetroot may be the star of this soup, but there are a lot of supporting players, from cabbage to parsnips, and a seasoning of fresh dill and a splash of vinegar brighten the flavour."
+    ]
+  }
+}

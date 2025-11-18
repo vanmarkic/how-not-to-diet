@@ -1,0 +1,42 @@
+{
+  "id": "food-95",
+  "name": "Spring Onions (Scallions)",
+  "categories": [
+    "rich-in-vegetables",
+    "anti-inflammatory",
+    "low-calorie-density",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Milder flavor than regular onions",
+    "Both white and green parts are edible",
+    "Rich in antioxidants and vitamins",
+    "Low in calories",
+    "Adds flavor without salt"
+  ],
+  "benefits": "Spring onions provide mild onion flavor along with beneficial compounds similar to garlic and onions. They add flavor, color, and nutrients to dishes without adding salt or significant calories. Rich in vitamins A, C, and K.",
+  "synergies": [
+    "vegetables",
+    "beans-legumes",
+    "greens",
+    "ginger"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "salads",
+    "soups"
+  ],
+  "amount": "Use freely as part of vegetable servings",
+  "sources": {
+    "pages": [
+      32,
+      33,
+      54,
+      88
+    ],
+    "quotes": [
+      "Stir in the spinach, rocket, peas and spring onions and cook until the greens are wilted and tender from the hot broth, about 2 minutes."
+    ]
+  }
+}

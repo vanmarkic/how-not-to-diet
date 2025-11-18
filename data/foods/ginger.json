@@ -1,0 +1,40 @@
+{
+  "id": "food-47",
+  "name": "Ginger",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Weight-loss booster proven in randomized controlled trials",
+    "Significantly decreases body weight",
+    "Works better in the morning than evening",
+    "Part of 21 Tweaks for weight loss",
+    "Can be used fresh or ground"
+  ],
+  "benefits": "Randomized controlled trials have found that 1/4 to 1-1/2 teaspoons a day of ground ginger significantly decreased body weight for just pennies a day. It can be as easy as stirring the ground spice into a cup of hot water. Ginger may work better in the morning than evening, and consider chai tea as a tasty way to combine the green tea and ginger tricks into a single beverage.",
+  "synergies": [
+    "green-tea",
+    "carrots",
+    "hot-and-sour-soup",
+    "vegetables"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "daily",
+    "with-meals"
+  ],
+  "amount": "1 teaspoon of ground ginger daily (or equivalent fresh ginger)",
+  "sources": {
+    "pages": [
+      21,
+      24,
+      56
+    ],
+    "quotes": [
+      "Ground Ginger (1 teaspoon) or Cayenne (½ teaspoon) Randomized controlled trials have found that ¼ to 1½ teaspoons a day of ground ginger significantly decreased body weight for just pennies a day. It can be as easy as stirring the ground spice into a cup of hot water. Ginger may work better in the morning than evening, and consider chai tea as a tasty way to combine the green tea and ginger tricks into a single beverage."
+    ]
+  }
+}

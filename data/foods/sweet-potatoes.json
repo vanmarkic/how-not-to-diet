@@ -1,0 +1,35 @@
+{
+  "id": "food-100",
+  "name": "Sweet Potatoes",
+  "categories": [
+    "rich-in-vegetables",
+    "low-glycemic",
+    "high-fiber",
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Lower glycemic load than white potatoes",
+    "Underground vegetable choice for weight loss",
+    "Rich in fiber and nutrients",
+    "High in beta-carotene",
+    "Satisfying and filling"
+  ],
+  "benefits": "Sweet potatoes are specifically recommended over white potatoes for weight loss optimization due to their lower glycemic load. They provide satisfying fullness while having less impact on blood sugar. Their fiber content and nutrient density make them an excellent choice for any meal.",
+  "synergies": [
+    "vegetables",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "Use as preferred underground vegetable choice",
+  "sources": {
+    "pages": [
+      18
+    ],
+    "quotes": [
+      "If you want to go underground, on the basis of what we learned about glycemic load, sweet potatoes would be preferable to white."
+    ]
+  }
+}

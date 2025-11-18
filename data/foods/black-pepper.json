@@ -1,0 +1,42 @@
+{
+  "id": "food-18",
+  "name": "Black Pepper",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Contains piperine",
+    "Enhances absorption of other nutrients",
+    "Particularly enhances turmeric absorption",
+    "Part of Daily Dozen herbs and spices",
+    "Adds flavor without calories"
+  ],
+  "benefits": "Black pepper contains piperine, which has anti-inflammatory properties and significantly enhances the bioavailability of curcumin in turmeric (up to 2000%). It adds flavor to dishes without adding calories and supports nutrient absorption.",
+  "synergies": [
+    "turmeric",
+    "vegetables",
+    "soups",
+    "beans-legumes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "in-cooking",
+    "can-sprinkle-on-meals"
+  ],
+  "amount": "To taste, typically 1/4 teaspoon or ground to taste",
+  "sources": {
+    "pages": [
+      32,
+      35,
+      36,
+      38,
+      44
+    ],
+    "quotes": [
+      "Ground black pepper - add to taste in soups and dishes",
+      "1/4 teaspoon ground black pepper - adds flavor and enhances nutrient absorption"
+    ]
+  }
+}

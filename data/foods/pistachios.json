@@ -1,0 +1,39 @@
+{
+  "id": "food-76",
+  "name": "Pistachios",
+  "categories": [
+    "nuts-and-seeds",
+    "circadian-rhythm-support",
+    "weight-loss-booster",
+    "high-fiber"
+  ],
+  "properties": [
+    "Circadian synchronization properties",
+    "Contains melatonin",
+    "Rich in healthy fats and protein",
+    "High in fiber",
+    "Prebiotic properties",
+    "Shell slows eating rate",
+    "Theoretical promise for weight loss"
+  ],
+  "benefits": "Pistachios show theoretical promise for weight loss through circadian synchronization. They naturally contain melatonin and other compounds that may help regulate sleep-wake cycles and metabolism. Eating pistachios in-shell naturally slows consumption rate, increasing satiety. While promising, this mechanism hasn't been sufficiently tested in clinical trials yet. As with all nuts, they should be eaten raw and whole rather than processed into butters for optimal weight-loss benefits.",
+  "synergies": [
+    "sleep-optimization",
+    "evening-snacks",
+    "circadian-rhythm"
+  ],
+  "conflicts": [],
+  "timing": [
+    "evening",
+    "as-snack"
+  ],
+  "amount": "Portion as part of nut servings, preferably in-shell",
+  "sources": {
+    "pages": [
+      22
+    ],
+    "quotes": [
+      "Finally, there are options that show theoretical promise but haven't been sufficiently vetted in clinical trials, such as pistachios for circadian synchronization or mixing peppermint oil into hand lotion to facilitate brown adipose tissue (BAT) activation."
+    ]
+  }
+}

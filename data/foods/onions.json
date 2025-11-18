@@ -1,0 +1,41 @@
+{
+  "id": "food-71",
+  "name": "Onions",
+  "categories": [
+    "rich-in-vegetables",
+    "anti-inflammatory",
+    "low-glycemic",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Prebiotic fiber source",
+    "Anti-inflammatory properties",
+    "Low calorie density",
+    "Featured in numerous recipes",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Onions are a fundamental ingredient in many weight-loss recipes. They provide prebiotic fiber to support gut health and have anti-inflammatory properties. Low in calories and can add flavor without adding fat or salt.",
+  "synergies": [
+    "garlic",
+    "vegetables",
+    "beans",
+    "lentils"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "in-cooking"
+  ],
+  "amount": "Part of Daily Dozen vegetables - use liberally in cooking",
+  "sources": {
+    "pages": [
+      32,
+      33,
+      35,
+      36
+    ],
+    "quotes": [
+      "Heat ¼ cup/60ml of water in a large saucepan over medium heat. Add the onion and cook until softened, about 5 minutes."
+    ]
+  }
+}

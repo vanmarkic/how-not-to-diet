@@ -1,0 +1,49 @@
+{
+  "id": "food-121",
+  "name": "Mango (Fresh)",
+  "categories": [
+    "high-water-rich",
+    "rich-in-fruits",
+    "low-calorie-density",
+    "particularly-satiating"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of other fruits",
+    "High water content (approximately 83-84% water)",
+    "Moderate calorie density",
+    "Rich in vitamin C, vitamin A, and antioxidants",
+    "Contains beneficial polyphenols"
+  ],
+  "benefits": "Fresh mango contains approximately 83-84% water, making it a water-rich fruit choice for weight loss. Rich in vitamins and antioxidants, mango provides natural sweetness and volume. In the cookbook, mango is blended into salad dressing, demonstrating how water-rich fruits can add flavor and nutrition without added oils.",
+  "synergies": [
+    "rocket-arugula",
+    "spinach",
+    "red-kidney-beans",
+    "vinegar",
+    "turmeric",
+    "spring-onions-scallions"
+  ],
+  "conflicts": [
+    "added-sugar",
+    "dried-mango"
+  ],
+  "timing": [
+    "breakfast",
+    "salads",
+    "lunch",
+    "dinner",
+    "snacks"
+  ],
+  "amount": "1 ripe mango, peeled, pitted, and coarsely chopped (for dressing serving 4)",
+  "sources": {
+    "pages": [
+      79,
+      106
+    ],
+    "quotes": [
+      "RED BEAN AND ROCKET SALAD WITH MANGO BALSAMIC DRESSING",
+      "1 ripe mango, peeled, pitted, and coarsely chopped",
+      "In a blender, combine the mango, vinegar, spring onion, parsley, miso paste and turmeric. Blend until smooth."
+    ]
+  }
+}

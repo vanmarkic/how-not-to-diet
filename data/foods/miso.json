@@ -1,0 +1,42 @@
+{
+  "id": "food-62",
+  "name": "Miso",
+  "categories": [
+    "anti-inflammatory",
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Fermented soybean paste",
+    "White miso is milder than red/dark miso",
+    "Adds umami flavor to dishes",
+    "Should not be boiled (add after cooking)",
+    "Contains beneficial probiotics"
+  ],
+  "benefits": "Miso is a fermented food that adds deep umami flavor to soups and sauces without added salt. The fermentation process creates beneficial compounds and probiotics. White miso paste is commonly used in weight-loss recipes as a flavor enhancer.",
+  "synergies": [
+    "soups",
+    "vegetables",
+    "greens-low-oxalate",
+    "mushrooms"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "1 teaspoon per recipe (typically in soups and dressings)",
+  "sources": {
+    "pages": [
+      32,
+      33,
+      41,
+      42,
+      56,
+      91
+    ],
+    "quotes": [
+      "1 teaspoon white miso paste - add to hot broth and stir until blended",
+      "In a small bowl, combine the miso paste with about 1/4 cup/60ml of the hot broth, stirring to blend. Pour the miso mixture into the soup."
+    ]
+  }
+}

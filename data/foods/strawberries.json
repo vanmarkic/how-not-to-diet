@@ -1,0 +1,39 @@
+{
+  "id": "food-98",
+  "name": "Strawberries",
+  "categories": [
+    "rich-in-fruits",
+    "weight-loss-booster",
+    "high-water-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "AMPK-activating fresh fruit",
+    "Better weight-loss choice than raisins",
+    "High water content",
+    "Low calorie density",
+    "Rich in vitamin C and antioxidants",
+    "Orosensory stimulation from fresh texture"
+  ],
+  "benefits": "Strawberries are recommended as an optimized fresh fruit choice for weight loss. They activate AMPK, which boosts cellular metabolism and fat burning. Their high water content and low calorie density make them particularly satiating. Fresh strawberries provide more orosensory stimulation than dried fruit, helping to slow eating rate and increase satiety.",
+  "synergies": [
+    "oat-groats-whole-intact-oats",
+    "steel-cut-oats",
+    "breakfast-foods-large",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "any-meal"
+  ],
+  "amount": "Use as fresh fruit in breakfast dishes, replace dried fruit",
+  "sources": {
+    "pages": [
+      18
+    ],
+    "quotes": [
+      "We could optimize that meal for weight loss by making the oatmeal from steel-cut or whole groats rather than rolled or instant, cooking it thick, and switching the dried fruit for fresh – for example, swapping in strawberries for the raisins."
+    ]
+  }
+}

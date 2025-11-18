@@ -1,0 +1,42 @@
+{
+  "id": "food-111",
+  "name": "Watermelon",
+  "categories": [
+    "rich-in-fruits",
+    "high-water-rich",
+    "low-calorie-density",
+    "particularly-satiating",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of other fruits",
+    "Over 90% water content",
+    "Very low in calorie density",
+    "Natural source of lycopene",
+    "Highly satiating due to volume"
+  ],
+  "benefits": "Watermelon is one of the most water-rich foods available, with over 90% water content. This extremely low calorie density combined with high volume makes it particularly satiating for weight loss. Also provides lycopene and other beneficial compounds.",
+  "synergies": [
+    "peaches",
+    "blueberries",
+    "watercress",
+    "lemon-juice"
+  ],
+  "conflicts": [
+    "added-sugar"
+  ],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "dessert"
+  ],
+  "amount": "Part of 3 daily servings of other fruits (Daily Dozen)",
+  "sources": {
+    "pages": [
+      111
+    ],
+    "quotes": [
+      "In a large bowl, combine the watermelon, peaches, blueberries and lemon juice."
+    ]
+  }
+}

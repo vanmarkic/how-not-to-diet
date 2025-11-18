@@ -1,0 +1,43 @@
+{
+  "id": "food-172",
+  "name": "Hibiscus-Lemon Verbena Blend (6:1)",
+  "categories": [
+    "beverages",
+    "circadian-rhythm-support",
+    "evening-beverage",
+    "caffeine-free"
+  ],
+  "properties": [
+    "Caffeine-free beverage option",
+    "Safe for evening consumption",
+    "Rich in antioxidants",
+    "Anti-inflammatory properties",
+    "Supports sleep-friendly hydration",
+    "Can be consumed during meals",
+    "Synergistic herb combination"
+  ],
+  "benefits": "The hibiscus-lemon verbena blend (6 parts hibiscus to 1 part lemon verbena) is an ideal evening beverage choice because it's caffeine-free and won't disrupt sleep. Unlike green tea and chai tea, which must be avoided within 6 hours of bedtime, this herbal blend can be enjoyed at dinner or in the evening. The calming properties of lemon verbena combined with the antioxidant-rich hibiscus provide metabolic benefits without sleep interference. This makes it perfect for supporting both circadian rhythm optimization and adequate hydration in the evening hours.",
+  "synergies": [
+    "hibiscus-tea",
+    "lemon-verbena",
+    "evening-meals",
+    "sufficient-sleep",
+    "caffeine-free-evening",
+    "stay-hydrated"
+  ],
+  "conflicts": [],
+  "timing": [
+    "during-meals",
+    "evening-safe",
+    "any-time-of-day"
+  ],
+  "amount": "Mix 6 parts hibiscus tea with 1 part lemon verbena; consume as desired",
+  "sources": {
+    "pages": [
+      25
+    ],
+    "quotes": [
+      "During meals, drink water, black coffee or hibiscus tea mixed 6:1 with lemon verbena, but never exceed 3 cups of fluid per hour."
+    ]
+  }
+}

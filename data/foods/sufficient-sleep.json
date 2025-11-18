@@ -1,0 +1,46 @@
+{
+  "id": "food-166",
+  "name": "Sufficient Sleep",
+  "categories": [
+    "weight-loss-booster",
+    "circadian-rhythm-support",
+    "behavior-tweak"
+  ],
+  "properties": [
+    "Part of 21 Tweaks - EVERY NIGHT category",
+    "Minimum 7 hours at regular bedtime",
+    "Supports circadian rhythm regulation",
+    "Critical for weight management",
+    "Affects metabolism and hormones",
+    "Required for optimal fat burning"
+  ],
+  "benefits": "Getting sufficient sleep is one of the essential weight-loss boosters in the 21 Tweaks. Sleep deprivation disrupts metabolic hormones, increases appetite, and makes the same foods more fattening. Consistent sleep of at least 7 hours at a regular bedtime supports circadian rhythm optimization, which is crucial for weight management. Sleep quality and duration affect how calories are processed - the same food eaten with insufficient sleep translates into more body fat than when well-rested.",
+  "synergies": [
+    "time-restricted-eating",
+    "fasting-after-7pm",
+    "circadian-rhythm-alignment",
+    "avoid-caffeine-before-bed"
+  ],
+  "conflicts": [
+    "caffeine-within-6-hours-bedtime",
+    "late-night-eating",
+    "irregular-sleep-schedule"
+  ],
+  "timing": [
+    "evening",
+    "nightly",
+    "regular-bedtime"
+  ],
+  "amount": "At least 7 hours per night at a regular bedtime",
+  "sources": {
+    "pages": [
+      20,
+      22,
+      27
+    ],
+    "quotes": [
+      "The same number of calories eaten at a different time of the day, in a different meal distribution or after different amounts of sleep can translate into different amounts of body fat.",
+      "GET SUFFICIENT SLEEP - Check this box if you get at least seven hours of sleep at your regular bedtime."
+    ]
+  }
+}

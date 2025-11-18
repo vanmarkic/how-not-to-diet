@@ -1,0 +1,41 @@
+{
+  "id": "food-73",
+  "name": "Peaches",
+  "categories": [
+    "rich-in-fruits",
+    "high-water-rich",
+    "low-calorie-density",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of other fruits",
+    "High in water content",
+    "Natural sweetness without added sugar",
+    "Rich in vitamins A and C",
+    "Best when in season"
+  ],
+  "benefits": "Peaches are water-rich fruits that provide natural sweetness along with vitamins, minerals, and fiber. Their high water content and natural sugars satisfy sweet cravings while supporting weight loss through low calorie density.",
+  "synergies": [
+    "watermelon",
+    "blueberries",
+    "watercress",
+    "balsamic-vinegar"
+  ],
+  "conflicts": [
+    "added-sugar"
+  ],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "dessert"
+  ],
+  "amount": "Part of 3 daily servings of other fruits (Daily Dozen)",
+  "sources": {
+    "pages": [
+      111
+    ],
+    "quotes": [
+      "Balsamic syrup brings out the sweetness of the fruit. Make this refreshing salad when summer fruit and watercress are at their peak."
+    ]
+  }
+}

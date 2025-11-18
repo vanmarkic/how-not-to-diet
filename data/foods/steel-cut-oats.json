@@ -1,0 +1,38 @@
+{
+  "id": "food-96",
+  "name": "Steel-Cut Oats",
+  "categories": [
+    "rich-in-whole-grains",
+    "high-fiber",
+    "low-glycemic",
+    "weight-loss-booster"
+  ],
+  "properties": [
+    "Less processed than rolled oats",
+    "Lower glycemic index",
+    "More intact grain structure",
+    "Better for weight loss than instant oats",
+    "Provides sustained energy"
+  ],
+  "benefits": "Steel-cut oats maintain more of their original structure compared to rolled or instant oats, leading to better blood sugar control and increased satiety. The less-processed form means calories are more effectively 'walled off' within cell structures. Ideal breakfast choice for weight loss optimization.",
+  "synergies": [
+    "berries",
+    "flaxseeds-ground",
+    "breakfast-foods-large"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast"
+  ],
+  "amount": "1 serving as part of breakfast (preferably largest meal)",
+  "sources": {
+    "pages": [
+      17,
+      18
+    ],
+    "quotes": [
+      "They're found out in the fields as oat groats and then have their inedible outer husks removed during processing. Groats can then be sliced into two to four pieces to make steel-cut (also known as pinhead or Irish) oats",
+      "we could optimize that meal for weight loss by making the oatmeal from steel-cut or whole groats rather than rolled or instant"
+    ]
+  }
+}

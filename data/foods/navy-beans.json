@@ -1,0 +1,52 @@
+{
+  "id": "food-149",
+  "name": "Navy Beans (Haricot Beans)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Small white oval-shaped beans, also known as haricot beans",
+    "Traditionally used in baked beans and soups",
+    "Excellent source of plant-based protein and fiber",
+    "Benefits excess body weight and insulin resistance",
+    "Rich in folate, manganese, and resistant starch",
+    "Mild flavor and creamy texture absorb seasonings well"
+  ],
+  "benefits": "Navy beans are exceptionally high in fiber (19g per cooked cup), making them one of the most satiating legumes for weight management. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Their abundant resistant starch feeds beneficial gut bacteria and lowers the insulin response, supporting metabolic health and meeting the Daily Dozen's three daily servings of legumes for cardiovascular protection.",
+  "synergies": [
+    "vegetables",
+    "greens",
+    "whole-grains",
+    "herbs-spices",
+    "onions",
+    "garlic",
+    "tomatoes"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked navy beans",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck."
+    ]
+  }
+}

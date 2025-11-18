@@ -1,0 +1,45 @@
+{
+  "id": "food-15",
+  "name": "Black Beans",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Excellent source of vitamins, minerals, fiber and antioxidants",
+    "Benefits excess body weight and insulin resistance",
+    "High in antioxidants from dark color",
+    "Versatile in salads and main dishes"
+  ],
+  "benefits": "Black beans are an excellent source of vitamins, minerals, fiber and antioxidants. Their dark color indicates high antioxidant content. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention and weight loss.",
+  "synergies": [
+    "kale",
+    "corn",
+    "peppers",
+    "cumin",
+    "vinegar"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt"
+  ],
+  "timing": [
+    "lunch",
+    "dinner"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen)",
+  "sources": {
+    "pages": [
+      94,
+      95
+    ],
+    "quotes": [
+      "Favourite flavours of the Southwest combine in this hearty main-dish salad starring kale and black beans."
+    ]
+  }
+}

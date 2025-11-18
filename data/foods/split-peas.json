@@ -1,0 +1,52 @@
+{
+  "id": "food-146",
+  "name": "Split Peas (Green or Yellow)",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Excellent source of plant-based protein and fiber",
+    "Split peas are dried field peas with outer hull removed and split",
+    "Available in green and yellow varieties with similar nutritional profiles",
+    "Cook faster than whole dried legumes",
+    "Benefits excess body weight and insulin resistance",
+    "Rich in vitamins, minerals, and antioxidants"
+  ],
+  "benefits": "Split peas are a legume powerhouse providing exceptional fiber (16g per cooked cup) and protein, making them highly satiating for weight management. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress. Their low glycemic index and high fiber content support stable blood sugar levels and promote beneficial gut bacteria, essential for the Daily Dozen's three daily servings of legumes.",
+  "synergies": [
+    "vegetables",
+    "onions",
+    "garlic",
+    "carrots",
+    "celery",
+    "herbs-spices",
+    "turmeric"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt",
+    "added-fat"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen). 1 serving = 1/2 cup cooked split peas",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+    ]
+  }
+}

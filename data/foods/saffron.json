@@ -1,0 +1,38 @@
+{
+  "id": "food-89",
+  "name": "Saffron",
+  "categories": [
+    "herbs-and-spices",
+    "weight-loss-booster",
+    "appetite-suppression",
+    "mood-support"
+  ],
+  "properties": [
+    "Appetite suppression properties",
+    "Mood-enhancing effects",
+    "Alternative to cumin for weight loss",
+    "Rich in antioxidants",
+    "Anti-inflammatory compounds",
+    "Clinical evidence for weight loss"
+  ],
+  "benefits": "Saffron has clinical evidence supporting its use for weight loss through appetite suppression and mood enhancement. It works similarly to cumin but through different mechanisms. Saffron may help reduce snacking and emotional eating by improving mood and satiety signals. However, it's significantly more expensive than cumin, making cumin the more practical daily choice for most people.",
+  "synergies": [
+    "meals-in-general",
+    "rice-dishes",
+    "soups"
+  ],
+  "conflicts": [],
+  "timing": [
+    "daily",
+    "with-meals"
+  ],
+  "amount": "A pinch daily (expensive, cumin is more cost-effective alternative)",
+  "sources": {
+    "pages": [
+      24
+    ],
+    "quotes": [
+      "There is also evidence to support the use of the spice saffron, but a pinch a day would cost a lot, whereas a teaspoon of cumin costs very little."
+    ]
+  }
+}

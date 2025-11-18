@@ -1,0 +1,38 @@
+{
+  "id": "food-82",
+  "name": "Raw Vegetables",
+  "categories": [
+    "rich-in-vegetables",
+    "weight-loss-booster",
+    "high-water-rich",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Orosensory stimulation for satiety",
+    "High water content",
+    "Low calorie density",
+    "Better eaten earlier in meal",
+    "Maximizes chewing and sensory feedback"
+  ],
+  "benefits": "Raw vegetables provide more orosensory stimulation than cooked, leading to greater satiety signals and reduced caloric intake. Eating vegetables earlier in the meal helps crowd out more calorie-dense foods. The crunchy texture and increased chewing time enhance fullness.",
+  "synergies": [
+    "vinegar",
+    "negative-calorie-foods",
+    "salads"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "earlier-in-meal"
+  ],
+  "amount": "Eat raw vegetables first, before other meal components",
+  "sources": {
+    "pages": [
+      18
+    ],
+    "quotes": [
+      "uncooked vegetables in general offer more orosensory stimulation",
+      "since vegetables represent the healthiest class of foods with the fewest calories, we should aim to eat them earlier in the meal"
+    ]
+  }
+}

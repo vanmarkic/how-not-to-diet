@@ -1,0 +1,45 @@
+{
+  "id": "food-118",
+  "name": "Radishes",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - vegetables category",
+    "Very high water content (approximately 95% water)",
+    "Extremely low in calorie density",
+    "Member of cruciferous vegetable family",
+    "Contains beneficial glucosinolates"
+  ],
+  "benefits": "Radishes are exceptionally water-rich vegetables with approximately 95% water content, making them one of the lowest calorie-density foods available. As a cruciferous vegetable, radishes provide beneficial plant compounds including glucosinolates. Their crisp texture provides orosensory stimulation that may slow eating rate and enhance satiety.",
+  "synergies": [
+    "romaine-lettuce",
+    "cucumber",
+    "tomatoes",
+    "broccoli",
+    "cauliflower",
+    "spring-onions-scallions"
+  ],
+  "conflicts": [
+    "added-oils"
+  ],
+  "timing": [
+    "salads",
+    "lunch",
+    "dinner",
+    "earlier-in-meal"
+  ],
+  "amount": "3 radishes as part of chopped salad bowl",
+  "sources": {
+    "pages": [
+      118
+    ],
+    "quotes": [
+      "3 radishes, chopped",
+      "In a large bowl, combine all the salad ingredients, except the sunflower seeds."
+    ]
+  }
+}

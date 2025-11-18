@@ -1,0 +1,37 @@
+{
+  "id": "food-27",
+  "name": "Cashews",
+  "categories": [
+    "high-fiber",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen nuts and seeds",
+    "Creamy texture when blended",
+    "Best consumed whole rather than as butter",
+    "Used to create cheese-like sauces",
+    "Should be soaked before blending"
+  ],
+  "benefits": "Cashews are nutrient-dense nuts that provide healthy fats, protein, and fiber. When soaked and blended, they create creamy, cheese-like sauces without added fats. As part of the Daily Dozen nuts and seeds category, they contribute to the ideal weight-loss diet.",
+  "synergies": [
+    "nutritional-yeast",
+    "beans-legumes",
+    "vegetables"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "snacks"
+  ],
+  "amount": "Part of 1 serving nuts/seeds daily (1/4 cup or 1 ounce), or 3/4 cup raw for cheese sauces",
+  "sources": {
+    "pages": [
+      14,
+      15,
+      59
+    ],
+    "quotes": [
+      "NUTS AND SEEDS checkbox in Daily Dozen. CHEESY BROCCOLI SOUP - 3/4 cup/115g raw cashews, soaked in boiling water for 30 minutes and then drained, combined with nutritional yeast to create cheesy flavor."
+    ]
+  }
+}

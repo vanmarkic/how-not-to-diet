@@ -1,0 +1,44 @@
+{
+  "id": "food-26",
+  "name": "Carrots",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Rich in beta-carotene",
+    "Good source of fiber",
+    "Low calorie density",
+    "Part of Daily Dozen vegetables",
+    "Can be eaten raw or cooked"
+  ],
+  "benefits": "Nutrient-dense vegetable that provides fiber and vitamins with low calories. Supports eye health and weight management. Natural sweetness helps satisfy cravings.",
+  "synergies": [
+    "celery",
+    "onions",
+    "beans",
+    "ginger"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "snacks"
+  ],
+  "amount": "Part of vegetable servings",
+  "sources": {
+    "pages": [
+      31,
+      50,
+      51,
+      83,
+      88
+    ],
+    "quotes": [
+      "GINGER CARROT SOUP",
+      "1 cup/110g grated carrot",
+      "2 large carrots, grated",
+      "1 large carrot, grated"
+    ]
+  }
+}

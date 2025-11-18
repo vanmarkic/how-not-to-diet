@@ -1,0 +1,47 @@
+{
+  "id": "food-125",
+  "name": "Yellow Squash (Summer Squash)",
+  "categories": [
+    "high-water-rich",
+    "rich-in-vegetables",
+    "low-calorie-density",
+    "low-glycemic"
+  ],
+  "properties": [
+    "Part of Daily Dozen - vegetables category",
+    "Very high water content (approximately 94% water)",
+    "Extremely low in calorie density",
+    "Similar to zucchini/courgette",
+    "Rich in vitamins C, A, and antioxidants",
+    "Low glycemic impact"
+  ],
+  "benefits": "Yellow squash (also called summer squash) contains approximately 94% water, making it one of the most effective vegetables for calorie dilution and weight loss. As an aboveground vegetable highest on the water scale, it's ideal for optimizing weight loss meals. Its mild flavor pairs well with other vegetables in recipes.",
+  "synergies": [
+    "zucchini-courgette",
+    "bell-peppers",
+    "onions",
+    "garlic",
+    "tomatoes",
+    "fresh-herbs"
+  ],
+  "conflicts": [
+    "added-oils",
+    "overcooking"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "any-meal"
+  ],
+  "amount": "1 yellow squash, cut into ½-inch/1cm dice",
+  "sources": {
+    "pages": [
+      62,
+      137
+    ],
+    "quotes": [
+      "1 yellow squash, cut into ½-inch/1cm dice",
+      "1 small courgette or yellow squash, cut into ¼-inch/5mm dice"
+    ]
+  }
+}

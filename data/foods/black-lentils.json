@@ -1,0 +1,41 @@
+{
+  "id": "food-17",
+  "name": "Black Lentils",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Whole food plant protein",
+    "High in fiber",
+    "Low glycemic load",
+    "Rich in antioxidants",
+    "Part of Daily Dozen legumes",
+    "Particularly good in Bolognese sauce"
+  ],
+  "benefits": "Black lentils are an excellent source of vitamins, minerals, fiber and antioxidants. Legumes benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention. Can be used in various dishes including pasta sauces.",
+  "synergies": [
+    "mushrooms",
+    "tomatoes",
+    "garlic",
+    "onions",
+    "whole-grain-pasta"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "3/4 cup dried lentils. Part of Daily Dozen - minimum 3 servings of legumes daily",
+  "sources": {
+    "pages": [
+      54,
+      134
+    ],
+    "quotes": [
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+    ]
+  }
+}

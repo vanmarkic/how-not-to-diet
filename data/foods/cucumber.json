@@ -1,0 +1,39 @@
+{
+  "id": "food-37",
+  "name": "Cucumber",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-glycemic",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Very high water content (96%)",
+    "Extremely low in calorie density",
+    "Low glycemic load",
+    "Part of Daily Dozen vegetables",
+    "Great for preloading meals"
+  ],
+  "benefits": "Cucumber is one of the most water-rich vegetables with extremely low calorie density. Featured in gazpacho and salads. Perfect for preloading meals to reduce overall calorie intake. Checks off high water content and low calorie density criteria.",
+  "synergies": [
+    "tomatoes",
+    "vinegar",
+    "peppers",
+    "onions"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "earlier-in-meal"
+  ],
+  "amount": "Unlimited - part of negative calorie foods",
+  "sources": {
+    "pages": [
+      35,
+      36
+    ],
+    "quotes": [
+      "Preload with 'negative calorie' foods... Start each meal with an apple or a Green Light soup or salad containing fewer than 100 calories per cup."
+    ]
+  }
+}

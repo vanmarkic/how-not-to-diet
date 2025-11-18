@@ -1,0 +1,42 @@
+{
+  "id": "food-29",
+  "name": "Cavolo Nero (Black Kale)",
+  "categories": [
+    "cruciferous",
+    "greens",
+    "high-fiber",
+    "high-water-rich",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Italian dark leafy green",
+    "Cruciferous vegetable",
+    "Very high in nutrients",
+    "Low calorie density",
+    "Featured in traditional Italian ribollita",
+    "Part of Daily Dozen greens and cruciferous"
+  ],
+  "benefits": "Cavolo nero is a nutrient-dense Italian kale variety featured in traditional peasant soups like ribollita. As both a green and cruciferous vegetable, it provides double benefits for the Daily Dozen checklist. High in anti-inflammatory compounds and fiber.",
+  "synergies": [
+    "white-beans",
+    "cabbage",
+    "tomatoes",
+    "garlic",
+    "onions"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "1 bunch chopped. Part of Daily Dozen - 2 servings greens and 1 serving cruciferous vegetables daily",
+  "sources": {
+    "pages": [
+      47
+    ],
+    "quotes": [
+      "This cleaner, more modern version skips the cheese and bread in favour of superstars cavolo nero and cabbage."
+    ]
+  }
+}

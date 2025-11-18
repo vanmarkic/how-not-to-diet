@@ -1,0 +1,41 @@
+{
+  "id": "food-28",
+  "name": "Cauliflower",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "high-fiber",
+    "high-water-rich",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Cruciferous vegetable",
+    "Low in calorie density",
+    "High in fiber and water",
+    "Part of Daily Dozen cruciferous vegetables",
+    "Versatile in cooking"
+  ],
+  "benefits": "Cauliflower is a cruciferous vegetable with low calorie density and low glycemic load. Part of the optimal weight-loss diet. Cruciferous vegetables are particularly important for weight loss and health benefits.",
+  "synergies": [
+    "other-cruciferous",
+    "beans",
+    "vinegar",
+    "nutritional-yeast"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "Part of Daily Dozen - aim for cruciferous vegetables daily",
+  "sources": {
+    "pages": [
+      14,
+      117
+    ],
+    "quotes": [
+      "Most fruits and vegetables would top the list at sixteen out of seventeen [optimal weight-loss ingredients]."
+    ]
+  }
+}

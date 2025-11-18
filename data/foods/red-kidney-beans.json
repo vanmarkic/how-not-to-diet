@@ -1,0 +1,46 @@
+{
+  "id": "food-83",
+  "name": "Red Kidney Beans",
+  "categories": [
+    "rich-in-legumes",
+    "high-fiber",
+    "low-insulin-index",
+    "particularly-satiating",
+    "microbiome-friendly",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of legumes daily",
+    "Excellent source of vitamins, minerals, fiber and antioxidants",
+    "Benefits excess body weight and insulin resistance",
+    "Supports heart disease prevention",
+    "High in protein and complex carbohydrates"
+  ],
+  "benefits": "Red kidney beans are an excellent source of vitamins, minerals, fiber and antioxidants. They benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention. Meet the Daily Dozen requirement of three daily servings and your heart will thank you.",
+  "synergies": [
+    "vegetables",
+    "greens",
+    "whole-grains",
+    "herbs-spices"
+  ],
+  "conflicts": [
+    "refined-grains",
+    "added-salt"
+  ],
+  "timing": [
+    "lunch",
+    "dinner",
+    "soups"
+  ],
+  "amount": "Part of 3 daily servings of legumes (Daily Dozen)",
+  "sources": {
+    "pages": [
+      41,
+      54
+    ],
+    "quotes": [
+      "The traditional Portuguese soup is made with dark greens, potatoes and sliced sausage, but this elevated, healthier version keeps the greens while swapping in butternut squash for potatoes and replaces the sausage with red kidney beans.",
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+    ]
+  }
+}

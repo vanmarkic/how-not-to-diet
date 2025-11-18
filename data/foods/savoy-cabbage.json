@@ -1,0 +1,44 @@
+{
+  "id": "food-90",
+  "name": "Savoy Cabbage",
+  "categories": [
+    "cruciferous",
+    "rich-in-vegetables",
+    "high-fiber",
+    "high-water-rich",
+    "low-glycemic",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Cruciferous vegetable",
+    "High in water content",
+    "Low calorie density",
+    "Particularly good in soups",
+    "Part of Daily Dozen vegetables"
+  ],
+  "benefits": "Savoy cabbage is a cruciferous vegetable featured in traditional soups like ribollita and borscht. Its high water content and fiber make it excellent for weight loss. The cell walls trap nutrients and provide sustenance to gut flora.",
+  "synergies": [
+    "white-beans",
+    "kale",
+    "potatoes",
+    "beetroot",
+    "barley"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups"
+  ],
+  "amount": "3-4 cups shredded. Part of Daily Dozen - 2 servings cruciferous vegetables daily",
+  "sources": {
+    "pages": [
+      44,
+      47,
+      67
+    ],
+    "quotes": [
+      "Add the celery, parsnip, carrot and beetroot. Cover",
+      "1 head savoy cabbage, chopped"
+    ]
+  }
+}

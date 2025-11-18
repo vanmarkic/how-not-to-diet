@@ -1,0 +1,39 @@
+{
+  "id": "food-110",
+  "name": "Watercress",
+  "categories": [
+    "rich-in-vegetables",
+    "cruciferous",
+    "greens",
+    "anti-inflammatory",
+    "high-fiber"
+  ],
+  "properties": [
+    "Cruciferous green",
+    "Peppery flavor",
+    "Part of Daily Dozen greens and cruciferous vegetables",
+    "Very low calorie density",
+    "High nutrient density"
+  ],
+  "benefits": "Watercress is a nutrient-dense cruciferous green that provides both greens and cruciferous vegetable benefits. It offers powerful antioxidants and anti-inflammatory compounds while being very low in calories and high in vitamins and minerals.",
+  "synergies": [
+    "vinegar",
+    "beans-legumes",
+    "greens-low-oxalate"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "earlier-in-meal"
+  ],
+  "amount": "Part of Daily Dozen - counts toward both greens (2 servings) and cruciferous (1 serving) daily",
+  "sources": {
+    "pages": [
+      15,
+      32
+    ],
+    "quotes": [
+      "GREENS checkbox in Daily Dozen. CRUCIFEROUS VEGETABLES checkbox in Daily Dozen. Used in Spring Greens Soup recipes combining multiple green vegetables."
+    ]
+  }
+}

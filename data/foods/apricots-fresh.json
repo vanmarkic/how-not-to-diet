@@ -1,0 +1,40 @@
+{
+  "id": "food-4",
+  "name": "Apricots (Fresh)",
+  "categories": [
+    "rich-in-fruits",
+    "high-water-rich",
+    "low-calorie-density",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Part of Daily Dozen - 3 servings of other fruits",
+    "High in vitamins A and C",
+    "Good source of fiber",
+    "Natural sweetness",
+    "Better fresh than dried for water content"
+  ],
+  "benefits": "Fresh apricots provide water-rich, low-calorie nutrition with vitamins A and C, fiber, and beneficial plant compounds. Their natural sweetness satisfies cravings while supporting weight loss through low calorie density. Fresh apricots have higher water content than dried versions.",
+  "synergies": [
+    "sorghum",
+    "mint",
+    "whole-grains"
+  ],
+  "conflicts": [
+    "added-sugar"
+  ],
+  "timing": [
+    "breakfast",
+    "snacks",
+    "salads"
+  ],
+  "amount": "Part of 3 daily servings of other fruits (Daily Dozen)",
+  "sources": {
+    "pages": [
+      82
+    ],
+    "quotes": [
+      "MARRAKECH SORGHUM SALAD WITH FRESH APRICOTS AND MINT"
+    ]
+  }
+}
