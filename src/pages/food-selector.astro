@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FoodSelector from '../components/FoodSelector.astro';
+import foodsData from '../../data/extracted-foods.json';
+
+const foods = foodsData.foods;
+const metadata = foodsData.extraction_metadata;
+---
+
+<Layout title="Food Selection - How Not To Diet">
+  <div class="foods-page">
+    <div class="page-header">
+      <h1>Daily Dozen Foods</h1>
+      <p class="intro">
+        Select the nutrient-dense foods you want to incorporate into your diet.
+        These foods are based on Dr. Greger's evidence-based recommendations from
+        <strong>{metadata.source_document}</strong>.
+      </p>
+
+      <div class="focus-areas">
+        <h3>Focus Areas:</h3>
+        <div class="focus-grid">
+          {metadata.focus_areas.map(area => (
+            <div class="focus-item">
+              <span class="focus-icon">✓</span>
+              <span>{area}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <FoodSelector foods={foods} />
+
+    <div class="info-section">
+      <div class="info-card">
+        <h3>About the Daily Dozen</h3>
+        <p>
+          The Daily Dozen is Dr. Greger's checklist of foods to try to fit into your daily routine.
+          These foods have been shown to have the greatest impact on health and longevity based on
+          the best available balance of evidence.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>How to Use This Tool</h3>
+        <ol>
+          <li>Browse the food cards to learn about each food's benefits and properties</li>
+          <li>Use filters to find foods that fit your meal times or dietary preferences</li>
+          <li>Click the checkbox on any food card to add it to your selection</li>
+          <li>Review your selected foods in the summary section below the grid</li>
+          <li>Use the selected foods to plan your meals and grocery shopping</li>
+        </ol>
+      </div>
+
+      <div class="info-card source-info">
+        <h3>Source Reference</h3>
+        <p>
+          <strong>Document:</strong> {metadata.source_document}<br>
+          <strong>Extraction Date:</strong> {metadata.extraction_date}<br>
+          <strong>Total Foods:</strong> {foods.length} foods with detailed nutritional information
+        </p>
+        <p class="note">
+          Page numbers referenced in each food card correspond to the source document for further reading.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .foods-page {
+    width: 100%;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    max-width: 900px;
+  }
+
+  .intro strong {
+    color: var(--color-secondary);
+  }
+
+  .focus-areas {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+  }
+
+  .focus-areas h3 {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+  }
+
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .focus-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg);
+    border-radius: 8px;
+    border-left: 3px solid var(--color-accent);
+  }
+
+  .focus-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .focus-item span:last-child {
+    color: var(--color-text);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .info-section {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  .info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--color-accent);
+  }
+
+  .info-card h3 {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+  }
+
+  .info-card p {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .info-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .info-card ol {
+    margin-left: 1.5rem;
+    color: var(--color-text);
+    line-height: 1.8;
+  }
+
+  .info-card li {
+    margin-bottom: 0.75rem;
+  }
+
+  .info-card li:last-child {
+    margin-bottom: 0;
+  }
+
+  .source-info {
+    border-top-color: var(--color-secondary);
+  }
+
+  .source-info p strong {
+    color: var(--color-secondary);
+  }
+
+  .note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    padding: 1rem;
+    background: var(--color-bg);
+    border-radius: 6px;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+    }
+
+    .focus-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .info-section {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .focus-areas,
+    .info-card {
+      padding: 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,270 @@
+---
+import Layout from '@layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Load the extracted foods data
+const dataPath = path.join(process.cwd(), 'data', 'extracted-foods.json');
+const foodsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+const foods = foodsData.foods;
+---
+
+<Layout title="Food Synergies - How Not To Diet">
+  <div class="foods-page">
+    <header class="page-header">
+      <h1>Food Synergies Database</h1>
+      <p>Explore food relationships, timing, and amounts from "How Not to Diet"</p>
+    </header>
+
+    <div class="foods-grid">
+      {foods.map((food: any) => (
+        <div class="food-card" id={`food-${food.id}`}>
+          <div class="food-header">
+            <h3>{food.name}</h3>
+            <div class="categories">
+              {food.categories.map((cat: string) => (
+                <span class="category-badge">{cat}</span>
+              ))}
+            </div>
+          </div>
+
+          <div class="food-body">
+            <div class="section">
+              <h4>Benefits</h4>
+              <p>{food.benefits}</p>
+            </div>
+
+            <div class="section">
+              <h4>Properties</h4>
+              <ul>
+                {food.properties.map((prop: string) => (
+                  <li>{prop}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="section synergies">
+              <h4>Works Well With</h4>
+              <div class="synergy-tags">
+                {food.synergies.map((synergy: string) => (
+                  <span class="synergy-tag">{synergy}</span>
+                ))}
+              </div>
+            </div>
+
+            {food.conflicts && food.conflicts.length > 0 && (
+              <div class="section conflicts">
+                <h4>Avoid Combining With</h4>
+                <div class="conflict-tags">
+                  {food.conflicts.map((conflict: string) => (
+                    <span class="conflict-tag">{conflict}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div class="section timing">
+              <h4>Best Timing</h4>
+              <div class="timing-tags">
+                {food.timing.map((time: string) => (
+                  <span class="timing-tag">{time}</span>
+                ))}
+              </div>
+            </div>
+
+            <div class="section amount">
+              <h4>Recommended Amount</h4>
+              <p class="amount-text">{food.amount}</p>
+            </div>
+
+            <div class="section sources">
+              <h4>Sources</h4>
+              <p class="pages">Pages: {food.sources.pages.join(', ')}</p>
+              {food.sources.quotes.map((quote: string) => (
+                <blockquote>{quote}</blockquote>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .foods-page {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+  }
+
+  .foods-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+
+  .food-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .food-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .food-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .food-header h3 {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .section {
+    margin-bottom: 1.5rem;
+  }
+
+  .section h4 {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+  }
+
+  .section p {
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .section ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  .synergy-tags,
+  .conflict-tags,
+  .timing-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .synergy-tag {
+    padding: 0.5rem 1rem;
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .conflict-tag {
+    padding: 0.5rem 1rem;
+    background: #ffebee;
+    color: #c62828;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .timing-tag {
+    padding: 0.5rem 1rem;
+    background: #e3f2fd;
+    color: #1565c0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .amount-text {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 1.05rem;
+  }
+
+  .sources {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+  .pages {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+
+  blockquote {
+    margin: 0.75rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--color-accent);
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .foods-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

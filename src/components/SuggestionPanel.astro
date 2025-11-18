@@ -1,0 +1,330 @@
+---
+/**
+ * SuggestionPanel Component
+ *
+ * Displays food suggestions ranked by synergy scores with the user's selected foods.
+ * Shows detailed synergy breakdown explaining why each food is recommended.
+ */
+
+import type { FoodSuggestion } from '@utils/suggestions';
+
+interface Props {
+  suggestions: FoodSuggestion[];
+  onAddFood?: string; // Client-side event handler name
+  selectedFoodNames?: string[]; // For display context
+}
+
+const { suggestions, selectedFoodNames = [] } = Astro.props;
+
+/**
+ * Get color class based on synergy score
+ */
+function getScoreColor(score: number): string {
+  if (score >= 10) return 'score-excellent';
+  if (score >= 6) return 'score-great';
+  if (score >= 3) return 'score-good';
+  if (score >= 0) return 'score-neutral';
+  return 'score-poor';
+}
+
+/**
+ * Format synergy score for display
+ */
+function formatScore(score: number): string {
+  return score > 0 ? `+${score}` : `${score}`;
+}
+---
+
+<aside class="suggestion-panel">
+  <div class="panel-header">
+    <h2>Suggested Foods</h2>
+    {selectedFoodNames.length > 0 && (
+      <p class="context">
+        Based on: {selectedFoodNames.join(', ')}
+      </p>
+    )}
+  </div>
+
+  {suggestions.length === 0 ? (
+    <div class="empty-state">
+      <p>Select some foods to see personalized suggestions based on nutritional synergies.</p>
+    </div>
+  ) : (
+    <div class="suggestions-list">
+      {suggestions.map((suggestion) => (
+        <article class="suggestion-card" data-food-id={suggestion.food.id}>
+          <div class="suggestion-header">
+            <div class="food-info">
+              <h3 class="food-name">{suggestion.food.name}</h3>
+              <span class="food-category">{suggestion.food.category}</span>
+            </div>
+            <div class={`synergy-score ${getScoreColor(suggestion.totalScore)}`}>
+              <span class="score-value">{formatScore(suggestion.totalScore)}</span>
+              <span class="score-label">synergy</span>
+            </div>
+          </div>
+
+          <div class="synergy-breakdown">
+            <h4>Why this pairs well:</h4>
+            <ul class="breakdown-list">
+              {suggestion.synergyBreakdown
+                .filter(b => b.score !== 0)
+                .sort((a, b) => Math.abs(b.score) - Math.abs(a.score))
+                .map((breakdown) => (
+                  <li class={breakdown.score > 0 ? 'positive' : 'negative'}>
+                    <span class="breakdown-score">{formatScore(breakdown.score)}</span>
+                    <div class="breakdown-details">
+                      <strong>{breakdown.selectedFood.name}</strong>
+                      {breakdown.reason && (
+                        <p class="breakdown-reason">{breakdown.reason}</p>
+                      )}
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </div>
+
+          <button
+            class="add-food-btn"
+            data-food-id={suggestion.food.id}
+            data-food-name={suggestion.food.name}
+          >
+            Add to Menu
+          </button>
+        </article>
+      ))}
+    </div>
+  )}
+</aside>
+
+<style>
+  .suggestion-panel {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .panel-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .panel-header h2 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .context {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #666;
+  }
+
+  .empty-state p {
+    line-height: 1.6;
+  }
+
+  .suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .suggestion-card {
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+
+  .suggestion-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 8px rgba(139, 195, 74, 0.2);
+  }
+
+  .suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .food-info {
+    flex: 1;
+  }
+
+  .food-name {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .food-category {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #666;
+    background: var(--color-bg);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+  }
+
+  .synergy-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .score-value {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .score-label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    opacity: 0.8;
+  }
+
+  .score-excellent {
+    background: linear-gradient(135deg, #4caf50, #8bc34a);
+    color: white;
+  }
+
+  .score-great {
+    background: linear-gradient(135deg, #8bc34a, #cddc39);
+    color: #333;
+  }
+
+  .score-good {
+    background: linear-gradient(135deg, #cddc39, #ffeb3b);
+    color: #333;
+  }
+
+  .score-neutral {
+    background: var(--color-bg);
+    color: #666;
+  }
+
+  .score-poor {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+  }
+
+  .synergy-breakdown {
+    margin-bottom: 1rem;
+  }
+
+  .synergy-breakdown h4 {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .breakdown-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .breakdown-list li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 0.5rem;
+    background: var(--color-bg);
+    border-radius: 6px;
+  }
+
+  .breakdown-score {
+    font-weight: 600;
+    min-width: 35px;
+    text-align: center;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .positive .breakdown-score {
+    background: #4caf50;
+    color: white;
+  }
+
+  .negative .breakdown-score {
+    background: #ff5722;
+    color: white;
+  }
+
+  .breakdown-details {
+    flex: 1;
+  }
+
+  .breakdown-details strong {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+  }
+
+  .breakdown-reason {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.2rem;
+    line-height: 1.4;
+  }
+
+  .add-food-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .add-food-btn:hover {
+    background: var(--color-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(45, 80, 22, 0.3);
+  }
+
+  .add-food-btn:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    .suggestion-panel {
+      position: static;
+      max-height: none;
+    }
+
+    .suggestion-header {
+      flex-direction: column;
+    }
+
+    .synergy-score {
+      align-self: flex-end;
+    }
+  }
+</style>

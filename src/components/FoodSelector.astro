@@ -1,0 +1,490 @@
+---
+import FoodCard from './FoodCard.astro';
+
+interface Props {
+  foods: Array<{
+    id: string;
+    name: string;
+    categories: string[];
+    properties: string[];
+    benefits: string;
+    timing: string[];
+    amount: string;
+    sources: {
+      pages: number[];
+      quotes: string[];
+    };
+  }>;
+}
+
+const { foods } = Astro.props;
+
+// Extract unique categories and timing options for filters
+const allCategories = [...new Set(foods.flatMap(f => f.categories))].sort();
+const allTimings = [...new Set(foods.flatMap(f => f.timing))].sort();
+
+const formatFilterLabel = (value: string) => {
+  return value.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};
+---
+
+<div class="food-selector">
+  <div class="selector-header">
+    <div class="header-text">
+      <h2>Select Your Foods</h2>
+      <p class="subtitle">Choose the foods you want to include in your diet plan</p>
+    </div>
+    <div class="selection-counter">
+      <span class="count">0</span>
+      <span class="label">Selected</span>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filter-group">
+      <label for="category-filter">Filter by Category</label>
+      <select id="category-filter" class="filter-select">
+        <option value="">All Categories</option>
+        {allCategories.map(cat => (
+          <option value={cat}>{formatFilterLabel(cat)}</option>
+        ))}
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="timing-filter">Filter by Meal Time</label>
+      <select id="timing-filter" class="filter-select">
+        <option value="">All Times</option>
+        {allTimings.map(timing => (
+          <option value={timing}>{formatFilterLabel(timing)}</option>
+        ))}
+      </select>
+    </div>
+
+    <button class="clear-filters" id="clear-filters">Clear Filters</button>
+    <button class="clear-selection" id="clear-selection">Clear Selection</button>
+  </div>
+
+  <div class="food-grid" id="food-grid">
+    {foods.map(food => (
+      <FoodCard food={food} selected={false} />
+    ))}
+  </div>
+
+  <div class="no-results" id="no-results" style="display: none;">
+    <p>No foods match your current filters.</p>
+    <button class="reset-button" id="reset-filters">Reset Filters</button>
+  </div>
+
+  <div class="selection-summary" id="selection-summary">
+    <h3>Selected Foods Summary</h3>
+    <div class="summary-content">
+      <p class="empty-message">No foods selected yet. Click the checkbox on any food card to add it to your selection.</p>
+      <ul class="selected-list"></ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  .food-selector {
+    width: 100%;
+  }
+
+  .selector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid var(--color-accent);
+  }
+
+  .header-text h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .selection-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-secondary);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    min-width: 100px;
+  }
+
+  .selection-counter .count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .selection-counter .label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
+  }
+
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .filter-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .filter-select {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  .filter-select:hover,
+  .filter-select:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+  }
+
+  .clear-filters,
+  .clear-selection {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background: white;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .clear-filters:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: white;
+  }
+
+  .clear-selection {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: white;
+  }
+
+  .clear-selection:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .no-results p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reset-button {
+    padding: 0.75rem 2rem;
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .reset-button:hover {
+    background: var(--color-primary);
+  }
+
+  .selection-summary {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--color-secondary);
+  }
+
+  .selection-summary h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .summary-content .empty-message {
+    color: #666;
+    font-style: italic;
+  }
+
+  .selected-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .selected-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--color-bg);
+    border-radius: 8px;
+    border-left: 3px solid var(--color-accent);
+  }
+
+  .selected-list .food-name {
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .selected-list .food-amount {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 1024px) {
+    .food-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .selector-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .selection-counter {
+      align-self: stretch;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .selection-counter .count {
+      font-size: 2rem;
+    }
+
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .filter-group {
+      min-width: 100%;
+    }
+
+    .food-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  interface SelectedFood {
+    id: string;
+    name: string;
+    amount: string;
+  }
+
+  const selectedFoods: Map<string, SelectedFood> = new Map();
+
+  function updateSelectionCounter() {
+    const counter = document.querySelector('.selection-counter .count');
+    if (counter) {
+      counter.textContent = selectedFoods.size.toString();
+    }
+  }
+
+  function updateSelectionSummary() {
+    const summaryContent = document.querySelector('.summary-content');
+    const emptyMessage = summaryContent?.querySelector('.empty-message');
+    const selectedList = summaryContent?.querySelector('.selected-list');
+
+    if (selectedFoods.size === 0) {
+      if (emptyMessage) (emptyMessage as HTMLElement).style.display = 'block';
+      if (selectedList) (selectedList as HTMLElement).style.display = 'none';
+    } else {
+      if (emptyMessage) (emptyMessage as HTMLElement).style.display = 'none';
+      if (selectedList) {
+        (selectedList as HTMLElement).style.display = 'flex';
+        selectedList.innerHTML = Array.from(selectedFoods.values())
+          .map(food => `
+            <li>
+              <span class="food-name">${food.name}</span>
+              <span class="food-amount">${food.amount}</span>
+            </li>
+          `).join('');
+      }
+    }
+  }
+
+  function applyFilters() {
+    const categoryFilter = (document.getElementById('category-filter') as HTMLSelectElement)?.value || '';
+    const timingFilter = (document.getElementById('timing-filter') as HTMLSelectElement)?.value || '';
+    const foodGrid = document.getElementById('food-grid');
+    const noResults = document.getElementById('no-results');
+
+    if (!foodGrid) return;
+
+    const cards = foodGrid.querySelectorAll('.food-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardElement = card as HTMLElement;
+      const foodData = cardElement.dataset;
+
+      // Get categories and timing from the card's data attributes (we'll need to add these)
+      // For now, we'll show/hide based on text content
+      let matchesCategory = true;
+      let matchesTiming = true;
+
+      if (categoryFilter) {
+        const categoryBadge = cardElement.querySelector('.category-badge')?.textContent || '';
+        const categoryTags = Array.from(cardElement.querySelectorAll('.category-tag')).map(el => el.textContent || '');
+        matchesCategory = categoryBadge.toLowerCase().includes(categoryFilter.replace(/-/g, ' ')) ||
+                         categoryTags.some(tag => tag.toLowerCase().includes(categoryFilter.replace(/-/g, ' ')));
+      }
+
+      if (timingFilter) {
+        const timingTags = Array.from(cardElement.querySelectorAll('.timing-tag')).map(el => el.textContent || '');
+        matchesTiming = timingTags.some(tag => tag.toLowerCase().includes(timingFilter.replace(/-/g, ' ')));
+      }
+
+      if (matchesCategory && matchesTiming) {
+        cardElement.style.display = '';
+        visibleCount++;
+      } else {
+        cardElement.style.display = 'none';
+      }
+    });
+
+    // Show/hide no results message
+    if (noResults) {
+      if (visibleCount === 0) {
+        foodGrid.style.display = 'none';
+        noResults.style.display = 'block';
+      } else {
+        foodGrid.style.display = 'grid';
+        noResults.style.display = 'none';
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Handle food selection changes
+    document.addEventListener('food-selection-changed', (e) => {
+      const event = e as CustomEvent;
+      const { foodId, selected } = event.detail;
+      const card = document.querySelector(`[data-food-id="${foodId}"]`);
+
+      if (card) {
+        const foodName = card.querySelector('h3')?.textContent || '';
+        const foodAmount = card.querySelector('.amount')?.textContent || '';
+
+        if (selected) {
+          selectedFoods.set(foodId, { id: foodId, name: foodName, amount: foodAmount });
+        } else {
+          selectedFoods.delete(foodId);
+        }
+
+        updateSelectionCounter();
+        updateSelectionSummary();
+      }
+    });
+
+    // Handle filter changes
+    const categoryFilter = document.getElementById('category-filter');
+    const timingFilter = document.getElementById('timing-filter');
+
+    categoryFilter?.addEventListener('change', applyFilters);
+    timingFilter?.addEventListener('change', applyFilters);
+
+    // Handle clear filters button
+    const clearFiltersBtn = document.getElementById('clear-filters');
+    const resetFiltersBtn = document.getElementById('reset-filters');
+
+    const resetFilters = () => {
+      if (categoryFilter) (categoryFilter as HTMLSelectElement).value = '';
+      if (timingFilter) (timingFilter as HTMLSelectElement).value = '';
+      applyFilters();
+    };
+
+    clearFiltersBtn?.addEventListener('click', resetFilters);
+    resetFiltersBtn?.addEventListener('click', resetFilters);
+
+    // Handle clear selection button
+    const clearSelectionBtn = document.getElementById('clear-selection');
+    clearSelectionBtn?.addEventListener('click', () => {
+      selectedFoods.clear();
+      const cards = document.querySelectorAll('.food-card[data-selected="true"]');
+      cards.forEach(card => {
+        card.setAttribute('data-selected', 'false');
+        const button = card.querySelector('.select-button');
+        button?.setAttribute('aria-label', 'Select food');
+      });
+      updateSelectionCounter();
+      updateSelectionSummary();
+    });
+
+    // Initialize
+    updateSelectionCounter();
+    updateSelectionSummary();
+  });
+</script>

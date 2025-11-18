@@ -1,0 +1,87 @@
+---
+interface Props {
+  score: number;
+  maxScore?: number;
+}
+
+const { score, maxScore = 100 } = Astro.props;
+const percentage = Math.min(100, (score / maxScore) * 100);
+
+let rating = 'Poor';
+let color = '#dc2626';
+
+if (percentage >= 80) {
+  rating = 'Excellent';
+  color = '#16a34a';
+} else if (percentage >= 60) {
+  rating = 'Good';
+  color = '#65a30d';
+} else if (percentage >= 40) {
+  rating = 'Fair';
+  color = '#ca8a04';
+} else if (percentage >= 20) {
+  rating = 'Needs Improvement';
+  color = '#ea580c';
+}
+---
+
+<div class="synergy-score">
+  <div class="score-header">
+    <h3>Food Synergy Score</h3>
+    <span class="score-value" style={`color: ${color}`}>{score}</span>
+  </div>
+  <div class="score-bar">
+    <div class="score-fill" style={`width: ${percentage}%; background-color: ${color}`}></div>
+  </div>
+  <p class="score-rating" style={`color: ${color}`}>{rating}</p>
+</div>
+
+<style>
+  .synergy-score {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+
+  .score-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .score-header h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    color: var(--color-text);
+  }
+
+  .score-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .score-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .score-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+    border-radius: 6px;
+  }
+
+  .score-rating {
+    text-align: right;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+</style>

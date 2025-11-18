@@ -1,0 +1,23 @@
+{
+  "name": "how-not-to-diet-menu-planner",
+  "version": "0.1.0",
+  "description": "A weekly menu planner based on food science principles",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.16.12",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  }
+}

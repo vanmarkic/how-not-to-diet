@@ -1,0 +1,419 @@
+---
+import Layout from '@layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Load the extracted foods data
+const dataPath = path.join(process.cwd(), 'data', 'extracted-foods.json');
+const foodsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+const foods = foodsData.foods;
+
+// Build synergy graph
+interface SynergyCombo {
+  foods: string[];
+  synergyCount: number;
+  categories: string[];
+  timing: string[];
+  benefits: string[];
+}
+
+function calculateCombos(): SynergyCombo[] {
+  const combos: SynergyCombo[] = [];
+
+  // For each food, find foods it synergizes with
+  for (let i = 0; i < foods.length; i++) {
+    for (let j = i + 1; j < foods.length; j++) {
+      const food1 = foods[i];
+      const food2 = foods[j];
+
+      // Check if they have synergies
+      const food1SynergizesWith2 = food1.synergies.some((s: string) =>
+        food2.name.toLowerCase().includes(s.toLowerCase()) ||
+        s.toLowerCase().includes(food2.name.toLowerCase())
+      );
+
+      const food2SynergizesWith1 = food2.synergies.some((s: string) =>
+        food1.name.toLowerCase().includes(s.toLowerCase()) ||
+        s.toLowerCase().includes(food1.name.toLowerCase())
+      );
+
+      if (food1SynergizesWith2 || food2SynergizesWith1) {
+        // Check for common categories
+        const commonCategories = food1.categories.filter((c: string) =>
+          food2.categories.includes(c)
+        );
+
+        // Check for compatible timing
+        const compatibleTiming = food1.timing.filter((t: string) =>
+          food2.timing.includes(t)
+        );
+
+        const synergyCount = (food1SynergizesWith2 ? 1 : 0) +
+                            (food2SynergizesWith1 ? 1 : 0) +
+                            commonCategories.length;
+
+        combos.push({
+          foods: [food1.name, food2.name],
+          synergyCount,
+          categories: [...new Set([...food1.categories, ...food2.categories])],
+          timing: compatibleTiming.length > 0 ? compatibleTiming : [...new Set([...food1.timing, ...food2.timing])],
+          benefits: [food1.benefits, food2.benefits]
+        });
+      }
+    }
+  }
+
+  // Sort by synergy count
+  return combos.sort((a, b) => b.synergyCount - a.synergyCount);
+}
+
+// Calculate 3-food combos for maximum synergies
+function calculateTripleCombos(): SynergyCombo[] {
+  const tripleCombos: SynergyCombo[] = [];
+
+  // Common breakfast combos
+  const breakfast = foods.filter((f: any) =>
+    f.timing.includes('breakfast') || f.timing.includes('any-meal')
+  );
+
+  for (let i = 0; i < breakfast.length && i < 5; i++) {
+    for (let j = i + 1; j < breakfast.length && j < 6; j++) {
+      for (let k = j + 1; k < breakfast.length && k < 7; k++) {
+        const food1 = breakfast[i];
+        const food2 = breakfast[j];
+        const food3 = breakfast[k];
+
+        const allCategories = [...new Set([
+          ...food1.categories,
+          ...food2.categories,
+          ...food3.categories
+        ])];
+
+        const allTiming = [...new Set([
+          ...food1.timing,
+          ...food2.timing,
+          ...food3.timing
+        ])];
+
+        // Calculate synergy score
+        const synergyCount = allCategories.length + allTiming.length;
+
+        tripleCombos.push({
+          foods: [food1.name, food2.name, food3.name],
+          synergyCount,
+          categories: allCategories,
+          timing: allTiming,
+          benefits: [food1.benefits, food2.benefits, food3.benefits]
+        });
+      }
+    }
+  }
+
+  return tripleCombos.sort((a, b) => b.synergyCount - a.synergyCount).slice(0, 10);
+}
+
+const pairCombos = calculateCombos();
+const tripleCombos = calculateTripleCombos();
+---
+
+<Layout title="Food Combos - How Not To Diet">
+  <div class="combos-page">
+    <header class="page-header">
+      <h1>Synergy-Maximizing Food Combinations</h1>
+      <p>Discover powerful food pairings and combos that maximize health benefits</p>
+    </header>
+
+    <section class="combos-section">
+      <h2>Top Triple Combos (Best for Meals)</h2>
+      <p class="section-intro">These three-food combinations maximize synergies and are perfect for building complete meals</p>
+
+      <div class="combos-grid">
+        {tripleCombos.map((combo, index) => (
+          <div class="combo-card triple">
+            <div class="combo-rank">#{index + 1}</div>
+            <h3>{combo.foods.join(' + ')}</h3>
+            <div class="combo-score">
+              <span class="score-label">Synergy Score:</span>
+              <span class="score-value">{combo.synergyCount}</span>
+            </div>
+            <div class="combo-categories">
+              {combo.categories.slice(0, 6).map((cat: string) => (
+                <span class="category-badge">{cat}</span>
+              ))}
+            </div>
+            <div class="combo-timing">
+              <strong>Best timing:</strong> {combo.timing.join(', ')}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="combos-section">
+      <h2>Top Food Pairs</h2>
+      <p class="section-intro">These two-food combinations have scientifically documented synergies</p>
+
+      <div class="combos-grid pairs">
+        {pairCombos.slice(0, 12).map((combo, index) => (
+          <div class="combo-card pair">
+            <div class="combo-rank">#{index + 1}</div>
+            <h3>{combo.foods.join(' + ')}</h3>
+            <div class="combo-score">
+              <span class="score-label">Synergy Score:</span>
+              <span class="score-value">{combo.synergyCount}</span>
+            </div>
+            <div class="combo-categories">
+              {combo.categories.slice(0, 4).map((cat: string) => (
+                <span class="category-badge">{cat}</span>
+              ))}
+            </div>
+            <div class="combo-timing">
+              <strong>Best timing:</strong> {combo.timing.slice(0, 3).join(', ')}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="meal-builder">
+      <h2>Quick Meal Ideas</h2>
+      <div class="meal-ideas-grid">
+        <div class="meal-idea">
+          <h3>Power Breakfast</h3>
+          <p class="meal-combo">Oat Groats + Berries + Ground Flaxseeds</p>
+          <p class="meal-benefits">High fiber, anti-inflammatory, low glycemic - perfect morning combo</p>
+          <div class="meal-daily-dozen">Covers: Whole Grains, Berries, Flaxseeds</div>
+        </div>
+
+        <div class="meal-idea">
+          <h3>Anti-Inflammatory Salad</h3>
+          <p class="meal-combo">Kale + Cabbage + Vinegar Dressing</p>
+          <p class="meal-benefits">Maximum antioxidants, cholesterol reduction, metabolism boost</p>
+          <div class="meal-daily-dozen">Covers: Greens, Cruciferous Vegetables</div>
+        </div>
+
+        <div class="meal-idea">
+          <h3>Complete Bowl</h3>
+          <p class="meal-combo">Beans + Greens + Turmeric</p>
+          <p class="meal-benefits">Complete protein, fiber-rich, powerful anti-inflammatory</p>
+          <div class="meal-daily-dozen">Covers: Legumes, Greens, Herbs & Spices</div>
+        </div>
+
+        <div class="meal-idea">
+          <h3>Daily Dozen Booster</h3>
+          <p class="meal-combo">Add: Nigella Seeds (1/4 tsp) + Vinegar (2 tsp) to any meal</p>
+          <p class="meal-benefits">Weight loss acceleration from 21 Tweaks</p>
+          <div class="meal-daily-dozen">21 Tweaks: Appetite suppression + metabolism</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .combos-page {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+  }
+
+  .combos-section {
+    margin-bottom: 4rem;
+  }
+
+  .combos-section h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .section-intro {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .combos-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .combos-grid.pairs {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .combo-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    border: 3px solid transparent;
+  }
+
+  .combo-card.triple {
+    border-color: var(--color-accent);
+  }
+
+  .combo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .combo-rank {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-accent);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .combo-card h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-right: 3rem;
+  }
+
+  .combo-score {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #f0f9ff;
+    border-radius: 4px;
+  }
+
+  .score-label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .score-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-accent);
+  }
+
+  .combo-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .combo-timing {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .combo-timing strong {
+    color: var(--color-primary);
+  }
+
+  .meal-builder {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+  }
+
+  .meal-builder h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .meal-ideas-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .meal-idea {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .meal-idea h3 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .meal-combo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .meal-benefits {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .meal-daily-dozen {
+    padding: 0.5rem 1rem;
+    background: #e8f5e9;
+    border-left: 3px solid var(--color-accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2e7d32;
+  }
+
+  @media (max-width: 768px) {
+    .combos-grid,
+    .combos-grid.pairs {
+      grid-template-columns: 1fr;
+    }
+
+    .meal-builder {
+      padding: 2rem 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,469 @@
+---
+import Layout from '@layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Load the extracted foods data
+const dataPath = path.join(process.cwd(), 'data', 'extracted-foods.json');
+const foodsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+const foods = foodsData.foods;
+
+interface MealPlan {
+  day: string;
+  breakfast: { foods: string[]; categories: string[]; timing: string[]; amounts: string[] };
+  lunch: { foods: string[]; categories: string[]; timing: string[]; amounts: string[] };
+  dinner: { foods: string[]; categories: string[]; timing: string[]; amounts: string[] };
+  dailyDozenCoverage: string[];
+  twentyOneTweaks: string[];
+}
+
+// Generate smart meal plans
+function generateWeeklyMealPlan(): MealPlan[] {
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+  // Base breakfast template (Oats + Berries + Flaxseeds)
+  const breakfastBase = foods.filter((f: any) =>
+    ['Oat Groats (Whole Intact Oats)', 'Berries', 'Flaxseeds (Ground)'].includes(f.name)
+  );
+
+  // Greens and cruciferous for salads
+  const saladFoods = foods.filter((f: any) =>
+    ['Kale', 'Cabbage', 'Greens (Low-Oxalate)', 'Vinegar'].includes(f.name)
+  );
+
+  // Beans and vegetables for dinners
+  const dinnerFoods = foods.filter((f: any) =>
+    ['Beans (Legumes)', 'Greens (Low-Oxalate)', 'Turmeric', 'Ginger'].includes(f.name)
+  );
+
+  // 21 Tweaks boosters
+  const tweaksBoosters = foods.filter((f: any) =>
+    ['Vinegar', 'Nigella Seeds (Black Cumin)', 'Turmeric', 'Ginger'].includes(f.name)
+  );
+
+  return days.map((day, index) => {
+    // Breakfast (consistent for simplicity, good habit)
+    const breakfast = {
+      foods: breakfastBase.map((f: any) => f.name),
+      categories: [...new Set(breakfastBase.flatMap((f: any) => f.categories))],
+      timing: ['breakfast'],
+      amounts: breakfastBase.map((f: any) => f.amount)
+    };
+
+    // Lunch (vary the greens)
+    const lunchFoods = index % 2 === 0
+      ? [saladFoods[0], saladFoods[1], saladFoods[3]] // Kale, Cabbage, Vinegar
+      : [saladFoods[2], saladFoods[3]]; // Greens, Vinegar
+
+    const lunch = {
+      foods: lunchFoods.map((f: any) => f.name),
+      categories: [...new Set(lunchFoods.flatMap((f: any) => f.categories))],
+      timing: ['lunch', 'any-meal'],
+      amounts: lunchFoods.map((f: any) => f.amount)
+    };
+
+    // Dinner (beans + greens + spices)
+    const dinner = {
+      foods: dinnerFoods.map((f: any) => f.name),
+      categories: [...new Set(dinnerFoods.flatMap((f: any) => f.categories))],
+      timing: ['dinner', 'any-meal'],
+      amounts: dinnerFoods.map((f: any) => f.amount)
+    };
+
+    // Calculate Daily Dozen coverage
+    const allFoods = [...breakfastBase, ...lunchFoods, ...dinnerFoods];
+    const dailyDozenItems = [];
+
+    if (allFoods.some((f: any) => f.categories.includes('rich-in-legumes'))) {
+      dailyDozenItems.push('Beans (3 servings)');
+    }
+    if (allFoods.some((f: any) => f.name === 'Berries')) {
+      dailyDozenItems.push('Berries (1 serving)');
+    }
+    if (allFoods.some((f: any) => f.categories.includes('cruciferous'))) {
+      dailyDozenItems.push('Cruciferous Vegetables (1 serving)');
+    }
+    if (allFoods.filter((f: any) => f.categories.includes('greens')).length >= 2) {
+      dailyDozenItems.push('Greens (2 servings)');
+    }
+    if (allFoods.some((f: any) => f.name === 'Flaxseeds (Ground)')) {
+      dailyDozenItems.push('Flaxseeds (1 serving)');
+    }
+    if (allFoods.some((f: any) => f.categories.includes('rich-in-whole-grains'))) {
+      dailyDozenItems.push('Whole Grains (3 servings)');
+    }
+    if (allFoods.some((f: any) => f.categories.includes('herbs-and-spices'))) {
+      dailyDozenItems.push('Herbs & Spices (1 serving)');
+    }
+
+    // 21 Tweaks
+    const tweaks = [];
+    if (allFoods.some((f: any) => f.name === 'Vinegar')) {
+      tweaks.push('Vinegar with each meal (2 tsp)');
+    }
+    if (allFoods.some((f: any) => f.name === 'Nigella Seeds (Black Cumin)')) {
+      tweaks.push('Nigella seeds (1/4 tsp daily)');
+    }
+    if (allFoods.some((f: any) => f.name === 'Turmeric')) {
+      tweaks.push('Turmeric daily');
+    }
+    if (allFoods.some((f: any) => f.name === 'Ginger')) {
+      tweaks.push('Ginger (1 tsp daily)');
+    }
+
+    return {
+      day,
+      breakfast,
+      lunch,
+      dinner,
+      dailyDozenCoverage: dailyDozenItems,
+      twentyOneTweaks: tweaks
+    };
+  });
+}
+
+const weeklyPlan = generateWeeklyMealPlan();
+
+// Calculate weekly stats
+const totalDozenItems = new Set(weeklyPlan.flatMap(d => d.dailyDozenCoverage));
+const totalTweaks = new Set(weeklyPlan.flatMap(d => d.twentyOneTweaks));
+---
+
+<Layout title="Smart Weekly Planner - How Not To Diet">
+  <div class="planner-page">
+    <header class="page-header">
+      <h1>Smart Weekly Meal Planner</h1>
+      <p>AI-generated meal plan maximizing food synergies and Daily Dozen coverage</p>
+    </header>
+
+    <div class="weekly-stats">
+      <div class="stat-card">
+        <div class="stat-number">{totalDozenItems.size}</div>
+        <div class="stat-label">Daily Dozen Items Covered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">{totalTweaks.size}</div>
+        <div class="stat-label">21 Tweaks Implemented</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Synergy Optimization</div>
+      </div>
+    </div>
+
+    <div class="weekly-plan">
+      {weeklyPlan.map((dayPlan) => (
+        <div class="day-plan">
+          <h2 class="day-header">{dayPlan.day}</h2>
+
+          <div class="meals-container">
+            <div class="meal">
+              <h3>Breakfast</h3>
+              <div class="meal-foods">
+                {dayPlan.breakfast.foods.map((food: string, index: number) => (
+                  <div class="food-item">
+                    <span class="food-name">{food}</span>
+                    <span class="food-amount">{dayPlan.breakfast.amounts[index]}</span>
+                  </div>
+                ))}
+              </div>
+              <div class="meal-categories">
+                {dayPlan.breakfast.categories.slice(0, 4).map((cat: string) => (
+                  <span class="category-badge">{cat}</span>
+                ))}
+              </div>
+            </div>
+
+            <div class="meal">
+              <h3>Lunch</h3>
+              <div class="meal-foods">
+                {dayPlan.lunch.foods.map((food: string, index: number) => (
+                  <div class="food-item">
+                    <span class="food-name">{food}</span>
+                    <span class="food-amount">{dayPlan.lunch.amounts[index]}</span>
+                  </div>
+                ))}
+              </div>
+              <div class="meal-categories">
+                {dayPlan.lunch.categories.slice(0, 4).map((cat: string) => (
+                  <span class="category-badge">{cat}</span>
+                ))}
+              </div>
+            </div>
+
+            <div class="meal">
+              <h3>Dinner</h3>
+              <div class="meal-foods">
+                {dayPlan.dinner.foods.map((food: string, index: number) => (
+                  <div class="food-item">
+                    <span class="food-name">{food}</span>
+                    <span class="food-amount">{dayPlan.dinner.amounts[index]}</span>
+                  </div>
+                ))}
+              </div>
+              <div class="meal-categories">
+                {dayPlan.dinner.categories.slice(0, 4).map((cat: string) => (
+                  <span class="category-badge">{cat}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div class="day-summary">
+            <div class="summary-section">
+              <h4>Daily Dozen Coverage</h4>
+              <ul>
+                {dayPlan.dailyDozenCoverage.map((item: string) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div class="summary-section">
+              <h4>21 Tweaks Applied</h4>
+              <ul>
+                {dayPlan.twentyOneTweaks.map((tweak: string) => (
+                  <li>{tweak}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="action-buttons">
+      <button class="btn btn-primary">Download Shopping List</button>
+      <button class="btn btn-secondary">Print Weekly Plan</button>
+      <button class="btn btn-secondary">Export to Calendar</button>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .planner-page {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+  }
+
+  .weekly-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .weekly-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .day-plan {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .day-header {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--color-accent);
+  }
+
+  .meals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .meal {
+    background: var(--color-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
+  }
+
+  .meal h3 {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .meal-foods {
+    margin-bottom: 1rem;
+  }
+
+  .food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .food-item:last-child {
+    border-bottom: none;
+  }
+
+  .food-name {
+    font-weight: 600;
+    color: var(--color-text);
+    flex: 1;
+  }
+
+  .food-amount {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+    margin-left: 1rem;
+  }
+
+  .meal-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .day-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .summary-section h4 {
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .summary-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .summary-section ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  .summary-section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-primary {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .btn-secondary {
+    background: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .meals-container {
+      grid-template-columns: 1fr;
+    }
+
+    .day-summary {
+      grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+</style>

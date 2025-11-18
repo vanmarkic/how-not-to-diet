@@ -1,0 +1,203 @@
+---
+import type { Recipe } from '@types/index';
+import { formatTime } from '@utils/helpers';
+
+interface Props {
+  recipe: Recipe;
+  showFullDetails?: boolean;
+}
+
+const { recipe, showFullDetails = false } = Astro.props;
+const totalTime = recipe.prepTime + recipe.cookTime;
+---
+
+<article class="recipe-card">
+  <div class="recipe-header">
+    <h3>{recipe.name}</h3>
+    <div class="recipe-meta">
+      <span class="time">{formatTime(totalTime)}</span>
+      <span class="servings">{recipe.servings} serving{recipe.servings > 1 ? 's' : ''}</span>
+    </div>
+  </div>
+
+  <p class="description">{recipe.description}</p>
+
+  {recipe.nutrition && (
+    <div class="nutrition-summary">
+      <div class="nutrition-item">
+        <span class="value">{recipe.nutrition.calories}</span>
+        <span class="label">cal</span>
+      </div>
+      <div class="nutrition-item">
+        <span class="value">{recipe.nutrition.protein}g</span>
+        <span class="label">protein</span>
+      </div>
+      <div class="nutrition-item">
+        <span class="value">{recipe.nutrition.fiber}g</span>
+        <span class="label">fiber</span>
+      </div>
+    </div>
+  )}
+
+  <div class="tags">
+    {recipe.tags.map(tag => (
+      <span class="tag">{tag}</span>
+    ))}
+  </div>
+
+  {showFullDetails && (
+    <div class="recipe-details">
+      <div class="ingredients">
+        <h4>Ingredients</h4>
+        <ul>
+          {recipe.ingredients.map(ingredient => (
+            <li>
+              {ingredient.amount} {ingredient.unit} {ingredient.name}
+              {ingredient.notes && <span class="ingredient-notes">({ingredient.notes})</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="instructions">
+        <h4>Instructions</h4>
+        <ol>
+          {recipe.instructions.map(step => (
+            <li>{step}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  )}
+</article>
+
+<style>
+  .recipe-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .recipe-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .recipe-header {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .recipe-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .time::before {
+    content: '⏱ ';
+  }
+
+  .servings::before {
+    content: '👥 ';
+  }
+
+  .description {
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .nutrition-summary {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: var(--color-bg);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .nutrition-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrition-item .value {
+    font-weight: 600;
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+  }
+
+  .nutrition-item .label {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .tag {
+    background: var(--color-accent);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .recipe-details {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .ingredients,
+  .instructions {
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  ul,
+  ol {
+    margin-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .ingredient-notes {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .nutrition-summary {
+      gap: 1rem;
+    }
+
+    .nutrition-item .value {
+      font-size: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,198 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="How Not To Diet - Weekly Menu Planner">
+  <div class="hero">
+    <h1>Weekly Menu Planner</h1>
+    <p class="subtitle">Evidence-based nutrition planning for optimal health</p>
+  </div>
+
+  <section class="intro">
+    <h2>Welcome to Your Food Science-Based Menu Planner</h2>
+    <p>
+      Plan your weekly meals using principles from evidence-based nutrition science.
+      This tool helps you create balanced, nutritious menus that align with the latest
+      research on healthy eating.
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3><a href="/foods">Food Database</a></h3>
+        <p>Explore 10+ foods with synergies, timing, amounts, and source pages from "How Not to Diet"</p>
+        <ul>
+          <li>Anti-inflammatory foods</li>
+          <li>High fiber & low glycemic</li>
+          <li>Daily Dozen & 21 Tweaks</li>
+          <li>Tagged with chapter names</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3><a href="/combos">Food Synergies</a></h3>
+        <p>Discover powerful food combinations that maximize health benefits</p>
+        <ul>
+          <li>Top triple combos for meals</li>
+          <li>Scientifically-backed pairs</li>
+          <li>Quick meal ideas</li>
+          <li>Synergy score rankings</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3><a href="/planner">Weekly Planner</a></h3>
+        <p>AI-generated weekly meal plan optimizing food synergies</p>
+        <ul>
+          <li>Complete 7-day plan</li>
+          <li>Daily Dozen coverage</li>
+          <li>21 Tweaks integration</li>
+          <li>Shopping list ready</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="data-source">
+    <h2>Data Source</h2>
+    <p><strong>Book:</strong> "The How Not to Diet Cookbook" by Michael Greger, MD</p>
+    <p><strong>Extracted:</strong> 10 foods with complete synergy data, timing recommendations, and source page tracking</p>
+    <p><strong>Coverage:</strong> Anti-inflammatory foods, fiber-rich, low-glycemic, chronobiology principles, Daily Dozen, and 21 Tweaks</p>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--color-border);
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+  }
+
+  .intro {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .intro p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 800px;
+  }
+
+  .features {
+    margin-top: 3rem;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .feature-card h3 {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+
+  .feature-card p {
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card h3 a {
+    color: var(--color-secondary);
+    text-decoration: none;
+  }
+
+  .feature-card h3 a:hover {
+    color: var(--color-accent);
+  }
+
+  .feature-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .feature-card ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .feature-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  .data-source {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .data-source h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .data-source p {
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

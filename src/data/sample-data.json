@@ -1,0 +1,382 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-11-18T10:00:00Z"
+  },
+  "foods": [
+    {
+      "id": "kale-001",
+      "name": "Kale",
+      "description": "Nutrient-dense leafy green with cruciferous benefits",
+      "category": "leafy_greens",
+      "secondaryCategories": ["cruciferous"],
+      "timingRecommendations": ["lunch", "dinner", "anytime"],
+      "servingAmount": {
+        "value": 1,
+        "unit": "cup"
+      },
+      "nutritionalHighlights": [
+        "Vitamin K",
+        "Vitamin A",
+        "Vitamin C",
+        "Calcium",
+        "Iron"
+      ],
+      "evidenceTags": [
+        "anti-cancer",
+        "bone-health",
+        "anti-inflammatory"
+      ],
+      "preparationNotes": "Massage with lemon juice to reduce bitterness and increase digestibility",
+      "isStaple": true,
+      "seasonality": ["fall", "winter", "spring"],
+      "metadata": {
+        "caloriesPerServing": 33,
+        "fiberGrams": 2.6,
+        "proteinGrams": 2.9
+      }
+    },
+    {
+      "id": "blueberries-001",
+      "name": "Blueberries",
+      "description": "Antioxidant-rich berries with cognitive benefits",
+      "category": "berries",
+      "timingRecommendations": ["morning", "anytime"],
+      "servingAmount": {
+        "value": 1,
+        "unit": "cup"
+      },
+      "nutritionalHighlights": [
+        "Anthocyanins",
+        "Vitamin C",
+        "Manganese",
+        "Fiber"
+      ],
+      "evidenceTags": [
+        "brain-health",
+        "antioxidant",
+        "anti-aging",
+        "heart-health"
+      ],
+      "isStaple": true,
+      "seasonality": ["summer"],
+      "metadata": {
+        "caloriesPerServing": 84,
+        "fiberGrams": 3.6,
+        "proteinGrams": 1.1
+      }
+    },
+    {
+      "id": "black-beans-001",
+      "name": "Black Beans",
+      "description": "Protein and fiber-rich legume",
+      "category": "legumes",
+      "timingRecommendations": ["lunch", "dinner"],
+      "servingAmount": {
+        "value": 0.5,
+        "unit": "cup"
+      },
+      "nutritionalHighlights": [
+        "Protein",
+        "Fiber",
+        "Iron",
+        "Folate",
+        "Magnesium"
+      ],
+      "evidenceTags": [
+        "heart-health",
+        "blood-sugar-control",
+        "satiety",
+        "longevity"
+      ],
+      "preparationNotes": "Soak dried beans overnight, or use BPA-free canned",
+      "isStaple": true,
+      "metadata": {
+        "caloriesPerServing": 114,
+        "fiberGrams": 7.5,
+        "proteinGrams": 7.6
+      }
+    },
+    {
+      "id": "turmeric-001",
+      "name": "Turmeric",
+      "description": "Golden spice with powerful anti-inflammatory properties",
+      "category": "herbs_spices",
+      "timingRecommendations": ["anytime"],
+      "servingAmount": {
+        "value": 0.25,
+        "unit": "tsp"
+      },
+      "nutritionalHighlights": [
+        "Curcumin"
+      ],
+      "evidenceTags": [
+        "anti-inflammatory",
+        "antioxidant",
+        "brain-health",
+        "pain-relief"
+      ],
+      "preparationNotes": "Activate with black pepper (piperine) and heat or fat",
+      "isStaple": true,
+      "metadata": {
+        "caloriesPerServing": 8
+      }
+    },
+    {
+      "id": "black-pepper-001",
+      "name": "Black Pepper",
+      "description": "Piperine-rich spice that enhances nutrient absorption",
+      "category": "herbs_spices",
+      "timingRecommendations": ["anytime"],
+      "servingAmount": {
+        "value": 0.125,
+        "unit": "tsp"
+      },
+      "nutritionalHighlights": [
+        "Piperine"
+      ],
+      "evidenceTags": [
+        "bioavailability-enhancer",
+        "digestive-aid"
+      ],
+      "preparationNotes": "Freshly ground for maximum piperine content",
+      "isStaple": true
+    },
+    {
+      "id": "lemon-001",
+      "name": "Lemon",
+      "description": "Citrus fruit rich in vitamin C",
+      "category": "other_fruits",
+      "timingRecommendations": ["morning", "anytime"],
+      "servingAmount": {
+        "value": 0.5,
+        "unit": "piece"
+      },
+      "nutritionalHighlights": [
+        "Vitamin C",
+        "Flavonoids",
+        "Citric Acid"
+      ],
+      "evidenceTags": [
+        "immune-support",
+        "alkalizing",
+        "digestive-aid",
+        "iron-absorption-enhancer"
+      ],
+      "seasonality": ["winter", "spring"],
+      "metadata": {
+        "caloriesPerServing": 12,
+        "fiberGrams": 0.9
+      }
+    },
+    {
+      "id": "broccoli-001",
+      "name": "Broccoli",
+      "description": "Cruciferous powerhouse with sulforaphane",
+      "category": "cruciferous",
+      "timingRecommendations": ["lunch", "dinner", "anytime"],
+      "servingAmount": {
+        "value": 1,
+        "unit": "cup"
+      },
+      "nutritionalHighlights": [
+        "Sulforaphane",
+        "Vitamin C",
+        "Vitamin K",
+        "Fiber",
+        "Folate"
+      ],
+      "evidenceTags": [
+        "anti-cancer",
+        "anti-inflammatory",
+        "detoxification",
+        "heart-health"
+      ],
+      "preparationNotes": "Chop and wait 40 minutes before cooking to maximize sulforaphane",
+      "isStaple": true,
+      "seasonality": ["fall", "winter", "spring"],
+      "metadata": {
+        "caloriesPerServing": 55,
+        "fiberGrams": 5.1,
+        "proteinGrams": 3.7
+      }
+    },
+    {
+      "id": "garlic-001",
+      "name": "Garlic",
+      "description": "Allium family member with potent health benefits",
+      "category": "alliums",
+      "timingRecommendations": ["anytime"],
+      "servingAmount": {
+        "value": 1,
+        "unit": "piece"
+      },
+      "nutritionalHighlights": [
+        "Allicin",
+        "Sulfur compounds"
+      ],
+      "evidenceTags": [
+        "anti-cancer",
+        "cardiovascular-health",
+        "immune-support",
+        "antimicrobial"
+      ],
+      "preparationNotes": "Crush and wait 10 minutes before cooking to activate allicin",
+      "isStaple": true,
+      "metadata": {
+        "caloriesPerServing": 4
+      }
+    },
+    {
+      "id": "quinoa-001",
+      "name": "Quinoa",
+      "description": "Complete protein grain with all essential amino acids",
+      "category": "whole_grains",
+      "timingRecommendations": ["lunch", "dinner", "post_workout"],
+      "servingAmount": {
+        "value": 0.5,
+        "unit": "cup"
+      },
+      "nutritionalHighlights": [
+        "Complete Protein",
+        "Fiber",
+        "Iron",
+        "Magnesium",
+        "B Vitamins"
+      ],
+      "evidenceTags": [
+        "protein-source",
+        "satiety",
+        "blood-sugar-control"
+      ],
+      "preparationNotes": "Rinse thoroughly to remove saponins",
+      "isStaple": true,
+      "metadata": {
+        "caloriesPerServing": 111,
+        "fiberGrams": 2.6,
+        "proteinGrams": 4.1
+      }
+    },
+    {
+      "id": "walnuts-001",
+      "name": "Walnuts",
+      "description": "Omega-3 rich nuts with brain health benefits",
+      "category": "nuts_seeds",
+      "timingRecommendations": ["morning", "anytime"],
+      "servingAmount": {
+        "value": 0.25,
+        "unit": "cup"
+      },
+      "nutritionalHighlights": [
+        "Omega-3 ALA",
+        "Antioxidants",
+        "Vitamin E",
+        "Magnesium"
+      ],
+      "evidenceTags": [
+        "brain-health",
+        "heart-health",
+        "anti-inflammatory"
+      ],
+      "isStaple": true,
+      "seasonality": ["fall"],
+      "metadata": {
+        "caloriesPerServing": 164,
+        "fiberGrams": 1.6,
+        "proteinGrams": 3.8
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-001",
+      "fromFoodId": "kale-001",
+      "toFoodId": "lemon-001",
+      "type": "synergy",
+      "score": 80,
+      "rationale": "Vitamin C from lemon significantly increases non-heme iron absorption from kale by up to 6x",
+      "evidenceStrength": 5,
+      "sources": [
+        "American Journal of Clinical Nutrition",
+        "How Not to Die - Dr. Michael Greger"
+      ],
+      "isBidirectional": false
+    },
+    {
+      "id": "rel-002",
+      "fromFoodId": "turmeric-001",
+      "toFoodId": "black-pepper-001",
+      "type": "synergy",
+      "score": 95,
+      "rationale": "Piperine in black pepper increases curcumin bioavailability by 2000%",
+      "evidenceStrength": 5,
+      "sources": [
+        "Planta Medica 1998 - Shoba et al."
+      ],
+      "notes": "This is one of the most dramatic food synergies documented",
+      "isBidirectional": false
+    },
+    {
+      "id": "rel-003",
+      "fromFoodId": "black-beans-001",
+      "toFoodId": "lemon-001",
+      "type": "synergy",
+      "score": 75,
+      "rationale": "Vitamin C enhances iron absorption from beans, critical for plant-based diets",
+      "evidenceStrength": 5,
+      "sources": [
+        "British Journal of Nutrition"
+      ],
+      "isBidirectional": false
+    },
+    {
+      "id": "rel-004",
+      "fromFoodId": "broccoli-001",
+      "toFoodId": "garlic-001",
+      "type": "synergy",
+      "score": 65,
+      "rationale": "Allicin from garlic enhances sulforaphane production in broccoli",
+      "evidenceStrength": 4,
+      "sources": [
+        "Journal of Agricultural and Food Chemistry"
+      ],
+      "isBidirectional": true
+    },
+    {
+      "id": "rel-005",
+      "fromFoodId": "blueberries-001",
+      "toFoodId": "walnuts-001",
+      "type": "synergy",
+      "score": 55,
+      "rationale": "Combined polyphenols and omega-3s provide synergistic brain protection",
+      "evidenceStrength": 4,
+      "sources": [
+        "Nutritional Neuroscience"
+      ],
+      "isBidirectional": true
+    },
+    {
+      "id": "rel-006",
+      "fromFoodId": "quinoa-001",
+      "toFoodId": "black-beans-001",
+      "type": "synergy",
+      "score": 60,
+      "rationale": "Complementary amino acid profiles create more complete protein",
+      "evidenceStrength": 5,
+      "sources": [
+        "Journal of Nutrition"
+      ],
+      "isBidirectional": true
+    },
+    {
+      "id": "rel-007",
+      "fromFoodId": "kale-001",
+      "toFoodId": "turmeric-001",
+      "type": "synergy",
+      "score": 50,
+      "rationale": "Complementary anti-inflammatory compounds work through different pathways",
+      "evidenceStrength": 3,
+      "isBidirectional": true
+    }
+  ]
+}

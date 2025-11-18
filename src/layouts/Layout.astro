@@ -1,0 +1,152 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Weekly menu planner based on food science principles' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header>
+        <nav>
+          <a href="/" class="logo">How Not To Diet - Menu Planner</a>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/planner">Weekly Planner</a></li>
+            <li><a href="/menu-builder">Menu Builder</a></li>
+            <li><a href="/recipes">Recipes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer>
+        <p>&copy; {new Date().getFullYear()} How Not To Diet Menu Planner</p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style>
+  :root {
+    --color-primary: #2d5016;
+    --color-secondary: #5a8c2f;
+    --color-accent: #8bc34a;
+    --color-bg: #fafafa;
+    --color-text: #333;
+    --color-border: #e0e0e0;
+    --max-width: 1200px;
+    --spacing: 1rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--color-accent);
+  }
+
+  main {
+    flex: 1;
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      gap: 1rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+  }
+</style>

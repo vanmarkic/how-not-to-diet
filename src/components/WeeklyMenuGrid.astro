@@ -1,0 +1,413 @@
+---
+/**
+ * WeeklyMenuGrid Component
+ *
+ * Displays a 7-day weekly menu grid with meal slots for each day.
+ * Organizes meals by day (columns) and meal type (rows).
+ */
+
+import MealSlot from './MealSlot.astro';
+import type { Food } from '@utils/suggestions';
+import type { MealType } from './MealSlot.astro';
+
+export interface DayMeals {
+  day: string;
+  meals: {
+    [K in MealType]?: {
+      foods: Food[];
+      synergyScore?: number;
+    };
+  };
+  totalScore?: number;
+}
+
+interface Props {
+  weeklyData: DayMeals[];
+  showSnacks?: boolean;
+}
+
+const { weeklyData, showSnacks = true } = Astro.props;
+
+const weekDays = [
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday',
+  'sunday'
+];
+
+const mealTypes: MealType[] = showSnacks
+  ? ['breakfast', 'lunch', 'dinner', 'snack']
+  : ['breakfast', 'lunch', 'dinner'];
+
+/**
+ * Get meals for a specific day
+ */
+function getDayMeals(day: string): DayMeals {
+  return weeklyData.find(d => d.day.toLowerCase() === day.toLowerCase()) || {
+    day,
+    meals: {}
+  };
+}
+
+/**
+ * Capitalize first letter
+ */
+function capitalize(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+/**
+ * Get day abbreviation
+ */
+function getDayAbbr(day: string): string {
+  return day.substring(0, 3).toUpperCase();
+}
+---
+
+<section class="weekly-menu-grid">
+  <div class="grid-header">
+    <h2>Weekly Menu</h2>
+    <div class="grid-actions">
+      <button class="action-btn" id="clear-menu-btn">Clear All</button>
+      <button class="action-btn primary" id="save-menu-btn">Save Menu</button>
+      <button class="action-btn primary" id="export-menu-btn">Export</button>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <!-- Day headers -->
+    <div class="day-headers">
+      <div class="meal-labels-column">
+        <div class="corner-cell"></div>
+      </div>
+      {weekDays.map((day) => {
+        const dayData = getDayMeals(day);
+        return (
+          <div class="day-header">
+            <div class="day-name">
+              <span class="day-full">{capitalize(day)}</span>
+              <span class="day-abbr">{getDayAbbr(day)}</span>
+            </div>
+            {dayData.totalScore !== undefined && dayData.totalScore > 0 && (
+              <div class="day-score">
+                <span class="score-icon">⭐</span>
+                <span class="score-value">{dayData.totalScore}</span>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Meal rows -->
+    <div class="meals-grid">
+      {mealTypes.map((mealType) => (
+        <div class="meal-row" data-meal-type={mealType}>
+          <!-- Meal type label -->
+          <div class="meal-label-cell">
+            <span class="meal-label">{capitalize(mealType)}</span>
+          </div>
+
+          <!-- Meal slots for each day -->
+          {weekDays.map((day) => {
+            const dayData = getDayMeals(day);
+            const mealData = dayData.meals[mealType];
+            return (
+              <div class="meal-cell">
+                <MealSlot
+                  day={day}
+                  mealType={mealType}
+                  foods={mealData?.foods || []}
+                  synergyScore={mealData?.synergyScore}
+                  isEmpty={!mealData || mealData.foods.length === 0}
+                />
+              </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Grid legend -->
+  <div class="grid-legend">
+    <h4>Synergy Score Guide:</h4>
+    <div class="legend-items">
+      <div class="legend-item">
+        <span class="legend-badge excellent">10+</span>
+        <span>Excellent</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-badge great">6-9</span>
+        <span>Great</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-badge good">3-5</span>
+        <span>Good</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-badge neutral">0-2</span>
+        <span>Neutral</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .weekly-menu-grid {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .grid-header h2 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .grid-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .action-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid var(--color-border);
+    background: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--color-text);
+  }
+
+  .action-btn:hover {
+    border-color: var(--color-accent);
+    background: var(--color-bg);
+  }
+
+  .action-btn.primary {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: white;
+  }
+
+  .action-btn.primary:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .grid-container {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Day headers */
+  .day-headers {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    min-width: 900px;
+  }
+
+  .corner-cell {
+    height: 60px;
+  }
+
+  .day-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .day-name {
+    text-align: center;
+  }
+
+  .day-full {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .day-abbr {
+    display: none;
+  }
+
+  .day-score {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+
+  .score-icon {
+    font-size: 0.9rem;
+  }
+
+  /* Meals grid */
+  .meals-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 900px;
+  }
+
+  .meal-row {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);
+    gap: 0.5rem;
+  }
+
+  .meal-label-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .meal-cell {
+    min-height: 120px;
+  }
+
+  /* Grid legend */
+  .grid-legend {
+    padding: 1rem;
+    background: var(--color-bg);
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+
+  .grid-legend h4 {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .legend-badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+
+  .legend-badge.excellent {
+    background: #4caf50;
+    color: white;
+  }
+
+  .legend-badge.great {
+    background: #8bc34a;
+    color: white;
+  }
+
+  .legend-badge.good {
+    background: #cddc39;
+    color: #333;
+  }
+
+  .legend-badge.neutral {
+    background: var(--color-border);
+    color: #666;
+  }
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .day-full {
+      display: none;
+    }
+
+    .day-abbr {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .grid-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .grid-actions {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .weekly-menu-grid {
+      padding: 1rem;
+    }
+
+    .grid-header h2 {
+      font-size: 1.4rem;
+    }
+
+    .action-btn {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .day-headers,
+    .meal-row {
+      grid-template-columns: 80px repeat(7, 1fr);
+      min-width: 750px;
+    }
+
+    .meal-label-cell {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+
+    .grid-legend {
+      padding: 0.75rem;
+    }
+
+    .legend-items {
+      gap: 0.75rem;
+    }
+  }
+</style>

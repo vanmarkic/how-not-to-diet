@@ -1,0 +1,141 @@
+[
+  {
+    "id": "sample-breakfast-1",
+    "name": "Berry Oatmeal Bowl",
+    "description": "A nutrient-dense breakfast featuring whole grain oats, mixed berries, and nuts",
+    "servings": 1,
+    "prepTime": 5,
+    "cookTime": 10,
+    "ingredients": [
+      {
+        "name": "Rolled oats",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Water",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Mixed berries",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Walnuts",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped"
+      },
+      {
+        "name": "Ground flaxseed",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "Bring water to a boil in a small pot",
+      "Add oats and reduce heat to medium-low",
+      "Cook for 5-7 minutes, stirring occasionally",
+      "Remove from heat and let stand for 2 minutes",
+      "Top with berries, walnuts, flaxseed, and cinnamon",
+      "Serve warm"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 10,
+      "carbohydrates": 45,
+      "fat": 12,
+      "fiber": 10,
+      "sodium": 5
+    },
+    "tags": ["breakfast", "whole-grain", "berries", "quick", "plant-based"],
+    "category": "breakfast"
+  },
+  {
+    "id": "sample-lunch-1",
+    "name": "Mediterranean Chickpea Salad",
+    "description": "A refreshing salad packed with fiber, protein, and healthy vegetables",
+    "servings": 2,
+    "prepTime": 15,
+    "cookTime": 0,
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "amount": 1.5,
+        "unit": "cup",
+        "notes": "cooked or canned, drained"
+      },
+      {
+        "name": "Cherry tomatoes",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "halved"
+      },
+      {
+        "name": "Cucumber",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "diced"
+      },
+      {
+        "name": "Red onion",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "finely chopped"
+      },
+      {
+        "name": "Kalamata olives",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "pitted and halved"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "chopped"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 1,
+        "unit": "clove",
+        "notes": "minced"
+      }
+    ],
+    "instructions": [
+      "In a large bowl, combine chickpeas, tomatoes, cucumber, onion, olives, and parsley",
+      "In a small bowl, whisk together lemon juice, olive oil, and garlic",
+      "Pour dressing over salad and toss to combine",
+      "Season with salt and pepper to taste",
+      "Let sit for 10 minutes for flavors to meld",
+      "Serve chilled or at room temperature"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 9,
+      "carbohydrates": 32,
+      "fat": 14,
+      "fiber": 9,
+      "sodium": 320
+    },
+    "tags": ["lunch", "salad", "mediterranean", "no-cook", "plant-based", "high-fiber"],
+    "category": "lunch"
+  }
+]

@@ -1,0 +1,433 @@
+---
+import Layout from '@layouts/Layout.astro';
+import SynergyScore from '@components/SynergyScore.astro';
+import { loadRecipes, loadFoods } from '@utils/dataLoader';
+import { analyzeDaySynergies, analyzeMealSynergies } from '@utils/synergyEngine';
+
+const recipes = await loadRecipes();
+const foods = await loadFoods();
+
+// Example day with both sample recipes
+const breakfast = recipes.find(r => r.category === 'breakfast');
+const lunch = recipes.find(r => r.category === 'lunch');
+
+let dayAnalysis = null;
+let breakfastAnalysis = null;
+let lunchAnalysis = null;
+
+if (breakfast && lunch) {
+  dayAnalysis = await analyzeDaySynergies(breakfast, lunch);
+  breakfastAnalysis = await analyzeMealSynergies(breakfast);
+  lunchAnalysis = await analyzeMealSynergies(lunch);
+}
+---
+
+<Layout title="Weekly Menu Planner - Food Synergies">
+  <main>
+    <div class="container">
+      <h1>Weekly Menu Planner with Food Synergies</h1>
+
+      <section class="intro">
+        <p>
+          Plan your weekly meals based on food synergies from "The How Not to Diet Cookbook".
+          This system analyzes combinations of foods for optimal health benefits, timing, and
+          nutritional balance based on Dr. Greger's Daily Dozen and 21 Tweaks.
+        </p>
+      </section>
+
+      {dayAnalysis && (
+        <section class="analysis-section">
+          <h2>Today's Menu Analysis</h2>
+          <SynergyScore score={dayAnalysis.totalScore} maxScore={150} />
+
+          <div class="foods-included">
+            <h3>Foods Included Today</h3>
+            <div class="food-tags">
+              {dayAnalysis.foodsIncluded.map(food => (
+                <span class="food-tag">{food}</span>
+              ))}
+            </div>
+          </div>
+
+          {dayAnalysis.synergyPairs.length > 0 && (
+            <div class="synergy-pairs">
+              <h3>Food Synergies Detected</h3>
+              {dayAnalysis.synergyPairs.slice(0, 5).map(pair => (
+                <div class="synergy-pair">
+                  <div class="pair-header">
+                    <strong>{pair.food1}</strong> + <strong>{pair.food2}</strong>
+                    <span class="pair-score">+{pair.score}</span>
+                  </div>
+                  <ul class="pair-reasons">
+                    {pair.reasons.map(reason => (
+                      <li>{reason}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div class="category-balance">
+            <h3>Category Balance</h3>
+            <div class="categories-grid">
+              {Object.entries(dayAnalysis.categoryBalance).map(([category, count]) => (
+                <div class="category-item">
+                  <span class="category-name">{category.replace(/-/g, ' ')}</span>
+                  <span class="category-count">{count}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {dayAnalysis.recommendations.length > 0 && (
+            <div class="recommendations">
+              <h3>Recommendations</h3>
+              <ul>
+                {dayAnalysis.recommendations.map(rec => (
+                  <li>{rec}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </section>
+      )}
+
+      <section class="meals-section">
+        <h2>Meal Details</h2>
+
+        {breakfast && breakfastAnalysis && (
+          <div class="meal-card">
+            <h3>{breakfast.name}</h3>
+            <p class="meal-time">Breakfast</p>
+            <p>{breakfast.description}</p>
+            <SynergyScore score={breakfastAnalysis.totalScore} maxScore={50} />
+            <div class="meal-foods">
+              <strong>Power foods:</strong>
+              {breakfastAnalysis.foodsIncluded.map((food, idx) => (
+                <span>
+                  {food}{idx < breakfastAnalysis.foodsIncluded.length - 1 ? ', ' : ''}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {lunch && lunchAnalysis && (
+          <div class="meal-card">
+            <h3>{lunch.name}</h3>
+            <p class="meal-time">Lunch</p>
+            <p>{lunch.description}</p>
+            <SynergyScore score={lunchAnalysis.totalScore} maxScore={50} />
+            <div class="meal-foods">
+              <strong>Power foods:</strong>
+              {lunchAnalysis.foodsIncluded.map((food, idx) => (
+                <span>
+                  {food}{idx < lunchAnalysis.foodsIncluded.length - 1 ? ', ' : ''}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
+
+      <section class="food-database">
+        <h2>Food Database ({foods.length} foods)</h2>
+        <p class="food-db-description">
+          These foods have been extracted from "The How Not to Diet Cookbook" with their
+          properties, synergies, and optimal timing.
+        </p>
+        <div class="foods-grid">
+          {foods.map(food => (
+            <div class="food-card">
+              <h4>{food.name}</h4>
+              <div class="food-categories">
+                {food.categories.slice(0, 3).map(cat => (
+                  <span class="category-badge">{cat.replace(/-/g, ' ')}</span>
+                ))}
+              </div>
+              <p class="food-amount">{food.amount}</p>
+              {food.synergies.length > 0 && (
+                <div class="food-synergies">
+                  <strong>Synergizes with:</strong> {food.synergies.slice(0, 3).join(', ')}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    color: var(--color-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    background: #f0fdf4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-primary);
+    margin-bottom: 2rem;
+  }
+
+  .intro p {
+    margin: 0;
+    color: #065f46;
+    line-height: 1.6;
+  }
+
+  .analysis-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .foods-included {
+    margin-top: 2rem;
+  }
+
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .food-tag {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.375rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .synergy-pairs {
+    margin-top: 2rem;
+  }
+
+  .synergy-pair {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--color-accent);
+  }
+
+  .pair-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .pair-score {
+    background: var(--color-accent);
+    color: white;
+    padding: 0.25rem 0.625rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .pair-reasons {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #4b5563;
+  }
+
+  .pair-reasons li {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .category-balance {
+    margin-top: 2rem;
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .category-item {
+    background: #f3f4f6;
+    padding: 0.75rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .category-name {
+    font-size: 0.875rem;
+    color: #374151;
+    text-transform: capitalize;
+  }
+
+  .category-count {
+    background: var(--color-primary);
+    color: white;
+    padding: 0.125rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .recommendations {
+    margin-top: 2rem;
+    background: #fffbeb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+  }
+
+  .recommendations h3 {
+    margin-top: 0;
+    color: #92400e;
+  }
+
+  .recommendations ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #78350f;
+  }
+
+  .recommendations li {
+    margin-bottom: 0.5rem;
+  }
+
+  .meals-section {
+    margin-top: 2rem;
+  }
+
+  .meal-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+
+  .meal-card h3 {
+    margin-top: 0;
+    color: var(--color-primary);
+  }
+
+  .meal-time {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .meal-foods {
+    margin-top: 1rem;
+    color: #374151;
+    font-size: 0.875rem;
+  }
+
+  .food-database {
+    margin-top: 3rem;
+  }
+
+  .food-db-description {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .foods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .food-card {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .food-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .food-card h4 {
+    margin-top: 0;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+  }
+
+  .food-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .category-badge {
+    background: #e0f2fe;
+    color: #075985;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+  }
+
+  .food-amount {
+    color: #059669;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+  }
+
+  .food-synergies {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+  }
+
+  .food-synergies strong {
+    color: #374151;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .foods-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

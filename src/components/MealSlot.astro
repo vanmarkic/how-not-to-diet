@@ -1,0 +1,326 @@
+---
+/**
+ * MealSlot Component
+ *
+ * Represents a single meal slot in the weekly menu grid.
+ * Supports displaying foods, adding new foods, and showing synergy indicators.
+ */
+
+import type { Food } from '@utils/suggestions';
+
+export type MealType = 'breakfast' | 'lunch' | 'dinner' | 'snack';
+
+interface Props {
+  day: string;
+  mealType: MealType;
+  foods?: Food[];
+  synergyScore?: number;
+  isEmpty?: boolean;
+}
+
+const { day, mealType, foods = [], synergyScore, isEmpty = foods.length === 0 } = Astro.props;
+
+/**
+ * Get color class based on synergy score
+ */
+function getSynergyColor(score?: number): string {
+  if (!score || score === 0) return 'synergy-neutral';
+  if (score >= 10) return 'synergy-excellent';
+  if (score >= 6) return 'synergy-great';
+  if (score >= 3) return 'synergy-good';
+  if (score > 0) return 'synergy-ok';
+  return 'synergy-poor';
+}
+
+/**
+ * Get meal type icon
+ */
+function getMealIcon(type: MealType): string {
+  const icons: Record<MealType, string> = {
+    breakfast: '🌅',
+    lunch: '☀️',
+    dinner: '🌙',
+    snack: '🍎'
+  };
+  return icons[type] || '🍽️';
+}
+
+/**
+ * Capitalize first letter
+ */
+function capitalize(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+const slotId = `${day}-${mealType}`;
+---
+
+<div
+  class="meal-slot"
+  data-day={day}
+  data-meal={mealType}
+  data-slot-id={slotId}
+  data-empty={isEmpty}
+>
+  <div class="slot-header">
+    <span class="meal-icon" aria-hidden="true">{getMealIcon(mealType)}</span>
+    <h4 class="meal-label">{capitalize(mealType)}</h4>
+    {synergyScore !== undefined && synergyScore > 0 && (
+      <div class={`synergy-indicator ${getSynergyColor(synergyScore)}`}>
+        <span class="synergy-value">+{synergyScore}</span>
+      </div>
+    )}
+  </div>
+
+  <div class="slot-content">
+    {isEmpty ? (
+      <button
+        class="add-food-trigger"
+        data-slot-id={slotId}
+        aria-label={`Add food to ${capitalize(mealType)} on ${capitalize(day)}`}
+      >
+        <span class="add-icon">+</span>
+        <span class="add-text">Add Food</span>
+      </button>
+    ) : (
+      <div class="foods-list">
+        {foods.map((food) => (
+          <div class="food-item" data-food-id={food.id}>
+            <span class="food-name">{food.name}</span>
+            <button
+              class="remove-food-btn"
+              data-food-id={food.id}
+              data-slot-id={slotId}
+              aria-label={`Remove ${food.name}`}
+            >
+              ×
+            </button>
+          </div>
+        ))}
+        <button
+          class="add-more-btn"
+          data-slot-id={slotId}
+          aria-label={`Add another food to ${capitalize(mealType)}`}
+        >
+          + Add More
+        </button>
+      </div>
+    )}
+  </div>
+</div>
+
+<style>
+  .meal-slot {
+    background: white;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.75rem;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .meal-slot:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 8px rgba(139, 195, 74, 0.15);
+  }
+
+  .meal-slot[data-empty="false"] {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fef5 100%);
+  }
+
+  /* Drag and drop states */
+  .meal-slot.drag-over {
+    border-color: var(--color-secondary);
+    background: rgba(139, 195, 74, 0.1);
+    border-style: dashed;
+  }
+
+  .slot-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .meal-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .meal-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    flex: 1;
+  }
+
+  .synergy-indicator {
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .synergy-excellent {
+    background: #4caf50;
+    color: white;
+  }
+
+  .synergy-great {
+    background: #8bc34a;
+    color: white;
+  }
+
+  .synergy-good {
+    background: #cddc39;
+    color: #333;
+  }
+
+  .synergy-ok {
+    background: #ffeb3b;
+    color: #333;
+  }
+
+  .synergy-neutral {
+    background: var(--color-bg);
+    color: #666;
+  }
+
+  .synergy-poor {
+    background: #ff9800;
+    color: white;
+  }
+
+  .slot-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Empty state */
+  .add-food-trigger {
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    border: 2px dashed var(--color-border);
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    transition: all 0.2s;
+    color: #999;
+  }
+
+  .add-food-trigger:hover {
+    border-color: var(--color-accent);
+    background: rgba(139, 195, 74, 0.05);
+    color: var(--color-secondary);
+  }
+
+  .add-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  .add-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  /* Foods list */
+  .foods-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .food-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+  .food-item:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 1px 4px rgba(139, 195, 74, 0.2);
+  }
+
+  .food-name {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .remove-food-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .remove-food-btn:hover {
+    background: #d84315;
+    transform: scale(1.1);
+  }
+
+  .add-more-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background: transparent;
+    border: 1px dashed var(--color-border);
+    border-radius: 6px;
+    color: var(--color-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .add-more-btn:hover {
+    border-color: var(--color-accent);
+    background: rgba(139, 195, 74, 0.05);
+  }
+
+  @media (max-width: 768px) {
+    .meal-slot {
+      min-height: 100px;
+    }
+
+    .meal-label {
+      font-size: 0.85rem;
+    }
+
+    .food-name {
+      font-size: 0.85rem;
+    }
+  }
+</style>

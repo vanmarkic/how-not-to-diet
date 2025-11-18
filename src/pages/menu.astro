@@ -1,0 +1,244 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { loadWeeklyMenus } from '@utils/dataLoader';
+import { capitalize } from '@utils/helpers';
+
+const weeklyMenus = await loadWeeklyMenus();
+const currentMenu = weeklyMenus[0]; // Get the first menu as example
+---
+
+<Layout title="Weekly Menu - How Not To Diet Menu Planner">
+  <div class="menu-page">
+    <header class="page-header">
+      <h1>Weekly Menu Plan</h1>
+      <p>Your science-based meal plan for the week</p>
+    </header>
+
+    {currentMenu ? (
+      <div class="weekly-menu">
+        <div class="menu-info">
+          <h2>{currentMenu.name}</h2>
+          <p class="menu-meta">Week {currentMenu.week}, {currentMenu.year}</p>
+        </div>
+
+        <div class="days-grid">
+          {currentMenu.days.map(dayMenu => (
+            <div class="day-card">
+              <h3 class="day-name">{capitalize(dayMenu.day)}</h3>
+
+              <div class="meals">
+                <div class="meal-slot">
+                  <h4>Breakfast</h4>
+                  {dayMenu.breakfast ? (
+                    <p class="recipe-name">{dayMenu.breakfast.name}</p>
+                  ) : (
+                    <p class="empty">Not planned</p>
+                  )}
+                </div>
+
+                <div class="meal-slot">
+                  <h4>Lunch</h4>
+                  {dayMenu.lunch ? (
+                    <p class="recipe-name">{dayMenu.lunch.name}</p>
+                  ) : (
+                    <p class="empty">Not planned</p>
+                  )}
+                </div>
+
+                <div class="meal-slot">
+                  <h4>Dinner</h4>
+                  {dayMenu.dinner ? (
+                    <p class="recipe-name">{dayMenu.dinner.name}</p>
+                  ) : (
+                    <p class="empty">Not planned</p>
+                  )}
+                </div>
+
+                {dayMenu.snacks && dayMenu.snacks.length > 0 && (
+                  <div class="meal-slot">
+                    <h4>Snacks</h4>
+                    {dayMenu.snacks.map(snack => (
+                      <p class="recipe-name">{snack.name}</p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="menu-actions">
+          <button class="btn btn-primary">Generate Shopping List</button>
+          <button class="btn btn-secondary">Print Menu</button>
+        </div>
+      </div>
+    ) : (
+      <div class="empty-state">
+        <p>No menu plan available yet.</p>
+        <p>Start by adding meals to your data/weekly-menus.json file.</p>
+      </div>
+    )}
+  </div>
+</Layout>
+
+<style>
+  .menu-page {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+  }
+
+  .weekly-menu {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .menu-info h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-meta {
+    color: #666;
+    font-size: 1rem;
+  }
+
+  .days-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: 2rem;
+  }
+
+  .day-card {
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .day-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .day-name {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .meals {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .meal-slot h4 {
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+  }
+
+  .recipe-name {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .empty {
+    color: #999;
+    font-style: italic;
+  }
+
+  .menu-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 2rem;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-primary {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .btn-secondary {
+    background: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .empty-state p {
+    color: #666;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .days-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .menu-actions {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+</style>

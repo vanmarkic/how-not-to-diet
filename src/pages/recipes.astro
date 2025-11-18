@@ -1,0 +1,78 @@
+---
+import Layout from '@layouts/Layout.astro';
+import RecipeCard from '@components/RecipeCard.astro';
+import { loadRecipes } from '@utils/dataLoader';
+
+const recipes = await loadRecipes();
+---
+
+<Layout title="Recipes - How Not To Diet Menu Planner">
+  <div class="recipes-page">
+    <header class="page-header">
+      <h1>Recipe Collection</h1>
+      <p>Evidence-based recipes for optimal health</p>
+    </header>
+
+    <div class="recipes-grid">
+      {recipes.map(recipe => (
+        <RecipeCard recipe={recipe} showFullDetails={true} />
+      ))}
+    </div>
+
+    {recipes.length === 0 && (
+      <div class="empty-state">
+        <p>No recipes found. Add recipes to the data/recipes.json file.</p>
+      </div>
+    )}
+  </div>
+</Layout>
+
+<style>
+  .recipes-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+  }
+
+  .recipes-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .empty-state p {
+    color: #666;
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: 768px) {
+    .recipes-grid {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+  }
+</style>

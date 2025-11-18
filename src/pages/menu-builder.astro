@@ -1,0 +1,610 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { loadRecipes, loadFoods } from '@utils/dataLoader';
+import {
+  checkDailyDozenCompliance,
+  suggestFoodsToAdd,
+  findComplementaryRecipes
+} from '@utils/menuGenerator';
+import { analyzeDaySynergies } from '@utils/synergyEngine';
+
+const recipes = await loadRecipes();
+const foods = await loadFoods();
+
+// Get sample recipes for demonstration
+const breakfast = recipes.find(r => r.category === 'breakfast');
+const lunch = recipes.find(r => r.category === 'lunch');
+
+let compliance = null;
+let suggestions = null;
+let complementary = null;
+
+if (breakfast && lunch) {
+  compliance = await checkDailyDozenCompliance(breakfast, lunch);
+
+  // Get food suggestions for breakfast
+  const breakfastFoods = breakfast.ingredients.map(i => i.name);
+  const foodSuggestions = await suggestFoodsToAdd(
+    foods.filter(f => breakfastFoods.some(bf =>
+      f.name.toLowerCase().includes(bf.toLowerCase()) ||
+      bf.toLowerCase().includes(f.name.toLowerCase())
+    )).map(f => f.name),
+    'breakfast'
+  );
+  suggestions = foodSuggestions;
+
+  // Find complementary recipes for lunch
+  complementary = await findComplementaryRecipes(lunch, recipes);
+}
+---
+
+<Layout title="Menu Builder - Food Synergies">
+  <main>
+    <div class="container">
+      <h1>Interactive Menu Builder</h1>
+
+      <section class="intro">
+        <p>
+          Build your weekly menu with real-time food synergy analysis. This tool helps you
+          combine foods based on Dr. Greger's Daily Dozen and proven synergistic combinations.
+        </p>
+      </section>
+
+      <div class="builder-grid">
+        <!-- Left Column: Current Menu -->
+        <div class="current-menu">
+          <h2>Today's Menu</h2>
+
+          {breakfast && (
+            <div class="meal-builder-card">
+              <div class="meal-header">
+                <h3>Breakfast</h3>
+                <span class="meal-time">7:00 AM - 9:00 AM</span>
+              </div>
+              <h4>{breakfast.name}</h4>
+              <ul class="ingredient-list">
+                {breakfast.ingredients.map(ing => (
+                  <li>{ing.amount} {ing.unit} {ing.name}</li>
+                ))}
+              </ul>
+              <div class="meal-meta">
+                <span>Prep: {breakfast.prepTime} min</span>
+                <span>Cook: {breakfast.cookTime} min</span>
+              </div>
+            </div>
+          )}
+
+          {lunch && (
+            <div class="meal-builder-card">
+              <div class="meal-header">
+                <h3>Lunch</h3>
+                <span class="meal-time">12:00 PM - 1:00 PM</span>
+              </div>
+              <h4>{lunch.name}</h4>
+              <ul class="ingredient-list">
+                {lunch.ingredients.map(ing => (
+                  <li>{ing.amount} {ing.unit} {ing.name}</li>
+                ))}
+              </ul>
+              <div class="meal-meta">
+                <span>Prep: {lunch.prepTime} min</span>
+                <span>Cook: {lunch.cookTime} min</span>
+              </div>
+            </div>
+          )}
+
+          <div class="add-meal-placeholder">
+            <button class="add-meal-btn">+ Add Dinner</button>
+          </div>
+        </div>
+
+        <!-- Right Column: Suggestions & Analysis -->
+        <div class="suggestions-panel">
+          {compliance && (
+            <div class="compliance-card">
+              <h3>Daily Dozen Compliance</h3>
+
+              {compliance.compliant ? (
+                <div class="compliance-success">
+                  <span class="check-icon">✓</span>
+                  <p>All requirements met!</p>
+                </div>
+              ) : (
+                <div class="compliance-warning">
+                  <span class="warning-icon">!</span>
+                  <p>Missing some requirements</p>
+                </div>
+              )}
+
+              {compliance.present.length > 0 && (
+                <div class="compliance-section">
+                  <h4>Included ✓</h4>
+                  <ul class="compliance-list success">
+                    {compliance.present.map(item => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {compliance.missing.length > 0 && (
+                <div class="compliance-section">
+                  <h4>Still Need</h4>
+                  <ul class="compliance-list warning">
+                    {compliance.missing.map(item => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
+          {suggestions && suggestions.length > 0 && (
+            <div class="suggestions-card">
+              <h3>Suggested Additions</h3>
+              <p class="suggestions-intro">
+                Add these foods to boost synergies:
+              </p>
+              {suggestions.map(suggestion => (
+                <div class="suggestion-item">
+                  <div class="suggestion-header">
+                    <strong>{suggestion.food.name}</strong>
+                    <span class="boost-badge">+{suggestion.synergyBoost}</span>
+                  </div>
+                  <p class="suggestion-reason">{suggestion.reason}</p>
+                  <p class="suggestion-amount">{suggestion.food.amount}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {complementary && complementary.length > 0 && (
+            <div class="complementary-card">
+              <h3>Complementary Recipes</h3>
+              <p class="complementary-intro">
+                These recipes pair well with {lunch?.name}:
+              </p>
+              {complementary.map(({ recipe, synergyScore }) => (
+                <div class="complementary-item">
+                  <div class="complementary-header">
+                    <h4>{recipe.name}</h4>
+                    <span class="synergy-badge">Synergy: {synergyScore}</span>
+                  </div>
+                  <p>{recipe.description}</p>
+                  <div class="recipe-tags">
+                    {recipe.tags.slice(0, 3).map(tag => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <!-- Food Database Reference -->
+      <section class="quick-reference">
+        <h2>Quick Food Reference</h2>
+        <div class="food-reference-grid">
+          {foods.slice(0, 6).map(food => (
+            <div class="reference-card">
+              <h4>{food.name}</h4>
+              <p class="ref-amount">{food.amount}</p>
+              <div class="ref-categories">
+                {food.categories.slice(0, 2).map(cat => (
+                  <span class="ref-tag">{cat.replace(/-/g, ' ')}</span>
+                ))}
+              </div>
+              {food.synergies.length > 0 && (
+                <p class="ref-synergies">
+                  Pairs with: {food.synergies.slice(0, 2).join(', ')}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="usage-tips">
+        <h2>How to Use This Tool</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>1. Start with Base Meals</h3>
+            <p>Select breakfast, lunch, and dinner from recipes that you enjoy and can prepare easily.</p>
+          </div>
+          <div class="tip-card">
+            <h3>2. Check Compliance</h3>
+            <p>Review Daily Dozen requirements and see what food categories you're missing.</p>
+          </div>
+          <div class="tip-card">
+            <h3>3. Add Synergistic Foods</h3>
+            <p>Use the suggestions panel to add foods that complement your existing meals.</p>
+          </div>
+          <div class="tip-card">
+            <h3>4. Optimize Timing</h3>
+            <p>Follow the timing recommendations for foods like vinegar (with each meal) and greens (earlier in meal).</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    background: #f0fdf4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-primary);
+    margin-bottom: 2rem;
+  }
+
+  .builder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .current-menu h2,
+  .suggestions-panel h3 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .meal-builder-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+
+  .meal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .meal-header h3 {
+    margin: 0;
+    color: var(--color-primary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .meal-time {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .meal-builder-card h4 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    color: #111827;
+  }
+
+  .ingredient-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  .ingredient-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f3f4f6;
+    color: #374151;
+  }
+
+  .ingredient-list li:last-child {
+    border-bottom: none;
+  }
+
+  .meal-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .add-meal-placeholder {
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .add-meal-btn {
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .add-meal-btn:hover {
+    background: var(--color-secondary);
+  }
+
+  .compliance-card,
+  .suggestions-card,
+  .complementary-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+
+  .compliance-success,
+  .compliance-warning {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .compliance-success {
+    background: #d1fae5;
+    color: #065f46;
+  }
+
+  .compliance-warning {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .check-icon,
+  .warning-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .compliance-section {
+    margin-top: 1.5rem;
+  }
+
+  .compliance-section h4 {
+    margin: 0 0 0.75rem 0;
+    color: #374151;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .compliance-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .compliance-list li {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+  }
+
+  .compliance-list.success li {
+    background: #d1fae5;
+    color: #065f46;
+  }
+
+  .compliance-list.warning li {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .suggestions-intro,
+  .complementary-intro {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .suggestion-item {
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    border-left: 3px solid var(--color-accent);
+  }
+
+  .suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .boost-badge {
+    background: var(--color-accent);
+    color: white;
+    padding: 0.25rem 0.625rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .suggestion-reason {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+  }
+
+  .suggestion-amount {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  .complementary-item {
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .complementary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .complementary-header h4 {
+    margin: 0;
+    font-size: 1.125rem;
+    color: var(--color-primary);
+  }
+
+  .synergy-badge {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 0.25rem 0.625rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .recipe-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .tag {
+    background: #e0f2fe;
+    color: #075985;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+
+  .quick-reference {
+    margin-top: 3rem;
+  }
+
+  .food-reference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .reference-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .reference-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-primary);
+  }
+
+  .ref-amount {
+    color: #059669;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+  }
+
+  .ref-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0.5rem 0;
+  }
+
+  .ref-tag {
+    background: #e0f2fe;
+    color: #075985;
+    padding: 0.125rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+  }
+
+  .ref-synergies {
+    color: #6b7280;
+    font-size: 0.75rem;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .usage-tips {
+    margin-top: 3rem;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .tip-card h3 {
+    margin: 0 0 0.75rem 0;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+  }
+
+  .tip-card p {
+    margin: 0;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 1024px) {
+    .builder-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .food-reference-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .tips-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

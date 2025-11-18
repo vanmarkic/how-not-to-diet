@@ -1,0 +1,59 @@
+[
+  {
+    "id": "week-1-2025",
+    "name": "Sample Week 1",
+    "week": 1,
+    "year": 2025,
+    "days": [
+      {
+        "day": "monday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      },
+      {
+        "day": "tuesday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      },
+      {
+        "day": "wednesday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      },
+      {
+        "day": "thursday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      },
+      {
+        "day": "friday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      },
+      {
+        "day": "saturday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      },
+      {
+        "day": "sunday",
+        "breakfast": null,
+        "lunch": null,
+        "dinner": null,
+        "snacks": []
+      }
+    ]
+  }
+]
