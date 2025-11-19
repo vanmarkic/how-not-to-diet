@@ -105,7 +105,7 @@ export async function loadWeeklyMenuById(id: string): Promise<WeeklyMenu | null>
  */
 export async function loadFoods(): Promise<Food[]> {
   try {
-    const foodsModule = await import('../../data/extracted-foods.json');
+    const foodsModule = await import('../../public/foods-bundle.json');
     return foodsModule.default.foods as Food[];
   } catch (error) {
     console.error('Error loading foods:', error);
@@ -178,7 +178,7 @@ export async function loadFoodsByTiming(timing: MealTiming): Promise<Food[]> {
  */
 export async function loadExtractedFoodData(): Promise<ExtractedFoodData | null> {
   try {
-    const foodsModule = await import('../../data/extracted-foods.json');
+    const foodsModule = await import('../../public/foods-bundle.json');
     return foodsModule.default as ExtractedFoodData;
   } catch (error) {
     console.error('Error loading extracted food data:', error);

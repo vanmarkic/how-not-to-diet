@@ -1,0 +1,691 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "How Not To Diet API",
+    "description": "API for accessing recipes and nutritional food data from the 'How Not To Diet' project. This API provides comprehensive information about healthy recipes and foods based on scientific nutritional principles.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "How Not To Diet Project",
+      "url": "https://vanmarkic.github.io/how-not-to-diet/"
+    },
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://vanmarkic.github.io/how-not-to-diet/api",
+      "description": "Production API server"
+    }
+  ],
+  "paths": {
+    "/recipes.json": {
+      "get": {
+        "summary": "List all recipes",
+        "description": "Retrieves a list of all available recipes with their basic information including name, difficulty, meal type, and foods used.",
+        "operationId": "listRecipes",
+        "tags": ["Recipes"],
+        "responses": {
+          "200": {
+            "description": "Successful response with all recipes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "description": "Total number of recipes available"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Array of recipe objects",
+                      "items": {
+                        "$ref": "#/components/schemas/Recipe"
+                      }
+                    }
+                  },
+                  "required": ["count", "data"]
+                },
+                "example": {
+                  "count": 47,
+                  "data": [
+                    {
+                      "id": "recipe-001",
+                      "name": "Green Smoothie Bowl",
+                      "page": 125,
+                      "servings": "2 servings",
+                      "difficulty": "Easy",
+                      "meal_type": "Breakfast",
+                      "foods_used": [
+                        "food-001",
+                        "food-045",
+                        "food-089"
+                      ],
+                      "daily_dozen_coverage": {
+                        "beans": true,
+                        "berries": true,
+                        "other_fruits": false,
+                        "cruciferous_vegetables": false,
+                        "greens": true,
+                        "other_vegetables": false,
+                        "flaxseeds": false,
+                        "nuts": false,
+                        "spices": false,
+                        "whole_grains": false,
+                        "beverages": false,
+                        "exercise": false
+                      },
+                      "tweaks_21_incorporated": [
+                        "Maximize Your Eating Rate",
+                        "Perfect Your Plate"
+                      ],
+                      "key_synergies": [
+                        "Vitamin C enhances iron absorption",
+                        "Chlorophyll promotes detoxification"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/recipes/{id}.json": {
+      "get": {
+        "summary": "Get a single recipe by ID",
+        "description": "Retrieves detailed information about a specific recipe identified by its unique ID.",
+        "operationId": "getRecipeById",
+        "tags": ["Recipes"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The unique identifier of the recipe (e.g., 'recipe-072')",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^recipe-\\d+$"
+            },
+            "example": "recipe-072"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with the requested recipe",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Recipe"
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": {
+                    "id": "recipe-072",
+                    "name": "Colorful Quinoa Salad",
+                    "page": 156,
+                    "servings": "4 servings",
+                    "difficulty": "Medium",
+                    "meal_type": "Lunch",
+                    "foods_used": [
+                      "food-012",
+                      "food-034",
+                      "food-078",
+                      "food-102"
+                    ],
+                    "daily_dozen_coverage": {
+                      "beans": false,
+                      "berries": false,
+                      "other_fruits": false,
+                      "cruciferous_vegetables": true,
+                      "greens": true,
+                      "other_vegetables": true,
+                      "flaxseeds": false,
+                      "nuts": true,
+                      "spices": true,
+                      "whole_grains": true,
+                      "beverages": false,
+                      "exercise": false
+                    },
+                    "tweaks_21_incorporated": [
+                      "Minimize Calorie Density",
+                      "Perfect Your Plate"
+                    ],
+                    "key_synergies": [
+                      "Complete protein combination",
+                      "Antioxidant-rich ingredients"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Recipe not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message indicating the recipe was not found"
+                    }
+                  }
+                },
+                "example": {
+                  "error": "Recipe with id 'recipe-072' not found"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/foods.json": {
+      "get": {
+        "summary": "List all foods",
+        "description": "Retrieves a list of all available foods with their nutritional properties, benefits, and synergies.",
+        "operationId": "listFoods",
+        "tags": ["Foods"],
+        "responses": {
+          "200": {
+            "description": "Successful response with all foods",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "description": "Total number of foods available"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Array of food objects",
+                      "items": {
+                        "$ref": "#/components/schemas/Food"
+                      }
+                    }
+                  },
+                  "required": ["count", "data"]
+                },
+                "example": {
+                  "count": 152,
+                  "data": [
+                    {
+                      "id": "food-001",
+                      "name": "Blueberries",
+                      "categories": [
+                        "Berries",
+                        "Fruits",
+                        "Antioxidants"
+                      ],
+                      "properties": [
+                        "High in anthocyanins",
+                        "Low glycemic index",
+                        "Rich in fiber"
+                      ],
+                      "benefits": [
+                        "Improves cognitive function",
+                        "Supports heart health",
+                        "Reduces inflammation"
+                      ],
+                      "synergies": [
+                        "Pairs well with leafy greens",
+                        "Enhances vitamin C absorption"
+                      ],
+                      "timing": [
+                        "Best consumed fresh",
+                        "Can be frozen for preservation"
+                      ],
+                      "amount": "1 cup daily",
+                      "sources": {
+                        "pages": [
+                          45,
+                          112,
+                          234
+                        ],
+                        "quotes": [
+                          "Blueberries are nutritional powerhouses",
+                          "One of the best plant-based antioxidants"
+                        ]
+                      },
+                      "conflicts": [
+                        "May interact with blood thinners"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/foods/{id}.json": {
+      "get": {
+        "summary": "Get a single food by ID",
+        "description": "Retrieves detailed nutritional and synergistic information about a specific food identified by its unique ID.",
+        "operationId": "getFoodById",
+        "tags": ["Foods"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The unique identifier of the food (e.g., 'food-158')",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^food-\\d+$"
+            },
+            "example": "food-158"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with the requested food",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Food"
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": {
+                    "id": "food-158",
+                    "name": "Broccoli",
+                    "categories": [
+                      "Cruciferous Vegetables",
+                      "Vegetables",
+                      "Cancer-Fighting Foods"
+                    ],
+                    "properties": [
+                      "High in sulforaphane",
+                      "Rich in vitamin C",
+                      "Contains indole-3-carbinol",
+                      "Low in calories"
+                    ],
+                    "benefits": [
+                      "Reduces cancer risk",
+                      "Supports detoxification",
+                      "Enhances bone health",
+                      "Improves digestive health"
+                    ],
+                    "synergies": [
+                      "Cook lightly to preserve sulforaphane",
+                      "Pair with healthy fats for better absorption",
+                      "Combine with other cruciferous vegetables for synergy"
+                    ],
+                    "timing": [
+                      "Best consumed within 3 days of harvest",
+                      "Can be frozen immediately after harvest"
+                    ],
+                    "amount": "1 cup daily minimum",
+                    "sources": {
+                      "pages": [
+                        67,
+                        89,
+                        145,
+                        267
+                      ],
+                      "quotes": [
+                        "Broccoli contains compounds that activate the body's detoxification systems",
+                        "One of the most nutrient-dense vegetables available"
+                      ]
+                    },
+                    "conflicts": [
+                      "May interfere with thyroid function in excess",
+                      "Can cause bloating in sensitive individuals"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Food not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message indicating the food was not found"
+                    }
+                  }
+                },
+                "example": {
+                  "error": "Food with id 'food-158' not found"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Recipe": {
+        "type": "object",
+        "description": "A recipe containing a curated selection of healthy foods from the 'How Not To Diet' approach",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the recipe",
+            "pattern": "^recipe-\\d+$",
+            "example": "recipe-072"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the recipe",
+            "example": "Green Smoothie Bowl"
+          },
+          "page": {
+            "type": "integer",
+            "description": "Page number where the recipe appears in the source material",
+            "example": 125
+          },
+          "servings": {
+            "type": "string",
+            "description": "Number of servings the recipe produces",
+            "example": "2 servings"
+          },
+          "difficulty": {
+            "type": "string",
+            "description": "Difficulty level of preparation",
+            "enum": [
+              "Easy",
+              "Medium",
+              "Hard"
+            ],
+            "example": "Easy"
+          },
+          "meal_type": {
+            "type": "string",
+            "description": "Type of meal (breakfast, lunch, dinner, snack)",
+            "enum": [
+              "Breakfast",
+              "Lunch",
+              "Dinner",
+              "Snack",
+              "Dessert"
+            ],
+            "example": "Breakfast"
+          },
+          "foods_used": {
+            "type": "array",
+            "description": "List of food IDs used in this recipe",
+            "items": {
+              "type": "string",
+              "pattern": "^food-\\d+$"
+            },
+            "example": [
+              "food-001",
+              "food-045",
+              "food-089"
+            ]
+          },
+          "daily_dozen_coverage": {
+            "type": "object",
+            "description": "Coverage of the Daily Dozen nutritional guidelines",
+            "properties": {
+              "beans": {
+                "type": "boolean",
+                "description": "Covers beans category"
+              },
+              "berries": {
+                "type": "boolean",
+                "description": "Covers berries category"
+              },
+              "other_fruits": {
+                "type": "boolean",
+                "description": "Covers other fruits category"
+              },
+              "cruciferous_vegetables": {
+                "type": "boolean",
+                "description": "Covers cruciferous vegetables category"
+              },
+              "greens": {
+                "type": "boolean",
+                "description": "Covers dark leafy greens category"
+              },
+              "other_vegetables": {
+                "type": "boolean",
+                "description": "Covers other vegetables category"
+              },
+              "flaxseeds": {
+                "type": "boolean",
+                "description": "Covers flaxseeds category"
+              },
+              "nuts": {
+                "type": "boolean",
+                "description": "Covers nuts and seeds category"
+              },
+              "spices": {
+                "type": "boolean",
+                "description": "Covers spices category"
+              },
+              "whole_grains": {
+                "type": "boolean",
+                "description": "Covers whole grains category"
+              },
+              "beverages": {
+                "type": "boolean",
+                "description": "Covers healthy beverages category"
+              },
+              "exercise": {
+                "type": "boolean",
+                "description": "Includes exercise recommendations"
+              }
+            },
+            "example": {
+              "beans": true,
+              "berries": true,
+              "other_fruits": false,
+              "cruciferous_vegetables": false,
+              "greens": true,
+              "other_vegetables": false,
+              "flaxseeds": false,
+              "nuts": false,
+              "spices": false,
+              "whole_grains": false,
+              "beverages": false,
+              "exercise": false
+            }
+          },
+          "tweaks_21_incorporated": {
+            "type": "array",
+            "description": "List of 21 tweaks from the book that are incorporated in this recipe",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Maximize Your Eating Rate",
+              "Perfect Your Plate"
+            ]
+          },
+          "key_synergies": {
+            "type": "array",
+            "description": "Key nutritional synergies created by combining these foods",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Vitamin C enhances iron absorption",
+              "Chlorophyll promotes detoxification"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "page",
+          "servings",
+          "difficulty",
+          "meal_type",
+          "foods_used"
+        ]
+      },
+      "Food": {
+        "type": "object",
+        "description": "A food item with nutritional properties and health benefits based on scientific research",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the food",
+            "pattern": "^food-\\d+$",
+            "example": "food-158"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the food",
+            "example": "Broccoli"
+          },
+          "categories": {
+            "type": "array",
+            "description": "Food categories and classifications",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Cruciferous Vegetables",
+              "Vegetables",
+              "Cancer-Fighting Foods"
+            ]
+          },
+          "properties": {
+            "type": "array",
+            "description": "Key nutritional and chemical properties of the food",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "High in sulforaphane",
+              "Rich in vitamin C",
+              "Contains indole-3-carbinol",
+              "Low in calories"
+            ]
+          },
+          "benefits": {
+            "type": "array",
+            "description": "Health benefits associated with consuming this food",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Reduces cancer risk",
+              "Supports detoxification",
+              "Enhances bone health",
+              "Improves digestive health"
+            ]
+          },
+          "synergies": {
+            "type": "array",
+            "description": "Information about synergistic effects and optimal consumption methods",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Cook lightly to preserve sulforaphane",
+              "Pair with healthy fats for better absorption",
+              "Combine with other cruciferous vegetables for synergy"
+            ]
+          },
+          "timing": {
+            "type": "array",
+            "description": "Timing and storage recommendations",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Best consumed within 3 days of harvest",
+              "Can be frozen immediately after harvest"
+            ]
+          },
+          "amount": {
+            "type": "string",
+            "description": "Recommended daily amount or serving size",
+            "example": "1 cup daily minimum"
+          },
+          "sources": {
+            "$ref": "#/components/schemas/Sources",
+            "description": "Source references from the 'How Not To Diet' book"
+          },
+          "conflicts": {
+            "type": "array",
+            "description": "Potential conflicts or contraindications with certain conditions or medications",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "May interfere with thyroid function in excess",
+              "Can cause bloating in sensitive individuals"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "categories",
+          "benefits",
+          "amount"
+        ]
+      },
+      "Sources": {
+        "type": "object",
+        "description": "Source references for food information from the 'How Not To Diet' material",
+        "properties": {
+          "pages": {
+            "type": "array",
+            "description": "Page numbers where information about this food is referenced",
+            "items": {
+              "type": "integer"
+            },
+            "example": [
+              67,
+              89,
+              145,
+              267
+            ]
+          },
+          "quotes": {
+            "type": "array",
+            "description": "Relevant quotes about this food from the source material",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Broccoli contains compounds that activate the body's detoxification systems",
+              "One of the most nutrient-dense vegetables available"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Recipes",
+      "description": "Endpoints for accessing recipe data and meal planning information"
+    },
+    {
+      "name": "Foods",
+      "description": "Endpoints for accessing nutritional food data and health information"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FoodSelector from '../components/FoodSelector.astro';
-import foodsData from '../../data/extracted-foods.json';
+import foodsData from '../../public/foods-bundle.json';
 
 const foods = foodsData.foods;
-const metadata = foodsData.extraction_metadata;
+const metadata = foodsData.extraction_metadata || { focus_areas: [] };
 ---
 
 <Layout title="Food Selection - How Not To Diet">
