@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.0",
+  "openapi": "3.1.0",
   "info": {
     "title": "How Not To Diet API",
     "description": "API for accessing recipes and nutritional food data from the 'How Not To Diet' project. This API provides comprehensive information about healthy recipes and foods based on scientific nutritional principles.",
