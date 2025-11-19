@@ -17,7 +17,7 @@ export default defineConfig({
   output: 'static',
 
   // Site configuration for GitHub Pages
-  site: 'https://vanmarkic.github.io',
+  site: 'https://vanmarkic.github.io/how-not-to-diet/',
   base: '/how-not-to-diet',
 
   // Build configuration
