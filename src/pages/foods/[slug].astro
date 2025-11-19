@@ -25,9 +25,70 @@ function getFoodByName(name: string) {
     name.toLowerCase().includes(f.name.toLowerCase())
   );
 }
+
+// Create structured data for the food
+const benefits = Array.isArray(food.benefits) ? food.benefits : [food.benefits];
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": food.name,
+  "description": benefits.join('. '),
+  "author": {
+    "@type": "Person",
+    "name": "Dragan Markovic"
+  },
+  "datePublished": "2024-01-01",
+  "dateModified": new Date().toISOString(),
+  "keywords": [
+    food.name,
+    ...(food.categories || []),
+    ...(food.properties || []),
+    "nutrition",
+    "healthy eating"
+  ].join(', '),
+  "about": {
+    "@type": "Thing",
+    "name": food.name,
+    "description": benefits[0]
+  }
+};
+
+// Create BreadcrumbList
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vanmarkic.github.io/how-not-to-diet/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Foods",
+      "item": "https://vanmarkic.github.io/how-not-to-diet/foods"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": food.name,
+      "item": `https://vanmarkic.github.io/how-not-to-diet/foods/${food.id}`
+    }
+  ]
+};
+
+const combinedStructuredData = [structuredData, breadcrumbData];
 ---
 
-<Layout title={`${food.name} - How Not To Diet`}>
+<Layout 
+  title={`${food.name} - Health Benefits, Synergies & Timing | How Not To Diet`}
+  description={`Learn about ${food.name}: ${benefits[0]}. Discover food synergies, optimal timing, recommended amounts, and science-backed nutrition information.`}
+  keywords={`${food.name}, ${food.categories?.join(', ')}, healthy foods, nutrition facts, food synergies, anti-inflammatory foods`}
+  type="article"
+  structuredData={combinedStructuredData}
+>
   <div class="food-detail-page">
     <nav class="breadcrumb">
       <a href="/how-not-to-diet/foods">← Back to All Foods</a>

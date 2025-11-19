@@ -9,9 +9,31 @@ const foodsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 const foods = foodsData.foods;
 const categories = foodsData.categories;
 const totalFoods = foodsData.build_metadata.total_foods;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Healthy Foods Database",
+  "description": "Comprehensive database of foods with health benefits, synergies, and nutrition timing",
+  "numberOfItems": totalFoods,
+  "itemListElement": foods.slice(0, 20).map((food: any, index: number) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Thing",
+      "name": food.name,
+      "description": Array.isArray(food.benefits) ? food.benefits.join(', ') : food.benefits
+    }
+  }))
+};
 ---
 
-<Layout title="Food Synergies - How Not To Diet">
+<Layout 
+  title={`${totalFoods} Healthy Foods Database - How Not To Diet`}
+  description={`Explore ${totalFoods} scientifically-backed foods with health benefits, synergies, optimal timing, and recommended amounts. Based on How Not To Diet research.`}
+  keywords="healthy foods database, food synergies, anti-inflammatory foods, plant-based nutrition, daily dozen, food timing, nutrition science, healthy eating guide"
+  structuredData={structuredData}
+>
   <div class="foods-page">
     <header class="page-header">
       <h1>Food Synergies Database</h1>
