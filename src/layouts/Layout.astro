@@ -41,7 +41,15 @@ const { title, description = 'Weekly menu planner based on food science principl
       </main>
 
       <footer>
-        <p>&copy; {new Date().getFullYear()} How Not To Diet Menu Planner</p>
+        <div class="footer-content">
+          <p>&copy; {new Date().getFullYear()} How Not To Diet Menu Planner</p>
+          <p class="developer">Developed by <strong>Dragan Markovic</strong></p>
+          <nav class="footer-nav">
+            <a href={getPath('dev')}>Development Diary</a>
+            <span class="separator">•</span>
+            <a href="https://github.com/vanmarkic/how-not-to-diet" target="_blank" rel="noopener">GitHub</a>
+          </nav>
+        </div>
       </footer>
     </div>
   </body>
@@ -289,6 +297,69 @@ const { title, description = 'Weekly menu planner based on food science principl
     border-top: 3px solid var(--color-kale);
   }
 
+  .footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-content p {
+    margin: 0;
+  }
+
+  .developer {
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  .developer strong {
+    color: var(--color-carrot);
+    font-weight: 600;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer-nav a {
+    color: var(--color-cream);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-base);
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .footer-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-carrot);
+    transition: width var(--transition-base);
+  }
+
+  .footer-nav a:hover {
+    color: var(--color-carrot);
+  }
+
+  .footer-nav a:hover::after {
+    width: 100%;
+  }
+
+  .footer-nav .separator {
+    color: var(--color-sage);
+    opacity: 0.5;
+  }
+
   /* Global Typography Styles */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
@@ -319,6 +390,15 @@ const { title, description = 'Weekly menu planner based on food science principl
 
     footer {
       padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .footer-nav {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-nav .separator {
+      display: none;
     }
   }
 

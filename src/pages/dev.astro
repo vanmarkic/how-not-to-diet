@@ -1,0 +1,231 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Read the development diary markdown file
+const diaryPath = path.join(process.cwd(), 'DEVELOPMENT-DIARY.md');
+const diaryContent = fs.readFileSync(diaryPath, 'utf-8');
+
+// Simple markdown to HTML conversion for display
+function markdownToHtml(markdown: string): string {
+  return markdown
+    // Headers
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    // Bold
+    .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+    // Code blocks
+    .replace(/```(\w+)?\n([\s\S]*?)```/gim, '<pre><code class="language-$1">$2</code></pre>')
+    // Inline code
+    .replace(/`([^`]+)`/gim, '<code>$1</code>')
+    // Tables
+    .replace(/^\|(.+)\|$/gim, (match) => {
+      const cells = match.split('|').filter(cell => cell.trim());
+      const cellTags = cells.map(cell => `<td>${cell.trim()}</td>`).join('');
+      return `<tr>${cellTags}</tr>`;
+    })
+    // Links
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    // Line breaks
+    .replace(/\n\n/gim, '</p><p>')
+    .replace(/^\- (.*$)/gim, '<li>$1</li>')
+    .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+}
+
+const htmlContent = markdownToHtml(diaryContent);
+---
+
+<Layout title="Development Diary - How Not To Diet">
+  <div class="dev-diary">
+    <div class="diary-header">
+      <a href="/" class="back-link">← Back to Home</a>
+      <h1>Development Diary</h1>
+      <p class="subtitle">A detailed timeline of the development process</p>
+    </div>
+
+    <div class="diary-content" set:html={htmlContent} />
+  </div>
+</Layout>
+
+<style>
+  .dev-diary {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    min-height: 100vh;
+  }
+
+  .diary-header {
+    margin-bottom: 3rem;
+    border-bottom: 3px solid var(--color-primary, #2c5f2d);
+    padding-bottom: 2rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--color-primary, #2c5f2d);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+
+  .back-link:hover {
+    opacity: 0.7;
+  }
+
+  .diary-header h1 {
+    color: var(--color-primary, #2c5f2d);
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .diary-content {
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .diary-content :global(h1) {
+    color: var(--color-primary, #2c5f2d);
+    font-size: 2.2rem;
+    margin: 2.5rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .diary-content :global(h2) {
+    color: var(--color-secondary, #97bc62);
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .diary-content :global(h3) {
+    color: #555;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.8rem 0;
+  }
+
+  .diary-content :global(p) {
+    margin: 1rem 0;
+  }
+
+  .diary-content :global(code) {
+    background: #f5f5f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    color: #c7254e;
+  }
+
+  .diary-content :global(pre) {
+    background: #282c34;
+    color: #abb2bf;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .diary-content :global(pre code) {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  .diary-content :global(ul) {
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+
+  .diary-content :global(li) {
+    margin: 0.5rem 0;
+  }
+
+  .diary-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .diary-content :global(tr) {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .diary-content :global(td) {
+    padding: 0.8rem;
+    text-align: left;
+  }
+
+  .diary-content :global(tr:first-child) {
+    background: var(--color-primary, #2c5f2d);
+    color: white;
+    font-weight: 600;
+  }
+
+  .diary-content :global(tr:nth-child(even)) {
+    background: #f9f9f9;
+  }
+
+  .diary-content :global(a) {
+    color: var(--color-accent, #ff6b35);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .diary-content :global(a:hover) {
+    border-bottom-color: var(--color-accent, #ff6b35);
+  }
+
+  .diary-content :global(strong) {
+    color: var(--color-secondary, #97bc62);
+    font-weight: 600;
+  }
+
+  .diary-content :global(hr) {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 3rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .dev-diary {
+      padding: 1rem;
+    }
+
+    .diary-header h1 {
+      font-size: 2rem;
+    }
+
+    .diary-content :global(h1) {
+      font-size: 1.8rem;
+    }
+
+    .diary-content :global(h2) {
+      font-size: 1.5rem;
+    }
+
+    .diary-content :global(h3) {
+      font-size: 1.2rem;
+    }
+
+    .diary-content :global(pre) {
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

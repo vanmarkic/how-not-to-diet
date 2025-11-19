@@ -2,6 +2,12 @@
 
 A static JSON API for accessing recipes and nutritional food data, compatible with GitHub Pages.
 
+## Interactive API Testing
+
+**Try the interactive Swagger UI:** [https://vanmarkic.github.io/how-not-to-diet/api-docs](https://vanmarkic.github.io/how-not-to-diet/api-docs)
+
+Test all API endpoints directly in your browser with live examples and responses.
+
 ## Base URL
 
 ```

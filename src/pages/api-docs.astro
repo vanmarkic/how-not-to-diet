@@ -1,0 +1,126 @@
+---
+// Swagger UI page for interactive API testing
+const baseUrl = import.meta.env.BASE_URL || '/';
+const openapiUrl = `${baseUrl}openapi.json`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Not to Diet - API Documentation</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.10.5/swagger-ui.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .topbar {
+      display: none;
+    }
+    .swagger-ui .info {
+      margin: 30px 0;
+    }
+    .custom-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .custom-header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .custom-header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+    .custom-header .links {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .custom-header a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.5rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      transition: background 0.3s;
+      font-weight: 500;
+    }
+    .custom-header a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .swagger-container {
+      max-width: 1460px;
+      margin: 0 auto;
+    }
+    /* Customize try-it-out buttons */
+    .swagger-ui .btn.execute {
+      background-color: #667eea;
+      border-color: #667eea;
+    }
+    .swagger-ui .btn.execute:hover {
+      background-color: #5568d3;
+      border-color: #5568d3;
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-header">
+    <h1>How Not to Diet API</h1>
+    <p>Interactive API documentation for nutritional food data and recipes</p>
+    <div class="links">
+      <a href={baseUrl}>Home</a>
+      <a href={`${baseUrl}foods`}>Browse Foods</a>
+      <a href={`${baseUrl}recipes`}>Browse Recipes</a>
+      <a href="https://github.com/vanmarkic/how-not-to-diet" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="swagger-container">
+    <div id="swagger-ui"></div>
+  </div>
+
+  <script src="https://unpkg.com/swagger-ui-dist@5.10.5/swagger-ui-bundle.js"></script>
+  <script src="https://unpkg.com/swagger-ui-dist@5.10.5/swagger-ui-standalone-preset.js"></script>
+  <script>
+    window.onload = function() {
+      const ui = SwaggerUIBundle({
+        url: '{openapiUrl}',
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout",
+        defaultModelsExpandDepth: 1,
+        defaultModelExpandDepth: 1,
+        displayRequestDuration: true,
+        filter: true,
+        syntaxHighlight: {
+          activate: true,
+          theme: "monokai"
+        },
+        tryItOutEnabled: true,
+        persistAuthorization: true,
+        validatorUrl: null // Disable validator badge
+      });
+
+      window.ui = ui;
+    };
+  </script>
+</body>
+</html>
