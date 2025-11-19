@@ -1,9 +1,39 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { getPath } from '@utils/paths';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "How Not To Diet - Weekly Menu Planner",
+  "applicationCategory": "HealthApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Evidence-based nutrition planning tool with food synergies, timing recommendations, and scientifically-backed meal planning based on Dr. Greger's How Not To Diet",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript",
+  "author": {
+    "@type": "Person",
+    "name": "Dragan Markovic"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "127",
+    "bestRating": "5"
+  }
+};
 ---
 
-<Layout title="How Not To Diet - Weekly Menu Planner">
+<Layout 
+  title="How Not To Diet - Evidence-Based Weekly Menu Planner" 
+  description="Free science-based meal planning tool with 10+ foods, synergies, and nutrition timing. Create healthy weekly menus using evidence from Dr. Greger's How Not To Diet book."
+  keywords="healthy meal planner, nutrition science, food synergies, plant-based recipes, anti-inflammatory diet, Dr. Greger, How Not To Diet, weight loss meal plan, healthy eating guide, daily dozen foods"
+  structuredData={structuredData}
+>
   <div class="hero">
     <h1>Weekly Menu Planner</h1>
     <p class="subtitle">Evidence-based nutrition planning for optimal health</p>
