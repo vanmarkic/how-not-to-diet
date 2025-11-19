@@ -1,0 +1,17 @@
+# Open Graph Image Placeholder
+
+To complete SEO optimization, create an og-image.png file with dimensions 1200x630px.
+
+Recommended content:
+- Title: "How Not To Diet - Menu Planner"
+- Subtitle: "Science-Based Meal Planning"
+- Visual elements: Healthy food icons, green color scheme
+- Logo/branding
+
+Tools to create OG images:
+- Canva (canva.com)
+- Figma
+- Adobe Express
+- og-image.vercel.app (automated)
+
+Place the final image at: public/og-image.png
