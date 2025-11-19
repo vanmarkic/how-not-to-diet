@@ -1,0 +1,561 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { getPath } from '@utils/paths';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Support How Not To Diet Menu Planner",
+  "description": "Support the development and maintenance of this free, open-source nutrition planning tool based on Dr. Greger's How Not To Diet.",
+  "author": {
+    "@type": "Person",
+    "name": "Dragan Markovic"
+  }
+};
+---
+
+<Layout
+  title="Support the Project - How Not To Diet Menu Planner"
+  description="Help maintain and improve this free, open-source nutrition planning tool. Your support enables continued development, hosting, and new features based on evidence-based nutrition science."
+  keywords="support open source, donation, nutrition app, Dr. Greger, how not to diet, open source health tools"
+  structuredData={structuredData}
+>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="badge">
+      <span>Open Source & Evidence-Based</span>
+    </div>
+
+    <h1 class="hero-title">
+      Support the Project
+    </h1>
+
+    <p class="hero-subtitle">
+      Help keep this nutrition planning tool free, open-source, and accessible to everyone seeking evidence-based healthy eating guidance.
+    </p>
+
+    <!-- Quick stats -->
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Free & Open Source</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">10+</div>
+        <div class="stat-label">Evidence-Based Foods</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">Science</div>
+        <div class="stat-label">Backed Research</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <h2 class="section-title">What Your Support Enables</h2>
+
+    <div class="mission-grid">
+      <div class="mission-card">
+        <div class="mission-icon">🛠️</div>
+        <h3>Continuous Development</h3>
+        <p>Regular updates with new foods, recipes, and features based on the latest nutrition science research.</p>
+      </div>
+
+      <div class="mission-card">
+        <div class="mission-icon">📚</div>
+        <h3>Research Integration</h3>
+        <p>Ongoing integration of evidence-based nutrition research from Dr. Greger's work and peer-reviewed studies.</p>
+      </div>
+
+      <div class="mission-card">
+        <div class="mission-icon">⚡</div>
+        <h3>Infrastructure & Hosting</h3>
+        <p>Reliable hosting, API services, and performance optimizations to keep the tool fast and accessible.</p>
+      </div>
+
+      <div class="mission-card">
+        <div class="mission-icon">🌱</div>
+        <h3>Community Impact</h3>
+        <p>Helping people worldwide make informed nutrition choices with free, science-based planning tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Options -->
+  <section class="donation-section">
+    <div class="donation-container">
+      <h2 class="section-title">How to Support</h2>
+
+      <div class="payment-grid">
+        <!-- PayPal -->
+        <div class="payment-card">
+          <div class="payment-icon">💳</div>
+          <h3>PayPal</h3>
+          <p class="payment-description">
+            Quick and secure one-time donations
+          </p>
+          <a
+            href="https://www.paypal.com/paypalme/dragovanmarkic"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="payment-button primary"
+          >
+            Donate via PayPal
+          </a>
+        </div>
+
+        <!-- Open Collective -->
+        <div class="payment-card">
+          <div class="payment-icon">🌐</div>
+          <h3>Open Collective</h3>
+          <p class="payment-description">
+            Transparent community funding
+          </p>
+          <a
+            href="https://opencollective.com/mycelium-ecosystem"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="payment-button primary"
+          >
+            View on Open Collective
+          </a>
+        </div>
+
+        <!-- Bank Transfer / IBAN -->
+        <div class="payment-card">
+          <div class="payment-icon">🏦</div>
+          <h3>Bank Transfer</h3>
+          <p class="payment-description">
+            Direct IBAN transfer
+          </p>
+          <button
+            onclick="navigator.clipboard.writeText('BE37 3770 8459 2828'); this.textContent = 'IBAN Copied!'; setTimeout(() => this.textContent = 'Copy IBAN', 2000)"
+            class="payment-button secondary"
+          >
+            Copy IBAN
+          </button>
+          <p class="iban-note">BE37 3770 8459 2828</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thank You Section -->
+  <section class="thankyou-section">
+    <div class="thankyou-card">
+      <h2 class="thankyou-title">
+        Thank You for Your Support
+      </h2>
+      <p class="thankyou-text">
+        Every contribution, no matter the size, helps maintain this project as a free, independent, and open-source resource for evidence-based nutrition planning. Together, we're making healthy eating more accessible to everyone.
+      </p>
+
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-emoji">🌍</div>
+          <div class="impact-label">Global Impact</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-emoji">🤝</div>
+          <div class="impact-label">Community Driven</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-emoji">💻</div>
+          <div class="impact-label">Always Free</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-emoji">🔬</div>
+          <div class="impact-label">Science Backed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Ways to Help -->
+  <section class="other-ways-section">
+    <h2 class="section-title">Other Ways to Help</h2>
+    <div class="other-ways-grid">
+      <div class="other-way-card">
+        <div class="other-way-icon">⭐</div>
+        <h3>Star on GitHub</h3>
+        <p>Show your support by starring the repository</p>
+        <a href="https://github.com/vanmarkic/how-not-to-diet" target="_blank" rel="noopener noreferrer" class="text-link">Star on GitHub →</a>
+      </div>
+      <div class="other-way-card">
+        <div class="other-way-icon">🐛</div>
+        <h3>Report Issues</h3>
+        <p>Help improve the tool by reporting bugs or suggesting features</p>
+        <a href="https://github.com/vanmarkic/how-not-to-diet/issues" target="_blank" rel="noopener noreferrer" class="text-link">Open an Issue →</a>
+      </div>
+      <div class="other-way-card">
+        <div class="other-way-icon">📣</div>
+        <h3>Spread the Word</h3>
+        <p>Share this tool with friends and family interested in healthy eating</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, var(--color-kale), var(--color-forest-mid));
+    border: 2px solid var(--color-sage);
+    border-radius: var(--radius-full);
+    margin-bottom: 1.5rem;
+  }
+
+  .badge span {
+    color: var(--color-cream);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--color-forest-deep);
+    letter-spacing: -0.03em;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    color: var(--color-slate);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+  }
+
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-kale);
+    font-family: var(--font-display);
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  /* Mission Section */
+  .mission-section {
+    margin-bottom: 4rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--color-forest-deep);
+  }
+
+  .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .mission-card {
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    transition: all var(--transition-base);
+  }
+
+  .mission-card:hover {
+    border-color: var(--color-kale);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .mission-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .mission-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-forest-deep);
+  }
+
+  .mission-card p {
+    font-size: 0.95rem;
+    color: var(--color-slate);
+    line-height: 1.6;
+  }
+
+  /* Donation Section */
+  .donation-section {
+    margin-bottom: 4rem;
+  }
+
+  .donation-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-sand) 100%);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2rem;
+  }
+
+  .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .payment-card {
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+
+  .payment-card:hover {
+    border-color: var(--color-kale);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .payment-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .payment-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-forest-deep);
+  }
+
+  .payment-description {
+    font-size: 0.9rem;
+    color: var(--color-slate);
+    margin-bottom: 1.5rem;
+  }
+
+  .payment-button {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all var(--transition-base);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+  }
+
+  .payment-button.primary {
+    background: linear-gradient(135deg, var(--color-kale) 0%, var(--color-forest-mid) 100%);
+    color: var(--color-cream);
+  }
+
+  .payment-button.primary:hover {
+    background: linear-gradient(135deg, var(--color-forest-mid) 0%, var(--color-forest-deep) 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .payment-button.secondary {
+    background: var(--color-sand);
+    color: var(--color-forest-deep);
+    border: 2px solid var(--color-border);
+  }
+
+  .payment-button.secondary:hover {
+    background: var(--color-stone);
+    border-color: var(--color-kale);
+  }
+
+  .iban-note {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    margin-top: 0.75rem;
+    font-family: monospace;
+  }
+
+  /* Thank You Section */
+  .thankyou-section {
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .thankyou-card {
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2.5rem;
+    text-align: center;
+  }
+
+  .thankyou-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--color-forest-deep);
+  }
+
+  .thankyou-text {
+    font-size: 1.05rem;
+    color: var(--color-slate);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .impact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .impact-item {
+    text-align: center;
+  }
+
+  .impact-emoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .impact-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-forest-mid);
+  }
+
+  /* Other Ways Section */
+  .other-ways-section {
+    margin-bottom: 4rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .other-ways-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .other-way-card {
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+
+  .other-way-card:hover {
+    border-color: var(--color-kale);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .other-way-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .other-way-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-forest-deep);
+  }
+
+  .other-way-card p {
+    font-size: 0.95rem;
+    color: var(--color-slate);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .text-link {
+    color: var(--color-kale);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color var(--transition-base);
+  }
+
+  .text-link:hover {
+    color: var(--color-forest-deep);
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stats-grid {
+      gap: 2rem;
+    }
+
+    .mission-grid,
+    .payment-grid,
+    .other-ways-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .donation-container {
+      padding: 2rem 1.5rem;
+    }
+
+    .thankyou-card {
+      padding: 2rem 1.5rem;
+    }
+
+    .impact-grid {
+      gap: 1.5rem;
+    }
+  }
+</style>
