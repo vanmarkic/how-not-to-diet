@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .preview {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .step {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OG Image Preview</h1>
+        
+        <div class="preview">
+            <h2>Preview (1200x630px)</h2>
+            <img src="og-image.svg" alt="OG Image Preview" width="1200" height="630">
+        </div>
+        
+        <div class="instructions">
+            <h2>📸 How to Convert to PNG</h2>
+            
+            <div class="step">
+                <h3>Method 1: Online Converter (Easiest)</h3>
+                <ol>
+                    <li>Go to <a href="https://cloudconvert.com/svg-to-png" target="_blank">CloudConvert</a> or <a href="https://convertio.co/svg-png/" target="_blank">Convertio</a></li>
+                    <li>Upload <code>public/og-image.svg</code></li>
+                    <li>Set output size to <strong>1200x630px</strong></li>
+                    <li>Convert and download</li>
+                    <li>Save as <code>public/og-image.png</code></li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <h3>Method 2: Using Browser (Quick)</h3>
+                <ol>
+                    <li>Open <code>public/og-image.svg</code> in Chrome/Firefox</li>
+                    <li>Right-click on the image</li>
+                    <li>Select "Save Image As..."</li>
+                    <li>Save as PNG (some browsers support this directly)</li>
+                    <li>Or take a screenshot at 1200x630 resolution</li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <h3>Method 3: Using Figma/Canva (Best Quality)</h3>
+                <ol>
+                    <li>Open <a href="https://www.figma.com" target="_blank">Figma</a> or <a href="https://www.canva.com" target="_blank">Canva</a></li>
+                    <li>Create a new design with dimensions <strong>1200 x 630 px</strong></li>
+                    <li>Import the SVG file or recreate the design</li>
+                    <li>Export as PNG (2x for retina quality)</li>
+                    <li>Save as <code>public/og-image.png</code></li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <h3>Method 4: Install ImageMagick (Terminal)</h3>
+                <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;">
+<code># Install ImageMagick via Homebrew
+brew install imagemagick
+
+# Convert SVG to PNG
+magick public/og-image.svg -resize 1200x630 public/og-image.png
+
+# Or use rsvg-convert
+brew install librsvg
+rsvg-convert -w 1200 -h 630 public/og-image.svg -o public/og-image.png</code></pre>
+            </div>
+            
+            <div class="step">
+                <h3>✅ After Conversion</h3>
+                <ol>
+                    <li>Verify the PNG is exactly <strong>1200x630px</strong></li>
+                    <li>File size should be under <strong>1MB</strong> (ideally 200-300KB)</li>
+                    <li>Test it in the <a href="https://developers.facebook.com/tools/debug/" target="_blank">Facebook Sharing Debugger</a></li>
+                    <li>The image will automatically be used by the site</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
