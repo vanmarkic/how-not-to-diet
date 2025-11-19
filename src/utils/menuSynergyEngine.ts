@@ -230,6 +230,27 @@ export function calculateSuggestions(
     }
     // any-meal only foods get no boost (appear last)
 
+    // Apply category diversity penalty to avoid redundant suggestions
+    // Count how many selected foods share categories with this candidate
+    const categoryOverlap = new Set<string>();
+    for (const selectedFood of selectedFoods) {
+      for (const category of candidate.categories) {
+        if (selectedFood.categories.includes(category)) {
+          categoryOverlap.add(category);
+        }
+      }
+    }
+
+    // Heavy penalty for category redundancy
+    // Examples: Don't suggest more beans if there are already beans,
+    // don't suggest more greens if there are already greens, etc.
+    const overlapCount = categoryOverlap.size;
+    if (overlapCount > 0) {
+      // Penalize based on how many category overlaps exist
+      // 1 overlap = -12 points, 2 overlaps = -24 points, etc.
+      totalScore -= overlapCount * 12;
+    }
+
     return {
       food: candidate,
       synergyScore: totalScore,
