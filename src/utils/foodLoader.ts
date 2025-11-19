@@ -5,7 +5,7 @@ import type { FoodDatabase, Food } from '../types/food';
  */
 export async function loadFoodDatabase(): Promise<FoodDatabase | null> {
   try {
-    const foodsModule = await import('@data/extracted-foods.json');
+    const foodsModule = await import('../../public/foods-bundle.json');
     return foodsModule.default as FoodDatabase;
   } catch (error) {
     console.error('Error loading food database:', error);
