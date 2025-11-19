@@ -554,6 +554,442 @@
           }
         }
       }
+    },
+    "/search/recipes.json": {
+      "get": {
+        "summary": "Get recipe search index",
+        "description": "Retrieves a search index containing recipe names and IDs for client-side search functionality.",
+        "operationId": "getRecipeSearchIndex",
+        "tags": ["Search"],
+        "responses": {
+          "200": {
+            "description": "Successful response with recipe search index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of recipe search entries",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Unique identifier for the recipe",
+                            "pattern": "^recipe-\\d+$"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "Name of the recipe"
+                          }
+                        },
+                        "required": ["id", "name"]
+                      }
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": [
+                    {
+                      "id": "recipe-001",
+                      "name": "Green Smoothie Bowl"
+                    },
+                    {
+                      "id": "recipe-072",
+                      "name": "Colorful Quinoa Salad"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search/foods.json": {
+      "get": {
+        "summary": "Get food search index",
+        "description": "Retrieves a search index containing food names and IDs for client-side search functionality.",
+        "operationId": "getFoodSearchIndex",
+        "tags": ["Search"],
+        "responses": {
+          "200": {
+            "description": "Successful response with food search index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of food search entries",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Unique identifier for the food",
+                            "pattern": "^food-\\d+$"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "Name of the food"
+                          }
+                        },
+                        "required": ["id", "name"]
+                      }
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": [
+                    {
+                      "id": "food-001",
+                      "name": "Blueberries"
+                    },
+                    {
+                      "id": "food-158",
+                      "name": "Broccoli"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/categories.json": {
+      "get": {
+        "summary": "Get all categories",
+        "description": "Retrieves all available food categories with the count of foods in each category.",
+        "operationId": "getCategories",
+        "tags": ["Filters"],
+        "responses": {
+          "200": {
+            "description": "Successful response with categories and food counts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of category entries",
+                      "items": {
+                        "$ref": "#/components/schemas/CategoryEntry"
+                      }
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": [
+                    {
+                      "name": "Berries",
+                      "foodCount": 12
+                    },
+                    {
+                      "name": "Cruciferous Vegetables",
+                      "foodCount": 8
+                    },
+                    {
+                      "name": "Leafy Greens",
+                      "foodCount": 15
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/categories/{category}.json": {
+      "get": {
+        "summary": "Filter foods by category (paginated)",
+        "description": "Retrieves a paginated list of foods filtered by category with food details.",
+        "operationId": "getFoodsByCategory",
+        "tags": ["Filters", "Foods"],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "description": "Category name (URL-encoded)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Berries"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with paginated foods in the specified category",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/PaginationMetadata"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "description": "Array of food objects in the specified category",
+                          "items": {
+                            "$ref": "#/components/schemas/Food"
+                          }
+                        }
+                      },
+                      "required": ["data"]
+                    }
+                  ]
+                },
+                "example": {
+                  "count": 12,
+                  "page": 1,
+                  "pageSize": 25,
+                  "totalPages": 1,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false,
+                  "nextPage": null,
+                  "previousPage": null,
+                  "data": []
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Category not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "error": "Category 'UnknownCategory' not found"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/properties.json": {
+      "get": {
+        "summary": "Get all properties",
+        "description": "Retrieves all available food properties with the count of foods having each property.",
+        "operationId": "getProperties",
+        "tags": ["Filters"],
+        "responses": {
+          "200": {
+            "description": "Successful response with properties and food counts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of property entries",
+                      "items": {
+                        "$ref": "#/components/schemas/PropertyEntry"
+                      }
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": [
+                    {
+                      "name": "High in anthocyanins",
+                      "foodCount": 8
+                    },
+                    {
+                      "name": "Rich in vitamin C",
+                      "foodCount": 24
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/synergies.json": {
+      "get": {
+        "summary": "Get all synergies",
+        "description": "Retrieves all available food synergies with the count of foods associated with each synergy.",
+        "operationId": "getSynergies",
+        "tags": ["Filters"],
+        "responses": {
+          "200": {
+            "description": "Successful response with synergies and food counts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of synergy entries",
+                      "items": {
+                        "$ref": "#/components/schemas/SynergyEntry"
+                      }
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": [
+                    {
+                      "name": "Vitamin C enhances iron absorption",
+                      "foodCount": 15
+                    },
+                    {
+                      "name": "Chlorophyll promotes detoxification",
+                      "foodCount": 10
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/timings.json": {
+      "get": {
+        "summary": "Get all timings",
+        "description": "Retrieves all available timing recommendations with the count of foods associated with each timing.",
+        "operationId": "getTimings",
+        "tags": ["Filters"],
+        "responses": {
+          "200": {
+            "description": "Successful response with timings and food counts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "description": "Array of timing entries",
+                      "items": {
+                        "$ref": "#/components/schemas/TimingEntry"
+                      }
+                    }
+                  },
+                  "required": ["data"]
+                },
+                "example": {
+                  "data": [
+                    {
+                      "name": "Best consumed fresh",
+                      "foodCount": 18
+                    },
+                    {
+                      "name": "Can be frozen for preservation",
+                      "foodCount": 22
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/timings/{timing}.json": {
+      "get": {
+        "summary": "Filter foods by timing (paginated)",
+        "description": "Retrieves a paginated list of foods filtered by timing recommendation with food details.",
+        "operationId": "getFoodsByTiming",
+        "tags": ["Filters", "Foods"],
+        "parameters": [
+          {
+            "name": "timing",
+            "in": "path",
+            "description": "Timing recommendation (URL-encoded)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Best consumed fresh"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with paginated foods matching the specified timing",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/PaginationMetadata"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "description": "Array of food objects matching the specified timing",
+                          "items": {
+                            "$ref": "#/components/schemas/Food"
+                          }
+                        }
+                      },
+                      "required": ["data"]
+                    }
+                  ]
+                },
+                "example": {
+                  "count": 18,
+                  "page": 1,
+                  "pageSize": 25,
+                  "totalPages": 1,
+                  "hasNextPage": false,
+                  "hasPreviousPage": false,
+                  "nextPage": null,
+                  "previousPage": null,
+                  "data": []
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Timing not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "error": "Timing 'Unknown timing' not found"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -913,6 +1349,78 @@
           "nextPage",
           "previousPage"
         ]
+      },
+      "CategoryEntry": {
+        "type": "object",
+        "description": "A food category with its associated food count",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the category",
+            "example": "Berries"
+          },
+          "foodCount": {
+            "type": "integer",
+            "description": "Number of foods in this category",
+            "minimum": 0,
+            "example": 12
+          }
+        },
+        "required": ["name", "foodCount"]
+      },
+      "PropertyEntry": {
+        "type": "object",
+        "description": "A food property with its associated food count",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the property",
+            "example": "High in anthocyanins"
+          },
+          "foodCount": {
+            "type": "integer",
+            "description": "Number of foods with this property",
+            "minimum": 0,
+            "example": 8
+          }
+        },
+        "required": ["name", "foodCount"]
+      },
+      "SynergyEntry": {
+        "type": "object",
+        "description": "A food synergy with its associated food count",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Description of the synergy",
+            "example": "Vitamin C enhances iron absorption"
+          },
+          "foodCount": {
+            "type": "integer",
+            "description": "Number of foods associated with this synergy",
+            "minimum": 0,
+            "example": 15
+          }
+        },
+        "required": ["name", "foodCount"]
+      },
+      "TimingEntry": {
+        "type": "object",
+        "description": "A timing recommendation with its associated food count",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Timing recommendation",
+            "example": "Best consumed fresh"
+          },
+          "foodCount": {
+            "type": "integer",
+            "description": "Number of foods with this timing recommendation",
+            "minimum": 0,
+            "example": 18
+          }
+        },
+        "required": ["name", "foodCount"]
       }
     }
   },
@@ -924,6 +1432,14 @@
     {
       "name": "Foods",
       "description": "Endpoints for accessing nutritional food data and health information"
+    },
+    {
+      "name": "Search",
+      "description": "Endpoints for client-side search functionality with recipe and food indexes"
+    },
+    {
+      "name": "Filters",
+      "description": "Endpoints for filtering foods by categories, properties, synergies, and timing recommendations"
     }
   ]
 }
