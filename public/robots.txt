@@ -1,0 +1,29 @@
+# Robots.txt for How Not To Diet - Menu Planner
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# XML Sitemap location
+Sitemap: https://vanmarkic.github.io/how-not-to-diet/sitemap-index.xml
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 0
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block access to API testing endpoints (if any)
+User-agent: *
+Disallow: /api/test/
+Disallow: /dev/

@@ -25,8 +25,16 @@ interface FoodSearchItem extends Food {
 
 interface SearchIndexResponse {
   count: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+  hasNextPage: boolean;
+  hasPreviousPage: boolean;
   foods: FoodSearchItem[];
 }
+
+const DEFAULT_PAGE_SIZE = 10;
+const MAX_PAGE_SIZE = 20; // Limit to ensure response stays under 1000 lines
 
 /**
  * Creates a normalized search text from food data
@@ -68,8 +76,12 @@ function createSearchText(food: Food): string {
   return unique.join(' ');
 }
 
-export const GET: APIRoute = async () => {
+export const GET: APIRoute = async ({ url }) => {
   try {
+    // Parse pagination parameters
+    const page = Math.max(1, parseInt(url.searchParams.get('page') || '1', 10));
+    const limit = Math.min(MAX_PAGE_SIZE, Math.max(1, parseInt(url.searchParams.get('limit') || String(DEFAULT_PAGE_SIZE), 10)));
+
     // Read all food files from data/foods directory
     const foodsDir = path.join(process.cwd(), 'data', 'foods');
 
@@ -91,7 +103,7 @@ export const GET: APIRoute = async () => {
     const files = fs.readdirSync(foodsDir).filter(f => f.endsWith('.json'));
 
     // Read and process all food files
-    const foods: FoodSearchItem[] = files.map(file => {
+    const allFoods: FoodSearchItem[] = files.map(file => {
       const filePath = path.join(foodsDir, file);
       const content = fs.readFileSync(filePath, 'utf-8');
       const food: Food = JSON.parse(content);
@@ -103,16 +115,28 @@ export const GET: APIRoute = async () => {
     });
 
     // Sort by ID for consistent ordering
-    foods.sort((a, b) => {
+    allFoods.sort((a, b) => {
       // Extract numeric part from IDs like "food-1", "food-209"
       const aNum = parseInt(a.id.replace(/\D/g, '') || '0', 10);
       const bNum = parseInt(b.id.replace(/\D/g, '') || '0', 10);
       return aNum - bNum;
     });
 
+    // Calculate pagination
+    const totalCount = allFoods.length;
+    const totalPages = Math.ceil(totalCount / limit);
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedFoods = allFoods.slice(startIndex, endIndex);
+
     const response: SearchIndexResponse = {
-      count: foods.length,
-      foods
+      count: totalCount,
+      page,
+      pageSize: limit,
+      totalPages,
+      hasNextPage: page < totalPages,
+      hasPreviousPage: page > 1,
+      foods: paginatedFoods
     };
 
     return new Response(JSON.stringify(response, null, 2), {
