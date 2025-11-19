@@ -4,9 +4,25 @@ import { getPath, getAssetPath } from '@utils/paths';
 interface Props {
   title: string;
   description?: string;
+  keywords?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  author?: string;
+  structuredData?: object;
 }
 
-const { title, description = 'Weekly menu planner based on food science principles' } = Astro.props;
+const { 
+  title, 
+  description = 'Science-based weekly menu planner inspired by How Not To Diet. Create healthy meal plans with optimal food combinations, synergies, and nutrition timing.',
+  keywords = 'healthy meal planning, nutrition science, food synergies, Dr. Greger, plant-based diet, anti-inflammatory foods, weight loss, healthy recipes, daily dozen, 21 tweaks',
+  image = '/how-not-to-diet/og-image.png',
+  type = 'website',
+  author = 'Dragan Markovic',
+  structuredData
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const fullImageUrl = new URL(image, Astro.site);
 ---
 
 <!doctype html>
