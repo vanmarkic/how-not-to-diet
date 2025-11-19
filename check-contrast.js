@@ -53,7 +53,7 @@ const colors = {
   beet: '#8b2e3f',
   carrot: '#e67e22',
   carrotLight: '#ff914d',
-  carrotLighter: '#ffa366',
+  carrotLighter: '#ffb380',
   golden: '#d4a574',
   cream: '#faf8f3',
   sand: '#f0ede5',
