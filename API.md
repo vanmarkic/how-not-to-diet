@@ -20,10 +20,10 @@ All list endpoints return paginated results with 25 items per page.
 
 ### Search
 
-#### Recipe Search Index
+#### Recipe Search Index (Full)
 **GET** `/search/recipes.json`
 
-Returns a complete search index of all recipes with searchable text for client-side filtering.
+⚠️ **Large Response (~80KB)** - Returns complete recipe data with searchable text for client-side filtering.
 
 **Response:**
 ```json
@@ -40,10 +40,29 @@ Returns a complete search index of all recipes with searchable text for client-s
 }
 ```
 
-#### Food Search Index
+#### Recipe Search Index (Light)
+**GET** `/search/recipes-light.json`
+
+✅ **Small Response (~2KB)** - Returns only recipe IDs, names, and meal types for quick lookups.
+
+**Response:**
+```json
+{
+  "count": 59,
+  "recipes": [
+    {
+      "id": "recipe-001",
+      "name": "Antipasto Vegetables With Tuscan White Bean Dressing",
+      "meal_type": "lunch"
+    }
+  ]
+}
+```
+
+#### Food Search Index (Full)
 **GET** `/search/foods.json`
 
-Returns a complete search index of all foods with searchable text for client-side filtering.
+⚠️ **Large Response (~240KB)** - Returns complete food data with searchable text for client-side filtering.
 
 **Response:**
 ```json
@@ -59,6 +78,27 @@ Returns a complete search index of all foods with searchable text for client-sid
   ]
 }
 ```
+
+#### Food Search Index (Light)
+**GET** `/search/foods-light.json`
+
+✅ **Small Response (~8KB)** - Returns only food IDs, names, and categories for quick lookups.
+
+**Response:**
+```json
+{
+  "count": 209,
+  "foods": [
+    {
+      "id": "food-1",
+      "name": "Adzuki Beans (Aduki Beans)",
+      "categories": ["rich-in-legumes", "high-fiber", "low-insulin-index"]
+    }
+  ]
+}
+```
+
+**Recommendation:** Use the **light** endpoints for autocomplete, dropdowns, and quick searches. Use the **full** endpoints only when you need complete data for offline/client-side filtering.
 
 ### Filters
 
