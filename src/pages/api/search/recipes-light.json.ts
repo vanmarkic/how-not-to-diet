@@ -10,7 +10,8 @@ interface LightRecipeSearchItem {
 export const GET: APIRoute = async () => {
   try {
     // Extract only minimal data for search
-    const lightRecipes: LightRecipeSearchItem[] = recipesBundle.map(recipe => ({
+    const recipes = recipesBundle.recipes || [];
+    const lightRecipes: LightRecipeSearchItem[] = recipes.map((recipe: any) => ({
       id: recipe.id,
       name: recipe.name,
       meal_type: recipe.meal_type
