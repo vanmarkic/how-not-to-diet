@@ -59,15 +59,24 @@ All list endpoints return paginated results with 25 items per page.
 }
 ```
 
-#### Food Search Index (Full)
-**GET** `/search/foods.json`
+#### Food Search Index (Full, Paginated)
+**GET** `/search/foods.json?page=1&limit=10`
 
-⚠️ **Large Response (~240KB)** - Returns complete food data with searchable text for client-side filtering.
+✅ **Paginated Response** - Returns complete food data with searchable text. Limited to 10 items by default, max 20 items per page.
+
+**Query Parameters:**
+- `page` (optional, default: 1) - Page number
+- `limit` (optional, default: 10, max: 20) - Items per page
 
 **Response:**
 ```json
 {
   "count": 209,
+  "page": 1,
+  "pageSize": 10,
+  "totalPages": 21,
+  "hasNextPage": true,
+  "hasPreviousPage": false,
   "foods": [
     {
       "id": "food-1",
@@ -78,6 +87,8 @@ All list endpoints return paginated results with 25 items per page.
   ]
 }
 ```
+
+**Response Size:** ~417 lines (default), ~834 lines (max) - **Guaranteed under 1000 lines**
 
 #### Food Search Index (Light)
 **GET** `/search/foods-light.json`

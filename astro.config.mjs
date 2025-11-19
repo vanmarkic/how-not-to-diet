@@ -1,10 +1,18 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  // Enable React integration
-  integrations: [react()],
+  // Enable React integration and sitemap generation
+  integrations: [
+    react(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
+  ],
   // Enable static site generation (default mode)
   output: 'static',
 
