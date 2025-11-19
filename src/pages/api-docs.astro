@@ -1,6 +1,7 @@
 ---
 // Swagger UI page for interactive API testing
-const baseUrl = import.meta.env.BASE_URL || '/';
+const rawBaseUrl = import.meta.env.BASE_URL || '/';
+const baseUrl = rawBaseUrl.endsWith('/') ? rawBaseUrl : `${rawBaseUrl}/`;
 const openapiUrl = `${baseUrl}openapi.json`;
 ---
 
