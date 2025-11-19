@@ -119,41 +119,10 @@ export const GET: APIRoute = async ({ params }) => {
       );
     }
 
-    // Get page number from query params (default to 1)
-    const url = new URL(params as unknown as string);
-    const pageParam = url.searchParams.get('page');
-    const pageNumber = pageParam ? parseInt(pageParam, 10) : 1;
-
-    if (isNaN(pageNumber) || pageNumber < 1) {
-      return new Response(
-        JSON.stringify({
-          error: 'Invalid page number. Page must be >= 1',
-        }),
-        {
-          status: 400,
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
-    }
-
+    // For static sites, we only generate page 1
+    // Query params are not supported in static generation
+    const pageNumber = 1;
     const totalPages = Math.ceil(foodsInCategory.length / PAGE_SIZE);
-
-    if (pageNumber > totalPages) {
-      return new Response(
-        JSON.stringify({
-          error: `Page ${pageNumber} does not exist. Total pages: ${totalPages}`,
-          category,
-        }),
-        {
-          status: 404,
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
-    }
 
     // Calculate pagination
     const startIndex = (pageNumber - 1) * PAGE_SIZE;

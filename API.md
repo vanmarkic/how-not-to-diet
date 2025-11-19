@@ -12,6 +12,174 @@ https://vanmarkic.github.io/how-not-to-diet/api
 
 All list endpoints return paginated results with 25 items per page.
 
+### Search
+
+#### Recipe Search Index
+**GET** `/search/recipes.json`
+
+Returns a complete search index of all recipes with searchable text for client-side filtering.
+
+**Response:**
+```json
+{
+  "count": 59,
+  "recipes": [
+    {
+      "id": "recipe-001",
+      "name": "Antipasto Vegetables With Tuscan White Bean Dressing",
+      "searchText": "antipasto vegetables tuscan white bean dressing beans-legumes bell-peppers lunch easy",
+      ...all recipe fields...
+    }
+  ]
+}
+```
+
+#### Food Search Index
+**GET** `/search/foods.json`
+
+Returns a complete search index of all foods with searchable text for client-side filtering.
+
+**Response:**
+```json
+{
+  "count": 209,
+  "foods": [
+    {
+      "id": "food-1",
+      "name": "Adzuki Beans (Aduki Beans)",
+      "searchText": "adzuki beans aduki beans rich-in-legumes high-fiber...",
+      ...all food fields...
+    }
+  ]
+}
+```
+
+### Filters
+
+#### List All Categories
+**GET** `/categories.json`
+
+Returns all food categories with counts.
+
+**Response:**
+```json
+{
+  "count": 71,
+  "categories": [
+    {
+      "name": "anti-inflammatory",
+      "foodCount": 134
+    }
+  ]
+}
+```
+
+#### Filter Foods by Category
+**GET** `/categories/{category}.json`
+
+Filters foods by a specific category (paginated, 25 per page).
+
+**Example:**
+```
+GET /categories/anti-inflammatory.json
+```
+
+**Response:**
+```json
+{
+  "category": "anti-inflammatory",
+  "count": 134,
+  "page": 1,
+  "pageSize": 25,
+  "totalPages": 6,
+  "hasNextPage": true,
+  "hasPreviousPage": false,
+  "nextPage": "/api/categories/anti-inflammatory.json?page=2",
+  "foods": [ ...25 foods... ]
+}
+```
+
+#### List All Properties
+**GET** `/properties.json`
+
+Returns all food properties with counts.
+
+**Response:**
+```json
+{
+  "count": 864,
+  "properties": [
+    {
+      "name": "High in fiber",
+      "foodCount": 45
+    }
+  ]
+}
+```
+
+#### List All Synergies
+**GET** `/synergies.json`
+
+Returns all food synergies with counts.
+
+**Response:**
+```json
+{
+  "count": 282,
+  "synergies": [
+    {
+      "name": "rocket",
+      "foodCount": 5
+    }
+  ]
+}
+```
+
+#### List All Timings
+**GET** `/timings.json`
+
+Returns all meal timings with counts.
+
+**Response:**
+```json
+{
+  "count": 60,
+  "timings": [
+    {
+      "name": "breakfast",
+      "foodCount": 41
+    }
+  ]
+}
+```
+
+#### Filter Foods by Timing
+**GET** `/timings/{timing}.json`
+
+Filters foods by a specific meal timing (paginated, 25 per page).
+
+**Example:**
+```
+GET /timings/breakfast.json
+```
+
+**Response:**
+```json
+{
+  "timing": "breakfast",
+  "count": 41,
+  "pagination": {
+    "page": 1,
+    "pageSize": 25,
+    "totalPages": 2,
+    "hasNextPage": true,
+    "hasPreviousPage": false,
+    "nextPage": "/api/timings/breakfast.json?page=2"
+  },
+  "foods": [ ...25 foods... ]
+}
+```
+
 ### Recipes
 
 #### List Recipes (Page 1)
@@ -274,6 +442,46 @@ You can use this specification with:
 ### JavaScript (Fetch API)
 
 ```javascript
+// Search for recipes containing "smoothie"
+fetch('https://vanmarkic.github.io/how-not-to-diet/api/search/recipes.json')
+  .then(response => response.json())
+  .then(data => {
+    const searchQuery = 'smoothie';
+    const results = data.recipes.filter(recipe =>
+      recipe.searchText.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    console.log(`Found ${results.length} recipes matching "${searchQuery}"`);
+  });
+
+// Search for foods containing "bean"
+fetch('https://vanmarkic.github.io/how-not-to-diet/api/search/foods.json')
+  .then(response => response.json())
+  .then(data => {
+    const searchQuery = 'bean';
+    const results = data.foods.filter(food =>
+      food.searchText.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    console.log(`Found ${results.length} foods matching "${searchQuery}"`);
+  });
+
+// Get all categories
+fetch('https://vanmarkic.github.io/how-not-to-diet/api/categories.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(`Found ${data.count} categories`);
+    data.categories.forEach(cat => {
+      console.log(`${cat.name}: ${cat.foodCount} foods`);
+    });
+  });
+
+// Get foods in anti-inflammatory category
+fetch('https://vanmarkic.github.io/how-not-to-diet/api/categories/anti-inflammatory.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(`${data.count} anti-inflammatory foods`);
+    console.log(`Page ${data.page} of ${data.totalPages}`);
+  });
+
 // Get first page of recipes
 fetch('https://vanmarkic.github.io/how-not-to-diet/api/recipes.json')
   .then(response => response.json())
@@ -495,6 +703,32 @@ npx serve dist
 - **Navigation**: Use `nextPage` and `previousPage` fields to navigate between pages
 - **Page Numbers**: Page 1 is at `/recipes.json` or `/foods.json`, subsequent pages are at `/recipes/page-{n}.json` or `/foods/page-{n}.json`
 
+## API Summary
+
+### Endpoints Overview
+
+- **Search**: 2 endpoints for client-side text search
+  - `/search/recipes.json` - Recipe search index (59 recipes)
+  - `/search/foods.json` - Food search index (209 foods)
+
+- **Filters**: 6 endpoints for filtering and discovery
+  - `/categories.json` - 71 categories
+  - `/categories/{category}.json` - Filter by category (paginated)
+  - `/properties.json` - 864 unique properties
+  - `/synergies.json` - 282 food synergies
+  - `/timings.json` - 60 meal timings
+  - `/timings/{timing}.json` - Filter by timing (paginated)
+
+- **Recipes**: 4 endpoints (paginated)
+  - `/recipes.json` - List all recipes (page 1)
+  - `/recipes/page-{page}.json` - Additional pages
+  - `/recipes/{id}.json` - Get single recipe
+
+- **Foods**: 4 endpoints (paginated)
+  - `/foods.json` - List all foods (page 1)
+  - `/foods/page-{page}.json` - Additional pages
+  - `/foods/{id}.json` - Get single food
+
 ## Notes
 
 - This is a **static API** - all data is pre-generated at build time
@@ -504,6 +738,8 @@ npx serve dist
 - Total dataset: 59 recipes and 209 foods
 - List endpoints return paginated results (25 items per page)
 - Detail endpoints (by ID) return single items without pagination
+- Search endpoints return complete datasets for client-side filtering
+- Filter endpoints (categories, timings) return paginated results (25 per page)
 
 ## License
 
