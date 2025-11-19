@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import FoodSelector from '../components/FoodSelector.astro';
+import FoodSelectorComponent from '../components/FoodSelector.astro';
 import foodsData from '../../public/foods-bundle.json';
 
 const foods = foodsData.foods;
@@ -29,7 +29,7 @@ const metadata = foodsData.extraction_metadata || { focus_areas: [] };
       </div>
     </div>
 
-    <FoodSelector foods={foods} />
+    <FoodSelectorComponent foods={foods} />
 
     <div class="info-section">
       <div class="info-card">

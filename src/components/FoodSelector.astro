@@ -8,11 +8,14 @@ interface Props {
     categories: string[];
     properties: string[];
     benefits: string;
+    synergies?: string[];
+    conflicts?: string[];
     timing: string[];
     amount: string;
     sources: {
       pages: number[];
       quotes: string[];
+      recipes?: string[];
     };
   }>;
 }
