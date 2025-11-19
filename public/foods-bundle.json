@@ -112,7 +112,7 @@
     }
   ],
   "build_metadata": {
-    "build_timestamp": "2025-11-19T01:36:44.556Z",
+    "build_timestamp": "2025-11-19T01:56:35.274Z",
     "total_foods": 209,
     "total_categories": 71,
     "builder_version": "1.0.0"
@@ -191,44 +191,6 @@
     "whole-grains"
   ],
   "foods": [
-    {
-      "id": "allspice",
-      "name": "Allspice",
-      "categories": [
-        "spices",
-        "seasonings",
-        "aromatic-spices"
-      ],
-      "properties": [
-        "Flavor: warm, sweet, aromatic",
-        "Flavor notes: combination of cinnamon, nutmeg, and cloves",
-        "Form: ground",
-        "Botanical name: Pimenta dioica",
-        "Origin: Caribbean, Central America"
-      ],
-      "benefits": "Contributes warm, multi-dimensional flavor that combines characteristics of cinnamon, cloves, and nutmeg Used in Berbere Spice Blend for authentic Ethiopian flavor profile",
-      "synergies": [
-        "cinnamon",
-        "cloves",
-        "nutmeg",
-        "cayenne-pepper",
-        "turmeric"
-      ],
-      "conflicts": [],
-      "timing": [
-        "any time as part of spice blends"
-      ],
-      "amount": "⅛ teaspoon in spice blend recipe",
-      "sources": {
-        "pages": [
-          338
-        ],
-        "quotes": [
-          "Berbere Spice Blend - ⅛ teaspoon ground allspice (page 338)",
-          "Listed as ⅛ teaspoon ground allspice in Berbere Spice Blend recipe"
-        ]
-      }
-    },
     {
       "id": "food-1",
       "name": "Adzuki Beans (Aduki Beans)",
@@ -5948,6 +5910,44 @@
         "quotes": [
           "1 teaspoon pure vanilla extract",
           "Add the pumpkin puree, treacle, Date Syrup, pumpkin pie or mixed spice and vanilla and blend until smooth and creamy"
+        ]
+      }
+    },
+    {
+      "id": "food-268",
+      "name": "Allspice",
+      "categories": [
+        "spices",
+        "seasonings",
+        "aromatic-spices"
+      ],
+      "properties": [
+        "Flavor: warm, sweet, aromatic",
+        "Flavor notes: combination of cinnamon, nutmeg, and cloves",
+        "Form: ground",
+        "Botanical name: Pimenta dioica",
+        "Origin: Caribbean, Central America"
+      ],
+      "benefits": "Contributes warm, multi-dimensional flavor that combines characteristics of cinnamon, cloves, and nutmeg Used in Berbere Spice Blend for authentic Ethiopian flavor profile",
+      "synergies": [
+        "cinnamon",
+        "cloves",
+        "nutmeg",
+        "cayenne-pepper",
+        "turmeric"
+      ],
+      "conflicts": [],
+      "timing": [
+        "any time as part of spice blends"
+      ],
+      "amount": "⅛ teaspoon in spice blend recipe",
+      "sources": {
+        "pages": [
+          338
+        ],
+        "quotes": [
+          "Berbere Spice Blend - ⅛ teaspoon ground allspice (page 338)",
+          "Listed as ⅛ teaspoon ground allspice in Berbere Spice Blend recipe"
         ]
       }
     },

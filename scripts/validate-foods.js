@@ -74,7 +74,29 @@ const VALID_CATEGORIES = [
   'herbs-spices',
   'nutrient-dense',
   'heavy-metal-detox',
-  'allium-family'
+  'allium-family',
+  // Additional categories from parallel extraction (pages 187-386)
+  'flavor-enhancer',
+  'natural-sweetener',
+  'mineral-rich',
+  'iron-source',
+  'intact-whole-grains',
+  'fiber-rich',
+  'protein-rich',
+  'cognitive-support',
+  'spices',
+  'nuts-seeds',
+  'healthy-fats',
+  'beans-legumes',
+  'high-protein',
+  'quick-cooking',
+  'metabolism-booster',
+  'gluten-free',
+  'vinegar',
+  'low-calorie',
+  'whole-food',
+  'seasonings',
+  'aromatic-spices'
 ];
 
 const VALID_TIMING = [
@@ -125,7 +147,21 @@ const VALID_TIMING = [
   'particularly-effective-in-dressings',
   'particularly-effective-roasted',
   'appetizers',
-  'particularly-effective-in-stuffing'
+  'particularly-effective-in-stuffing',
+  // Additional timing values from parallel extraction (pages 187-386)
+  'in-sweet-dishes',
+  'desserts',
+  'any-time',
+  'as-dessert',
+  'in-season-late-summer',
+  'before-roasting',
+  'as-condiment',
+  'as-sweetener',
+  'occasional-use',
+  'with-fruit',
+  'as-dessert-topping',
+  'as-topping',
+  'any time as part of spice blends'
 ];
 
 class ValidationError {
