@@ -1,7 +1,7 @@
 {
   "name": "how-not-to-diet-menu-planner",
   "version": "0.1.0",
-  "description": "A weekly menu planner based on food science principles",
+  "description": "Science-based weekly menu planner with food synergies, nutrition timing, and AI-powered meal planning. Inspired by Dr. Greger's How Not To Diet.",
   "type": "module",
   "scripts": {
     "dev": "astro dev",

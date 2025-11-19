@@ -104,32 +104,35 @@ const fullImageUrl = new URL(image, Astro.site);
     </script>
   </head>
   <body>
+    <!-- Skip to main content for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div class="layout">
-      <header>
-        <nav>
-          <a href={getPath()} class="logo">How Not To Diet - Menu Planner</a>
-          <ul>
-            <li><a href={getPath()}>Home</a></li>
-            <li><a href={getPath('planner')}>Weekly Planner</a></li>
-            <li><a href={getPath('foods')}>Foods</a></li>
-            <li><a href={getPath('recipes')}>Recipes</a></li>
-            <li><a href={getPath('api-docs')}>API Docs</a></li>
+      <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+          <a href={getPath()} class="logo" aria-label="How Not To Diet Menu Planner - Home">How Not To Diet - Menu Planner</a>
+          <ul role="menubar" aria-label="Main menu">
+            <li role="none"><a href={getPath()} role="menuitem">Home</a></li>
+            <li role="none"><a href={getPath('planner')} role="menuitem">Weekly Planner</a></li>
+            <li role="none"><a href={getPath('foods')} role="menuitem">Foods</a></li>
+            <li role="none"><a href={getPath('recipes')} role="menuitem">Recipes</a></li>
+            <li role="none"><a href={getPath('api-docs')} role="menuitem">API Docs</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
+      <main role="main" id="main-content">
         <slot />
       </main>
 
-      <footer>
+      <footer role="contentinfo">
         <div class="footer-content">
           <p>&copy; {new Date().getFullYear()} How Not To Diet Menu Planner</p>
           <p class="developer">Developed by <strong>Dragan Markovic</strong></p>
-          <nav class="footer-nav">
+          <nav class="footer-nav" aria-label="Footer navigation">
             <a href={getPath('dev')}>Development Diary</a>
-            <span class="separator">•</span>
-            <a href="https://github.com/vanmarkic/how-not-to-diet" target="_blank" rel="noopener">GitHub</a>
+            <span class="separator" aria-hidden="true">•</span>
+            <a href="https://github.com/vanmarkic/how-not-to-diet" target="_blank" rel="noopener noreferrer">GitHub</a>
           </nav>
         </div>
       </footer>
