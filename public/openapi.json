@@ -21,34 +21,44 @@
   "paths": {
     "/recipes.json": {
       "get": {
-        "summary": "List all recipes",
-        "description": "Retrieves a list of all available recipes with their basic information including name, difficulty, meal type, and foods used.",
+        "summary": "List recipes (page 1)",
+        "description": "Retrieves the first page of recipes (25 per page) with pagination metadata. Use page-{page}.json endpoints for additional pages.",
         "operationId": "listRecipes",
         "tags": ["Recipes"],
         "responses": {
           "200": {
-            "description": "Successful response with all recipes",
+            "description": "Successful response with paginated recipes",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {
-                    "count": {
-                      "type": "integer",
-                      "description": "Total number of recipes available"
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/PaginationMetadata"
                     },
-                    "data": {
-                      "type": "array",
-                      "description": "Array of recipe objects",
-                      "items": {
-                        "$ref": "#/components/schemas/Recipe"
-                      }
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "description": "Array of recipe objects for this page",
+                          "items": {
+                            "$ref": "#/components/schemas/Recipe"
+                          }
+                        }
+                      },
+                      "required": ["data"]
                     }
-                  },
-                  "required": ["count", "data"]
+                  ]
                 },
                 "example": {
-                  "count": 47,
+                  "count": 59,
+                  "page": 1,
+                  "pageSize": 25,
+                  "totalPages": 3,
+                  "hasNextPage": true,
+                  "hasPreviousPage": false,
+                  "nextPage": "/api/recipes/page-2.json",
+                  "previousPage": null,
                   "data": [
                     {
                       "id": "recipe-001",
@@ -189,36 +199,125 @@
         }
       }
     },
-    "/foods.json": {
+    "/recipes/page-{page}.json": {
       "get": {
-        "summary": "List all foods",
-        "description": "Retrieves a list of all available foods with their nutritional properties, benefits, and synergies.",
-        "operationId": "listFoods",
-        "tags": ["Foods"],
+        "summary": "Get recipes page",
+        "description": "Retrieves a specific page of recipes (25 per page) with pagination metadata.",
+        "operationId": "getRecipesPage",
+        "tags": ["Recipes"],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "description": "Page number (2 or higher, page 1 is at /recipes.json)",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 2
+            },
+            "example": 2
+          }
+        ],
         "responses": {
           "200": {
-            "description": "Successful response with all foods",
+            "description": "Successful response with paginated recipes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/PaginationMetadata"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "description": "Array of recipe objects for this page",
+                          "items": {
+                            "$ref": "#/components/schemas/Recipe"
+                          }
+                        }
+                      },
+                      "required": ["data"]
+                    }
+                  ]
+                },
+                "example": {
+                  "count": 59,
+                  "page": 2,
+                  "pageSize": 25,
+                  "totalPages": 3,
+                  "hasNextPage": true,
+                  "hasPreviousPage": true,
+                  "nextPage": "/api/recipes/page-3.json",
+                  "previousPage": "/api/recipes.json",
+                  "data": []
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid page number",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "count": {
-                      "type": "integer",
-                      "description": "Total number of foods available"
-                    },
-                    "data": {
-                      "type": "array",
-                      "description": "Array of food objects",
-                      "items": {
-                        "$ref": "#/components/schemas/Food"
-                      }
+                    "error": {
+                      "type": "string"
                     }
-                  },
-                  "required": ["count", "data"]
+                  }
                 },
                 "example": {
-                  "count": 152,
+                  "error": "Invalid page number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/foods.json": {
+      "get": {
+        "summary": "List foods (page 1)",
+        "description": "Retrieves the first page of foods (25 per page) with pagination metadata. Use page-{page}.json endpoints for additional pages.",
+        "operationId": "listFoods",
+        "tags": ["Foods"],
+        "responses": {
+          "200": {
+            "description": "Successful response with paginated foods",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/PaginationMetadata"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "description": "Array of food objects for this page",
+                          "items": {
+                            "$ref": "#/components/schemas/Food"
+                          }
+                        }
+                      },
+                      "required": ["data"]
+                    }
+                  ]
+                },
+                "example": {
+                  "count": 209,
+                  "page": 1,
+                  "pageSize": 25,
+                  "totalPages": 9,
+                  "hasNextPage": true,
+                  "hasPreviousPage": false,
+                  "nextPage": "/api/foods/page-2.json",
+                  "previousPage": null,
                   "data": [
                     {
                       "id": "food-001",
@@ -370,6 +469,85 @@
                 },
                 "example": {
                   "error": "Food with id 'food-158' not found"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/foods/page-{page}.json": {
+      "get": {
+        "summary": "Get foods page",
+        "description": "Retrieves a specific page of foods (25 per page) with pagination metadata.",
+        "operationId": "getFoodsPage",
+        "tags": ["Foods"],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "description": "Page number (2 or higher, page 1 is at /foods.json)",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 2
+            },
+            "example": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with paginated foods",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/PaginationMetadata"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "description": "Array of food objects for this page",
+                          "items": {
+                            "$ref": "#/components/schemas/Food"
+                          }
+                        }
+                      },
+                      "required": ["data"]
+                    }
+                  ]
+                },
+                "example": {
+                  "count": 209,
+                  "page": 2,
+                  "pageSize": 25,
+                  "totalPages": 9,
+                  "hasNextPage": true,
+                  "hasPreviousPage": true,
+                  "nextPage": "/api/foods/page-3.json",
+                  "previousPage": "/api/foods.json",
+                  "data": []
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid page number",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "error": "Invalid page number"
                 }
               }
             }
@@ -675,6 +853,66 @@
             ]
           }
         }
+      },
+      "PaginationMetadata": {
+        "type": "object",
+        "description": "Pagination metadata for list endpoints",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "Total number of items across all pages",
+            "example": 59
+          },
+          "page": {
+            "type": "integer",
+            "description": "Current page number (1-indexed)",
+            "minimum": 1,
+            "example": 1
+          },
+          "pageSize": {
+            "type": "integer",
+            "description": "Number of items per page",
+            "example": 25
+          },
+          "totalPages": {
+            "type": "integer",
+            "description": "Total number of pages available",
+            "minimum": 1,
+            "example": 3
+          },
+          "hasNextPage": {
+            "type": "boolean",
+            "description": "Whether there is a next page available",
+            "example": true
+          },
+          "hasPreviousPage": {
+            "type": "boolean",
+            "description": "Whether there is a previous page available",
+            "example": false
+          },
+          "nextPage": {
+            "type": "string",
+            "nullable": true,
+            "description": "URL path to the next page, or null if no next page",
+            "example": "/api/recipes/page-2.json"
+          },
+          "previousPage": {
+            "type": "string",
+            "nullable": true,
+            "description": "URL path to the previous page, or null if no previous page",
+            "example": null
+          }
+        },
+        "required": [
+          "count",
+          "page",
+          "pageSize",
+          "totalPages",
+          "hasNextPage",
+          "hasPreviousPage",
+          "nextPage",
+          "previousPage"
+        ]
       }
     }
   },

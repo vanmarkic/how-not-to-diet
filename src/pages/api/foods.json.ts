@@ -17,9 +17,27 @@ export const GET: APIRoute = async () => {
     // Sort by ID for consistent ordering
     foods.sort((a, b) => a.id.localeCompare(b.id));
 
+    // Pagination constants
+    const pageSize = 25;
+    const count = foods.length;
+    const page = 1;
+    const totalPages = Math.ceil(count / pageSize);
+    const hasNextPage = page < totalPages;
+    const hasPreviousPage = page > 1;
+
+    // Get the first page of foods
+    const paginatedFoods = foods.slice(0, pageSize);
+
     return new Response(JSON.stringify({
-      count: foods.length,
-      data: foods
+      count,
+      page,
+      pageSize,
+      totalPages,
+      hasNextPage,
+      hasPreviousPage,
+      nextPage: hasNextPage ? `/api/foods/page-2.json` : null,
+      previousPage: hasPreviousPage ? `/api/foods/page-0.json` : null,
+      data: paginatedFoods
     }, null, 2), {
       status: 200,
       headers: {

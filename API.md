@@ -10,17 +10,26 @@ https://vanmarkic.github.io/how-not-to-diet/api
 
 ## Endpoints
 
+All list endpoints return paginated results with 25 items per page.
+
 ### Recipes
 
-#### List All Recipes
+#### List Recipes (Page 1)
 **GET** `/recipes.json`
 
-Returns a list of all available recipes.
+Returns the first page of recipes (25 per page) with pagination metadata.
 
 **Response:**
 ```json
 {
   "count": 59,
+  "page": 1,
+  "pageSize": 25,
+  "totalPages": 3,
+  "hasNextPage": true,
+  "hasPreviousPage": false,
+  "nextPage": "/api/recipes/page-2.json",
+  "previousPage": null,
   "data": [
     {
       "id": "recipe-001",
@@ -35,6 +44,34 @@ Returns a list of all available recipes.
       "key_synergies": [...]
     }
   ]
+}
+```
+
+#### Get Recipes Page
+**GET** `/recipes/page-{page}.json`
+
+Returns a specific page of recipes (pages 2-3).
+
+**Parameters:**
+- `page` (integer): Page number (2 or higher)
+
+**Example:**
+```
+GET /recipes/page-2.json
+```
+
+**Response:**
+```json
+{
+  "count": 59,
+  "page": 2,
+  "pageSize": 25,
+  "totalPages": 3,
+  "hasNextPage": true,
+  "hasPreviousPage": true,
+  "nextPage": "/api/recipes/page-3.json",
+  "previousPage": "/api/recipes.json",
+  "data": [ ...25 recipes... ]
 }
 ```
 

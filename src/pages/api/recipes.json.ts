@@ -17,9 +17,33 @@ export const GET: APIRoute = async () => {
     // Sort by ID for consistent ordering
     recipes.sort((a, b) => a.id.localeCompare(b.id));
 
+    // Pagination settings
+    const pageSize = 25;
+    const page = 1;
+    const count = recipes.length;
+    const totalPages = Math.ceil(count / pageSize);
+    const hasNextPage = page < totalPages;
+    const hasPreviousPage = page > 1;
+
+    // Get first page of results
+    const startIndex = (page - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+    const paginatedRecipes = recipes.slice(startIndex, endIndex);
+
+    // Build next/previous page URLs
+    const nextPage = hasNextPage ? `/api/recipes/page-${page + 1}.json` : null;
+    const previousPage = hasPreviousPage ? `/api/recipes/page-${page - 1}.json` : null;
+
     return new Response(JSON.stringify({
-      count: recipes.length,
-      data: recipes
+      count: count,
+      page: page,
+      pageSize: pageSize,
+      totalPages: totalPages,
+      hasNextPage: hasNextPage,
+      hasPreviousPage: hasPreviousPage,
+      nextPage: nextPage,
+      previousPage: previousPage,
+      data: paginatedRecipes
     }, null, 2), {
       status: 200,
       headers: {
