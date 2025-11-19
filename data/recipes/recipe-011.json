@@ -1,0 +1,22 @@
+{
+  "id": "recipe-011",
+  "name": "Beetroot",
+  "page": 189,
+  "meal_type": "lunch",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "black-pepper",
+    "brussels-sprouts",
+    "butternut-squash",
+    "fresh-herbs",
+    "onions",
+    "oregano-dried"
+  ],
+  "daily_dozen": [
+    "cruciferous",
+    "vegetables"
+  ],
+  "tweaks": [],
+  "synergies": []
+}

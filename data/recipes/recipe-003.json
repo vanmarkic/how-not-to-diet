@@ -1,0 +1,39 @@
+{
+  "id": "recipe-003",
+  "name": "Lentil Bolognese",
+  "page": 134,
+  "meal_type": "lunch",
+  "servings": 4,
+  "difficulty": "moderate",
+  "foods": [
+    "bell-peppers-raw",
+    "crushed-red-pepper-flakes",
+    "fresh-herbs",
+    "garlic",
+    "lentils-brown-puy",
+    "miso",
+    "nutritional-yeast",
+    "onions",
+    "oregano-dried",
+    "portobello-mushrooms",
+    "zucchini-courgette"
+  ],
+  "daily_dozen": [
+    "beans",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "fiber"
+  ],
+  "synergies": [
+    {
+      "foods": [
+        "garlic",
+        "onions",
+        "portobello-mushrooms"
+      ],
+      "benefit": "Mushrooms + alliums: Enhanced immune-boosting properties"
+    }
+  ]
+}

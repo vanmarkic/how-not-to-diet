@@ -1,0 +1,44 @@
+{
+  "id": "food-183",
+  "name": "Kombu (Dried Sea Vegetable)",
+  "categories": [
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "microbiome-friendly"
+  ],
+  "properties": [
+    "Dried edible kelp/seaweed",
+    "Rich source of umami flavor",
+    "Contains natural glutamates",
+    "High in iodine and minerals",
+    "Used in Japanese cuisine for broth",
+    "Optional ingredient for depth of flavor"
+  ],
+  "benefits": "Kombu is a type of dried edible kelp used in Japanese cooking to add deep umami flavor to broths and stocks. It contains natural glutamates which enhance savory taste without added salt or MSG. Rich in minerals including iodine, kombu provides nutritional benefits while acting as a flavor enhancer. A single strip infuses large batches of vegetable broth with complex, satisfying taste.",
+  "synergies": [
+    "vegetable-broth",
+    "miso",
+    "mushrooms-shiitake",
+    "tomato-puree",
+    "ginger",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "1 strip (2-inch/5cm piece) per large pot of broth or soup",
+  "sources": {
+    "pages": [
+      341,
+      342,
+      343
+    ],
+    "quotes": [
+      "1 strip kombu (dried sea vegetable) (optional)",
+      "Add the parsley, bay leaf, peppercorns, kombu (if using) and 2.85 litres of water",
+      "Stir in the tomatoes, mushrooms, kombu (if using), parsley, bay leaves and black pepper"
+    ]
+  }
+}

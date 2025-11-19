@@ -1,0 +1,37 @@
+{
+  "id": "recipe-071",
+  "name": "BROL Bowl with Sautéed Greens",
+  "page": 306,
+  "servings": "1",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "barley",
+    "oat-groats-whole-intact-oats",
+    "lentils-brown-puy",
+    "onions",
+    "garlic",
+    "carrots",
+    "miso",
+    "cavolo-nero",
+    "nutritional-yeast",
+    "black-pepper",
+    "lemon"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "cruciferous": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "onions",
+    "garlic"
+  ]
+}

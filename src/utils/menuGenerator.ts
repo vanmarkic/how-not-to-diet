@@ -1,4 +1,4 @@
-import type { Recipe, Food, WeeklyMenu, DayMenu, Weekday } from '@types/index';
+import type { Recipe, Food, WeeklyMenu, DayMenu, Weekday } from '../types';
 import { loadFoods } from './dataLoader';
 import { analyzeDaySynergies, extractFoodNamesFromRecipe } from './synergyEngine';
 
@@ -31,7 +31,7 @@ export async function scoreRecipeForSynergy(recipe: Recipe): Promise<number> {
 
   for (const food of foodObjects) {
     for (const category of dailyDozenCategories) {
-      if (food.categories.includes(category)) {
+      if (food.categories.includes(category as any)) {
         score += 5;
       }
     }

@@ -6,7 +6,6 @@ import type { Recipe, WeeklyMenu, Food, FoodCategory, MealTiming } from '../type
 interface ExtractedFoodData {
   extraction_metadata: {
     extraction_date: string;
-    source_document: string;
     focus_areas: string[];
   };
   extraction_index: Array<{
@@ -73,7 +72,7 @@ export async function searchRecipes(query: string): Promise<Recipe[]> {
 export async function loadWeeklyMenus(): Promise<WeeklyMenu[]> {
   try {
     const menusModule = await import('@data/weekly-menus.json');
-    return menusModule.default as WeeklyMenu[];
+    return menusModule.default as unknown as WeeklyMenu[];
   } catch (error) {
     console.error('Error loading weekly menus:', error);
     return [];
@@ -173,7 +172,7 @@ export async function loadFoodsByTiming(timing: MealTiming): Promise<Food[]> {
  * @example
  * ```ts
  * const data = await loadExtractedFoodData();
- * console.log(data.extraction_metadata.source_document);
+ * console.log(data.extraction_metadata.extraction_date);
  * console.log(data.foods.length);
  * ```
  */

@@ -1,0 +1,47 @@
+{
+  "id": "food-170",
+  "name": "Spaghetti Squash",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-calorie-density",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Winter squash with unique stringy texture",
+    "Natural pasta alternative when cooked",
+    "Very low calorie density compared to grain pasta",
+    "High in beta-carotene and vitamin C",
+    "Scrapes into noodle-like strands after baking",
+    "Perfect for calorie dilution in pasta dishes"
+  ],
+  "benefits": "Spaghetti squash is a remarkable vegetable that transforms into pasta-like noodles when cooked, giving you all the heart and weight-loss benefits of vegetables in a pasta-like form. The stringy texture provides satisfying 'pasta' experience with dramatically fewer calories than grain pasta. Rich in beta-carotene and antioxidants while maintaining very high water content for optimal satiety and calorie dilution. Can be baked in oven or pressure cooked for quick preparation.",
+  "synergies": [
+    "basil-pesto",
+    "white-beans",
+    "tomatoes",
+    "garlic",
+    "nutritional-yeast",
+    "brazil-nut-parm"
+  ],
+  "conflicts": [],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-as-pasta-substitute"
+  ],
+  "amount": "1 large spaghetti squash serves 4 people",
+  "sources": {
+    "pages": [
+      126,
+      127,
+      140,
+      141
+    ],
+    "quotes": [
+      "'Pasta' made from vegetables, such as spiralized courgettes and spaghetti squash noodles, gives you all the heart and weight-loss benefits of veggies in a pasta-like form.",
+      "The fragrant Basil Pesto and cooked white beans add a deep flavour and interesting texture to baked spaghetti squash and are delicious with cooked courgette noodles and whole-grain pasta, too.",
+      "When the squash is done baking, remove and discard its seeds, and then use a fork to scrape the squash into strands and place them in a large bowl."
+    ]
+  }
+}

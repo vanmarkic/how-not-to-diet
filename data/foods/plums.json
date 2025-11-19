@@ -1,0 +1,42 @@
+{
+  "id": "food-261",
+  "name": "Plums",
+  "categories": [
+    "fruits",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Stone fruit (drupe)",
+    "Contains a pit/stone inside",
+    "Fresh, ripe varieties",
+    "In season late summer",
+    "Purple/red skin with antioxidants",
+    "Sweet-tart flavor"
+  ],
+  "benefits": "Plums are stone fruits rich in antioxidants, particularly in their colorful skins. They provide fiber, vitamins, and natural sweetness while supporting digestive health. Part of daily fruit serving for optimal metabolic health and weight management.",
+  "synergies": [
+    "other-stone-fruits",
+    "cherries",
+    "peaches",
+    "nectarines",
+    "apricots",
+    "chia-seeds",
+    "mango"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-time",
+    "in-season-late-summer"
+  ],
+  "amount": "3 ripe plums, pitted and cut into 1-inch/2.5cm pieces",
+  "sources": {
+    "pages": [
+      316
+    ],
+    "quotes": [
+      "3 ripe plums, pitted and cut into 1-inch/2.5cm pieces",
+      "A drupe, more commonly known as stone fruit, is so named because it contains a stone (or pit) inside. Many popular stone fruits, such as cherries, plums, peaches, nectarines, mangoes and dates, are in season in late summer."
+    ]
+  }
+}

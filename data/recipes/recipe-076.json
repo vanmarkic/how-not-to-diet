@@ -1,0 +1,22 @@
+{
+  "id": "recipe-076",
+  "name": "Crust-Free Pumpkin Pie",
+  "page": 320,
+  "servings": "6-8",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "chia-seeds",
+    "cashews",
+    "pumpkin",
+    "cinnamon",
+    "nutmeg",
+    "walnuts"
+  ],
+  "daily_dozen_coverage": {
+    "nuts_seeds": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": []
+}

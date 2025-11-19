@@ -1,0 +1,36 @@
+{
+  "id": "recipe-060",
+  "name": "Teff and Black Lentils Over Berbere-Spiced Kale",
+  "page": 271,
+  "servings": "3-4",
+  "difficulty": "Moderate",
+  "meal_type": "Main Dish",
+  "foods_used": [
+    "teff",
+    "lentils-brown-puy",
+    "kale",
+    "onions",
+    "garlic",
+    "tomatoes",
+    "nutritional-yeast",
+    "miso",
+    "bell-peppers"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "cruciferous": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast"
+  ],
+  "key_synergies": [
+    "kale",
+    "tomatoes",
+    "onions",
+    "garlic"
+  ]
+}

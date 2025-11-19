@@ -1,0 +1,55 @@
+{
+  "id": "food-153",
+  "name": "Endive",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "low-calorie-density",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Member of the chicory family (related to escarole and radicchio)",
+    "Bitter leafy green with distinctive flavor",
+    "Rich in vitamins A, C, and K",
+    "Contains folate and fiber",
+    "Provides kaempferol and other flavonoids",
+    "Very low in calories",
+    "Can be eaten raw or cooked"
+  ],
+  "benefits": [
+    "Supports digestive health with high fiber content",
+    "Provides antioxidants that combat free radicals",
+    "Contains bitter compounds that may aid digestion",
+    "Supports bone health with vitamin K",
+    "May help regulate blood sugar levels",
+    "Promotes liver health and detoxification",
+    "Aids in weight management with low calorie density",
+    "Contains anti-inflammatory compounds"
+  ],
+  "synergies": [
+    "Pairs well with white beans (cannellini) in Italian dishes",
+    "Combines with garlic for enhanced flavor and benefits",
+    "Works with other bitter greens (radicchio, escarole)",
+    "Complements vegetable broth in soups"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "soups",
+    "salads"
+  ],
+  "amount": "2-4 cups chopped per serving",
+  "sources": {
+    "pages": [
+      38,
+      118
+    ],
+    "quotes": [
+      "A member of the chicory family, escarole is a hearty bitter green widely used in Italian cooking and is frequently paired with cannellini beans. Endive or chicory would also taste good.",
+      "ARE PRE-CUT VEGETABLES JUST AS HEALTHY? - Endotoxins come from bacteria, such as E. coli. Most spoilage organisms cannot penetrate the surface barrier of plants to spoil the inner tissues, but once you cut them open, bacteria can gain access and vegetables can start to spoil in a matter of days."
+    ]
+  },
+  "conflicts": []
+}

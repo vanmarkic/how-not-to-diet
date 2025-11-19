@@ -1,0 +1,62 @@
+{
+  "id": "food-150",
+  "name": "Swiss Chard",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "anti-inflammatory",
+    "antioxidant-rich",
+    "low-calorie-density"
+  ],
+  "properties": [
+    "Dark leafy green vegetable",
+    "Member of the beet family",
+    "Rich in vitamins A, C, and K",
+    "High in minerals including magnesium and potassium",
+    "Contains betalains and flavonoids",
+    "Low in calories, high in nutrients",
+    "Can be used in place of spinach or kale"
+  ],
+  "benefits": [
+    "Supports healthy digestion with high fiber content",
+    "Provides anti-inflammatory compounds",
+    "Rich in antioxidants that combat oxidative stress",
+    "Supports bone health with vitamin K",
+    "Helps regulate blood sugar levels",
+    "Promotes heart health",
+    "Aids in weight management due to low calorie density"
+  ],
+  "synergies": [
+    "Pairs well with beans and legumes for complete protein",
+    "Combines with garlic for enhanced cardiovascular benefits",
+    "Works with turmeric and spices for anti-inflammatory effects",
+    "Complements quinoa and whole grains in balanced meals"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking",
+    "soups"
+  ],
+  "amount": "3-6 cups cooked or 6-9 cups raw per serving",
+  "sources": {
+    "pages": [
+      32,
+      72,
+      176,
+      246,
+      261,
+      832
+    ],
+    "quotes": [
+      "6 cups/150g coarsely chopped spinach or chard",
+      "This simple soup is so full of flavour, it tastes as if it took hours to make. Spinach, chard or other dark leafy greens may be substituted for the kale if desired.",
+      "Depending on the type of greens, this can take as few as 3 minutes (for chard or spinach) or 25 to 45 minutes (for kale or collards).",
+      "TURMERIC QUINOA AND RED BEANS WITH CAULIFLOWER AND CHARD",
+      "8 ounces/225g chard, kale or spinach, tough stems removed, chopped",
+      "9 ounces/250g chard or spinach, chopped"
+    ]
+  },
+  "conflicts": []
+}

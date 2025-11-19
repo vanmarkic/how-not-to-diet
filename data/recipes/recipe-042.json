@@ -1,0 +1,33 @@
+{
+  "id": "recipe-042",
+  "name": "Szechuan Tempeh and Broccoli",
+  "page": 244,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Spicy Szechuan-style stir-fry with tempeh and broccoli.",
+  "foods_used": [
+    "tempeh",
+    "broccoli",
+    "onions",
+    "bell-peppers",
+    "carrots",
+    "garlic",
+    "ginger",
+    "mushrooms-white",
+    "miso",
+    "apple-cider-vinegar",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "cruciferous-vegetables",
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "vinegar",
+    "fermented-foods",
+    "cruciferous-vegetables"
+  ],
+  "key_synergies": "Tempeh + broccoli for complete protein and sulforaphane. Vinegar + miso for gut health."
+}

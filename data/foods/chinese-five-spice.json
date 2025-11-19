@@ -1,0 +1,50 @@
+{
+  "id": "food-222",
+  "name": "Chinese Five-Spice Powder",
+  "categories": [
+    "spices",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "thermogenic"
+  ],
+  "properties": [
+    "Traditional Chinese spice blend containing five key spices",
+    "Typically includes star anise, cloves, cinnamon, Sichuan pepper, and fennel seeds",
+    "Balances sweet, sour, bitter, pungent, and salty flavors in Chinese philosophy",
+    "Rich in antioxidants from multiple spice compounds",
+    "Anti-inflammatory properties from combined spices",
+    "Adds complex flavor without added salt or fat",
+    "Contains metabolism-boosting compounds"
+  ],
+  "benefits": [
+    "Provides concentrated antioxidant protection from five different spices",
+    "Supports anti-inflammatory response throughout the body",
+    "May enhance thermogenesis and metabolic rate",
+    "Aids digestion through carminative properties",
+    "Helps reduce sodium needs through complex flavor profile",
+    "May support blood sugar regulation",
+    "Promotes cardiovascular health"
+  ],
+  "synergies": [
+    "Pairs with ginger in Szechuan-style stir-fries",
+    "Complements garlic powder in Asian marinades",
+    "Works with rice vinegar in sauce bases",
+    "Enhances umami flavors in tempeh dishes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking"
+  ],
+  "amount": "1/2 teaspoon per recipe serving 4 people",
+  "sources": {
+    "pages": [
+      241
+    ],
+    "quotes": [
+      "1/2 teaspoon Chinese five-spice powder"
+    ]
+  }
+}

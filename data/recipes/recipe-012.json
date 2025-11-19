@@ -1,0 +1,19 @@
+{
+  "id": "recipe-012",
+  "name": "Artichoke And Spinach Stuffed\nPortobellos",
+  "page": 195,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "artichokes",
+    "portobello-mushrooms",
+    "spinach"
+  ],
+  "daily_dozen": [
+    "greens",
+    "vegetables"
+  ],
+  "tweaks": [],
+  "synergies": []
+}

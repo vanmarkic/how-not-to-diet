@@ -1,0 +1,47 @@
+{
+  "id": "food-181",
+  "name": "Balsamic Vinegar",
+  "categories": [
+    "anti-inflammatory",
+    "antioxidant-rich",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Sweet and tangy aged vinegar",
+    "Made from grape must",
+    "Rich, complex flavor",
+    "Natural sweetness without added sugar",
+    "Darker color than other vinegars",
+    "Ideal for salad dressings"
+  ],
+  "benefits": "Balsamic vinegar is a sweet, aged vinegar made from grape must that provides rich flavor to salads and vegetables. Its natural sweetness and complex taste make it ideal for dressings and marinades. Like all vinegars, it supports weight loss through metabolic benefits when consumed with meals. The concentrated flavor means a small amount goes a long way in enhancing dishes.",
+  "synergies": [
+    "tomatoes",
+    "rocket-arugula",
+    "bell-peppers",
+    "garlic-powder",
+    "nigella-seeds-black-cumin",
+    "mango-fresh"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1-2 tablespoons in dressings or drizzled on salads",
+  "sources": {
+    "pages": [
+      27,
+      79,
+      88,
+      106,
+      111,
+      120
+    ],
+    "quotes": [
+      "starting a meal with a tomato salad sprinkled with some nigella seeds, garlic powder and balsamic vinegar hits five boxes right there",
+      "RED BEAN AND ROCKET SALAD WITH MANGO BALSAMIC DRESSING",
+      "2 tablespoons balsamic vinegar"
+    ]
+  }
+}

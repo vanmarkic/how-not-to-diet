@@ -1,0 +1,51 @@
+{
+  "id": "food-158",
+  "name": "Poppy Seeds",
+  "categories": [
+    "nuts-and-seeds",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Tiny seeds about the size of teff grain",
+    "Rich in calcium and manganese",
+    "Contains healthy polyunsaturated fats",
+    "Provides iron, zinc, and magnesium",
+    "Good source of dietary fiber",
+    "Contains oleic acid and linoleic acid",
+    "Provides plant-based protein"
+  ],
+  "benefits": [
+    "Supports bone health with high calcium content",
+    "Provides minerals for metabolic function",
+    "Contains healthy fats for cardiovascular health",
+    "May help improve digestion with fiber content",
+    "Supports immune system with zinc",
+    "Contains antioxidants that protect cells",
+    "May help with sleep quality (contains alkaloids in trace amounts)",
+    "Adds texture and nutrition to dishes"
+  ],
+  "synergies": [
+    "Used as comparison for teff grain size in recipes",
+    "Can be sprinkled on salads and baked goods",
+    "Pairs well with other seeds for nutrition",
+    "Complements whole grains and vegetables"
+  ],
+  "timing": [
+    "any-meal",
+    "breakfast",
+    "snacks"
+  ],
+  "amount": "1-2 teaspoons per serving (about 5-10g)",
+  "sources": {
+    "pages": [
+      271,
+      968
+    ],
+    "quotes": [
+      "TEFF AND BLACK LENTILS OVER BERBERE-SPICED KALE - Teff is a fine grain about the size of a poppy seed. Naturally gluten-free and high in protein, it is a staple in many East African dishes.",
+      "Teff is a fine grain about the size of a poppy seed. Naturally gluten-free and high in protein"
+    ]
+  },
+  "conflicts": []
+}

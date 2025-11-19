@@ -1,0 +1,39 @@
+{
+  "id": "recipe-069",
+  "name": "Millet Upma (Savoury Indian Porridge)",
+  "page": 301,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "millet",
+    "onions",
+    "carrots",
+    "ginger",
+    "turmeric",
+    "cumin",
+    "coriander",
+    "miso",
+    "peas",
+    "tomatoes",
+    "lemon",
+    "cashews"
+  ],
+  "daily_dozen_coverage": {
+    "greens": 1,
+    "other_veg": 1,
+    "nuts_seeds": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [
+    "cumin",
+    "curcumin",
+    "ground_ginger"
+  ],
+  "key_synergies": [
+    "onions",
+    "ginger",
+    "carrots"
+  ]
+}

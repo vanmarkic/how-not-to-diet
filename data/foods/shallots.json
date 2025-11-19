@@ -1,0 +1,66 @@
+{
+  "id": "food-151",
+  "name": "Shallots",
+  "categories": [
+    "rich-in-vegetables",
+    "anti-inflammatory",
+    "antioxidant-rich",
+    "low-calorie-density"
+  ],
+  "properties": [
+    "Member of the allium family (related to onions and garlic)",
+    "Contains quercetin and other flavonoids",
+    "Rich in organosulfur compounds",
+    "Provides vitamin C, vitamin A, and minerals",
+    "Milder and sweeter flavor than onions",
+    "Contains allicin (when chopped or crushed)",
+    "Low in calories with concentrated nutrients"
+  ],
+  "benefits": [
+    "Supports cardiovascular health through organosulfur compounds",
+    "Provides anti-inflammatory effects",
+    "Rich in antioxidants that protect against cellular damage",
+    "May help regulate blood sugar levels",
+    "Supports immune system function",
+    "Contains compounds that may have anticancer properties",
+    "Aids in detoxification processes"
+  ],
+  "synergies": [
+    "Enhances flavor and nutrition when combined with mushrooms",
+    "Pairs well with cauliflower and other cruciferous vegetables",
+    "Complements whole grains and legumes",
+    "Works with garlic for enhanced cardiovascular benefits"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking",
+    "soups",
+    "salads"
+  ],
+  "amount": "2-4 shallots per serving (chopped or sliced)",
+  "sources": {
+    "pages": [
+      50,
+      51,
+      128,
+      162,
+      178,
+      208,
+      238,
+      258
+    ],
+    "quotes": [
+      "2 shallots, cut lengthways into thin slivers",
+      "Add the bok choy, mushrooms, shallots, chillies and carrot. Lower the heat to low and cook for 5 minutes.",
+      "½ cup/75g chopped onion, or 2 large shallots, chopped",
+      "SAGE-KISSED SWEET POTATO WEDGES WITH SHALLOTS",
+      "2 shallots, finely chopped",
+      "3 shallots, quartered lengthways (optional)",
+      "¼ cup/40g coarsely chopped shallot",
+      "2 shallots, finely chopped"
+    ]
+  },
+  "conflicts": []
+}

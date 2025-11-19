@@ -1,0 +1,49 @@
+{
+  "id": "food-180",
+  "name": "Vegetable Broth (Light & Rich)",
+  "categories": [
+    "herbs-and-spices",
+    "low-in-salt",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Salt-free cooking liquid base",
+    "Made from vegetables, herbs, and aromatics",
+    "Light version for everyday use",
+    "Rich roasted version for deeper flavor",
+    "Optional kombu adds umami depth",
+    "Can be frozen in portions"
+  ],
+  "benefits": "Vegetable broth provides a flavorful, salt-free cooking liquid base for soups, stews, and sauces. The light version uses simple vegetables and herbs for everyday cooking. The rich roasted version features caramelized vegetables, miso paste, and optional kombu seaweed for enhanced umami flavor without added sodium. Both versions support weight loss by adding flavor without calories or salt.",
+  "synergies": [
+    "miso",
+    "kombu",
+    "tomato-puree",
+    "mushrooms",
+    "onions",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "Use as needed in recipes (typically 4-6 cups per soup recipe serving 4-6 people)",
+  "sources": {
+    "pages": [
+      32,
+      38,
+      41,
+      44,
+      340,
+      341,
+      342,
+      343
+    ],
+    "quotes": [
+      "6 cups/1.5 litres Light Vegetable Broth",
+      "RICH ROASTED VEGETABLE BROTH - Use this broth in any recipes when you want to enrich the flavour of the dish.",
+      "1 strip kombu (dried sea vegetable) (optional)"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "food-168",
+  "name": "Lime",
+  "categories": [
+    "rich-in-fruits",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Citrus fruit high in vitamin C",
+    "Rich in flavonoid antioxidants",
+    "Enhances iron absorption from plant foods",
+    "Acidic component for vinegar-free dressings",
+    "Both zest and juice provide nutrients",
+    "Brightens flavors in Asian and Mexican cuisine"
+  ],
+  "benefits": "Limes are excellent sources of vitamin C and flavonoid antioxidants with anti-inflammatory properties. The citric acid enhances iron absorption from plant-based meals and adds acidity to dressings without vinegar. Lime zest and juice brighten flavors in Thai and Mexican dishes, making healthy whole food meals more palatable and satisfying. The natural acidity also helps with digestion and supports gut health.",
+  "synergies": [
+    "green-papaya",
+    "jicama",
+    "ginger",
+    "garlic",
+    "miso",
+    "peanuts",
+    "coriander",
+    "chillies"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-dressings",
+    "salads"
+  ],
+  "amount": "Zest and juice of 1 lime for salad dressing serving 4",
+  "sources": {
+    "pages": [
+      85,
+      182
+    ],
+    "quotes": [
+      "Zest and juice of 1 lime",
+      "In a small bowl, combine 2 tablespoons of water, the lime zest and juice, garlic, apple cider vinegar, ginger, miso paste, Date Syrup and red pepper flakes.",
+      "Place the jicama slices in a bowl. Add the lime juice and toss gently to coat."
+    ]
+  }
+}

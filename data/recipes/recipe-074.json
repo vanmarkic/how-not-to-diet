@@ -1,0 +1,29 @@
+{
+  "id": "recipe-074",
+  "name": "Stone Fruit Bowls",
+  "page": 316,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "chia-seeds",
+    "mango-fresh",
+    "lemon",
+    "dates",
+    "apricots-fresh",
+    "plums",
+    "peaches-fresh",
+    "cherries"
+  ],
+  "daily_dozen_coverage": {
+    "berries": 1,
+    "other_fruits": 1,
+    "nuts_seeds": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": [
+    "cherries",
+    "chia-seeds",
+    "lemon"
+  ]
+}

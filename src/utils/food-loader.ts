@@ -27,7 +27,6 @@ export interface Food {
 export interface FoodIndex {
   extraction_metadata: {
     extraction_date: string;
-    source_document: string;
     focus_areas: string[];
   };
   extraction_index: Array<{
@@ -41,7 +40,6 @@ export interface FoodIndex {
 export interface FoodData {
   extraction_metadata: {
     extraction_date: string;
-    source_document: string;
     focus_areas: string[];
   };
   extraction_index: Array<{

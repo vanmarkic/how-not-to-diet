@@ -1,0 +1,42 @@
+{
+  "id": "recipe-001",
+  "name": "Antipasto Vegetables With Tuscan White\nBean Dressing",
+  "page": 120,
+  "meal_type": "lunch",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "beans-legumes",
+    "bell-peppers-raw",
+    "cherry-tomatoes",
+    "fresh-herbs",
+    "garlic",
+    "lemon",
+    "miso",
+    "nutritional-yeast",
+    "onions",
+    "portobello-mushrooms",
+    "turmeric",
+    "white-beans-cannellini",
+    "zucchini-courgette"
+  ],
+  "daily_dozen": [
+    "beans",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "fiber",
+    "vinegar"
+  ],
+  "synergies": [
+    {
+      "foods": [
+        "garlic",
+        "onions",
+        "portobello-mushrooms"
+      ],
+      "benefit": "Mushrooms + alliums: Enhanced immune-boosting properties"
+    }
+  ]
+}

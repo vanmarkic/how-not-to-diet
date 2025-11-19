@@ -1,0 +1,28 @@
+{
+  "id": "recipe-073",
+  "name": "Fresh Berries with Chocolate Balsamic Syrup",
+  "page": 313,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "strawberries",
+    "raspberries",
+    "blueberries-fresh",
+    "blackberries",
+    "mint",
+    "cacao-nibs",
+    "pecans",
+    "walnuts",
+    "vinegar"
+  ],
+  "daily_dozen_coverage": {
+    "berries": 1,
+    "nuts_seeds": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "vinegar"
+  ],
+  "key_synergies": []
+}

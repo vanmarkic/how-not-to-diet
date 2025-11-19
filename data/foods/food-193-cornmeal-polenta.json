@@ -1,0 +1,44 @@
+{
+  "id": "food-193",
+  "name": "Cornmeal / Polenta",
+  "categories": [
+    "whole-grains",
+    "high-fiber",
+    "gluten-free"
+  ],
+  "properties": [
+    "Coarse-ground corn (maize)",
+    "Blue cornmeal available with additional antioxidants",
+    "Used for coating, crusting, and as a grain base",
+    "Gluten-free whole grain option",
+    "Adds texture and helps create crispy coatings",
+    "Can be stone-ground for maximum nutrition"
+  ],
+  "benefits": "Cornmeal/polenta is a whole grain corn product that provides fiber and, when blue, additional anthocyanin antioxidants. It's versatile for creating crispy coatings on tempeh and vegetables, or can be cooked into a creamy porridge. Blue cornmeal offers enhanced antioxidant content compared to yellow varieties.",
+  "synergies": [
+    "tempeh",
+    "sweet-potatoes",
+    "nutritional-yeast",
+    "smoked-paprika",
+    "sage",
+    "vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal"
+  ],
+  "amount": "1/3 to 3/4 cup coarse-ground cornmeal for coating or crusting (4 servings)",
+  "sources": {
+    "pages": [
+      208,
+      216,
+      217
+    ],
+    "quotes": [
+      "1/3 cup/40g coarse cornmeal/polenta, blue if available - Sage-Kissed Sweet Potato Wedges with Shallots (page 208)",
+      "In a small bowl, combine the cornmeal/polenta, paprika and sage (page 208)",
+      "3/4 cup/90g coarse-ground cornmeal/polenta, blue if available - Cornmeal-Crusted Buffalo Tempeh (page 216)",
+      "In a large bowl, combine the cornmeal/polenta, nutritional yeast, garlic powder and Dr Greger's Special Spice Blend. Stream in 3/4 cup/175ml of water and whisk until smooth. Add the tempeh to the batter, turning to coat each piece (page 217)"
+    ]
+  }
+}

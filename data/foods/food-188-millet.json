@@ -1,0 +1,53 @@
+{
+  "id": "food-188",
+  "name": "Millet",
+  "categories": [
+    "intact-whole-grains",
+    "high-fiber",
+    "low-glycemic",
+    "resistant-starch"
+  ],
+  "properties": [
+    "Generic term for many small grains (pearl, proso, foxtail, finger millet)",
+    "Contains resistant starch that feeds gut bacteria",
+    "Markedly slower stomach-emptying time than white rice, potatoes or pasta",
+    "Creates creamy texture when cooked (good for risotto)",
+    "Gluten-free whole grain",
+    "Part of Daily Dozen whole grains"
+  ],
+  "benefits": "Millet is a whole grain that provides resistant starch to feed beneficial gut bacteria. It has notably slower stomach-emptying times compared to refined grains like white rice, boiled potatoes, or pasta, which helps with satiation and blood sugar control. The resistant starch content supports colon health and microbiome diversity.",
+  "synergies": [
+    "mushrooms",
+    "white-beans",
+    "spinach",
+    "kale",
+    "nutritional-yeast",
+    "balsamic-vinegar"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "1 cup cooked millet per serving, as part of 3 servings of whole grains daily",
+  "sources": {
+    "pages": [
+      219,
+      246,
+      250,
+      251,
+      252,
+      254,
+      255
+    ],
+    "quotes": [
+      "MILLET RISOTTO WITH MUSHROOMS, WHITE BEANS AND SPINACH - Millet isn't typically used to make risotto, but this recipe proves this healthy grain creates a delicious, creamy and savoury version. (page 254)",
+      "WHAT ABOUT MILLET? Millet is a generic term applicable to many small grains, such as pearl millet, which most of us think of as millet. But there are also proso, foxtail and finger millets, plus dozens of others. Much of its starch may be resistant starch that feeds the good bugs in our colon. Millet also tends to have markedly slower stomach-emptying times than other starchy foods such as white rice, boiled potatoes or pasta. (page 255)",
+      "1 cup/200g uncooked millet (page 254)",
+      "1 cup/175g cold cooked millet (page 250)",
+      "STUFFED WINTER SQUASH WITH MILLET AND KALE (page 246)"
+    ]
+  }
+}

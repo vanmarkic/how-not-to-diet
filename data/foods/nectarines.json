@@ -1,0 +1,42 @@
+{
+  "id": "food-262",
+  "name": "Nectarines",
+  "categories": [
+    "fruits",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Stone fruit (drupe)",
+    "Smooth-skinned peach variety",
+    "Contains a pit/stone inside",
+    "Fresh, ripe varieties",
+    "In season late summer",
+    "Sweet, juicy flesh"
+  ],
+  "benefits": "Nectarines are stone fruits closely related to peaches but with smooth skin. Rich in vitamins, antioxidants, and fiber. The colorful flesh indicates high carotenoid content. Part of daily fruit serving that supports metabolic health and provides natural sweetness without added sugars.",
+  "synergies": [
+    "other-stone-fruits",
+    "peaches",
+    "plums",
+    "cherries",
+    "apricots",
+    "chia-seeds",
+    "mango"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-time",
+    "in-season-late-summer"
+  ],
+  "amount": "2 ripe nectarines, pitted and cut into 1-inch/2.5cm pieces",
+  "sources": {
+    "pages": [
+      316
+    ],
+    "quotes": [
+      "2 ripe peaches or nectarines, pitted and cut into 1-inch/2.5cm pieces",
+      "Many popular stone fruits, such as cherries, plums, peaches, nectarines, mangoes and dates, are in season in late summer."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "recipe-010",
+  "name": "Cauliflower Piccata With Mushrooms And\nPotatoes",
+  "page": 186,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "beans-legumes",
+    "black-pepper",
+    "cauliflower",
+    "cherry-tomatoes",
+    "fresh-herbs",
+    "garlic",
+    "lemon",
+    "miso",
+    "nutritional-yeast",
+    "onion-powder",
+    "onions",
+    "portobello-mushrooms",
+    "turmeric",
+    "white-beans-cannellini"
+  ],
+  "daily_dozen": [
+    "beans",
+    "cruciferous",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "fiber"
+  ],
+  "synergies": [
+    {
+      "foods": [
+        "black-pepper",
+        "turmeric"
+      ],
+      "benefit": "Turmeric + black pepper: 2000% increase in curcumin absorption"
+    },
+    {
+      "foods": [
+        "garlic",
+        "onions",
+        "portobello-mushrooms"
+      ],
+      "benefit": "Mushrooms + alliums: Enhanced immune-boosting properties"
+    },
+    {
+      "foods": [
+        "cauliflower",
+        "turmeric"
+      ],
+      "benefit": "Cruciferous + turmeric: Synergistic anti-cancer effects"
+    }
+  ]
+}

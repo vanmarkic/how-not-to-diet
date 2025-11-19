@@ -1,0 +1,45 @@
+{
+  "id": "food-171",
+  "name": "Baby Kale",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Young, tender kale leaves",
+    "More delicate texture than mature kale",
+    "Part of Daily Dozen cruciferous vegetables",
+    "Rich in vitamins A, C, and K",
+    "High in antioxidants and fiber",
+    "No need to remove stems - entirely edible",
+    "Cooks faster than mature kale"
+  ],
+  "benefits": "Baby kale provides all the nutritional benefits of mature kale with a more tender, less bitter taste. As a cruciferous vegetable, it's exceptionally high in antioxidants, vitamins A, C, and K, and anti-inflammatory compounds. The younger leaves cook quickly and don't require stem removal, making them convenient for soups and quick-cooking dishes. Part of the Daily Dozen vegetables and particularly valuable for its thylakoid content which helps with appetite suppression and fat absorption.",
+  "synergies": [
+    "chickpeas",
+    "tomatoes",
+    "garlic",
+    "basil-pesto",
+    "white-beans",
+    "light-vegetable-broth"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-soups",
+    "salads"
+  ],
+  "amount": "3 cups (75g) baby kale in soups",
+  "sources": {
+    "pages": [
+      65
+    ],
+    "quotes": [
+      "3 cups/75g baby kale",
+      "Stir in the baby kale and chickpeas. Cover and cook until the kale is wilted, 2 to 3 minutes."
+    ]
+  }
+}

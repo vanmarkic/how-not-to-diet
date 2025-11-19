@@ -1,0 +1,21 @@
+{
+  "id": "recipe-080",
+  "name": "Ginger Roasted Pears",
+  "page": 328,
+  "servings": "2-4",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "pears",
+    "ginger",
+    "lemon"
+  ],
+  "daily_dozen_coverage": {
+    "other_fruits": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "ground_ginger"
+  ],
+  "key_synergies": []
+}

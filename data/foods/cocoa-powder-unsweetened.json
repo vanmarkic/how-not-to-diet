@@ -1,0 +1,40 @@
+{
+  "id": "food-257",
+  "name": "Cocoa Powder (Unsweetened)",
+  "categories": [
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "flavor-enhancer"
+  ],
+  "properties": [
+    "Pure cocoa without sugar",
+    "Rich in flavonoids",
+    "High in antioxidants",
+    "Dark chocolate flavor",
+    "No added sweeteners",
+    "Natural whole food ingredient"
+  ],
+  "benefits": "Unsweetened cocoa powder is extremely rich in antioxidants and flavonoids that support cardiovascular health. Provides chocolate flavor without added sugar, making it ideal for healthy breakfast bowls and desserts. Anti-inflammatory properties support overall health.",
+  "synergies": [
+    "walnuts",
+    "cherries",
+    "date-syrup",
+    "whole-grains",
+    "berries"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "any-time"
+  ],
+  "amount": "1 tablespoon per serving",
+  "sources": {
+    "pages": [
+      299
+    ],
+    "quotes": [
+      "1 tablespoon unsweetened cocoa powder",
+      "Spoon the Basic BROL into a bowl. Sprinkle with the cocoa, then drizzle with Date Syrup."
+    ]
+  }
+}

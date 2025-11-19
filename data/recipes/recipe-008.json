@@ -1,0 +1,24 @@
+{
+  "id": "recipe-008",
+  "name": "Nigella Seed-Rubbed Balsamic Roasted\nCauliflower",
+  "page": 172,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "cauliflower",
+    "cherry-tomatoes",
+    "fresh-herbs",
+    "nigella-seeds-black-cumin",
+    "onions"
+  ],
+  "daily_dozen": [
+    "cruciferous",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "vinegar"
+  ],
+  "synergies": []
+}

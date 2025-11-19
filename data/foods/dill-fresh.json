@@ -1,0 +1,41 @@
+{
+  "id": "food-196",
+  "name": "Dill (Fresh)",
+  "categories": [
+    "herbs-spices",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Contains flavonoids and monoterpenes",
+    "Traditional digestive aid",
+    "Rich in vitamin C and manganese",
+    "Contains anti-inflammatory compounds",
+    "Aromatic herb with distinct flavor"
+  ],
+  "benefits": "Fresh dill is an aromatic herb that brightens soups and salads while providing antioxidant benefits. Featured in traditional Eastern European cuisine like borscht. Contains compounds that may support digestion and reduce inflammation. Adds flavor complexity without calories or sodium.",
+  "synergies": [
+    "beetroot",
+    "cabbage",
+    "potatoes",
+    "lemon"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "2-4 tablespoons fresh chopped, or ¼ cup as featured garnish",
+  "sources": {
+    "pages": [
+      44,
+      67
+    ],
+    "quotes": [
+      "BORSCHT WITH CABBAGE AND DILL - seasoning of fresh dill and a splash of vinegar brighten the flavour",
+      "¼ cup/4 tablespoons finely chopped fresh dill",
+      "Chopped fresh parsley or dill - To serve, ladle the soup into bowls and garnish with parsley or dill"
+    ]
+  }
+}

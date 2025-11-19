@@ -1,0 +1,29 @@
+{
+  "id": "recipe-031",
+  "name": "Cumin-Roasted Carrots with Chickpeas and Tomatoes",
+  "page": 205,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Easy",
+  "description": "Savoury roasted vegetables with metabolism-boosting cumin. Roasting time depends on carrot size.",
+  "foods_used": [
+    "carrots",
+    "chickpeas",
+    "cherry-tomatoes",
+    "apple-cider-vinegar",
+    "cumin",
+    "coriander-ground",
+    "black-pepper",
+    "parsley-fresh"
+  ],
+  "daily_dozen_coverage": [
+    "other-vegetables",
+    "beans"
+  ],
+  "tweaks_incorporated": [
+    "cumin-boost",
+    "vinegar",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Cumin (weight-loss booster) + chickpeas + vinegar enhances metabolism. Tomatoes provide lycopene."
+}

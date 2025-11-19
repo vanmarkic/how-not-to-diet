@@ -1,0 +1,42 @@
+{
+  "id": "food-201",
+  "name": "Sweetcorn",
+  "categories": [
+    "vegetables",
+    "high-fiber",
+    "resistant-starch"
+  ],
+  "properties": [
+    "Good source of fiber",
+    "Contains resistant starch when cooled",
+    "Rich in lutein and zeaxanthin for eye health",
+    "Provides B vitamins and vitamin C",
+    "Natural sweetness without added sugar"
+  ],
+  "benefits": "Sweetcorn features in multiple recipes including corn chowder and black-eyed bean salad. While technically a grain, corn on the cob or kernels provide fiber and resistant starch. Rich in carotenoids lutein and zeaxanthin that support eye health. When cooled, corn develops resistant starch that feeds beneficial gut bacteria.",
+  "synergies": [
+    "black-eyed-peas",
+    "black-beans",
+    "peppers-bell-peppers",
+    "tomatoes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "lunch",
+    "dinner",
+    "with-meals"
+  ],
+  "amount": "1½ cups fresh or frozen kernels per recipe (about 260g)",
+  "sources": {
+    "pages": [
+      72,
+      83
+    ],
+    "quotes": [
+      "CORN CHOWDER",
+      "SWEETCORN AND BLACK-EYED BEAN SALAD",
+      "1½ cups/260g fresh or thawed frozen sweetcorn",
+      "black beans, pepper, corn, avocado and coriander"
+    ]
+  }
+}

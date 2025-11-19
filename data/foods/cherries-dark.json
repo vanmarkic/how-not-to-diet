@@ -1,0 +1,43 @@
+{
+  "id": "food-258",
+  "name": "Cherries (Dark/Sweet)",
+  "categories": [
+    "fruits",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Stone fruit (drupe)",
+    "Fresh pitted or frozen",
+    "Rich in anthocyanins",
+    "Natural sweetness",
+    "In season late summer",
+    "Dark red pigments indicate high antioxidants"
+  ],
+  "benefits": "Dark cherries are rich in anthocyanins and antioxidants that support heart health and reduce inflammation. Stone fruits provide natural sweetness and fiber. Part of daily fruit serving for optimal health and weight management.",
+  "synergies": [
+    "cocoa-powder",
+    "walnuts",
+    "whole-grains",
+    "other-stone-fruits",
+    "chia-seeds"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "any-time",
+    "in-season-late-summer"
+  ],
+  "amount": "½ cup to 2 cups/115g to 450g pitted cherries",
+  "sources": {
+    "pages": [
+      299,
+      316
+    ],
+    "quotes": [
+      "½ cup/115g fresh pitted or thawed frozen dark cherries",
+      "2 cups/450g pitted cherries",
+      "Many popular stone fruits, such as cherries, plums, peaches, nectarines, mangoes and dates, are in season in late summer."
+    ]
+  }
+}

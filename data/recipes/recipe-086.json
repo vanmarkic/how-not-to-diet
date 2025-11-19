@@ -1,0 +1,38 @@
+{
+  "id": "recipe-086",
+  "name": "Super-Charged Spice Blend",
+  "page": 338,
+  "servings": "2/3 cup",
+  "difficulty": "Easy",
+  "meal_type": "Spice Blend",
+  "foods_used": [
+    "nutritional-yeast",
+    "garlic-powder",
+    "parsley",
+    "basil",
+    "cumin",
+    "nigella-seeds-black-cumin",
+    "ginger",
+    "turmeric",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": {
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "garlic_powder",
+    "cumin",
+    "black_cumin",
+    "ground_ginger",
+    "curcumin",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "turmeric",
+    "black-pepper",
+    "ginger"
+  ]
+}

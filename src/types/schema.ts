@@ -112,9 +112,6 @@ export interface ExtractionMetadata {
   /** Date when data was extracted */
   extraction_date: string;
 
-  /** Source document name */
-  source_document: string;
-
   /** Key nutritional focus areas from the source */
   focus_areas: string[];
 }

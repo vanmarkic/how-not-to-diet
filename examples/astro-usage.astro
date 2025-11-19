@@ -208,7 +208,6 @@ const topPages = Array.from(pageCounts.entries())
     <h1>How Not to Diet - Food Database</h1>
 
     <p>
-      Data extracted from: <strong>{foodData.extraction_metadata.source_document}</strong><br />
       Extraction date: {foodData.extraction_metadata.extraction_date}
       {foodData.build_metadata && (
         <><br />Build timestamp: {new Date(foodData.build_metadata.build_timestamp).toLocaleString()}</>

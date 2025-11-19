@@ -1,0 +1,29 @@
+{
+  "id": "recipe-088",
+  "name": "Umami Sauce Redux",
+  "page": 340,
+  "servings": "1.25 cups",
+  "difficulty": "Easy",
+  "meal_type": "Sauce",
+  "foods_used": [
+    "garlic",
+    "ginger",
+    "tomatoes",
+    "black-pepper",
+    "miso",
+    "vinegar",
+    "lemon"
+  ],
+  "daily_dozen_coverage": {
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "vinegar",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "garlic",
+    "vinegar"
+  ]
+}

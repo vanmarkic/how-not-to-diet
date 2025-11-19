@@ -1,0 +1,33 @@
+{
+  "id": "recipe-081",
+  "name": "Mushroom-Walnut Crumbles",
+  "page": 333,
+  "servings": "2 cups",
+  "difficulty": "Easy",
+  "meal_type": "Condiment",
+  "foods_used": [
+    "portobello-mushrooms",
+    "walnuts",
+    "sunflower-seeds",
+    "pumpkin-seeds",
+    "flaxseeds-ground",
+    "nutritional-yeast",
+    "oregano-dried",
+    "basil",
+    "black-pepper",
+    "cayenne-pepper"
+  ],
+  "daily_dozen_coverage": {
+    "greens": 1,
+    "other_veg": 1,
+    "flaxseeds": 1,
+    "nuts_seeds": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "black_pepper",
+    "cayenne"
+  ],
+  "key_synergies": []
+}

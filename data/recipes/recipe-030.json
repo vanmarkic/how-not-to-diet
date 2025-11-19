@@ -1,0 +1,35 @@
+{
+  "id": "recipe-030",
+  "name": "Roasted Kabocha with Kale-Cranberry Stuffing",
+  "page": 202,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Rather than starchy bread cubes, the stuffing for this dish is made with Basic BROL (Barley, Rye, Oats and Lentils), combined with onion, celery, kale and cranberries.",
+  "foods_used": [
+    "kabocha-squash",
+    "kale",
+    "cranberries-dried",
+    "onions",
+    "celery",
+    "barley",
+    "lentils-brown-puy",
+    "thyme-dried",
+    "rosemary-dried",
+    "sage-dried",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "greens",
+    "cruciferous-vegetables",
+    "other-vegetables",
+    "whole-grains",
+    "beans"
+  ],
+  "tweaks_incorporated": [
+    "fiber",
+    "intact-whole-grains",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Kale + barley + lentils provide complete protein and maximum fiber. Cranberries add antioxidants."
+}

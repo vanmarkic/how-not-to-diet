@@ -1,0 +1,42 @@
+{
+  "id": "food-254",
+  "name": "Green Chilli",
+  "categories": [
+    "vegetables",
+    "metabolism-booster",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Fresh hot pepper",
+    "Contains capsaicin",
+    "Metabolism-boosting compound",
+    "Common in Indian cuisine",
+    "Adds heat to dishes",
+    "Optional ingredient for heat tolerance"
+  ],
+  "benefits": "Green chillies contain capsaicin, which boosts metabolism and supports weight loss through increased thermogenesis. The heat from chillies can increase calorie burn and reduce appetite.",
+  "synergies": [
+    "ginger",
+    "turmeric",
+    "millet",
+    "moong-dal",
+    "garam-masala",
+    "cumin",
+    "coriander"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1 green chilli, finely chopped (optional)",
+  "sources": {
+    "pages": [
+      301
+    ],
+    "quotes": [
+      "1 green chilli, finely chopped (optional)",
+      "Add the onion, carrot, ginger and chilli (if using) and cook for 5 minutes to soften."
+    ]
+  }
+}

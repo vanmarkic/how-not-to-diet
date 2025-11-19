@@ -1,0 +1,33 @@
+{
+  "id": "recipe-040",
+  "name": "African Red Bean and Sweet Potato Stew",
+  "page": 235,
+  "meal_type": "dinner",
+  "servings": "6",
+  "difficulty": "Easy",
+  "description": "Hearty African-inspired stew with red beans, sweet potatoes and peanut butter.",
+  "foods_used": [
+    "red-beans-kidney",
+    "sweet-potatoes",
+    "onions",
+    "garlic",
+    "ginger",
+    "cherry-tomatoes",
+    "kale",
+    "peanut-butter-natural",
+    "cumin",
+    "coriander-ground",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "other-vegetables",
+    "greens",
+    "nuts-and-seeds"
+  ],
+  "tweaks_incorporated": [
+    "cumin-boost",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Red beans + sweet potatoes + peanut butter for complete nutrition. Kale adds greens and minerals."
+}

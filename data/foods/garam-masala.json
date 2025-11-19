@@ -1,0 +1,47 @@
+{
+  "id": "food-220",
+  "name": "Garam Masala",
+  "categories": [
+    "spices",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "thermogenic"
+  ],
+  "properties": [
+    "Traditional Indian spice blend",
+    "Contains warming spices like cinnamon, cardamom, cloves, cumin, coriander, black pepper",
+    "Rich in antioxidants from multiple spice compounds",
+    "Anti-inflammatory properties from combined spices",
+    "May boost metabolism through thermogenic effects",
+    "Enhances flavor without added salt or fat"
+  ],
+  "benefits": [
+    "Provides concentrated antioxidant protection from multiple spices",
+    "Supports anti-inflammatory response",
+    "May enhance thermogenesis and metabolic rate",
+    "Aids digestion through carminative spices",
+    "Helps reduce sodium needs through rich flavor profile",
+    "May improve blood sugar control",
+    "Supports cardiovascular health"
+  ],
+  "synergies": [
+    "Combines with turmeric in dal recipes for enhanced anti-inflammatory effects",
+    "Pairs with black lentils in traditional Indian dishes",
+    "Works with ginger and garlic in curry bases",
+    "Complements cayenne pepper for additional heat and metabolism boost"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "in-cooking"
+  ],
+  "amount": "1 teaspoon per recipe serving 4-6 people",
+  "sources": {
+    "pages": [
+      232
+    ],
+    "quotes": [
+      "1 teaspoon garam masala"
+    ]
+  }
+}

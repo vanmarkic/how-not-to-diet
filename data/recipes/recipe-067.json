@@ -1,0 +1,40 @@
+{
+  "id": "recipe-067",
+  "name": "Quinoa Kitchari",
+  "page": 297,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "mung-beans",
+    "quinoa",
+    "cauliflower",
+    "peas",
+    "ginger",
+    "coriander",
+    "cumin",
+    "turmeric",
+    "miso",
+    "black-pepper",
+    "lemon"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "cruciferous": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [
+    "cumin",
+    "curcumin",
+    "ground_ginger",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "turmeric",
+    "ginger",
+    "black-pepper"
+  ]
+}

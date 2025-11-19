@@ -1,5 +1,5 @@
 {
-  "id": "food-17",
+  "id": "food-19",
   "name": "Black Lentils",
   "categories": [
     "rich-in-legumes",
@@ -11,11 +11,13 @@
     "Whole food plant protein",
     "High in fiber",
     "Low glycemic load",
-    "Rich in antioxidants",
+    "Rich in antioxidants - among highest of all legumes",
     "Part of Daily Dozen legumes",
-    "Particularly good in Bolognese sauce"
+    "Also known as beluga lentils (resemble caviar)",
+    "Stay perfectly intact when cooked, scatter well over salads",
+    "Particularly good in Bolognese sauce and dal dishes"
   ],
-  "benefits": "Black lentils are an excellent source of vitamins, minerals, fiber and antioxidants. Legumes benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention. Can be used in various dishes including pasta sauces.",
+  "benefits": "Black lentils are an excellent source of vitamins, minerals, fiber and antioxidants - among the highest antioxidant content of all legumes. Significantly slow stomach-emptying rates of meals eaten hours later, promoting extended satiety. Legumes benefit excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention. Can be used in various dishes including pasta sauces and Indian dal.",
   "synergies": [
     "mushrooms",
     "tomatoes",
@@ -32,10 +34,15 @@
   "sources": {
     "pages": [
       54,
-      134
+      134,
+      231,
+      232,
+      233
     ],
     "quotes": [
-      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention.",
+      "Black lentils, also known as beluga lentils because they resemble caviar, stay perfectly intact when cooked and scatter well over salads.",
+      "Lentils and chickpeas have among the highest antioxidant content of legumes. Lentils significantly slow stomach-emptying rates of meals eaten hours later."
     ]
   }
 }

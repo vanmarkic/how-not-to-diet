@@ -1,0 +1,482 @@
+---
+import Layout from '@layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Load all foods to generate static paths
+export async function getStaticPaths() {
+  const dataPath = path.join(process.cwd(), 'public', 'foods-bundle.json');
+  const foodsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+  const foods = foodsData.foods;
+
+  return foods.map((food: any) => ({
+    params: { slug: food.id },
+    props: { food, allFoods: foods }
+  }));
+}
+
+const { food, allFoods } = Astro.props;
+
+// Helper to get food by name for synergy/conflict lookups
+function getFoodByName(name: string) {
+  return allFoods.find((f: any) =>
+    f.name.toLowerCase() === name.toLowerCase() ||
+    f.name.toLowerCase().includes(name.toLowerCase()) ||
+    name.toLowerCase().includes(f.name.toLowerCase())
+  );
+}
+---
+
+<Layout title={`${food.name} - How Not To Diet`}>
+  <div class="food-detail-page">
+    <nav class="breadcrumb">
+      <a href="/how-not-to-diet/foods">← Back to All Foods</a>
+    </nav>
+
+    <header class="food-header">
+      <h1>{food.name}</h1>
+      <div class="categories">
+        {food.categories.map((cat: string) => (
+          <span class="category-badge">{cat.replace(/-/g, ' ')}</span>
+        ))}
+      </div>
+    </header>
+
+    <div class="food-content">
+      {/* Benefits Section */}
+      {food.benefits && (
+        <section class="section">
+          <h2>Health Benefits</h2>
+          {Array.isArray(food.benefits) ? (
+            <ul class="benefits-list">
+              {food.benefits.map((benefit: string) => (
+                <li>{benefit}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{food.benefits}</p>
+          )}
+        </section>
+      )}
+
+      {/* Categories Section */}
+      {food.categories && food.categories.length > 0 && (
+        <section class="section categories-section">
+          <h2>Food Categories ({food.categories.length})</h2>
+          <div class="tag-list">
+            {food.categories.map((category: string) => (
+              <a href={`/how-not-to-diet/foods?category=${category}`} class="tag category-tag">
+                {category.replace(/-/g, ' ')}
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Properties Section */}
+      {food.properties && food.properties.length > 0 && (
+        <section class="section">
+          <h2>Properties</h2>
+          <ul class="properties-list">
+            {food.properties.map((prop: string) => (
+              <li>✓ {prop}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <div class="two-column">
+        {/* Synergies Section */}
+        {food.synergies && food.synergies.length > 0 && (
+          <section class="section synergies">
+            <h2>Works Well With ({food.synergies.length})</h2>
+            <div class="tag-list">
+              {food.synergies.map((synergy: string) => {
+                const synergyFood = getFoodByName(synergy);
+                return synergyFood ? (
+                  <a
+                    href={`/how-not-to-diet/foods/${synergyFood.id}`}
+                    class="tag synergy-tag"
+                    title={`View ${synergy} details`}
+                  >
+                    {synergy}
+                  </a>
+                ) : (
+                  <a
+                    href={`/how-not-to-diet/foods?search=${encodeURIComponent(synergy)}`}
+                    class="tag synergy-tag"
+                    title={`Search for foods with "${synergy}"`}
+                  >
+                    {synergy}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {/* Conflicts Section */}
+        {food.conflicts && food.conflicts.length > 0 && (
+          <section class="section conflicts">
+            <h2>Avoid Combining With ({food.conflicts.length})</h2>
+            <div class="tag-list">
+              {food.conflicts.map((conflict: string) => {
+                const conflictFood = getFoodByName(conflict);
+                return conflictFood ? (
+                  <a
+                    href={`/how-not-to-diet/foods/${conflictFood.id}`}
+                    class="tag conflict-tag"
+                    title={`View ${conflict} details`}
+                  >
+                    {conflict}
+                  </a>
+                ) : (
+                  <a
+                    href={`/how-not-to-diet/foods?search=${encodeURIComponent(conflict)}`}
+                    class="tag conflict-tag"
+                    title={`Search for foods with "${conflict}"`}
+                  >
+                    {conflict}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        )}
+      </div>
+
+      <div class="two-column">
+        {/* Timing Section */}
+        {food.timing && food.timing.length > 0 && (
+          <section class="section timing">
+            <h2>Best Meal Timing</h2>
+            <div class="tag-list">
+              {food.timing.map((time: string) => (
+                <a href={`/how-not-to-diet/foods?timing=${time}`} class="tag timing-tag">
+                  {time}
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Amount Section */}
+        {food.amount && (
+          <section class="section amount">
+            <h2>Recommended Amount</h2>
+            <p class="amount-text">{food.amount}</p>
+          </section>
+        )}
+      </div>
+
+      {/* Sources Section */}
+      {food.sources && food.sources.length > 0 && (
+        <section class="section sources">
+          <h2>Sources from "How Not to Diet"</h2>
+          {food.sources.map((source: any) => (
+            <div class="source-item">
+              <div class="source-meta">
+                <strong>Page {source.page}</strong>
+                {source.context && <span class="context"> • {source.context}</span>}
+              </div>
+              {source.quote && <blockquote>{source.quote}</blockquote>}
+            </div>
+          ))}
+        </section>
+      )}
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="/how-not-to-diet/foods" class="btn-secondary">← Back to All Foods</a>
+      <a href="/how-not-to-diet/combos" class="btn-primary">Explore Food Combinations →</a>
+    </nav>
+  </div>
+</Layout>
+
+<style>
+  .food-detail-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 2rem;
+  }
+
+  .breadcrumb a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--color-primary);
+  }
+
+  .food-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+  }
+
+  .food-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .category-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  .food-content {
+    margin-bottom: 3rem;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .benefits-list,
+  .properties-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .benefits-list li,
+  .properties-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.6;
+  }
+
+  .benefits-list li:last-child,
+  .properties-list li:last-child {
+    border-bottom: none;
+  }
+
+  .properties-list li {
+    color: #2e7d32;
+    font-weight: 500;
+  }
+
+  .two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .synergy-tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 2px solid #4caf50;
+  }
+
+  a.synergy-tag:hover {
+    background: #4caf50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+  }
+
+  .conflict-tag {
+    background: #ffebee;
+    color: #c62828;
+    border: 2px solid #ef5350;
+  }
+
+  a.conflict-tag:hover {
+    background: #ef5350;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(239, 83, 80, 0.3);
+  }
+
+  .timing-tag {
+    background: #e3f2fd;
+    color: #1565c0;
+    border: 2px solid #42a5f5;
+  }
+
+  a.timing-tag:hover {
+    background: #42a5f5;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(66, 165, 245, 0.3);
+  }
+
+  .category-tag {
+    background: #f3e5f5;
+    color: #6a1b9a;
+    border: 2px solid #9c27b0;
+  }
+
+  a.category-tag:hover {
+    background: #9c27b0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(156, 39, 176, 0.3);
+  }
+
+  .amount-text {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+    background: #fff3e0;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #ff9800;
+    margin: 0;
+  }
+
+  .sources {
+    background: #f9fafb;
+  }
+
+  .source-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .source-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .source-meta {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-secondary);
+  }
+
+  .source-meta strong {
+    color: var(--color-primary);
+  }
+
+  .context {
+    color: #666;
+  }
+
+  blockquote {
+    margin: 0.5rem 0 0 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--color-accent);
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .bottom-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-secondary {
+    background: #f5f5f5;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-border);
+  }
+
+  .btn-secondary:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+  }
+
+  .btn-primary {
+    background: var(--color-accent);
+    color: white;
+    border: 2px solid var(--color-accent);
+  }
+
+  .btn-primary:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    .food-header h1 {
+      font-size: 2rem;
+    }
+
+    .two-column {
+      grid-template-columns: 1fr;
+    }
+
+    .bottom-nav {
+      flex-direction: column;
+    }
+
+    .section {
+      padding: 1.5rem;
+    }
+  }
+</style>

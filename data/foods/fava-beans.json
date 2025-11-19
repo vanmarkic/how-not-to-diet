@@ -1,5 +1,5 @@
 {
-  "id": "food-151",
+  "id": "food-52",
   "name": "Fava Beans (Broad Beans)",
   "categories": [
     "rich-in-legumes",
@@ -43,10 +43,12 @@
   "sources": {
     "pages": [
       41,
-      54
+      54,
+      213
     ],
     "quotes": [
-      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention."
+      "Legumes – beans, chickpeas, split peas, and lentils – are an excellent source of vitamins, minerals, fibre and antioxidants. In terms of nutrition density, they may give the biggest bang for the buck, benefitting excess body weight, insulin resistance, high cholesterol, inflammation, and oxidative stress, making them an important part of heart disease prevention.",
+      "1 cup/170g cooked fresh or frozen broad beans - Cottage Pie with Sweet Potato Mash (page 213)"
     ]
   }
 }

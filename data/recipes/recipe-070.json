@@ -1,0 +1,33 @@
+{
+  "id": "recipe-070",
+  "name": "Chickpea-Cauliflower Scramble",
+  "page": 304,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "chickpeas",
+    "cauliflower",
+    "onions",
+    "bell-peppers",
+    "mushrooms",
+    "nutritional-yeast",
+    "turmeric",
+    "parsley"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "cruciferous": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "curcumin"
+  ],
+  "key_synergies": [
+    "onions",
+    "nutritional-yeast"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "food-260",
+  "name": "Chocolate Balsamic Vinegar",
+  "categories": [
+    "anti-inflammatory",
+    "antioxidant-rich",
+    "flavor-enhancer"
+  ],
+  "properties": [
+    "Flavored balsamic vinegar",
+    "Chocolate-infused",
+    "Can be reduced to syrup consistency",
+    "Natural sweetness without added sugar",
+    "Rich, complex flavor",
+    "Pairs well with berries"
+  ],
+  "benefits": "Chocolate balsamic vinegar combines the antioxidant benefits of balsamic vinegar with chocolate flavors. When reduced, creates a naturally sweet syrup without added sugars. The polyphenols support heart health and metabolic function.",
+  "synergies": [
+    "berries",
+    "strawberries",
+    "raspberries",
+    "blueberries",
+    "blackberries",
+    "cacao-nibs"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-fruit",
+    "as-dessert-topping",
+    "any-time"
+  ],
+  "amount": "⅓ cup/75ml (can be reduced by one-third)",
+  "sources": {
+    "pages": [
+      313
+    ],
+    "quotes": [
+      "⅓ cup/75ml chocolate balsamic vinegar or Balsamic Syrup",
+      "If not using Balsamic Syrup, pour the chocolate balsamic vinegar into a small saucepan and simmer over low heat for about 10 minutes, or until reduced by about one-third."
+    ]
+  }
+}

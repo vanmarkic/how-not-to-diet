@@ -1,0 +1,54 @@
+{
+  "id": "food-226",
+  "name": "Sage (Dried)",
+  "categories": [
+    "herbs-spices",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "cognitive-support"
+  ],
+  "properties": [
+    "Aromatic herb from the mint family (Salvia officinalis)",
+    "Dried form is more concentrated than fresh",
+    "Rich in rosmarinic acid and other antioxidant compounds",
+    "Contains anti-inflammatory polyphenols",
+    "Traditional culinary herb with earthy, slightly peppery flavor",
+    "Used in Mediterranean and European cuisine",
+    "Contains vitamins K, A, C, E, and B vitamins",
+    "Provides minerals including calcium, iron, and magnesium"
+  ],
+  "benefits": [
+    "Supports cognitive function and memory",
+    "Provides powerful antioxidant protection",
+    "May help reduce inflammation throughout the body",
+    "Supports oral health with antimicrobial properties",
+    "May help regulate blood sugar levels",
+    "Traditional digestive aid",
+    "May support menopausal symptom relief",
+    "Adds savory flavor without salt or fat"
+  ],
+  "synergies": [
+    "Pairs with thyme in grain loaves and savory baked dishes",
+    "Combines with nutritional yeast for umami depth",
+    "Works with mushrooms in gravies and sauces",
+    "Complements whole grains like barley and oat groats"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking"
+  ],
+  "amount": "1/2 to 1 teaspoon dried sage per recipe serving 4-6 people",
+  "sources": {
+    "pages": [
+      257,
+      258
+    ],
+    "quotes": [
+      "1/2 teaspoon dried sage",
+      "1/2 teaspoon dried sage"
+    ]
+  }
+}

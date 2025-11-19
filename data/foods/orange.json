@@ -1,0 +1,45 @@
+{
+  "id": "food-169",
+  "name": "Orange",
+  "categories": [
+    "rich-in-fruits",
+    "high-water-rich",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Citrus fruit exceptionally high in vitamin C",
+    "Rich in flavonoid antioxidants",
+    "High water content for satiety",
+    "Natural sweetness without added sugars",
+    "Fiber-rich when eaten whole",
+    "Hesperidin supports cardiovascular health"
+  ],
+  "benefits": "Oranges are outstanding sources of vitamin C and flavonoid antioxidants, particularly hesperidin which supports cardiovascular health and has anti-inflammatory effects. High water content and fiber provide satiety with low calorie density. The natural sweetness makes them perfect for whole food dressings, adding flavor complexity to salads without added sugars. Eating whole oranges (not juice) preserves the beneficial fiber and supports weight loss through increased satiety.",
+  "synergies": [
+    "goji-berries",
+    "chickpeas",
+    "rye-grains",
+    "balsamic-vinegar",
+    "miso",
+    "lemon",
+    "greens"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "breakfast",
+    "salads",
+    "dessert"
+  ],
+  "amount": "1 orange peeled and quartered for salad dressing",
+  "sources": {
+    "pages": [
+      89
+    ],
+    "quotes": [
+      "1 orange, peeled and quartered",
+      "Scoop out 1/2 cup of the diced apple mixture and transfer to a blender. Add 2 tablespoons of water, the apple cider vinegar, date (if using), ginger, miso paste, and black pepper and blend until smooth."
+    ]
+  }
+}

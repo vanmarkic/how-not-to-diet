@@ -1,0 +1,58 @@
+{
+  "id": "food-221",
+  "name": "Peanuts (Unsalted, Dry-Roasted)",
+  "categories": [
+    "nuts-seeds",
+    "protein-rich",
+    "healthy-fats",
+    "fiber-rich"
+  ],
+  "properties": [
+    "Technically a legume, not a true nut",
+    "Good source of plant-based protein",
+    "Contains heart-healthy monounsaturated fats",
+    "Rich in resveratrol, an antioxidant also found in grapes",
+    "Good source of vitamin E, niacin, folate, and magnesium",
+    "Contains fiber for digestive health",
+    "Peanut butter provides concentrated nutrition",
+    "Choose unsalted, natural versions without added oils or sugars"
+  ],
+  "benefits": [
+    "Supports heart health through healthy fat profile",
+    "Provides sustained energy from protein and healthy fats",
+    "May help with satiety and weight management when portion-controlled",
+    "Supports muscle maintenance with plant protein",
+    "Provides antioxidant protection from resveratrol",
+    "May help stabilize blood sugar levels",
+    "Adds richness and flavor to African-inspired stews"
+  ],
+  "synergies": [
+    "Combines with sweet potatoes in African peanut stew for balanced nutrition",
+    "Pairs with red kidney beans for complete protein profile",
+    "Works with ginger and cumin in savory dishes",
+    "Complements nigella seeds for texture contrast"
+  ],
+  "conflicts": [
+    "High in calories - use moderate portions (1/4 cup chopped peanuts)",
+    "Common allergen - avoid if allergic",
+    "Choose unsalted versions to avoid excess sodium"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking"
+  ],
+  "amount": "2 tablespoons natural peanut butter or 1/4 cup (30g) chopped unsalted dry-roasted peanuts per serving",
+  "sources": {
+    "pages": [
+      235,
+      236
+    ],
+    "quotes": [
+      "2 tablespoons smooth unsalted natural peanut butter",
+      "1/4 cup/30g chopped unsalted dry-roasted peanuts",
+      "Place the peanut butter in a small bowl and blend in the remaining 1/4 cup/60ml of Light Vegetable Broth"
+    ]
+  }
+}

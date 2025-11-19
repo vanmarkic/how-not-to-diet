@@ -1,0 +1,31 @@
+{
+  "id": "recipe-034",
+  "name": "Cornmeal-Crusted Buffalo Tempeh with White Bean Ranch",
+  "page": 216,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Crispy tempeh with creamy white bean ranch dipping sauce that also makes a great salad dressing.",
+  "foods_used": [
+    "tempeh",
+    "white-beans-cannellini",
+    "cashews",
+    "apple-cider-vinegar",
+    "lemon",
+    "onions",
+    "garlic",
+    "miso",
+    "black-pepper",
+    "parsley-fresh",
+    "nutritional-yeast"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "nuts-and-seeds"
+  ],
+  "tweaks_incorporated": [
+    "vinegar",
+    "fermented-foods"
+  ],
+  "key_synergies": "Tempeh (fermented soy) + vinegar + miso for gut health. White beans create creaminess without dairy."
+}

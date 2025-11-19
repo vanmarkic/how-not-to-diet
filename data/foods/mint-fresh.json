@@ -1,0 +1,41 @@
+{
+  "id": "food-197",
+  "name": "Mint (Fresh)",
+  "categories": [
+    "herbs-spices",
+    "digestive-support",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Contains menthol and rosmarinic acid",
+    "Traditional digestive aid",
+    "May improve mental alertness",
+    "Rich in antioxidants",
+    "Refreshing flavor enhancer"
+  ],
+  "benefits": "Fresh mint is a refreshing herb featured in Middle Eastern-inspired dishes like tabbouleh and bean soups. Contains rosmarinic acid, an antioxidant that may help with seasonal allergies. The menthol in mint may aid digestion and provide a cooling sensation. Adds bright, fresh flavor to salads and grain dishes.",
+  "synergies": [
+    "lemon",
+    "chickpeas",
+    "whole-grains",
+    "cucumber"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "any-meal"
+  ],
+  "amount": "2 tablespoons to ½ cup fresh chopped, depending on recipe",
+  "sources": {
+    "pages": [
+      54,
+      83
+    ],
+    "quotes": [
+      "2 tablespoons chopped fresh mint, or 2 teaspoons dried",
+      "Add the spinach, parsley, spring onions, mint, black pepper and Super-Charged Spice Blend to taste",
+      "MARRAKECH SORGHUM SALAD WITH FRESH APRICOTS AND MINT",
+      "½ cup/25g chopped fresh mint"
+    ]
+  }
+}

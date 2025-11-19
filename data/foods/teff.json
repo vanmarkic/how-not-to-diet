@@ -1,0 +1,56 @@
+{
+  "id": "food-225",
+  "name": "Teff (Whole Grain)",
+  "categories": [
+    "intact-whole-grains",
+    "fiber-rich",
+    "protein-rich",
+    "iron-source",
+    "gluten-free"
+  ],
+  "properties": [
+    "Tiny ancient grain native to Ethiopia",
+    "Smallest grain in the world (size of a poppy seed)",
+    "Naturally gluten-free whole grain",
+    "Cannot be processed/refined due to tiny size - always whole grain",
+    "Excellent source of iron and calcium",
+    "High in resistant starch (feeds gut bacteria)",
+    "Good source of protein with complete amino acid profile",
+    "Rich in fiber, especially compared to other grains",
+    "Contains manganese, phosphorus, copper, and zinc"
+  ],
+  "benefits": [
+    "Supports gut health with high resistant starch content",
+    "Excellent plant-based iron source for preventing anemia",
+    "Provides sustained energy from complex carbohydrates",
+    "Helps regulate blood sugar with low glycemic impact",
+    "Supports bone health with calcium and minerals",
+    "Promotes satiety and weight management with high fiber",
+    "May slow stomach-emptying for extended fullness",
+    "Safe for those with celiac disease or gluten sensitivity"
+  ],
+  "synergies": [
+    "Pairs with black lentils for complete protein profile",
+    "Combines with berbere spice blend in Ethiopian cuisine",
+    "Works well with kale and other greens",
+    "Complements other whole grains in grain bowls"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "1/2 to 1 cup cooked teff per serving",
+  "sources": {
+    "pages": [
+      245,
+      246
+    ],
+    "quotes": [
+      "The recipes in this section may introduce you to grains you haven't had before, such as sorghum and teff.",
+      "TEFF AND BLACK LENTILS OVER BERBERE-SPICED KALE"
+    ]
+  }
+}

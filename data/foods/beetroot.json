@@ -1,5 +1,5 @@
 {
-  "id": "food-11",
+  "id": "food-12",
   "name": "Beetroot",
   "categories": [
     "rich-in-vegetables",
@@ -9,33 +9,43 @@
   ],
   "properties": [
     "Root vegetable",
-    "Rich in antioxidants",
+    "Rich in antioxidants and nitrates",
     "Anti-inflammatory compounds",
-    "Natural nitrates for circulation",
+    "Natural nitrates boost brain function and artery-dilation",
+    "2 cups beetroot juice has same nitrate as 2 cups cooked rocket",
+    "Improves brain structure when combined with exercise",
     "Featured in traditional soups like borscht",
     "Part of Daily Dozen vegetables"
   ],
-  "benefits": "Beetroot is the star of borscht soup and provides powerful anti-inflammatory benefits. Rich in natural nitrates that support circulation and cardiovascular health. The fiber and nutrients make it excellent for weight management when prepared without added fats.",
+  "benefits": "Beetroot is rich in nitrates that boost nitric oxide production, supporting both brain function and cardiovascular health. Just one dose of beetroot juice (2 cups) can improve performance in cognitive tasks like subtraction. When combined with exercise, beetroot juice enhances brain structure. The natural nitrates dilate arteries and support circulation. Rich in antioxidants and anti-inflammatory compounds for weight management.",
   "synergies": [
     "cabbage",
     "parsnips",
     "carrots",
     "onions",
     "dill",
-    "vinegar"
+    "vinegar",
+    "brussels-sprouts",
+    "butternut-squash",
+    "rocket",
+    "exercise"
   ],
   "conflicts": [],
   "timing": [
     "any-meal",
     "particularly-effective-in-soups"
   ],
-  "amount": "3 beetroot chopped per 4 servings of soup",
+  "amount": "3 beetroot chopped per 4 servings of soup, or 2 cups/500ml beetroot juice for cognitive benefits",
   "sources": {
     "pages": [
-      44
+      44,
+      189,
+      190
     ],
     "quotes": [
-      "Beetroot may be the star of this soup, but there are a lot of supporting players, from cabbage to parsnips, and a seasoning of fresh dill and a splash of vinegar brighten the flavour."
+      "Beetroot may be the star of this soup, but there are a lot of supporting players, from cabbage to parsnips, and a seasoning of fresh dill and a splash of vinegar brighten the flavour. (page 44)",
+      "ARE GREENS AND BEETS BRAIN FOOD? Our brain produces the artery-dilating compound nitric oxide, which is boosted by nitrate-rich vegetable consumption. After drinking 2 cups/500ml of beetroot juice, which has about as much nitrate as 2 cups/450g of cooked rocket, performance in a subtraction task was significantly improved, suggesting one dose of nitrate-rich vegetables can modify brain function. And our brain structure? Exercise alone may not result in any significant change, but, after the same amount of exercise and drinking some beetroot juice, there was a noticeable improvement. Can't beet that! (page 190)",
+      "1 bunch beetroot (3 to 4 medium beetroot, or about 1 pound/450g), trimmed and cut into 1-inch/2.5cm dice - Balsamic Butternut, Brussels and Beetroot (page 189)"
     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "id": "food-56",
+  "id": "food-71",
   "name": "Kale",
   "categories": [
     "rich-in-vegetables",
@@ -13,28 +13,43 @@
     "High in antioxidants",
     "Low-oxalate green",
     "Contains fat-blocking thylakoids",
-    "Part of Daily Dozen - 2 servings of greens daily"
+    "Part of Daily Dozen - 2 servings of greens daily",
+    "Blanching and steaming boost antioxidant content",
+    "Can be boiled without losing antioxidant punch",
+    "Steaming preferred over microwaving, stir-frying or boiling"
   ],
-  "benefits": "Increased antioxidant capacity of blood, significant reductions of total cholesterol, LDL cholesterol, blood sugar levels, and oxidized LDL. Helps reduce risk of heart disease and strokes.",
+  "benefits": "Increased antioxidant capacity of blood, significant reductions of total cholesterol, LDL cholesterol, blood sugar levels, and oxidized LDL. Helps reduce risk of heart disease and strokes. Blanching and steaming kale actually boost antioxidant content, whereas microwaving or boiling doesn't do much. You can boil kale without losing out on its antioxidant punch, making it versatile for various cooking methods.",
   "synergies": [
     "cabbage",
     "beans",
     "vinegar",
-    "nuts"
+    "nuts",
+    "black-beans",
+    "mushrooms",
+    "cranberries",
+    "millet",
+    "kabocha-squash"
   ],
   "conflicts": [],
   "timing": [
     "any-meal",
     "earlier-in-meal-for-maximum-benefit"
   ],
-  "amount": "Daily consumption recommended (part of 2 servings of greens)",
+  "amount": "Daily consumption recommended (part of 2 servings of greens). 4 cups/260g chopped kale per recipe (4 servings)",
   "sources": {
     "pages": [
       13,
-      94
+      94,
+      199,
+      202,
+      222,
+      223
     ],
     "quotes": [
-      "Study subjects ate kale and cabbage every day for two weeks and got increased antioxidant capacity of their blood and significant reductions of total cholesterol, LDL cholesterol, blood sugar levels, and oxidized LDL."
+      "Study subjects ate kale and cabbage every day for two weeks and got increased antioxidant capacity of their blood and significant reductions of total cholesterol, LDL cholesterol, blood sugar levels, and oxidized LDL. (page 13)",
+      "HOW TO COOK GREENS - Although eating greens fresh is best, steaming's not bad, microwaving comes in second, and stir-frying and boiling fall to the bottom of the barrel. What about kale specifically? Blanching and steaming kale actually boost antioxidant content, whereas microwaving or even boiling doesn't seem to do much. So, you can boil kale without losing out on its antioxidant punch. (page 223)",
+      "4 cups/260g finely chopped kale - Peppers Stuffed with Black Beans and Mushroom-Walnut Crumbles (page 199)",
+      "1 cup/30g finely shredded kale or other dark leafy greens - Roasted Kabocha with Kale-Cranberry Stuffing (page 202)"
     ]
   }
 }

@@ -1,0 +1,28 @@
+{
+  "id": "recipe-002",
+  "name": "Cauliflower Alfredo Linguine With\nRoasted Asparagus",
+  "page": 128,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "asparagus",
+    "black-pepper",
+    "brazil-nuts",
+    "cauliflower",
+    "fresh-herbs",
+    "garlic",
+    "lemon",
+    "miso",
+    "nutritional-yeast",
+    "onions"
+  ],
+  "daily_dozen": [
+    "cruciferous",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory"
+  ],
+  "synergies": []
+}

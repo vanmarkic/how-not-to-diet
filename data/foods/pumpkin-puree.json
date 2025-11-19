@@ -1,0 +1,42 @@
+{
+  "id": "food-264",
+  "name": "Pumpkin Puree (Solid-Pack)",
+  "categories": [
+    "vegetables",
+    "antioxidant-rich",
+    "fiber-rich"
+  ],
+  "properties": [
+    "Pure pumpkin (not pumpkin pie filling)",
+    "BPA-free tinned",
+    "No added sugars or spices",
+    "Rich in beta-carotene",
+    "Orange color indicates carotenoids",
+    "Smooth, creamy texture"
+  ],
+  "benefits": "Pumpkin puree is rich in beta-carotene and fiber while being naturally low in calories. The orange pigment indicates high carotenoid content which supports eye health and immunity. Provides creamy texture to desserts without dairy or added fats.",
+  "synergies": [
+    "cashews",
+    "chia-seeds",
+    "date-syrup",
+    "cinnamon",
+    "nutmeg",
+    "vanilla-extract",
+    "walnuts"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-time",
+    "as-dessert"
+  ],
+  "amount": "1 (400g) BPA-free tin",
+  "sources": {
+    "pages": [
+      320
+    ],
+    "quotes": [
+      "1 (400g) BPA-free tin solid-pack pumpkin puree (not pumpkin pie filling)",
+      "Add the pumpkin puree, treacle, Date Syrup, pumpkin pie or mixed spice and vanilla and blend until smooth and creamy"
+    ]
+  }
+}

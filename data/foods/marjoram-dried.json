@@ -1,0 +1,39 @@
+{
+  "id": "food-202",
+  "name": "Marjoram (Dried)",
+  "categories": [
+    "herbs-spices",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "Related to oregano with milder, sweeter flavor",
+    "Contains antioxidants and anti-inflammatory compounds",
+    "Traditional digestive aid",
+    "Rich in vitamins A, C, and K",
+    "Contains carvacrol and other beneficial compounds"
+  ],
+  "benefits": "Dried marjoram is featured in borscht and other Eastern European-inspired dishes. Part of the mint family, related to oregano but with a more delicate, sweet flavor. Contains compounds that may support digestion and reduce inflammation. Alternative to basil, thyme, or other herbs in various recipes.",
+  "synergies": [
+    "beetroot",
+    "cabbage",
+    "beans-legumes",
+    "tomatoes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "1 teaspoon dried, used in soups and stews",
+  "sources": {
+    "pages": [
+      44
+    ],
+    "quotes": [
+      "1 teaspoon dried marjoram",
+      "1 teaspoon dried basil or another herb of your choice, such as thyme, marjoram"
+    ]
+  }
+}

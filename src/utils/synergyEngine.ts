@@ -143,13 +143,17 @@ export async function analyzeMealSynergies(recipe: Recipe): Promise<MealSynergyA
 
   // Check timing optimization
   const mealCategory = recipe.category;
-  const timingOptimal = foodObjects.every(food =>
-    food.timing.includes('any-meal') ||
-    food.timing.includes(mealCategory) ||
-    (mealCategory === 'breakfast' && food.timing.includes('breakfast')) ||
-    (mealCategory === 'lunch' && food.timing.includes('lunch')) ||
-    (mealCategory === 'dinner' && food.timing.includes('dinner'))
-  );
+  const timingOptimal = foodObjects.every(food => {
+    if (food.timing.includes('any-meal')) return true;
+
+    // Map recipe category to meal timing
+    if (mealCategory === 'breakfast' && food.timing.includes('breakfast')) return true;
+    if (mealCategory === 'lunch' && food.timing.includes('lunch')) return true;
+    if (mealCategory === 'dinner' && food.timing.includes('dinner')) return true;
+    if (mealCategory === 'snack' && food.timing.includes('snacks')) return true;
+
+    return false;
+  });
 
   // Generate recommendations
   const recommendations: string[] = [];

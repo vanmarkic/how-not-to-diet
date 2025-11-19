@@ -1,0 +1,36 @@
+{
+  "id": "recipe-047",
+  "name": "Teff and Black Lentils over Berbere-Spiced Kale",
+  "page": 268,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Ethiopian-inspired dish with teff, black lentils and berbere-spiced kale.",
+  "foods_used": [
+    "teff",
+    "lentils-black-beluga",
+    "kale",
+    "onions",
+    "garlic",
+    "ginger",
+    "cumin",
+    "coriander-ground",
+    "turmeric",
+    "black-pepper",
+    "cayenne-pepper",
+    "lemon"
+  ],
+  "daily_dozen_coverage": [
+    "whole-grains",
+    "beans",
+    "greens",
+    "cruciferous-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "intact-whole-grains",
+    "cumin-boost",
+    "black-pepper-turmeric",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Teff + lentils provide complete protein and iron. Berbere spices boost metabolism. Kale adds sulforaphane."
+}

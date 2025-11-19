@@ -1,0 +1,22 @@
+{
+  "id": "recipe-066",
+  "name": "Stovetop Overnight Oats with Bananas and Pecans",
+  "page": 294,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "oat-groats-whole-intact-oats",
+    "bananas",
+    "pecans",
+    "nutmeg"
+  ],
+  "daily_dozen_coverage": {
+    "other_fruits": 1,
+    "nuts_seeds": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": []
+}

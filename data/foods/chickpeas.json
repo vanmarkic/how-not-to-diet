@@ -1,5 +1,5 @@
 {
-  "id": "food-34",
+  "id": "food-39",
   "name": "Chickpeas",
   "categories": [
     "rich-in-legumes",
@@ -11,9 +11,11 @@
   "properties": [
     "Part of legume family",
     "High in protein and fiber",
+    "Among highest antioxidant content of all legumes",
     "Calories trapped within cell walls",
     "Part of Daily Dozen - 3 servings of legumes daily",
-    "Different impact on microbiome than animal protein"
+    "Different impact on microbiome than animal protein",
+    "May promote intestinal health"
   ],
   "benefits": "One hundred calories of chickpeas have a different impact than one hundred calories of chicken or chocolate, based on their different effects on such factors as absorption, appetite or our microbiome. Benefits excess body weight, insulin resistance, and inflammation.",
   "synergies": [
@@ -33,11 +35,15 @@
       9,
       53,
       54,
-      88
+      88,
+      233,
+      237,
+      238
     ],
     "quotes": [
       "One hundred calories of chickpeas have a different impact than one hundred calories of chicken or chocolate, based on their different effects on such factors as absorption, appetite or our microbiome.",
-      "1½ cups/250g cooked* or 1 (400g) BPA-free tin or Tetra Pak salt-free chickpeas, drained and rinsed"
+      "1½ cups/250g cooked* or 1 (400g) BPA-free tin or Tetra Pak salt-free chickpeas, drained and rinsed",
+      "Lentils and chickpeas have among the highest antioxidant content of legumes. Chickpeas may promote intestinal health, so have some hummus with your lentil soup!"
     ]
   }
 }

@@ -1,0 +1,51 @@
+{
+  "id": "food-184",
+  "name": "Tomato Puree (Salt-Free)",
+  "categories": [
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Concentrated tomato paste",
+    "Salt-free version for healthy cooking",
+    "Rich in lycopene",
+    "Adds umami depth to dishes",
+    "Thickens soups and sauces",
+    "Enhances savory flavors"
+  ],
+  "benefits": "Salt-free tomato puree is a concentrated tomato paste that adds rich umami flavor, color, and lycopene to soups, stews, and sauces without added sodium. It's a key ingredient in creating flavorful, satisfying dishes that support weight loss. The concentrated form means a small amount (2-3 tablespoons) provides significant flavor enhancement. Combined with miso, mushrooms, and vegetable broth, it creates deep savory profiles.",
+  "synergies": [
+    "miso",
+    "vegetable-broth",
+    "mushrooms",
+    "beetroot",
+    "cabbage",
+    "kombu-seaweed"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "2-3 tablespoons per recipe (soups, sauces, stews)",
+  "sources": {
+    "pages": [
+      44,
+      45,
+      65,
+      134,
+      135,
+      340,
+      341,
+      342
+    ],
+    "quotes": [
+      "2 tablespoons salt-free tomato puree",
+      "3 tablespoons salt-free tomato puree",
+      "Add the tomato puree, Light Vegetable Broth, cabbage, marjoram",
+      "stir in the tomato puree, miso paste, nutritional yeast, oregano",
+      "Stir in the miso paste and tomato puree - in Rich Vegetable Broth"
+    ]
+  }
+}

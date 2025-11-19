@@ -1,0 +1,36 @@
+{
+  "id": "recipe-062",
+  "name": "Green Tea Quinoa and Peas with Roasted Asparagus",
+  "page": 279,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Main Dish",
+  "foods_used": [
+    "green-tea",
+    "asparagus",
+    "quinoa",
+    "garlic",
+    "ginger",
+    "peas",
+    "spring-onions",
+    "sesame-seeds",
+    "lemon",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": {
+    "other_veg": 1,
+    "nuts_seeds": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1,
+    "beverages": 1
+  },
+  "tweaks_21_incorporated": [
+    "green_tea",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "peas",
+    "asparagus",
+    "green-tea"
+  ]
+}

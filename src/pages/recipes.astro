@@ -4,19 +4,80 @@ import RecipeCard from '@components/RecipeCard.astro';
 import { loadRecipes } from '@utils/dataLoader';
 
 const recipes = await loadRecipes();
+
+// Organize recipes by category
+const breakfastRecipes = recipes.filter(r => r.category === 'breakfast');
+const lunchRecipes = recipes.filter(r => r.category === 'lunch');
+const dinnerRecipes = recipes.filter(r => r.category === 'dinner');
+
+// Get all unique tags
+const allTags = [...new Set(recipes.flatMap(r => r.tags))].sort();
 ---
 
 <Layout title="Recipes - How Not To Diet Menu Planner">
   <div class="recipes-page">
     <header class="page-header">
       <h1>Recipe Collection</h1>
-      <p>Evidence-based recipes for optimal health</p>
+      <p>Evidence-based recipes featuring foods from Dr. Greger's Daily Dozen and 21 Tweaks</p>
+      <div class="recipe-stats">
+        <span class="stat">{recipes.length} Total Recipes</span>
+        <span class="stat">{breakfastRecipes.length} Breakfast</span>
+        <span class="stat">{lunchRecipes.length} Lunch</span>
+        <span class="stat">{dinnerRecipes.length} Dinner</span>
+      </div>
     </header>
 
-    <div class="recipes-grid">
-      {recipes.map(recipe => (
-        <RecipeCard recipe={recipe} showFullDetails={true} />
-      ))}
+    <div class="filter-section">
+      <h3>Filter by Tags</h3>
+      <div class="tag-filters" id="tagFilters">
+        <button class="filter-tag active" data-tag="all">All Recipes</button>
+        {allTags.map(tag => (
+          <button class="filter-tag" data-tag={tag}>
+            {tag.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div class="category-sections">
+      {breakfastRecipes.length > 0 && (
+        <section class="category-section">
+          <h2 class="category-title">Breakfast</h2>
+          <div class="recipes-grid" data-category="breakfast">
+            {breakfastRecipes.map(recipe => (
+              <div class="recipe-wrapper" data-tags={JSON.stringify(recipe.tags)}>
+                <RecipeCard recipe={recipe} showFullDetails={true} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {lunchRecipes.length > 0 && (
+        <section class="category-section">
+          <h2 class="category-title">Lunch</h2>
+          <div class="recipes-grid" data-category="lunch">
+            {lunchRecipes.map(recipe => (
+              <div class="recipe-wrapper" data-tags={JSON.stringify(recipe.tags)}>
+                <RecipeCard recipe={recipe} showFullDetails={true} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {dinnerRecipes.length > 0 && (
+        <section class="category-section">
+          <h2 class="category-title">Dinner</h2>
+          <div class="recipes-grid" data-category="dinner">
+            {dinnerRecipes.map(recipe => (
+              <div class="recipe-wrapper" data-tags={JSON.stringify(recipe.tags)}>
+                <RecipeCard recipe={recipe} showFullDetails={true} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
 
     {recipes.length === 0 && (
@@ -27,15 +88,51 @@ const recipes = await loadRecipes();
   </div>
 </Layout>
 
+<script>
+  // Filter recipes by tags
+  const tagButtons = document.querySelectorAll('.filter-tag');
+  const recipeWrappers = document.querySelectorAll('.recipe-wrapper');
+
+  tagButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedTag = button.getAttribute('data-tag');
+
+      // Update active state
+      tagButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Filter recipes
+      recipeWrappers.forEach(wrapper => {
+        const recipeTags = JSON.parse(wrapper.getAttribute('data-tags') || '[]');
+
+        if (selectedTag === 'all' || recipeTags.includes(selectedTag)) {
+          wrapper.style.display = 'block';
+        } else {
+          wrapper.style.display = 'none';
+        }
+      });
+
+      // Hide empty category sections
+      const categorySections = document.querySelectorAll('.category-section');
+      categorySections.forEach(section => {
+        const visibleRecipes = section.querySelectorAll('.recipe-wrapper[style="display: block;"], .recipe-wrapper:not([style])');
+        const hasVisibleRecipes = selectedTag === 'all' ? true : Array.from(visibleRecipes).some(r => r.style.display !== 'none');
+        section.style.display = hasVisibleRecipes ? 'block' : 'none';
+      });
+    });
+  });
+</script>
+
 <style>
   .recipes-page {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 1rem;
   }
 
   .page-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid var(--color-border);
   }
@@ -49,12 +146,96 @@ const recipes = await loadRecipes();
   .page-header p {
     font-size: 1.125rem;
     color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  .recipe-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    padding: 0.5rem 1rem;
+    background: var(--color-bg);
+    border-radius: 20px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    font-size: 0.95rem;
+  }
+
+  .filter-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.5rem;
+  }
+
+  .filter-section h3 {
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-tag {
+    padding: 0.5rem 1rem;
+    background: var(--color-bg);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .filter-tag:hover {
+    background: #e8f5e9;
+    border-color: var(--color-accent);
+  }
+
+  .filter-tag.active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .category-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .category-section {
+    margin-bottom: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--color-accent);
+    display: inline-block;
   }
 
   .recipes-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
+  }
+
+  .recipe-wrapper {
+    transition: opacity 0.3s ease;
   }
 
   .empty-state {
@@ -73,6 +254,29 @@ const recipes = await loadRecipes();
   @media (min-width: 768px) {
     .recipes-grid {
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .recipe-stats {
+      gap: 0.75rem;
+    }
+
+    .stat {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+
+    .filter-section {
+      padding: 1rem;
+    }
+
+    .category-title {
+      font-size: 1.5rem;
     }
   }
 </style>

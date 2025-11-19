@@ -1,0 +1,41 @@
+{
+  "id": "food-267",
+  "name": "Vanilla Extract (Pure)",
+  "categories": [
+    "flavor-enhancer",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Pure vanilla flavoring",
+    "Made from vanilla beans",
+    "No artificial flavors",
+    "Contains vanillin",
+    "Aromatic flavor enhancer",
+    "Small amount provides strong flavor"
+  ],
+  "benefits": "Pure vanilla extract adds natural flavor to dishes without sugar. Contains vanillin and other compounds with antioxidant properties. Using pure vanilla (not imitation) ensures you get the beneficial compounds from real vanilla beans.",
+  "synergies": [
+    "pumpkin-puree",
+    "dates",
+    "cashews",
+    "chia-seeds",
+    "fruits",
+    "oat-groats"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-sweet-dishes",
+    "breakfast",
+    "desserts"
+  ],
+  "amount": "1 teaspoon pure vanilla extract",
+  "sources": {
+    "pages": [
+      320
+    ],
+    "quotes": [
+      "1 teaspoon pure vanilla extract",
+      "Add the pumpkin puree, treacle, Date Syrup, pumpkin pie or mixed spice and vanilla and blend until smooth and creamy"
+    ]
+  }
+}

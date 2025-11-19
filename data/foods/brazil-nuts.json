@@ -1,0 +1,66 @@
+{
+  "id": "food-152",
+  "name": "Brazil Nuts",
+  "categories": [
+    "nuts-and-seeds",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Extremely rich in selenium (one nut provides daily requirement)",
+    "Contains healthy monounsaturated and polyunsaturated fats",
+    "Good source of magnesium, copper, and zinc",
+    "Provides vitamin E and other antioxidants",
+    "Contains protein and dietary fiber",
+    "Has unique creamy texture and mild flavor",
+    "Can be ground into a parmesan-like topping"
+  ],
+  "benefits": [
+    "Provides exceptional selenium content for thyroid function",
+    "Supports immune system with high selenium and zinc",
+    "Contains antioxidants that protect against oxidative stress",
+    "Promotes heart health with healthy fats",
+    "May help regulate cholesterol levels",
+    "Supports brain health and cognitive function",
+    "Aids in satiety and weight management",
+    "Contains anti-inflammatory compounds"
+  ],
+  "synergies": [
+    "Combines with cashews in Brazil Nut Parm topping",
+    "Pairs with nutritional yeast for cheesy flavor profile",
+    "Complements pasta dishes and whole grains",
+    "Works well with vegetables for nutrient absorption"
+  ],
+  "timing": [
+    "any-meal",
+    "snacks",
+    "lunch",
+    "dinner",
+    "salads"
+  ],
+  "amount": "1-3 nuts per day (due to high selenium content, do not exceed 3-4 nuts daily)",
+  "sources": {
+    "pages": [
+      128,
+      129,
+      137,
+      140,
+      143,
+      199,
+      332,
+      336
+    ],
+    "quotes": [
+      "Brazil Nut Parm (here)",
+      "Divide the pasta among shallow serving bowls or plates and serve hot, topped with the Brazil Nut Parm to taste, basil, and black pepper to taste.",
+      "2 tablespoons Brazil Nut Parm (here)",
+      "Brazil Nut Parm (here)",
+      "Brazil Nut Parm (here)",
+      "2 tablespoons Brazil Nut Parm (here)",
+      "BRAZIL NUT PARM",
+      "BRAZIL NUT PARM - MAKES: 1½ cups/200g - The recipe calls for Brazil nuts and cashews... ¾ cup/100g raw Brazil nuts, ¼ cup/40g raw cashews"
+    ]
+  },
+  "conflicts": []
+}

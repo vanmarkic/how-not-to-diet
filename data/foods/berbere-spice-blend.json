@@ -1,0 +1,41 @@
+{
+  "id": "food-251",
+  "name": "Berbere Spice Blend",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "flavor-enhancer"
+  ],
+  "properties": [
+    "Traditional Ethiopian spice blend",
+    "Complex aromatic flavoring",
+    "Available online or in well-stocked supermarkets",
+    "Can be made at home",
+    "Used in East African cuisine"
+  ],
+  "benefits": "Berbere is a traditional Ethiopian spice blend that adds complex flavor without salt. Contains anti-inflammatory spices that support metabolic health and add depth to whole grain and vegetable dishes.",
+  "synergies": [
+    "teff",
+    "black-lentils",
+    "kale",
+    "tomatoes",
+    "smoked-paprika",
+    "coriander"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1-2 teaspoons per recipe",
+  "sources": {
+    "pages": [
+      271,
+      272
+    ],
+    "quotes": [
+      "Berbere? It is a traditional Ethiopian spice blend available online or in well-stocked supermarkets. You can also make your own using the recipe on here.",
+      "Combine the lentils, Berbere Spice Blend, onion powder and garlic powder"
+    ]
+  }
+}

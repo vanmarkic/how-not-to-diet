@@ -1,0 +1,46 @@
+{
+  "id": "food-167",
+  "name": "Cranberries",
+  "categories": [
+    "rich-in-fruits",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "digestive-support"
+  ],
+  "properties": [
+    "High in polyphenol antioxidants",
+    "Rich in vitamin C and fiber",
+    "Anti-inflammatory compounds",
+    "Supports urinary tract health",
+    "Natural tartness adds flavor complexity",
+    "Dried form concentrates nutrients"
+  ],
+  "benefits": "Cranberries are exceptional sources of polyphenol antioxidants and anti-inflammatory compounds. Rich in proanthocyanidins that support urinary tract health and prevent bacterial adhesion. The natural tartness pairs beautifully with whole grains and dark leafy greens in stuffing, adding flavor complexity without added sugars. Dried cranberries provide concentrated nutrition and natural sweetness to grain-based dishes.",
+  "synergies": [
+    "kabocha-squash",
+    "kale",
+    "barley",
+    "rye",
+    "oats",
+    "lentils",
+    "rosemary",
+    "sage",
+    "thyme"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "particularly-effective-in-stuffing"
+  ],
+  "amount": "1/2 cup (50g) dried cranberries in stuffing recipes",
+  "sources": {
+    "pages": [
+      202,
+      203
+    ],
+    "quotes": [
+      "Rather than starchy, boring bread cubes, the stuffing for this dish is made with my Basic BROL (Barley, Rye, Oats and Lentils), combined with onion, celery, kale and cranberries.",
+      "Stir in the cranberries, kale, Umami Sauce Redux, thyme, rosemary, sage and black pepper to taste."
+    ]
+  }
+}

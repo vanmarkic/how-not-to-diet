@@ -1,0 +1,33 @@
+{
+  "id": "recipe-033",
+  "name": "Cottage Pie with Sweet Potato Mash",
+  "page": 213,
+  "meal_type": "dinner",
+  "servings": "4-6",
+  "difficulty": "Moderate",
+  "description": "Warm, savoury comfort food with sweet potato topping instead of regular mashed potatoes.",
+  "foods_used": [
+    "sweet-potatoes",
+    "onions",
+    "carrots",
+    "garlic",
+    "peas",
+    "lentils-brown-puy",
+    "mushrooms-white",
+    "nutritional-yeast",
+    "miso",
+    "thyme-dried",
+    "black-pepper",
+    "celery"
+  ],
+  "daily_dozen_coverage": [
+    "other-vegetables",
+    "beans",
+    "greens"
+  ],
+  "tweaks_incorporated": [
+    "fiber",
+    "umami-flavor"
+  ],
+  "key_synergies": "Lentils + vegetables + mushrooms create rich umami flavor. Sweet potato provides sustained energy."
+}

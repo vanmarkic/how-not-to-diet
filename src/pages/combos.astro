@@ -3,211 +3,528 @@ import Layout from '@layouts/Layout.astro';
 import fs from 'fs';
 import path from 'path';
 
-// Load the extracted foods data
-const dataPath = path.join(process.cwd(), 'data', 'extracted-foods.json');
-const foodsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-const foods = foodsData.foods;
+// Load foods from the bundle
+const bundlePath = path.join(process.cwd(), 'public', 'foods-bundle.json');
+const foodsBundle = JSON.parse(fs.readFileSync(bundlePath, 'utf-8'));
+const foods = foodsBundle.foods;
+const totalFoods = foodsBundle.build_metadata.total_foods;
 
-// Build synergy graph
-interface SynergyCombo {
-  foods: string[];
-  synergyCount: number;
-  categories: string[];
-  timing: string[];
-  benefits: string[];
-}
-
-function calculateCombos(): SynergyCombo[] {
-  const combos: SynergyCombo[] = [];
-
-  // For each food, find foods it synergizes with
-  for (let i = 0; i < foods.length; i++) {
-    for (let j = i + 1; j < foods.length; j++) {
-      const food1 = foods[i];
-      const food2 = foods[j];
-
-      // Check if they have synergies
-      const food1SynergizesWith2 = food1.synergies.some((s: string) =>
-        food2.name.toLowerCase().includes(s.toLowerCase()) ||
-        s.toLowerCase().includes(food2.name.toLowerCase())
-      );
-
-      const food2SynergizesWith1 = food2.synergies.some((s: string) =>
-        food1.name.toLowerCase().includes(s.toLowerCase()) ||
-        s.toLowerCase().includes(food1.name.toLowerCase())
-      );
-
-      if (food1SynergizesWith2 || food2SynergizesWith1) {
-        // Check for common categories
-        const commonCategories = food1.categories.filter((c: string) =>
-          food2.categories.includes(c)
-        );
-
-        // Check for compatible timing
-        const compatibleTiming = food1.timing.filter((t: string) =>
-          food2.timing.includes(t)
-        );
-
-        const synergyCount = (food1SynergizesWith2 ? 1 : 0) +
-                            (food2SynergizesWith1 ? 1 : 0) +
-                            commonCategories.length;
-
-        combos.push({
-          foods: [food1.name, food2.name],
-          synergyCount,
-          categories: [...new Set([...food1.categories, ...food2.categories])],
-          timing: compatibleTiming.length > 0 ? compatibleTiming : [...new Set([...food1.timing, ...food2.timing])],
-          benefits: [food1.benefits, food2.benefits]
-        });
-      }
-    }
-  }
-
-  // Sort by synergy count
-  return combos.sort((a, b) => b.synergyCount - a.synergyCount);
-}
-
-// Calculate 3-food combos for maximum synergies
-function calculateTripleCombos(): SynergyCombo[] {
-  const tripleCombos: SynergyCombo[] = [];
-
-  // Common breakfast combos
-  const breakfast = foods.filter((f: any) =>
-    f.timing.includes('breakfast') || f.timing.includes('any-meal')
-  );
-
-  for (let i = 0; i < breakfast.length && i < 5; i++) {
-    for (let j = i + 1; j < breakfast.length && j < 6; j++) {
-      for (let k = j + 1; k < breakfast.length && k < 7; k++) {
-        const food1 = breakfast[i];
-        const food2 = breakfast[j];
-        const food3 = breakfast[k];
-
-        const allCategories = [...new Set([
-          ...food1.categories,
-          ...food2.categories,
-          ...food3.categories
-        ])];
-
-        const allTiming = [...new Set([
-          ...food1.timing,
-          ...food2.timing,
-          ...food3.timing
-        ])];
-
-        // Calculate synergy score
-        const synergyCount = allCategories.length + allTiming.length;
-
-        tripleCombos.push({
-          foods: [food1.name, food2.name, food3.name],
-          synergyCount,
-          categories: allCategories,
-          timing: allTiming,
-          benefits: [food1.benefits, food2.benefits, food3.benefits]
-        });
-      }
-    }
-  }
-
-  return tripleCombos.sort((a, b) => b.synergyCount - a.synergyCount).slice(0, 10);
-}
-
-const pairCombos = calculateCombos();
-const tripleCombos = calculateTripleCombos();
+// Serialize foods data for client-side use
+const foodsJSON = JSON.stringify(foods);
 ---
 
 <Layout title="Food Combos - How Not To Diet">
   <div class="combos-page">
     <header class="page-header">
-      <h1>Synergy-Maximizing Food Combinations</h1>
-      <p>Discover powerful food pairings and combos that maximize health benefits</p>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Food Synergy Explorer</h1>
+          <p>Search and discover powerful food combinations from {totalFoods} foods with scientifically documented synergies</p>
+        </div>
+        <a href="/how-not-to-diet/planner" class="meal-ideas-btn" title="View saved meal ideas in Weekly Planner">
+          <span class="btn-icon">💡</span>
+          <span class="btn-text">My Meal Ideas</span>
+          <span id="meal-ideas-count"></span>
+        </a>
+      </div>
     </header>
 
-    <section class="combos-section">
-      <h2>Top Triple Combos (Best for Meals)</h2>
-      <p class="section-intro">These three-food combinations maximize synergies and are perfect for building complete meals</p>
-
-      <div class="combos-grid">
-        {tripleCombos.map((combo, index) => (
-          <div class="combo-card triple">
-            <div class="combo-rank">#{index + 1}</div>
-            <h3>{combo.foods.join(' + ')}</h3>
-            <div class="combo-score">
-              <span class="score-label">Synergy Score:</span>
-              <span class="score-value">{combo.synergyCount}</span>
-            </div>
-            <div class="combo-categories">
-              {combo.categories.slice(0, 6).map((cat: string) => (
-                <span class="category-badge">{cat}</span>
-              ))}
-            </div>
-            <div class="combo-timing">
-              <strong>Best timing:</strong> {combo.timing.join(', ')}
-            </div>
-          </div>
-        ))}
+    <div class="search-section">
+      <div class="search-container">
+        <input
+          type="text"
+          id="food-search"
+          placeholder="Search for a food (e.g., kale, beans, turmeric)..."
+          class="search-input"
+        />
+        <div class="search-stats">
+          <span id="total-foods">{totalFoods} foods available</span>
+          <span id="combo-count"></span>
+        </div>
       </div>
-    </section>
 
-    <section class="combos-section">
-      <h2>Top Food Pairs</h2>
-      <p class="section-intro">These two-food combinations have scientifically documented synergies</p>
-
-      <div class="combos-grid pairs">
-        {pairCombos.slice(0, 12).map((combo, index) => (
-          <div class="combo-card pair">
-            <div class="combo-rank">#{index + 1}</div>
-            <h3>{combo.foods.join(' + ')}</h3>
-            <div class="combo-score">
-              <span class="score-label">Synergy Score:</span>
-              <span class="score-value">{combo.synergyCount}</span>
-            </div>
-            <div class="combo-categories">
-              {combo.categories.slice(0, 4).map((cat: string) => (
-                <span class="category-badge">{cat}</span>
-              ))}
-            </div>
-            <div class="combo-timing">
-              <strong>Best timing:</strong> {combo.timing.slice(0, 3).join(', ')}
-            </div>
-          </div>
-        ))}
+      <div class="filter-options">
+        <label class="filter-label">
+          <input type="checkbox" id="show-pairs" checked />
+          <span>Show Pairs</span>
+        </label>
+        <label class="filter-label">
+          <input type="checkbox" id="show-triples" />
+          <span>Show Triple Combos</span>
+        </label>
+        <label class="filter-label">
+          Min Score:
+          <input type="number" id="min-score" min="0" max="20" value="3" class="score-input" />
+        </label>
       </div>
-    </section>
+    </div>
+
+    <div id="results-container">
+      <div class="loading-state">
+        <p>Enter a food name to discover synergies...</p>
+        <p class="hint">Try searching for: beans, kale, turmeric, vinegar, berries, or any of the {totalFoods} foods</p>
+      </div>
+    </div>
 
     <section class="meal-builder">
       <h2>Quick Meal Ideas</h2>
       <div class="meal-ideas-grid">
         <div class="meal-idea">
           <h3>Power Breakfast</h3>
-          <p class="meal-combo">Oat Groats + Berries + Ground Flaxseeds</p>
+          <p class="meal-combo">
+            <a href="/how-not-to-diet/foods?search=oat%20groats" class="meal-food-link">Oat Groats</a> +
+            <a href="/how-not-to-diet/foods?search=berries" class="meal-food-link">Berries</a> +
+            <a href="/how-not-to-diet/foods?search=flaxseed" class="meal-food-link">Ground Flaxseeds</a>
+          </p>
           <p class="meal-benefits">High fiber, anti-inflammatory, low glycemic - perfect morning combo</p>
-          <div class="meal-daily-dozen">Covers: Whole Grains, Berries, Flaxseeds</div>
+          <div class="meal-daily-dozen">
+            <strong>Covers:</strong>
+            <a href="/how-not-to-diet/foods?category=whole-grain" class="daily-dozen-link">Whole Grains</a>,
+            <a href="/how-not-to-diet/foods?search=berries" class="daily-dozen-link">Berries</a>,
+            <a href="/how-not-to-diet/foods?search=flaxseed" class="daily-dozen-link">Flaxseeds</a>
+          </div>
         </div>
 
         <div class="meal-idea">
           <h3>Anti-Inflammatory Salad</h3>
-          <p class="meal-combo">Kale + Cabbage + Vinegar Dressing</p>
+          <p class="meal-combo">
+            <a href="/how-not-to-diet/foods?search=kale" class="meal-food-link">Kale</a> +
+            <a href="/how-not-to-diet/foods?search=cabbage" class="meal-food-link">Cabbage</a> +
+            <a href="/how-not-to-diet/foods?search=vinegar" class="meal-food-link">Vinegar Dressing</a>
+          </p>
           <p class="meal-benefits">Maximum antioxidants, cholesterol reduction, metabolism boost</p>
-          <div class="meal-daily-dozen">Covers: Greens, Cruciferous Vegetables</div>
+          <div class="meal-daily-dozen">
+            <strong>Covers:</strong>
+            <a href="/how-not-to-diet/foods?category=greens" class="daily-dozen-link">Greens</a>,
+            <a href="/how-not-to-diet/foods?category=cruciferous" class="daily-dozen-link">Cruciferous Vegetables</a>
+          </div>
         </div>
 
         <div class="meal-idea">
           <h3>Complete Bowl</h3>
-          <p class="meal-combo">Beans + Greens + Turmeric</p>
+          <p class="meal-combo">
+            <a href="/how-not-to-diet/foods?category=beans-legumes" class="meal-food-link">Beans</a> +
+            <a href="/how-not-to-diet/foods?category=greens" class="meal-food-link">Greens</a> +
+            <a href="/how-not-to-diet/foods?search=turmeric" class="meal-food-link">Turmeric</a>
+          </p>
           <p class="meal-benefits">Complete protein, fiber-rich, powerful anti-inflammatory</p>
-          <div class="meal-daily-dozen">Covers: Legumes, Greens, Herbs & Spices</div>
+          <div class="meal-daily-dozen">
+            <strong>Covers:</strong>
+            <a href="/how-not-to-diet/foods?category=beans-legumes" class="daily-dozen-link">Legumes</a>,
+            <a href="/how-not-to-diet/foods?category=greens" class="daily-dozen-link">Greens</a>,
+            <a href="/how-not-to-diet/foods?category=herbs-spices" class="daily-dozen-link">Herbs & Spices</a>
+          </div>
         </div>
 
         <div class="meal-idea">
           <h3>Daily Dozen Booster</h3>
-          <p class="meal-combo">Add: Nigella Seeds (1/4 tsp) + Vinegar (2 tsp) to any meal</p>
+          <p class="meal-combo">
+            Add: <a href="/how-not-to-diet/foods?search=nigella" class="meal-food-link">Nigella Seeds (1/4 tsp)</a> +
+            <a href="/how-not-to-diet/foods?search=vinegar" class="meal-food-link">Vinegar (2 tsp)</a> to any meal
+          </p>
           <p class="meal-benefits">Weight loss acceleration from 21 Tweaks</p>
           <div class="meal-daily-dozen">21 Tweaks: Appetite suppression + metabolism</div>
         </div>
       </div>
     </section>
   </div>
+
+  <script define:vars={{ foodsJSON }}>
+    const foods = JSON.parse(foodsJSON);
+
+    // Helper to create food page links
+    function getFoodLink(foodName) {
+      const food = foods.find(f => f.name === foodName);
+      if (!food) return foodName;
+      return `<a href="/how-not-to-diet/foods/${food.id}" class="food-link">${foodName}</a>`;
+    }
+
+    // Meal Ideas Storage
+    const STORAGE_KEY = 'meal-ideas';
+
+    function getMealIdeas() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? JSON.parse(stored) : [];
+      } catch (error) {
+        console.error('Failed to load meal ideas:', error);
+        return [];
+      }
+    }
+
+    function saveMealIdea(name, foodNames, score, timing = []) {
+      // Get food IDs
+      const foodIds = foodNames.map(fname => {
+        const food = foods.find(f => f.name === fname);
+        return food ? food.id : null;
+      }).filter(id => id !== null);
+
+      if (foodIds.length === 0) {
+        showToast('Failed to save meal: foods not found', 'error');
+        return;
+      }
+
+      const mealIdea = {
+        id: `meal-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+        name: name,
+        foodIds: foodIds,
+        synergyScore: score,
+        timing: timing.length > 0 ? timing : undefined,
+        created: new Date().toISOString(),
+      };
+
+      const ideas = getMealIdeas();
+      ideas.unshift(mealIdea);
+
+      // Keep only last 50 (Pareto: most recent are most useful)
+      const trimmed = ideas.slice(0, 50);
+
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(trimmed));
+        showToast(`Saved "${name}" to Meal Ideas!`, 'success');
+        updateMealIdeasBadge();
+      } catch (error) {
+        console.error('Failed to save meal idea:', error);
+        showToast('Failed to save meal idea', 'error');
+      }
+    }
+
+    function showToast(message, type = 'success') {
+      const existingToast = document.querySelector('.toast-notification');
+      if (existingToast) existingToast.remove();
+
+      const toast = document.createElement('div');
+      toast.className = `toast-notification toast-${type}`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+
+      setTimeout(() => toast.classList.add('show'), 100);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+
+    function updateMealIdeasBadge() {
+      const ideas = getMealIdeas();
+      const badge = document.getElementById('meal-ideas-count');
+      if (badge && ideas.length > 0) {
+        badge.textContent = ideas.length;
+        badge.style.display = 'inline-flex';
+      }
+    }
+
+    // Update badge on page load
+    document.addEventListener('DOMContentLoaded', updateMealIdeasBadge);
+
+    // Calculate synergy score between two foods
+    function calculateSynergyScore(food1, food2) {
+      let score = 0;
+      const details = {
+        directSynergies: [],
+        commonCategories: [],
+        compatibleTiming: []
+      };
+
+      // Check direct synergies
+      const food1SynergizesWith2 = food1.synergies.some(s =>
+        food2.name.toLowerCase().includes(s.toLowerCase()) ||
+        s.toLowerCase().includes(food2.name.toLowerCase())
+      );
+      const food2SynergizesWith1 = food2.synergies.some(s =>
+        food1.name.toLowerCase().includes(s.toLowerCase()) ||
+        s.toLowerCase().includes(food1.name.toLowerCase())
+      );
+
+      if (food1SynergizesWith2) {
+        score += 2;
+        details.directSynergies.push(`${food1.name} synergizes with ${food2.name}`);
+      }
+      if (food2SynergizesWith1) {
+        score += 2;
+        details.directSynergies.push(`${food2.name} synergizes with ${food1.name}`);
+      }
+
+      // Common categories
+      const commonCategories = food1.categories.filter(c => food2.categories.includes(c));
+      score += commonCategories.length;
+      details.commonCategories = commonCategories;
+
+      // Compatible timing
+      const compatibleTiming = food1.timing.filter(t => food2.timing.includes(t));
+      score += compatibleTiming.length * 0.5;
+      details.compatibleTiming = compatibleTiming;
+
+      return { score, details };
+    }
+
+    // Find synergy combinations for given foods
+    function findSynergies(searchTerm, showPairs, showTriples, minScore) {
+      const matches = foods.filter(f =>
+        f.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+
+      if (matches.length === 0) return [];
+
+      const combos = [];
+
+      // Calculate pairs
+      if (showPairs) {
+        matches.forEach(searchFood => {
+          foods.forEach(otherFood => {
+            if (searchFood.id !== otherFood.id) {
+              const { score, details } = calculateSynergyScore(searchFood, otherFood);
+
+              if (score >= minScore) {
+                combos.push({
+                  foods: [searchFood.name, otherFood.name],
+                  foodObjects: [searchFood, otherFood],
+                  score: score,
+                  type: 'pair',
+                  details: details
+                });
+              }
+            }
+          });
+        });
+      }
+
+      // Calculate triple combos (limited for performance)
+      if (showTriples && matches.length > 0) {
+        const topPartners = new Set();
+
+        // Get top partners for each match
+        matches.forEach(searchFood => {
+          const partners = foods
+            .filter(f => f.id !== searchFood.id)
+            .map(f => ({ food: f, score: calculateSynergyScore(searchFood, f).score }))
+            .sort((a, b) => b.score - a.score)
+            .slice(0, 10);
+
+          partners.forEach(p => topPartners.add(p.food));
+        });
+
+        const partnersArray = Array.from(topPartners);
+
+        matches.forEach(searchFood => {
+          for (let i = 0; i < partnersArray.length && i < 15; i++) {
+            for (let j = i + 1; j < partnersArray.length && j < 15; j++) {
+              const food2 = partnersArray[i];
+              const food3 = partnersArray[j];
+
+              const score1 = calculateSynergyScore(searchFood, food2).score;
+              const score2 = calculateSynergyScore(searchFood, food3).score;
+              const score3 = calculateSynergyScore(food2, food3).score;
+              const totalScore = score1 + score2 + score3;
+
+              if (totalScore >= minScore * 2) {
+                const allCategories = [...new Set([
+                  ...searchFood.categories,
+                  ...food2.categories,
+                  ...food3.categories
+                ])];
+
+                const compatibleTiming = searchFood.timing.filter(t =>
+                  food2.timing.includes(t) && food3.timing.includes(t)
+                );
+
+                combos.push({
+                  foods: [searchFood.name, food2.name, food3.name],
+                  foodObjects: [searchFood, food2, food3],
+                  score: totalScore,
+                  type: 'triple',
+                  categories: allCategories,
+                  timing: compatibleTiming
+                });
+              }
+            }
+          }
+        });
+      }
+
+      return combos.sort((a, b) => b.score - a.score);
+    }
+
+    // Render synergy combinations
+    function renderCombos(combos) {
+      const container = document.getElementById('results-container');
+
+      if (combos.length === 0) {
+        container.innerHTML = `
+          <div class="no-results">
+            <p>No synergies found. Try:</p>
+            <ul>
+              <li>Lowering the minimum score</li>
+              <li>Checking "Show Pairs" or "Show Triple Combos"</li>
+              <li>Searching for a different food</li>
+            </ul>
+          </div>
+        `;
+        return;
+      }
+
+      const pairs = combos.filter(c => c.type === 'pair');
+      const triples = combos.filter(c => c.type === 'triple');
+
+      let html = '';
+
+      if (triples.length > 0) {
+        html += `
+          <section class="combos-section">
+            <h2>Triple Combos (${triples.length})</h2>
+            <p class="section-intro">Three-food combinations with maximum synergy</p>
+            <div class="combos-grid">
+              ${triples.slice(0, 20).map((combo, index) => {
+                const mealName = combo.foods.join(' + ');
+                const foodNamesJson = JSON.stringify(combo.foods);
+                const timingJson = JSON.stringify(combo.timing || []);
+                return `
+                <div class="combo-card triple">
+                  <div class="combo-rank">#${index + 1}</div>
+                  <h3>${combo.foods.map(f => getFoodLink(f)).join(' + ')}</h3>
+                  <div class="combo-score">
+                    <span class="score-label">Synergy Score:</span>
+                    <span class="score-value">${combo.score.toFixed(1)}</span>
+                  </div>
+                  <div class="combo-categories">
+                    ${combo.categories.slice(0, 6).map(cat =>
+                      `<span class="category-badge">${cat}</span>`
+                    ).join('')}
+                  </div>
+                  ${combo.timing.length > 0 ? `
+                    <div class="combo-timing">
+                      <strong>Best timing:</strong> ${combo.timing.join(', ')}
+                    </div>
+                  ` : ''}
+                  <button
+                    class="create-meal-btn"
+                    onclick="saveMealIdea('${mealName.replace(/'/g, "\\'")}', ${foodNamesJson}, ${combo.score.toFixed(1)}, ${timingJson})"
+                    title="Save this combo as a meal idea"
+                  >
+                    <span class="btn-icon">💡</span> Create Meal
+                  </button>
+                </div>
+                `;
+              }).join('')}
+            </div>
+          </section>
+        `;
+      }
+
+      if (pairs.length > 0) {
+        html += `
+          <section class="combos-section">
+            <h2>Food Pairs (${pairs.length})</h2>
+            <p class="section-intro">Two-food combinations with documented synergies</p>
+            <div class="combos-grid pairs">
+              ${pairs.slice(0, 30).map((combo, index) => {
+                const mealName = combo.foods.join(' + ');
+                const foodNamesJson = JSON.stringify(combo.foods);
+                const timingJson = JSON.stringify(combo.details.compatibleTiming || []);
+                return `
+                <div class="combo-card pair">
+                  <div class="combo-rank">#${index + 1}</div>
+                  <h3>${combo.foods.map(f => getFoodLink(f)).join(' + ')}</h3>
+                  <div class="combo-score">
+                    <span class="score-label">Synergy Score:</span>
+                    <span class="score-value">${combo.score.toFixed(1)}</span>
+                  </div>
+                  <div class="combo-details">
+                    ${combo.details.directSynergies.length > 0 ? `
+                      <div class="synergy-detail">
+                        <strong>Direct Synergies:</strong> ${combo.details.directSynergies.length}
+                      </div>
+                    ` : ''}
+                    ${combo.details.commonCategories.length > 0 ? `
+                      <div class="synergy-detail">
+                        <strong>Common Categories:</strong> ${combo.details.commonCategories.slice(0, 3).join(', ')}
+                      </div>
+                    ` : ''}
+                    ${combo.details.compatibleTiming.length > 0 ? `
+                      <div class="synergy-detail">
+                        <strong>Best Timing:</strong> ${combo.details.compatibleTiming.join(', ')}
+                      </div>
+                    ` : ''}
+                  </div>
+                  <button
+                    class="create-meal-btn"
+                    onclick="saveMealIdea('${mealName.replace(/'/g, "\\'")}', ${foodNamesJson}, ${combo.score.toFixed(1)}, ${timingJson})"
+                    title="Save this combo as a meal idea"
+                  >
+                    <span class="btn-icon">💡</span> Create Meal
+                  </button>
+                </div>
+                `;
+              }).join('')}
+            </div>
+          </section>
+        `;
+      }
+
+      container.innerHTML = html;
+
+      // Update stats
+      document.getElementById('combo-count').textContent =
+        `${combos.length} combinations found`;
+    }
+
+    // Event handlers
+    let searchTimeout;
+    document.getElementById('food-search').addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        const searchTerm = e.target.value.trim();
+        if (searchTerm.length >= 2) {
+          const showPairs = document.getElementById('show-pairs').checked;
+          const showTriples = document.getElementById('show-triples').checked;
+          const minScore = parseFloat(document.getElementById('min-score').value) || 0;
+
+          const combos = findSynergies(searchTerm, showPairs, showTriples, minScore);
+          renderCombos(combos);
+        } else {
+          document.getElementById('results-container').innerHTML = `
+            <div class="loading-state">
+              <p>Enter at least 2 characters to search...</p>
+            </div>
+          `;
+          document.getElementById('combo-count').textContent = '';
+        }
+      }, 300);
+    });
+
+    document.getElementById('show-pairs').addEventListener('change', () => {
+      const searchTerm = document.getElementById('food-search').value.trim();
+      if (searchTerm.length >= 2) {
+        const showPairs = document.getElementById('show-pairs').checked;
+        const showTriples = document.getElementById('show-triples').checked;
+        const minScore = parseFloat(document.getElementById('min-score').value) || 0;
+        const combos = findSynergies(searchTerm, showPairs, showTriples, minScore);
+        renderCombos(combos);
+      }
+    });
+
+    document.getElementById('show-triples').addEventListener('change', () => {
+      const searchTerm = document.getElementById('food-search').value.trim();
+      if (searchTerm.length >= 2) {
+        const showPairs = document.getElementById('show-pairs').checked;
+        const showTriples = document.getElementById('show-triples').checked;
+        const minScore = parseFloat(document.getElementById('min-score').value) || 0;
+        const combos = findSynergies(searchTerm, showPairs, showTriples, minScore);
+        renderCombos(combos);
+      }
+    });
+
+    document.getElementById('min-score').addEventListener('change', () => {
+      const searchTerm = document.getElementById('food-search').value.trim();
+      if (searchTerm.length >= 2) {
+        const showPairs = document.getElementById('show-pairs').checked;
+        const showTriples = document.getElementById('show-triples').checked;
+        const minScore = parseFloat(document.getElementById('min-score').value) || 0;
+        const combos = findSynergies(searchTerm, showPairs, showTriples, minScore);
+        renderCombos(combos);
+      }
+    });
+  </script>
 </Layout>
 
 <style>
@@ -217,10 +534,21 @@ const tripleCombos = calculateTripleCombos();
   }
 
   .page-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: 2px solid var(--color-border);
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header-text {
+    flex: 1;
+    text-align: center;
   }
 
   h1 {
@@ -234,8 +562,155 @@ const tripleCombos = calculateTripleCombos();
     color: var(--color-secondary);
   }
 
+  .meal-ideas-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .meal-ideas-btn:hover {
+    background: linear-gradient(135deg, #f57c00 0%, #ff9800 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+  }
+
+  .meal-ideas-btn .btn-icon {
+    font-size: 1.2em;
+  }
+
+  .meal-ideas-btn .btn-text {
+    display: inline;
+  }
+
+  /* Search Section */
+  .search-section {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .search-container {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .search-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .filter-options {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filter-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .filter-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .score-input {
+    width: 70px;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  /* Results Container */
+  #results-container {
+    min-height: 300px;
+  }
+
+  .loading-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #666;
+  }
+
+  .loading-state p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .loading-state .hint {
+    font-size: 1rem;
+    color: #999;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff9e6;
+    border-radius: 8px;
+    border: 2px solid #ffeb3b;
+  }
+
+  .no-results p {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .no-results ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .no-results li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Combos Section */
   .combos-section {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .combos-section h2 {
@@ -350,6 +825,21 @@ const tripleCombos = calculateTripleCombos();
     color: var(--color-primary);
   }
 
+  .combo-details {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .synergy-detail {
+    margin-bottom: 0.5rem;
+  }
+
+  .synergy-detail strong {
+    color: var(--color-primary);
+  }
+
+  /* Meal Builder */
   .meal-builder {
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     padding: 3rem;
@@ -390,6 +880,31 @@ const tripleCombos = calculateTripleCombos();
     margin-bottom: 0.75rem;
   }
 
+  .meal-food-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+  }
+
+  .meal-food-link:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-accent);
+  }
+
+  .meal-food-link::after {
+    content: '→';
+    opacity: 0;
+    margin-left: 0.25rem;
+    transition: opacity 0.2s;
+    font-size: 0.9em;
+  }
+
+  .meal-food-link:hover::after {
+    opacity: 1;
+  }
+
   .meal-benefits {
     font-size: 0.95rem;
     color: #666;
@@ -406,6 +921,132 @@ const tripleCombos = calculateTripleCombos();
     color: #2e7d32;
   }
 
+  .meal-daily-dozen strong {
+    margin-right: 0.25rem;
+  }
+
+  .daily-dozen-link {
+    color: #1b5e20;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-bottom: 1px solid transparent;
+  }
+
+  .daily-dozen-link:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+  }
+
+  /* Food links in combo titles */
+  .food-link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
+  }
+
+  .food-link:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+  }
+
+  .food-link::after {
+    content: '→';
+    opacity: 0;
+    margin-left: 0.25rem;
+    transition: opacity 0.2s;
+    font-size: 0.9em;
+  }
+
+  .food-link:hover::after {
+    opacity: 1;
+  }
+
+  /* Create Meal Button */
+  .create-meal-btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+  }
+
+  .create-meal-btn:hover {
+    background: linear-gradient(135deg, #45a049 0%, #4caf50 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
+  }
+
+  .create-meal-btn:active {
+    transform: translateY(0);
+  }
+
+  .create-meal-btn .btn-icon {
+    font-size: 1.1em;
+  }
+
+  /* Toast Notifications */
+  .toast-notification {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    z-index: 10000;
+    max-width: 400px;
+  }
+
+  .toast-notification.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .toast-success {
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    color: white;
+  }
+
+  .toast-error {
+    background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+    color: white;
+  }
+
+  /* Meal Ideas Badge */
+  #meal-ideas-count {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
   @media (max-width: 768px) {
     .combos-grid,
     .combos-grid.pairs {
@@ -414,6 +1055,52 @@ const tripleCombos = calculateTripleCombos();
 
     .meal-builder {
       padding: 2rem 1rem;
+    }
+
+    .filter-options {
+      gap: 1rem;
+    }
+
+    .search-section {
+      padding: 1.5rem 1rem;
+    }
+
+    .toast-notification {
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      max-width: none;
+    }
+
+    .create-meal-btn {
+      font-size: 0.85rem;
+      padding: 0.65rem 0.85rem;
+    }
+
+    .header-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+
+    .header-text {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+    }
+
+    .meal-ideas-btn {
+      justify-content: center;
+    }
+
+    .meal-ideas-btn .btn-text {
+      display: inline;
     }
   }
 </style>

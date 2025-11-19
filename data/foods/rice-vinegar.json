@@ -1,0 +1,41 @@
+{
+  "id": "food-186",
+  "name": "Rice Vinegar",
+  "categories": [
+    "anti-inflammatory",
+    "digestive-support",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Mild, slightly sweet vinegar",
+    "Made from fermented rice",
+    "Common in Asian cuisine",
+    "Gentler taste than white vinegar",
+    "Perfect for grain salads",
+    "Supports weight-loss metabolism"
+  ],
+  "benefits": "Rice vinegar is a mild, slightly sweet vinegar made from fermented rice, commonly used in Asian cuisine. It has a gentler, less acidic taste compared to white or apple cider vinegar, making it ideal for delicate grain salads and Asian-inspired dressings. Like all vinegars, it provides metabolic benefits for weight loss when consumed with meals. Its subtle flavor pairs particularly well with quinoa, miso, and Asian vegetables.",
+  "synergies": [
+    "quinoa",
+    "miso",
+    "ginger",
+    "garlic",
+    "spring-onions-scallions",
+    "edamame"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "2 tablespoons in dressings and grain salads",
+  "sources": {
+    "pages": [
+      91
+    ],
+    "quotes": [
+      "2 tablespoons rice vinegar",
+      "1 tablespoon white miso paste"
+    ]
+  }
+}

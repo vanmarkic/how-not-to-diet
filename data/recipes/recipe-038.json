@@ -1,0 +1,31 @@
+{
+  "id": "recipe-038",
+  "name": "BBQ Tempeh with Sweet Potatoes and Collards",
+  "page": 228,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Smoky BBQ tempeh with roasted sweet potatoes and saut\u00e9ed collard greens.",
+  "foods_used": [
+    "tempeh",
+    "sweet-potatoes",
+    "collard-greens",
+    "onions",
+    "garlic",
+    "apple-cider-vinegar",
+    "smoked-paprika",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "greens",
+    "cruciferous-vegetables",
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "vinegar",
+    "fermented-foods",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Tempeh + collards + vinegar for gut and metabolic health. Sweet potatoes provide beta-carotene."
+}

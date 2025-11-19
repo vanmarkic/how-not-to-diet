@@ -1,0 +1,37 @@
+{
+  "id": "food-200",
+  "name": "Chives (Fresh)",
+  "categories": [
+    "herbs-spices",
+    "allium-family",
+    "nutrient-dense"
+  ],
+  "properties": [
+    "Member of allium family (related to onions and garlic)",
+    "Rich in vitamins A, C, and K",
+    "Contains quercetin and other flavonoids",
+    "Mild onion flavor",
+    "Source of antioxidants"
+  ],
+  "benefits": "Fresh chives are a delicate herb from the allium family, providing mild onion flavor without overpowering dishes. Mentioned as an optional garnish for soups. Contains beneficial organosulfur compounds like other alliums. Rich in vitamin K for bone health. Adds color and flavor to finished dishes.",
+  "synergies": [
+    "potatoes",
+    "soups",
+    "salads",
+    "beans-legumes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "any-meal"
+  ],
+  "amount": "1-2 tablespoons snipped fresh, used as garnish",
+  "sources": {
+    "pages": [
+      57
+    ],
+    "quotes": [
+      "Optional garnishes: snipped fresh chives, chopped fresh parsley, or coarsely ground nigella seeds"
+    ]
+  }
+}

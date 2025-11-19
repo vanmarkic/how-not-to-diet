@@ -1,0 +1,44 @@
+{
+  "id": "food-259",
+  "name": "Cacao Nibs",
+  "categories": [
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "whole-food"
+  ],
+  "properties": [
+    "Raw crushed cacao beans",
+    "Whole food chocolate alternative",
+    "No added sugar",
+    "Crunchy texture",
+    "Extremely high in antioxidants",
+    "Rich in flavonoids",
+    "Bitter chocolate flavor"
+  ],
+  "benefits": "Cacao nibs are one of the most antioxidant-rich foods available. They provide pure chocolate benefits without any added sugar or processing. Rich in flavonoids that support heart health, reduce inflammation, and may aid in weight management. Adds satisfying crunch and chocolate flavor to dishes.",
+  "synergies": [
+    "berries",
+    "nuts",
+    "chia-seeds",
+    "fruits",
+    "oat-groats"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "as-topping",
+    "any-time"
+  ],
+  "amount": "1 tablespoon as topping",
+  "sources": {
+    "pages": [
+      295,
+      313
+    ],
+    "quotes": [
+      "cacao nibs - listed as breakfast topping option",
+      "1 tablespoon cacao nibs",
+      "Top with the cacao nibs and nuts (if using)."
+    ]
+  }
+}

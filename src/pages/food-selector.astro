@@ -13,8 +13,7 @@ const metadata = foodsData.extraction_metadata;
       <h1>Daily Dozen Foods</h1>
       <p class="intro">
         Select the nutrient-dense foods you want to incorporate into your diet.
-        These foods are based on Dr. Greger's evidence-based recommendations from
-        <strong>{metadata.source_document}</strong>.
+        These foods are based on evidence-based recommendations.
       </p>
 
       <div class="focus-areas">
@@ -36,7 +35,7 @@ const metadata = foodsData.extraction_metadata;
       <div class="info-card">
         <h3>About the Daily Dozen</h3>
         <p>
-          The Daily Dozen is Dr. Greger's checklist of foods to try to fit into your daily routine.
+          The Daily Dozen is a checklist of foods to try to fit into your daily routine.
           These foods have been shown to have the greatest impact on health and longevity based on
           the best available balance of evidence.
         </p>
@@ -54,14 +53,12 @@ const metadata = foodsData.extraction_metadata;
       </div>
 
       <div class="info-card source-info">
-        <h3>Source Reference</h3>
+        <h3>Food Database</h3>
         <p>
-          <strong>Document:</strong> {metadata.source_document}<br>
-          <strong>Extraction Date:</strong> {metadata.extraction_date}<br>
           <strong>Total Foods:</strong> {foods.length} foods with detailed nutritional information
         </p>
         <p class="note">
-          Page numbers referenced in each food card correspond to the source document for further reading.
+          Page numbers referenced in each food card provide additional context for further reading.
         </p>
       </div>
     </div>

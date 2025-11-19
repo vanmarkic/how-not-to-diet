@@ -1,0 +1,33 @@
+{
+  "id": "recipe-035",
+  "name": "Red Bean and Beetroot Cutlets",
+  "page": 219,
+  "meal_type": "dinner",
+  "servings": "6",
+  "difficulty": "Moderate",
+  "description": "Delicious cutlets perfect on a bed of greens, topped with sauce or served cold in lettuce wraps.",
+  "foods_used": [
+    "red-beans-kidney",
+    "walnuts",
+    "quinoa",
+    "beetroot",
+    "onions",
+    "nutritional-yeast",
+    "flaxseeds-ground",
+    "chia-seeds",
+    "miso",
+    "smoked-paprika",
+    "garlic",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "nuts-and-seeds",
+    "whole-grains"
+  ],
+  "tweaks_incorporated": [
+    "fiber",
+    "omega-3-fatty-acids"
+  ],
+  "key_synergies": "Beans + walnuts + flax/chia provide complete protein and omega-3s. Beets boost athletic performance."
+}

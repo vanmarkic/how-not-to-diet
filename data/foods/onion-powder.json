@@ -1,0 +1,41 @@
+{
+  "id": "food-252",
+  "name": "Onion Powder",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "flavor-enhancer"
+  ],
+  "properties": [
+    "Dried ground onion",
+    "Concentrated onion flavor",
+    "Convenient seasoning",
+    "Adds depth without moisture",
+    "Salt-free flavoring"
+  ],
+  "benefits": "Onion powder provides concentrated allium family benefits with anti-inflammatory and metabolic support properties. Convenient way to add onion flavor to dishes without added salt.",
+  "synergies": [
+    "garlic-powder",
+    "lentils",
+    "beans-legumes",
+    "whole-grains",
+    "berbere-spice"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking",
+    "daily"
+  ],
+  "amount": "½ teaspoon per recipe",
+  "sources": {
+    "pages": [
+      271,
+      276
+    ],
+    "quotes": [
+      "½ teaspoon onion powder",
+      "½ teaspoon onion powder - in Cheesy Tomato Sauce"
+    ]
+  }
+}

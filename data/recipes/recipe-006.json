@@ -1,0 +1,44 @@
+{
+  "id": "recipe-006",
+  "name": "Pasta With Garlicky White Beans And\nCavolo Nero",
+  "page": 150,
+  "meal_type": "dinner",
+  "servings": 6,
+  "difficulty": "easy",
+  "foods": [
+    "beans-legumes",
+    "bell-peppers-raw",
+    "black-pepper",
+    "cavolo-nero",
+    "crushed-red-pepper-flakes",
+    "garlic",
+    "garlic-powder",
+    "kale",
+    "miso",
+    "nutritional-yeast",
+    "onions",
+    "white-beans-cannellini"
+  ],
+  "daily_dozen": [
+    "beans",
+    "cruciferous",
+    "greens",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "fiber",
+    "vinegar"
+  ],
+  "synergies": [
+    {
+      "foods": [
+        "beans-legumes",
+        "cavolo-nero",
+        "kale",
+        "white-beans-cannellini"
+      ],
+      "benefit": "Greens + beans: Enhanced iron absorption from vitamin C in greens"
+    }
+  ]
+}

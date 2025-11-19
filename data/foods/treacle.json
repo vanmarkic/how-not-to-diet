@@ -1,0 +1,57 @@
+{
+  "id": "food-223",
+  "name": "Treacle (Blackstrap Molasses)",
+  "categories": [
+    "natural-sweetener",
+    "mineral-rich",
+    "iron-source"
+  ],
+  "properties": [
+    "Thick, dark syrup byproduct of sugar refining",
+    "Blackstrap treacle/molasses is the most nutritious type (third boiling)",
+    "Rich in iron, calcium, magnesium, and potassium",
+    "Contains B vitamins, particularly vitamin B6",
+    "Provides trace minerals including copper and manganese",
+    "Has a strong, distinctive bitter-sweet flavor",
+    "Less sweet than refined sugar, more complex flavor",
+    "Lower glycemic impact than refined sugars"
+  ],
+  "benefits": [
+    "Excellent plant-based source of iron for preventing anemia",
+    "Supports bone health with calcium and magnesium",
+    "Provides essential minerals often lacking in plant-based diets",
+    "May help maintain healthy blood pressure with potassium",
+    "Supports energy production through B vitamins",
+    "Adds depth and umami to savory dishes",
+    "Better nutritional profile than refined sweeteners"
+  ],
+  "synergies": [
+    "Combines with umami sauce in Asian-inspired dishes",
+    "Pairs with rice vinegar in sweet-savory sauces",
+    "Works with ginger and garlic in stir-fry marinades",
+    "Complements red pepper flakes for sweet-heat balance"
+  ],
+  "conflicts": [
+    "Use sparingly - still a concentrated sweetener",
+    "Strong flavor may overpower delicate dishes",
+    "Not suitable for those monitoring iron intake for medical reasons"
+  ],
+  "timing": [
+    "any-meal",
+    "in-cooking"
+  ],
+  "amount": "1 tablespoon per recipe serving 4 people (use sparingly)",
+  "sources": {
+    "pages": [
+      241,
+      340
+    ],
+    "quotes": [
+      "1 tablespoon treacle",
+      "1½ tablespoons treacle (in Umami Sauce Redux)"
+    ],
+    "recipes": [
+      "Umami Sauce Redux (page 340)"
+    ]
+  }
+}

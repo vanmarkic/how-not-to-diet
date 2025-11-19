@@ -1,0 +1,37 @@
+{
+  "id": "recipe-045",
+  "name": "Baked Grain Loaf with Umami Gravy",
+  "page": 256,
+  "meal_type": "dinner",
+  "servings": "6-8",
+  "difficulty": "Moderate",
+  "description": "Hearty grain and vegetable loaf with rich umami gravy.",
+  "foods_used": [
+    "lentils-brown-puy",
+    "quinoa",
+    "oat-groats-whole-intact-oats",
+    "mushrooms-white",
+    "onions",
+    "celery",
+    "carrots",
+    "garlic",
+    "nutritional-yeast",
+    "flaxseeds-ground",
+    "miso",
+    "thyme-dried",
+    "sage-dried",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "whole-grains",
+    "other-vegetables",
+    "nuts-and-seeds"
+  ],
+  "tweaks_incorporated": [
+    "intact-whole-grains",
+    "omega-3-fatty-acids",
+    "umami-flavor"
+  ],
+  "key_synergies": "Lentils + whole grains + flax for complete nutrition. Mushrooms + miso create rich umami flavor."
+}

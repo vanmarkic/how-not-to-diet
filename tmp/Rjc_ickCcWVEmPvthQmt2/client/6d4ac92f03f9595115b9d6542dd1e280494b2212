@@ -1,0 +1,85 @@
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@testing-library/jest-dom/dist/index.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vitest/dist/index.js", {"importedNames":["afterEach"]});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@testing-library/react/dist/index.js", {"importedNames":["cleanup"]});
+
+
+
+(0,__vite_ssr_import_1__.afterEach)(() => {
+  (0,__vite_ssr_import_2__.cleanup)();
+  localStorage.clear();
+  sessionStorage.clear();
+});
+Object.defineProperty(window, "matchMedia", {
+  writable: true,
+  value: (query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: () => {
+    },
+    // deprecated
+    removeListener: () => {
+    },
+    // deprecated
+    addEventListener: () => {
+    },
+    removeEventListener: () => {
+    },
+    dispatchEvent: () => true
+  })
+});
+Object.defineProperty(navigator, "share", {
+  writable: true,
+  value: async () => Promise.resolve()
+});
+global.fetch = async (url) => {
+  const urlString = typeof url === "string" ? url : url.toString();
+  if (urlString.includes("foods-bundle.json")) {
+    return Promise.resolve({
+      ok: true,
+      json: async () => ({
+        foods: [
+          {
+            id: "food-1",
+            name: "Oat Groats (Whole Intact Oats)",
+            categories: ["rich-in-whole-grains", "high-fiber"],
+            properties: ["Whole grain"],
+            benefits: "Great for breakfast",
+            synergies: ["berries", "flaxseeds"],
+            conflicts: [],
+            timing: ["breakfast", "any-meal"],
+            amount: "1 cup",
+            sources: { pages: [17], quotes: ["Quote"] }
+          },
+          {
+            id: "food-2",
+            name: "Blueberries",
+            categories: ["rich-in-fruits", "berries"],
+            properties: ["Antioxidant-rich"],
+            benefits: "Brain health",
+            synergies: ["oats", "flaxseeds"],
+            conflicts: [],
+            timing: ["breakfast", "any-meal"],
+            amount: "1/2 cup",
+            sources: { pages: [15], quotes: ["Quote"] }
+          },
+          {
+            id: "food-3",
+            name: "Kale",
+            categories: ["greens", "cruciferous"],
+            properties: ["Nutrient-dense"],
+            benefits: "Anti-inflammatory",
+            synergies: ["beans", "vinegar"],
+            conflicts: [],
+            timing: ["lunch", "dinner", "any-meal"],
+            amount: "2 cups",
+            sources: { pages: [13], quotes: ["Quote"] }
+          }
+        ]
+      })
+    });
+  };
+  return Promise.reject(new Error("Not found"));
+};
+//# sourceMappingSource=vite-generated
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBS0E7QUFDQTtBQUNBOzs7O0dBR0EsaUNBQVUsTUFBTTtBQUNkLG9DQUFRO0FBQ1IsZUFBYSxNQUFNO0FBQ25CLGlCQUFlLE1BQU07QUFDdkIsQ0FBQztBQUdELE9BQU8sZUFBZSxRQUFRLGNBQWM7QUFBQSxFQUMxQyxVQUFVO0FBQUEsRUFDVixPQUFPLENBQUMsV0FBbUI7QUFBQSxJQUN6QixTQUFTO0FBQUEsSUFDVCxPQUFPO0FBQUEsSUFDUCxVQUFVO0FBQUEsSUFDVixhQUFhLE1BQU07QUFBQSxJQUFDO0FBQUE7QUFBQSxJQUNwQixnQkFBZ0IsTUFBTTtBQUFBLElBQUM7QUFBQTtBQUFBLElBQ3ZCLGtCQUFrQixNQUFNO0FBQUEsSUFBQztBQUFBLElBQ3pCLHFCQUFxQixNQUFNO0FBQUEsSUFBQztBQUFBLElBQzVCLGVBQWUsTUFBTTtBQUFBLEVBQ3ZCO0FBQ0YsQ0FBQztBQUdELE9BQU8sZUFBZSxXQUFXLFNBQVM7QUFBQSxFQUN4QyxVQUFVO0FBQUEsRUFDVixPQUFPLFlBQVksUUFBUSxRQUFRO0FBQ3JDLENBQUM7QUFHRCxPQUFPLFFBQVEsT0FBTyxRQUFnQztBQUNwRCxRQUFNLFlBQVksT0FBTyxRQUFRLFdBQVcsTUFBTSxJQUFJLFNBQVM7QUFFL0QsTUFBSSxVQUFVLFNBQVMsbUJBQW1CLEdBQUc7QUFFM0MsV0FBTyxRQUFRLFFBQVE7QUFBQSxNQUNyQixJQUFJO0FBQUEsTUFDSixNQUFNLGFBQWE7QUFBQSxRQUNqQixPQUFPO0FBQUEsVUFDTDtBQUFBLFlBQ0UsSUFBSTtBQUFBLFlBQ0osTUFBTTtBQUFBLFlBQ04sWUFBWSxDQUFDLHdCQUF3QixZQUFZO0FBQUEsWUFDakQsWUFBWSxDQUFDLGFBQWE7QUFBQSxZQUMxQixVQUFVO0FBQUEsWUFDVixXQUFXLENBQUMsV0FBVyxXQUFXO0FBQUEsWUFDbEMsV0FBVyxDQUFDO0FBQUEsWUFDWixRQUFRLENBQUMsYUFBYSxVQUFVO0FBQUEsWUFDaEMsUUFBUTtBQUFBLFlBQ1IsU0FBUyxFQUFFLE9BQU8sQ0FBQyxFQUFFLEdBQUcsUUFBUSxDQUFDLE9BQU8sRUFBRTtBQUFBLFVBQzVDO0FBQUEsVUFDQTtBQUFBLFlBQ0UsSUFBSTtBQUFBLFlBQ0osTUFBTTtBQUFBLFlBQ04sWUFBWSxDQUFDLGtCQUFrQixTQUFTO0FBQUEsWUFDeEMsWUFBWSxDQUFDLGtCQUFrQjtBQUFBLFlBQy9CLFVBQVU7QUFBQSxZQUNWLFdBQVcsQ0FBQyxRQUFRLFdBQVc7QUFBQSxZQUMvQixXQUFXLENBQUM7QUFBQSxZQUNaLFFBQVEsQ0FBQyxhQUFhLFVBQVU7QUFBQSxZQUNoQyxRQUFRO0FBQUEsWUFDUixTQUFTLEVBQUUsT0FBTyxDQUFDLEVBQUUsR0FBRyxRQUFRLENBQUMsT0FBTyxFQUFFO0FBQUEsVUFDNUM7QUFBQSxVQUNBO0FBQUEsWUFDRSxJQUFJO0FBQUEsWUFDSixNQUFNO0FBQUEsWUFDTixZQUFZLENBQUMsVUFBVSxhQUFhO0FBQUEsWUFDcEMsWUFBWSxDQUFDLGdCQUFnQjtBQUFBLFlBQzdCLFVBQVU7QUFBQSxZQUNWLFdBQVcsQ0FBQyxTQUFTLFNBQVM7QUFBQSxZQUM5QixXQUFXLENBQUM7QUFBQSxZQUNaLFFBQVEsQ0FBQyxTQUFTLFVBQVUsVUFBVTtBQUFBLFlBQ3RDLFFBQVE7QUFBQSxZQUNSLFNBQVMsRUFBRSxPQUFPLENBQUMsRUFBRSxHQUFHLFFBQVEsQ0FBQyxPQUFPLEVBQUU7QUFBQSxVQUM1QztBQUFBLFFBQ0Y7QUFBQSxNQUNGO0FBQUEsSUFDRixDQUFhO0FBQUEsRUFDZjtBQUVBLFNBQU8sUUFBUSxPQUFPLElBQUksTUFBTSxXQUFXLENBQUM7QUFDOUMiLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbInNldHVwLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGVzdCBzZXR1cCBmaWxlXG4gKiBSdW5zIGJlZm9yZSBlYWNoIHRlc3Qgc3VpdGVcbiAqL1xuXG5pbXBvcnQgJ0B0ZXN0aW5nLWxpYnJhcnkvamVzdC1kb20nO1xuaW1wb3J0IHsgYWZ0ZXJFYWNoIH0gZnJvbSAndml0ZXN0JztcbmltcG9ydCB7IGNsZWFudXAgfSBmcm9tICdAdGVzdGluZy1saWJyYXJ5L3JlYWN0JztcblxuLy8gQ2xlYW51cCBhZnRlciBlYWNoIHRlc3RcbmFmdGVyRWFjaCgoKSA9PiB7XG4gIGNsZWFudXAoKTtcbiAgbG9jYWxTdG9yYWdlLmNsZWFyKCk7XG4gIHNlc3Npb25TdG9yYWdlLmNsZWFyKCk7XG59KTtcblxuLy8gTW9jayB3aW5kb3cubWF0Y2hNZWRpYVxuT2JqZWN0LmRlZmluZVByb3BlcnR5KHdpbmRvdywgJ21hdGNoTWVkaWEnLCB7XG4gIHdyaXRhYmxlOiB0cnVlLFxuICB2YWx1ZTogKHF1ZXJ5OiBzdHJpbmcpID0+ICh7XG4gICAgbWF0Y2hlczogZmFsc2UsXG4gICAgbWVkaWE6IHF1ZXJ5LFxuICAgIG9uY2hhbmdlOiBudWxsLFxuICAgIGFkZExpc3RlbmVyOiAoKSA9PiB7fSwgLy8gZGVwcmVjYXRlZFxuICAgIHJlbW92ZUxpc3RlbmVyOiAoKSA9PiB7fSwgLy8gZGVwcmVjYXRlZFxuICAgIGFkZEV2ZW50TGlzdGVuZXI6ICgpID0+IHt9LFxuICAgIHJlbW92ZUV2ZW50TGlzdGVuZXI6ICgpID0+IHt9LFxuICAgIGRpc3BhdGNoRXZlbnQ6ICgpID0+IHRydWUsXG4gIH0pLFxufSk7XG5cbi8vIE1vY2sgbmF2aWdhdG9yLnNoYXJlIChXZWIgU2hhcmUgQVBJKVxuT2JqZWN0LmRlZmluZVByb3BlcnR5KG5hdmlnYXRvciwgJ3NoYXJlJywge1xuICB3cml0YWJsZTogdHJ1ZSxcbiAgdmFsdWU6IGFzeW5jICgpID0+IFByb21pc2UucmVzb2x2ZSgpLFxufSk7XG5cbi8vIE1vY2sgZmV0Y2ggZ2xvYmFsbHlcbmdsb2JhbC5mZXRjaCA9IGFzeW5jICh1cmw6IHN0cmluZyB8IFVSTCB8IFJlcXVlc3QpID0+IHtcbiAgY29uc3QgdXJsU3RyaW5nID0gdHlwZW9mIHVybCA9PT0gJ3N0cmluZycgPyB1cmwgOiB1cmwudG9TdHJpbmcoKTtcblxuICBpZiAodXJsU3RyaW5nLmluY2x1ZGVzKCdmb29kcy1idW5kbGUuanNvbicpKSB7XG4gICAgLy8gUmV0dXJuIG1vY2sgZm9vZHMgZGF0YVxuICAgIHJldHVybiBQcm9taXNlLnJlc29sdmUoe1xuICAgICAgb2s6IHRydWUsXG4gICAgICBqc29uOiBhc3luYyAoKSA9PiAoe1xuICAgICAgICBmb29kczogW1xuICAgICAgICAgIHtcbiAgICAgICAgICAgIGlkOiAnZm9vZC0xJyxcbiAgICAgICAgICAgIG5hbWU6ICdPYXQgR3JvYXRzIChXaG9sZSBJbnRhY3QgT2F0cyknLFxuICAgICAgICAgICAgY2F0ZWdvcmllczogWydyaWNoLWluLXdob2xlLWdyYWlucycsICdoaWdoLWZpYmVyJ10sXG4gICAgICAgICAgICBwcm9wZXJ0aWVzOiBbJ1dob2xlIGdyYWluJ10sXG4gICAgICAgICAgICBiZW5lZml0czogJ0dyZWF0IGZvciBicmVha2Zhc3QnLFxuICAgICAgICAgICAgc3luZXJnaWVzOiBbJ2JlcnJpZXMnLCAnZmxheHNlZWRzJ10sXG4gICAgICAgICAgICBjb25mbGljdHM6IFtdLFxuICAgICAgICAgICAgdGltaW5nOiBbJ2JyZWFrZmFzdCcsICdhbnktbWVhbCddLFxuICAgICAgICAgICAgYW1vdW50OiAnMSBjdXAnLFxuICAgICAgICAgICAgc291cmNlczogeyBwYWdlczogWzE3XSwgcXVvdGVzOiBbJ1F1b3RlJ10gfSxcbiAgICAgICAgICB9LFxuICAgICAgICAgIHtcbiAgICAgICAgICAgIGlkOiAnZm9vZC0yJyxcbiAgICAgICAgICAgIG5hbWU6ICdCbHVlYmVycmllcycsXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ3JpY2gtaW4tZnJ1aXRzJywgJ2JlcnJpZXMnXSxcbiAgICAgICAgICAgIHByb3BlcnRpZXM6IFsnQW50aW94aWRhbnQtcmljaCddLFxuICAgICAgICAgICAgYmVuZWZpdHM6ICdCcmFpbiBoZWFsdGgnLFxuICAgICAgICAgICAgc3luZXJnaWVzOiBbJ29hdHMnLCAnZmxheHNlZWRzJ10sXG4gICAgICAgICAgICBjb25mbGljdHM6IFtdLFxuICAgICAgICAgICAgdGltaW5nOiBbJ2JyZWFrZmFzdCcsICdhbnktbWVhbCddLFxuICAgICAgICAgICAgYW1vdW50OiAnMS8yIGN1cCcsXG4gICAgICAgICAgICBzb3VyY2VzOiB7IHBhZ2VzOiBbMTVdLCBxdW90ZXM6IFsnUXVvdGUnXSB9LFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6ICdmb29kLTMnLFxuICAgICAgICAgICAgbmFtZTogJ0thbGUnLFxuICAgICAgICAgICAgY2F0ZWdvcmllczogWydncmVlbnMnLCAnY3J1Y2lmZXJvdXMnXSxcbiAgICAgICAgICAgIHByb3BlcnRpZXM6IFsnTnV0cmllbnQtZGVuc2UnXSxcbiAgICAgICAgICAgIGJlbmVmaXRzOiAnQW50aS1pbmZsYW1tYXRvcnknLFxuICAgICAgICAgICAgc3luZXJnaWVzOiBbJ2JlYW5zJywgJ3ZpbmVnYXInXSxcbiAgICAgICAgICAgIGNvbmZsaWN0czogW10sXG4gICAgICAgICAgICB0aW1pbmc6IFsnbHVuY2gnLCAnZGlubmVyJywgJ2FueS1tZWFsJ10sXG4gICAgICAgICAgICBhbW91bnQ6ICcyIGN1cHMnLFxuICAgICAgICAgICAgc291cmNlczogeyBwYWdlczogWzEzXSwgcXVvdGVzOiBbJ1F1b3RlJ10gfSxcbiAgICAgICAgICB9LFxuICAgICAgICBdLFxuICAgICAgfSksXG4gICAgfSBhcyBSZXNwb25zZSk7XG4gIH1cblxuICByZXR1cm4gUHJvbWlzZS5yZWplY3QobmV3IEVycm9yKCdOb3QgZm91bmQnKSk7XG59O1xuIl0sImZpbGUiOiIvc3JjL3Rlc3Qvc2V0dXAudHMifQ==

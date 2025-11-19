@@ -1,0 +1,35 @@
+{
+  "id": "recipe-005",
+  "name": "Gemelli With Courgette Meatballs And\nChimichurri",
+  "page": 146,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "moderate",
+  "foods": [
+    "avocado",
+    "black-pepper",
+    "chia-seeds",
+    "chickpeas",
+    "flaxseeds-ground",
+    "fresh-herbs",
+    "garlic",
+    "lemon",
+    "miso",
+    "nutritional-yeast",
+    "oat-groats-whole-intact-oats",
+    "onion-powder",
+    "onions",
+    "oregano-dried",
+    "peas",
+    "zucchini-courgette"
+  ],
+  "daily_dozen": [
+    "beans",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "deflour"
+  ],
+  "synergies": []
+}

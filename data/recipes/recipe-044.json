@@ -1,0 +1,39 @@
+{
+  "id": "recipe-044",
+  "name": "Great Grain Tart",
+  "page": 250,
+  "meal_type": "dinner",
+  "servings": "6",
+  "difficulty": "Moderate",
+  "description": "Delicious way to use leftover whole grains with mushrooms, greens and white beans.",
+  "foods_used": [
+    "oat-groats-whole-intact-oats",
+    "quinoa",
+    "millet",
+    "white-beans-cannellini",
+    "mushrooms-white",
+    "bell-peppers",
+    "onions",
+    "garlic",
+    "chard",
+    "nutritional-yeast",
+    "flaxseeds-ground",
+    "miso",
+    "smoked-paprika",
+    "thyme-dried",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "whole-grains",
+    "beans",
+    "other-vegetables",
+    "greens",
+    "nuts-and-seeds"
+  ],
+  "tweaks_incorporated": [
+    "intact-whole-grains",
+    "omega-3-fatty-acids",
+    "umami-flavor"
+  ],
+  "key_synergies": "Multiple whole grains + beans provide complete protein. Flax adds omega-3s. Mushrooms create umami."
+}

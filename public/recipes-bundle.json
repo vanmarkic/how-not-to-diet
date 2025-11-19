@@ -1,0 +1,2078 @@
+{
+  "build_metadata": {
+    "build_timestamp": "2025-11-19T01:38:12.202Z",
+    "total_recipes": 59,
+    "total_meal_types": 9,
+    "total_difficulties": 4,
+    "builder_version": "1.0.0"
+  },
+  "meal_types": [
+    "Base",
+    "Breakfast",
+    "Condiment",
+    "Dessert",
+    "Main Dish",
+    "Sauce",
+    "Spice Blend",
+    "dinner",
+    "lunch"
+  ],
+  "difficulties": [
+    "Easy",
+    "Moderate",
+    "easy",
+    "moderate"
+  ],
+  "daily_dozen_items": [
+    {
+      "beans": 1,
+      "cruciferous": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "beans": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "flaxseeds": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "other_veg": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1,
+      "beverages": 1
+    },
+    {
+      "beans": 1,
+      "cruciferous": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "beans": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "cruciferous": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "other_fruits": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "beans": 1,
+      "cruciferous": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "beans": 1,
+      "berries": 1,
+      "nuts_seeds": 1,
+      "whole_grains": 1
+    },
+    {
+      "greens": 1,
+      "other_veg": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "beans": 1,
+      "cruciferous": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "beans": 1,
+      "cruciferous": 1,
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "berries": 1,
+      "other_fruits": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1,
+      "whole_grains": 1
+    },
+    {
+      "berries": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1
+    },
+    {
+      "berries": 1,
+      "other_fruits": 1,
+      "nuts_seeds": 1
+    },
+    {
+      "berries": 1,
+      "other_fruits": 1,
+      "nuts_seeds": 1
+    },
+    {
+      "nuts_seeds": 1,
+      "herbs_spices": 1
+    },
+    {
+      "berries": 1,
+      "other_fruits": 1,
+      "nuts_seeds": 1
+    },
+    {
+      "berries": 1,
+      "other_fruits": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1
+    },
+    {
+      "berries": 1,
+      "other_fruits": 1,
+      "nuts_seeds": 1
+    },
+    {
+      "other_fruits": 1,
+      "herbs_spices": 1
+    },
+    {
+      "greens": 1,
+      "other_veg": 1,
+      "flaxseeds": 1,
+      "nuts_seeds": 1,
+      "herbs_spices": 1
+    },
+    {
+      "beans": 1,
+      "whole_grains": 1
+    },
+    {
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "nuts_seeds": 1
+    },
+    {
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "greens": 1,
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    {
+      "other_veg": 1,
+      "herbs_spices": 1
+    },
+    "beans",
+    "berries",
+    "cruciferous-vegetables",
+    "greens",
+    "nuts-and-seeds",
+    "other-vegetables",
+    "whole-grains"
+  ],
+  "tweaks": [
+    "black-pepper-turmeric",
+    "cruciferous-vegetables",
+    "cumin-boost",
+    "fermented-foods",
+    "fiber",
+    "herbs-and-spices",
+    "intact-whole-grains",
+    "omega-3-fatty-acids",
+    "umami-flavor",
+    "vinegar"
+  ],
+  "recipes": [
+    {
+      "id": "recipe-001",
+      "name": "Antipasto Vegetables With Tuscan White\nBean Dressing",
+      "page": 120,
+      "meal_type": "lunch",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "beans-legumes",
+        "bell-peppers-raw",
+        "cherry-tomatoes",
+        "fresh-herbs",
+        "garlic",
+        "lemon",
+        "miso",
+        "nutritional-yeast",
+        "onions",
+        "portobello-mushrooms",
+        "turmeric",
+        "white-beans-cannellini",
+        "zucchini-courgette"
+      ],
+      "daily_dozen": [
+        "beans",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "fiber",
+        "vinegar"
+      ],
+      "synergies": [
+        {
+          "foods": [
+            "garlic",
+            "onions",
+            "portobello-mushrooms"
+          ],
+          "benefit": "Mushrooms + alliums: Enhanced immune-boosting properties"
+        }
+      ]
+    },
+    {
+      "id": "recipe-002",
+      "name": "Cauliflower Alfredo Linguine With\nRoasted Asparagus",
+      "page": 128,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "asparagus",
+        "black-pepper",
+        "brazil-nuts",
+        "cauliflower",
+        "fresh-herbs",
+        "garlic",
+        "lemon",
+        "miso",
+        "nutritional-yeast",
+        "onions"
+      ],
+      "daily_dozen": [
+        "cruciferous",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory"
+      ],
+      "synergies": []
+    },
+    {
+      "id": "recipe-003",
+      "name": "Lentil Bolognese",
+      "page": 134,
+      "meal_type": "lunch",
+      "servings": 4,
+      "difficulty": "moderate",
+      "foods": [
+        "bell-peppers-raw",
+        "crushed-red-pepper-flakes",
+        "fresh-herbs",
+        "garlic",
+        "lentils-brown-puy",
+        "miso",
+        "nutritional-yeast",
+        "onions",
+        "oregano-dried",
+        "portobello-mushrooms",
+        "zucchini-courgette"
+      ],
+      "daily_dozen": [
+        "beans",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "fiber"
+      ],
+      "synergies": [
+        {
+          "foods": [
+            "garlic",
+            "onions",
+            "portobello-mushrooms"
+          ],
+          "benefit": "Mushrooms + alliums: Enhanced immune-boosting properties"
+        }
+      ]
+    },
+    {
+      "id": "recipe-004",
+      "name": "Pesto-Tossed Spaghetti Squash Noodles\nAnd White Beans",
+      "page": 140,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "beans-legumes",
+        "bell-peppers-raw",
+        "brazil-nuts",
+        "crushed-red-pepper-flakes",
+        "fresh-herbs",
+        "spaghetti-squash",
+        "white-beans-cannellini",
+        "zucchini-courgette"
+      ],
+      "daily_dozen": [
+        "beans",
+        "vegetables"
+      ],
+      "tweaks": [
+        "fiber"
+      ],
+      "synergies": []
+    },
+    {
+      "id": "recipe-005",
+      "name": "Gemelli With Courgette Meatballs And\nChimichurri",
+      "page": 146,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "moderate",
+      "foods": [
+        "avocado",
+        "black-pepper",
+        "chia-seeds",
+        "chickpeas",
+        "flaxseeds-ground",
+        "fresh-herbs",
+        "garlic",
+        "lemon",
+        "miso",
+        "nutritional-yeast",
+        "oat-groats-whole-intact-oats",
+        "onion-powder",
+        "onions",
+        "oregano-dried",
+        "peas",
+        "zucchini-courgette"
+      ],
+      "daily_dozen": [
+        "beans",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "deflour"
+      ],
+      "synergies": []
+    },
+    {
+      "id": "recipe-006",
+      "name": "Pasta With Garlicky White Beans And\nCavolo Nero",
+      "page": 150,
+      "meal_type": "dinner",
+      "servings": 6,
+      "difficulty": "easy",
+      "foods": [
+        "beans-legumes",
+        "bell-peppers-raw",
+        "black-pepper",
+        "cavolo-nero",
+        "crushed-red-pepper-flakes",
+        "garlic",
+        "garlic-powder",
+        "kale",
+        "miso",
+        "nutritional-yeast",
+        "onions",
+        "white-beans-cannellini"
+      ],
+      "daily_dozen": [
+        "beans",
+        "cruciferous",
+        "greens",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "fiber",
+        "vinegar"
+      ],
+      "synergies": [
+        {
+          "foods": [
+            "beans-legumes",
+            "cavolo-nero",
+            "kale",
+            "white-beans-cannellini"
+          ],
+          "benefit": "Greens + beans: Enhanced iron absorption from vitamin C in greens"
+        }
+      ]
+    },
+    {
+      "id": "recipe-007",
+      "name": "Three Sisters Stew",
+      "page": 163,
+      "meal_type": "dinner",
+      "servings": 6,
+      "difficulty": "easy",
+      "foods": [
+        "beans-legumes",
+        "bell-peppers-raw",
+        "black-pepper",
+        "butternut-squash",
+        "cumin",
+        "fresh-herbs",
+        "garlic",
+        "onion-powder",
+        "onions",
+        "oregano-dried",
+        "smoked-paprika"
+      ],
+      "daily_dozen": [
+        "beans",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "cumin",
+        "fiber"
+      ],
+      "synergies": []
+    },
+    {
+      "id": "recipe-008",
+      "name": "Nigella Seed-Rubbed Balsamic Roasted\nCauliflower",
+      "page": 172,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "cauliflower",
+        "cherry-tomatoes",
+        "fresh-herbs",
+        "nigella-seeds-black-cumin",
+        "onions"
+      ],
+      "daily_dozen": [
+        "cruciferous",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "vinegar"
+      ],
+      "synergies": []
+    },
+    {
+      "id": "recipe-009",
+      "name": "Braised Greens",
+      "page": 175,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "bell-peppers-raw",
+        "black-pepper",
+        "carrots",
+        "crushed-red-pepper-flakes",
+        "garlic",
+        "miso",
+        "onion-powder",
+        "onions",
+        "oregano-dried",
+        "parsnips",
+        "sweet-potatoes"
+      ],
+      "daily_dozen": [
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory"
+      ],
+      "synergies": []
+    },
+    {
+      "id": "recipe-010",
+      "name": "Cauliflower Piccata With Mushrooms And\nPotatoes",
+      "page": 186,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "beans-legumes",
+        "black-pepper",
+        "cauliflower",
+        "cherry-tomatoes",
+        "fresh-herbs",
+        "garlic",
+        "lemon",
+        "miso",
+        "nutritional-yeast",
+        "onion-powder",
+        "onions",
+        "portobello-mushrooms",
+        "turmeric",
+        "white-beans-cannellini"
+      ],
+      "daily_dozen": [
+        "beans",
+        "cruciferous",
+        "vegetables"
+      ],
+      "tweaks": [
+        "anti-inflammatory",
+        "fiber"
+      ],
+      "synergies": [
+        {
+          "foods": [
+            "black-pepper",
+            "turmeric"
+          ],
+          "benefit": "Turmeric + black pepper: 2000% increase in curcumin absorption"
+        },
+        {
+          "foods": [
+            "garlic",
+            "onions",
+            "portobello-mushrooms"
+          ],
+          "benefit": "Mushrooms + alliums: Enhanced immune-boosting properties"
+        },
+        {
+          "foods": [
+            "cauliflower",
+            "turmeric"
+          ],
+          "benefit": "Cruciferous + turmeric: Synergistic anti-cancer effects"
+        }
+      ]
+    },
+    {
+      "id": "recipe-011",
+      "name": "Beetroot",
+      "page": 189,
+      "meal_type": "lunch",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "black-pepper",
+        "brussels-sprouts",
+        "butternut-squash",
+        "fresh-herbs",
+        "onions",
+        "oregano-dried"
+      ],
+      "daily_dozen": [
+        "cruciferous",
+        "vegetables"
+      ],
+      "tweaks": [],
+      "synergies": []
+    },
+    {
+      "id": "recipe-012",
+      "name": "Artichoke And Spinach Stuffed\nPortobellos",
+      "page": 195,
+      "meal_type": "dinner",
+      "servings": 4,
+      "difficulty": "easy",
+      "foods": [
+        "artichokes",
+        "portobello-mushrooms",
+        "spinach"
+      ],
+      "daily_dozen": [
+        "greens",
+        "vegetables"
+      ],
+      "tweaks": [],
+      "synergies": []
+    },
+    {
+      "id": "recipe-030",
+      "name": "Roasted Kabocha with Kale-Cranberry Stuffing",
+      "page": 202,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Rather than starchy bread cubes, the stuffing for this dish is made with Basic BROL (Barley, Rye, Oats and Lentils), combined with onion, celery, kale and cranberries.",
+      "foods_used": [
+        "kabocha-squash",
+        "kale",
+        "cranberries-dried",
+        "onions",
+        "celery",
+        "barley",
+        "lentils-brown-puy",
+        "thyme-dried",
+        "rosemary-dried",
+        "sage-dried",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "greens",
+        "cruciferous-vegetables",
+        "other-vegetables",
+        "whole-grains",
+        "beans"
+      ],
+      "tweaks_incorporated": [
+        "fiber",
+        "intact-whole-grains",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Kale + barley + lentils provide complete protein and maximum fiber. Cranberries add antioxidants."
+    },
+    {
+      "id": "recipe-031",
+      "name": "Cumin-Roasted Carrots with Chickpeas and Tomatoes",
+      "page": 205,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Easy",
+      "description": "Savoury roasted vegetables with metabolism-boosting cumin. Roasting time depends on carrot size.",
+      "foods_used": [
+        "carrots",
+        "chickpeas",
+        "cherry-tomatoes",
+        "apple-cider-vinegar",
+        "cumin",
+        "coriander-ground",
+        "black-pepper",
+        "parsley-fresh"
+      ],
+      "daily_dozen_coverage": [
+        "other-vegetables",
+        "beans"
+      ],
+      "tweaks_incorporated": [
+        "cumin-boost",
+        "vinegar",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Cumin (weight-loss booster) + chickpeas + vinegar enhances metabolism. Tomatoes provide lycopene."
+    },
+    {
+      "id": "recipe-032",
+      "name": "Sage-Kissed Sweet Potato Wedges with Shallots",
+      "page": 208,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Easy",
+      "description": "Roasted sweet potatoes made more flavoursome with malt vinegar, cornmeal and spices.",
+      "foods_used": [
+        "sweet-potatoes",
+        "apple-cider-vinegar",
+        "smoked-paprika",
+        "sage-dried",
+        "shallots"
+      ],
+      "daily_dozen_coverage": [
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "vinegar",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Sweet potatoes + vinegar for blood sugar control. Sage adds anti-inflammatory benefits."
+    },
+    {
+      "id": "recipe-033",
+      "name": "Cottage Pie with Sweet Potato Mash",
+      "page": 213,
+      "meal_type": "dinner",
+      "servings": "4-6",
+      "difficulty": "Moderate",
+      "description": "Warm, savoury comfort food with sweet potato topping instead of regular mashed potatoes.",
+      "foods_used": [
+        "sweet-potatoes",
+        "onions",
+        "carrots",
+        "garlic",
+        "peas",
+        "lentils-brown-puy",
+        "mushrooms-white",
+        "nutritional-yeast",
+        "miso",
+        "thyme-dried",
+        "black-pepper",
+        "celery"
+      ],
+      "daily_dozen_coverage": [
+        "other-vegetables",
+        "beans",
+        "greens"
+      ],
+      "tweaks_incorporated": [
+        "fiber",
+        "umami-flavor"
+      ],
+      "key_synergies": "Lentils + vegetables + mushrooms create rich umami flavor. Sweet potato provides sustained energy."
+    },
+    {
+      "id": "recipe-034",
+      "name": "Cornmeal-Crusted Buffalo Tempeh with White Bean Ranch",
+      "page": 216,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Crispy tempeh with creamy white bean ranch dipping sauce that also makes a great salad dressing.",
+      "foods_used": [
+        "tempeh",
+        "white-beans-cannellini",
+        "cashews",
+        "apple-cider-vinegar",
+        "lemon",
+        "onions",
+        "garlic",
+        "miso",
+        "black-pepper",
+        "parsley-fresh",
+        "nutritional-yeast"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "nuts-and-seeds"
+      ],
+      "tweaks_incorporated": [
+        "vinegar",
+        "fermented-foods"
+      ],
+      "key_synergies": "Tempeh (fermented soy) + vinegar + miso for gut health. White beans create creaminess without dairy."
+    },
+    {
+      "id": "recipe-035",
+      "name": "Red Bean and Beetroot Cutlets",
+      "page": 219,
+      "meal_type": "dinner",
+      "servings": "6",
+      "difficulty": "Moderate",
+      "description": "Delicious cutlets perfect on a bed of greens, topped with sauce or served cold in lettuce wraps.",
+      "foods_used": [
+        "red-beans-kidney",
+        "walnuts",
+        "quinoa",
+        "beetroot",
+        "onions",
+        "nutritional-yeast",
+        "flaxseeds-ground",
+        "chia-seeds",
+        "miso",
+        "smoked-paprika",
+        "garlic",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "nuts-and-seeds",
+        "whole-grains"
+      ],
+      "tweaks_incorporated": [
+        "fiber",
+        "omega-3-fatty-acids"
+      ],
+      "key_synergies": "Beans + walnuts + flax/chia provide complete protein and omega-3s. Beets boost athletic performance."
+    },
+    {
+      "id": "recipe-036",
+      "name": "Persian Black-Eyed Beans and Greens",
+      "page": 222,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Fragrant spices turn simple beans and greens into something special.",
+      "foods_used": [
+        "black-eyed-peas",
+        "kale",
+        "collard-greens",
+        "onions",
+        "carrots",
+        "miso",
+        "coriander-ground",
+        "cumin",
+        "turmeric",
+        "black-pepper",
+        "cardamom",
+        "cinnamon",
+        "lemon"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "greens",
+        "cruciferous-vegetables",
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "cumin-boost",
+        "black-pepper-turmeric",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Black-eyed peas + greens + cumin/turmeric for anti-inflammatory benefits. Multiple spices amplify effects."
+    },
+    {
+      "id": "recipe-037",
+      "name": "Butternut-Black Bean Chilli",
+      "page": 225,
+      "meal_type": "dinner",
+      "servings": "6",
+      "difficulty": "Easy",
+      "description": "Black beans marry chunks of butternut squash in this delicious chilli.",
+      "foods_used": [
+        "black-beans",
+        "butternut-squash",
+        "onions",
+        "bell-peppers",
+        "garlic",
+        "cherry-tomatoes",
+        "turmeric",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "black-pepper-turmeric",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Black beans + squash for sustained energy. Turmeric + black pepper for enhanced absorption."
+    },
+    {
+      "id": "recipe-038",
+      "name": "BBQ Tempeh with Sweet Potatoes and Collards",
+      "page": 228,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Smoky BBQ tempeh with roasted sweet potatoes and sautéed collard greens.",
+      "foods_used": [
+        "tempeh",
+        "sweet-potatoes",
+        "collard-greens",
+        "onions",
+        "garlic",
+        "apple-cider-vinegar",
+        "smoked-paprika",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "greens",
+        "cruciferous-vegetables",
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "vinegar",
+        "fermented-foods",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Tempeh + collards + vinegar for gut and metabolic health. Sweet potatoes provide beta-carotene."
+    },
+    {
+      "id": "recipe-039",
+      "name": "Black Lentil Dal",
+      "page": 232,
+      "meal_type": "dinner",
+      "servings": "4-6",
+      "difficulty": "Easy",
+      "description": "Rich, creamy dal made with black lentils and aromatic spices.",
+      "foods_used": [
+        "lentils-black-beluga",
+        "onions",
+        "garlic",
+        "ginger",
+        "cherry-tomatoes",
+        "turmeric",
+        "cumin",
+        "coriander-ground",
+        "black-pepper",
+        "lemon"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "cumin-boost",
+        "black-pepper-turmeric",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Black lentils + cumin + turmeric for anti-inflammatory and weight-loss benefits. Ginger aids digestion."
+    },
+    {
+      "id": "recipe-040",
+      "name": "African Red Bean and Sweet Potato Stew",
+      "page": 235,
+      "meal_type": "dinner",
+      "servings": "6",
+      "difficulty": "Easy",
+      "description": "Hearty African-inspired stew with red beans, sweet potatoes and peanut butter.",
+      "foods_used": [
+        "red-beans-kidney",
+        "sweet-potatoes",
+        "onions",
+        "garlic",
+        "ginger",
+        "cherry-tomatoes",
+        "kale",
+        "peanut-butter-natural",
+        "cumin",
+        "coriander-ground",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "other-vegetables",
+        "greens",
+        "nuts-and-seeds"
+      ],
+      "tweaks_incorporated": [
+        "cumin-boost",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Red beans + sweet potatoes + peanut butter for complete nutrition. Kale adds greens and minerals."
+    },
+    {
+      "id": "recipe-041",
+      "name": "Red Curry Chickpeas and Kabocha Squash",
+      "page": 238,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Thai-inspired curry with chickpeas and kabocha squash in coconut milk.",
+      "foods_used": [
+        "chickpeas",
+        "kabocha-squash",
+        "onions",
+        "garlic",
+        "ginger",
+        "cherry-tomatoes",
+        "kale",
+        "cumin",
+        "coriander-ground",
+        "turmeric",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "other-vegetables",
+        "greens"
+      ],
+      "tweaks_incorporated": [
+        "cumin-boost",
+        "black-pepper-turmeric",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Chickpeas + kabocha + curry spices for antioxidant power. Kale adds cruciferous benefits."
+    },
+    {
+      "id": "recipe-042",
+      "name": "Szechuan Tempeh and Broccoli",
+      "page": 244,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Spicy Szechuan-style stir-fry with tempeh and broccoli.",
+      "foods_used": [
+        "tempeh",
+        "broccoli",
+        "onions",
+        "bell-peppers",
+        "carrots",
+        "garlic",
+        "ginger",
+        "mushrooms-white",
+        "miso",
+        "apple-cider-vinegar",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "cruciferous-vegetables",
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "vinegar",
+        "fermented-foods",
+        "cruciferous-vegetables"
+      ],
+      "key_synergies": "Tempeh + broccoli for complete protein and sulforaphane. Vinegar + miso for gut health."
+    },
+    {
+      "id": "recipe-043",
+      "name": "Vegetable Paella with Golden Barley",
+      "page": 247,
+      "meal_type": "dinner",
+      "servings": "4-6",
+      "difficulty": "Easy",
+      "description": "Spanish-inspired paella using pot barley instead of rice, with turmeric for golden color.",
+      "foods_used": [
+        "barley",
+        "white-beans-cannellini",
+        "onions",
+        "garlic",
+        "bell-peppers",
+        "cherry-tomatoes",
+        "peas",
+        "smoked-paprika",
+        "turmeric",
+        "black-pepper",
+        "parsley-fresh",
+        "lemon"
+      ],
+      "daily_dozen_coverage": [
+        "whole-grains",
+        "beans",
+        "other-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "intact-whole-grains",
+        "black-pepper-turmeric",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Barley + beans for sustained energy and fiber. Turmeric + black pepper for anti-inflammatory benefits."
+    },
+    {
+      "id": "recipe-044",
+      "name": "Great Grain Tart",
+      "page": 250,
+      "meal_type": "dinner",
+      "servings": "6",
+      "difficulty": "Moderate",
+      "description": "Delicious way to use leftover whole grains with mushrooms, greens and white beans.",
+      "foods_used": [
+        "oat-groats-whole-intact-oats",
+        "quinoa",
+        "millet",
+        "white-beans-cannellini",
+        "mushrooms-white",
+        "bell-peppers",
+        "onions",
+        "garlic",
+        "chard",
+        "nutritional-yeast",
+        "flaxseeds-ground",
+        "miso",
+        "smoked-paprika",
+        "thyme-dried",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "whole-grains",
+        "beans",
+        "other-vegetables",
+        "greens",
+        "nuts-and-seeds"
+      ],
+      "tweaks_incorporated": [
+        "intact-whole-grains",
+        "omega-3-fatty-acids",
+        "umami-flavor"
+      ],
+      "key_synergies": "Multiple whole grains + beans provide complete protein. Flax adds omega-3s. Mushrooms create umami."
+    },
+    {
+      "id": "recipe-045",
+      "name": "Baked Grain Loaf with Umami Gravy",
+      "page": 256,
+      "meal_type": "dinner",
+      "servings": "6-8",
+      "difficulty": "Moderate",
+      "description": "Hearty grain and vegetable loaf with rich umami gravy.",
+      "foods_used": [
+        "lentils-brown-puy",
+        "quinoa",
+        "oat-groats-whole-intact-oats",
+        "mushrooms-white",
+        "onions",
+        "celery",
+        "carrots",
+        "garlic",
+        "nutritional-yeast",
+        "flaxseeds-ground",
+        "miso",
+        "thyme-dried",
+        "sage-dried",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "beans",
+        "whole-grains",
+        "other-vegetables",
+        "nuts-and-seeds"
+      ],
+      "tweaks_incorporated": [
+        "intact-whole-grains",
+        "omega-3-fatty-acids",
+        "umami-flavor"
+      ],
+      "key_synergies": "Lentils + whole grains + flax for complete nutrition. Mushrooms + miso create rich umami flavor."
+    },
+    {
+      "id": "recipe-046",
+      "name": "Stuffed Winter Squash with Millet and Kale",
+      "page": 262,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Winter squash stuffed with millet, kale and savory seasonings.",
+      "foods_used": [
+        "butternut-squash",
+        "millet",
+        "kale",
+        "onions",
+        "garlic",
+        "mushrooms-white",
+        "cranberries-dried",
+        "walnuts",
+        "thyme-dried",
+        "sage-dried",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": [
+        "whole-grains",
+        "greens",
+        "cruciferous-vegetables",
+        "other-vegetables",
+        "nuts-and-seeds",
+        "berries"
+      ],
+      "tweaks_incorporated": [
+        "intact-whole-grains",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Millet + kale in squash provides complete nutrition. Cranberries add antioxidants. Walnuts provide omega-3s."
+    },
+    {
+      "id": "recipe-047",
+      "name": "Teff and Black Lentils over Berbere-Spiced Kale",
+      "page": 268,
+      "meal_type": "dinner",
+      "servings": "4",
+      "difficulty": "Moderate",
+      "description": "Ethiopian-inspired dish with teff, black lentils and berbere-spiced kale.",
+      "foods_used": [
+        "teff",
+        "lentils-black-beluga",
+        "kale",
+        "onions",
+        "garlic",
+        "ginger",
+        "cumin",
+        "coriander-ground",
+        "turmeric",
+        "black-pepper",
+        "cayenne-pepper",
+        "lemon"
+      ],
+      "daily_dozen_coverage": [
+        "whole-grains",
+        "beans",
+        "greens",
+        "cruciferous-vegetables"
+      ],
+      "tweaks_incorporated": [
+        "intact-whole-grains",
+        "cumin-boost",
+        "black-pepper-turmeric",
+        "herbs-and-spices"
+      ],
+      "key_synergies": "Teff + lentils provide complete protein and iron. Berbere spices boost metabolism. Kale adds sulforaphane."
+    },
+    {
+      "id": "recipe-060",
+      "name": "Teff and Black Lentils Over Berbere-Spiced Kale",
+      "page": 271,
+      "servings": "3-4",
+      "difficulty": "Moderate",
+      "meal_type": "Main Dish",
+      "foods_used": [
+        "teff",
+        "lentils-brown-puy",
+        "kale",
+        "onions",
+        "garlic",
+        "tomatoes",
+        "nutritional-yeast",
+        "miso",
+        "bell-peppers"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "cruciferous": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast"
+      ],
+      "key_synergies": [
+        "kale",
+        "tomatoes",
+        "onions",
+        "garlic"
+      ]
+    },
+    {
+      "id": "recipe-061",
+      "name": "Grain-Stuffed Peppers with Cheesy Tomato Sauce",
+      "page": 275,
+      "servings": "4",
+      "difficulty": "Moderate",
+      "meal_type": "Main Dish",
+      "foods_used": [
+        "bell-peppers",
+        "onions",
+        "garlic",
+        "barley",
+        "chickpeas",
+        "flaxseeds-ground",
+        "miso",
+        "nutritional-yeast",
+        "parsley",
+        "tomatoes",
+        "white-beans",
+        "lemon",
+        "turmeric"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "flaxseeds": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "curcumin",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "tomatoes",
+        "onions",
+        "garlic"
+      ]
+    },
+    {
+      "id": "recipe-062",
+      "name": "Green Tea Quinoa and Peas with Roasted Asparagus",
+      "page": 279,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Main Dish",
+      "foods_used": [
+        "green-tea",
+        "asparagus",
+        "quinoa",
+        "garlic",
+        "ginger",
+        "peas",
+        "spring-onions",
+        "sesame-seeds",
+        "lemon",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": {
+        "other_veg": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1,
+        "beverages": 1
+      },
+      "tweaks_21_incorporated": [
+        "green_tea",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "peas",
+        "asparagus",
+        "green-tea"
+      ]
+    },
+    {
+      "id": "recipe-063",
+      "name": "Barley-Stuffed Cabbage Rolls",
+      "page": 282,
+      "servings": "4",
+      "difficulty": "Moderate",
+      "meal_type": "Main Dish",
+      "foods_used": [
+        "cabbage",
+        "barley",
+        "white-beans",
+        "onions",
+        "garlic",
+        "tomatoes",
+        "nutritional-yeast",
+        "miso",
+        "parsley",
+        "oregano-dried",
+        "basil",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "cruciferous": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "garlic",
+        "tomatoes",
+        "basil"
+      ]
+    },
+    {
+      "id": "recipe-064",
+      "name": "Ful Medames",
+      "page": 288,
+      "servings": "3-4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "beans-legumes",
+        "onions",
+        "garlic",
+        "tomatoes",
+        "miso",
+        "cumin",
+        "black-pepper",
+        "lemon",
+        "cucumber",
+        "parsley",
+        "oregano-dried",
+        "nigella-seeds-black-cumin"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "cumin",
+        "black_cumin",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "beans-legumes",
+        "tomatoes",
+        "onions",
+        "garlic"
+      ]
+    },
+    {
+      "id": "recipe-065",
+      "name": "Cavolo Nero and Sweet Potato Hash",
+      "page": 291,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "sweet-potato",
+        "onions",
+        "parsnips",
+        "bell-peppers",
+        "portobello-mushrooms",
+        "cavolo-nero",
+        "peas",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": {
+        "cruciferous": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "onions"
+      ]
+    },
+    {
+      "id": "recipe-066",
+      "name": "Stovetop Overnight Oats with Bananas and Pecans",
+      "page": 294,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "oat-groats-whole-intact-oats",
+        "bananas",
+        "pecans",
+        "nutmeg"
+      ],
+      "daily_dozen_coverage": {
+        "other_fruits": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-067",
+      "name": "Quinoa Kitchari",
+      "page": 297,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "mung-beans",
+        "quinoa",
+        "cauliflower",
+        "peas",
+        "ginger",
+        "coriander",
+        "cumin",
+        "turmeric",
+        "miso",
+        "black-pepper",
+        "lemon"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "cruciferous": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [
+        "cumin",
+        "curcumin",
+        "ground_ginger",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "turmeric",
+        "ginger",
+        "black-pepper"
+      ]
+    },
+    {
+      "id": "recipe-068",
+      "name": "Chocolate-Covered Cherry BROL Bowl",
+      "page": 299,
+      "servings": "1",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "barley",
+        "oat-groats-whole-intact-oats",
+        "lentils-brown-puy",
+        "cocoa-powder",
+        "walnuts",
+        "cherries"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "berries": 1,
+        "nuts_seeds": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-069",
+      "name": "Millet Upma (Savoury Indian Porridge)",
+      "page": 301,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "millet",
+        "onions",
+        "carrots",
+        "ginger",
+        "turmeric",
+        "cumin",
+        "coriander",
+        "miso",
+        "peas",
+        "tomatoes",
+        "lemon",
+        "cashews"
+      ],
+      "daily_dozen_coverage": {
+        "greens": 1,
+        "other_veg": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [
+        "cumin",
+        "curcumin",
+        "ground_ginger"
+      ],
+      "key_synergies": [
+        "onions",
+        "ginger",
+        "carrots"
+      ]
+    },
+    {
+      "id": "recipe-070",
+      "name": "Chickpea-Cauliflower Scramble",
+      "page": 304,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "chickpeas",
+        "cauliflower",
+        "onions",
+        "bell-peppers",
+        "mushrooms",
+        "nutritional-yeast",
+        "turmeric",
+        "parsley"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "cruciferous": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "curcumin"
+      ],
+      "key_synergies": [
+        "onions",
+        "nutritional-yeast"
+      ]
+    },
+    {
+      "id": "recipe-071",
+      "name": "BROL Bowl with Sautéed Greens",
+      "page": 306,
+      "servings": "1",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "barley",
+        "oat-groats-whole-intact-oats",
+        "lentils-brown-puy",
+        "onions",
+        "garlic",
+        "carrots",
+        "miso",
+        "cavolo-nero",
+        "nutritional-yeast",
+        "black-pepper",
+        "lemon"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "cruciferous": 1,
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "onions",
+        "garlic"
+      ]
+    },
+    {
+      "id": "recipe-072",
+      "name": "Slow Cooker Apple Pie Oat Groats",
+      "page": 309,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Breakfast",
+      "foods_used": [
+        "oat-groats-whole-intact-oats",
+        "chia-seeds",
+        "cinnamon",
+        "apples",
+        "goji-berries"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "other_fruits": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": [
+        "oat-groats-whole-intact-oats",
+        "apples"
+      ]
+    },
+    {
+      "id": "recipe-073",
+      "name": "Fresh Berries with Chocolate Balsamic Syrup",
+      "page": 313,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "strawberries",
+        "raspberries",
+        "blueberries-fresh",
+        "blackberries",
+        "mint",
+        "cacao-nibs",
+        "pecans",
+        "walnuts",
+        "vinegar"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "vinegar"
+      ],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-074",
+      "name": "Stone Fruit Bowls",
+      "page": 316,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "chia-seeds",
+        "mango-fresh",
+        "lemon",
+        "dates",
+        "apricots-fresh",
+        "plums",
+        "peaches-fresh",
+        "cherries"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "other_fruits": 1,
+        "nuts_seeds": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": [
+        "cherries",
+        "chia-seeds",
+        "lemon"
+      ]
+    },
+    {
+      "id": "recipe-075",
+      "name": "Mango-Raspberry Chia Pudding",
+      "page": 318,
+      "servings": "2",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "raspberries",
+        "mango-fresh",
+        "chia-seeds"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "other_fruits": 1,
+        "nuts_seeds": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-076",
+      "name": "Crust-Free Pumpkin Pie",
+      "page": 320,
+      "servings": "6-8",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "chia-seeds",
+        "cashews",
+        "pumpkin",
+        "cinnamon",
+        "nutmeg",
+        "walnuts"
+      ],
+      "daily_dozen_coverage": {
+        "nuts_seeds": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-077",
+      "name": "Black Forest Chia Pudding",
+      "page": 322,
+      "servings": "2",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "cherries",
+        "bananas",
+        "cocoa-powder",
+        "dates",
+        "chia-seeds"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "other_fruits": 1,
+        "nuts_seeds": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-078",
+      "name": "Baked Apples with Walnuts and Goji Berries",
+      "page": 324,
+      "servings": "4",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "apples",
+        "goji-berries",
+        "walnuts",
+        "cinnamon",
+        "lemon"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "other_fruits": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": [
+        "walnuts",
+        "apples"
+      ]
+    },
+    {
+      "id": "recipe-079",
+      "name": "Tropical Smoothie Bowls",
+      "page": 326,
+      "servings": "2",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "chia-seeds",
+        "bananas",
+        "mango-fresh",
+        "pineapple",
+        "goji-berries"
+      ],
+      "daily_dozen_coverage": {
+        "berries": 1,
+        "other_fruits": 1,
+        "nuts_seeds": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-080",
+      "name": "Ginger Roasted Pears",
+      "page": 328,
+      "servings": "2-4",
+      "difficulty": "Easy",
+      "meal_type": "Dessert",
+      "foods_used": [
+        "pears",
+        "ginger",
+        "lemon"
+      ],
+      "daily_dozen_coverage": {
+        "other_fruits": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "ground_ginger"
+      ],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-081",
+      "name": "Mushroom-Walnut Crumbles",
+      "page": 333,
+      "servings": "2 cups",
+      "difficulty": "Easy",
+      "meal_type": "Condiment",
+      "foods_used": [
+        "portobello-mushrooms",
+        "walnuts",
+        "sunflower-seeds",
+        "pumpkin-seeds",
+        "flaxseeds-ground",
+        "nutritional-yeast",
+        "oregano-dried",
+        "basil",
+        "black-pepper",
+        "cayenne-pepper"
+      ],
+      "daily_dozen_coverage": {
+        "greens": 1,
+        "other_veg": 1,
+        "flaxseeds": 1,
+        "nuts_seeds": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "black_pepper",
+        "cayenne"
+      ],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-082",
+      "name": "Basic BROL (Barley, Rye, Oats and Lentils)",
+      "page": 335,
+      "servings": "5 cups",
+      "difficulty": "Easy",
+      "meal_type": "Base",
+      "foods_used": [
+        "lentils-brown-puy",
+        "barley",
+        "rye",
+        "oat-groats-whole-intact-oats"
+      ],
+      "daily_dozen_coverage": {
+        "beans": 1,
+        "whole_grains": 1
+      },
+      "tweaks_21_incorporated": [],
+      "key_synergies": []
+    },
+    {
+      "id": "recipe-083",
+      "name": "Fresh Tomato Salsa",
+      "page": 336,
+      "servings": "3 cups",
+      "difficulty": "Easy",
+      "meal_type": "Condiment",
+      "foods_used": [
+        "tomatoes",
+        "bell-peppers",
+        "onions",
+        "jalapeno-peppers",
+        "vinegar",
+        "coriander"
+      ],
+      "daily_dozen_coverage": {
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "vinegar"
+      ],
+      "key_synergies": [
+        "tomatoes",
+        "onions"
+      ]
+    },
+    {
+      "id": "recipe-084",
+      "name": "Brazil Nut Parm",
+      "page": 336,
+      "servings": "1.5 cups",
+      "difficulty": "Easy",
+      "meal_type": "Condiment",
+      "foods_used": [
+        "brazil-nuts",
+        "cashews",
+        "nutritional-yeast"
+      ],
+      "daily_dozen_coverage": {
+        "nuts_seeds": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast"
+      ],
+      "key_synergies": [
+        "nutritional-yeast"
+      ]
+    },
+    {
+      "id": "recipe-085",
+      "name": "Berbere Spice Blend",
+      "page": 337,
+      "servings": "1/3 cup",
+      "difficulty": "Easy",
+      "meal_type": "Spice Blend",
+      "foods_used": [
+        "paprika",
+        "cayenne-pepper",
+        "coriander",
+        "ginger",
+        "turmeric",
+        "cumin",
+        "cardamom",
+        "black-pepper",
+        "nutmeg",
+        "cloves",
+        "cinnamon"
+      ],
+      "daily_dozen_coverage": {
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "cumin",
+        "curcumin",
+        "ground_ginger",
+        "black_pepper",
+        "cayenne"
+      ],
+      "key_synergies": [
+        "turmeric",
+        "ginger",
+        "cloves",
+        "coriander",
+        "cinnamon"
+      ]
+    },
+    {
+      "id": "recipe-086",
+      "name": "Super-Charged Spice Blend",
+      "page": 338,
+      "servings": "2/3 cup",
+      "difficulty": "Easy",
+      "meal_type": "Spice Blend",
+      "foods_used": [
+        "nutritional-yeast",
+        "garlic-powder",
+        "parsley",
+        "basil",
+        "cumin",
+        "nigella-seeds-black-cumin",
+        "ginger",
+        "turmeric",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": {
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "garlic_powder",
+        "cumin",
+        "black_cumin",
+        "ground_ginger",
+        "curcumin",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "turmeric",
+        "black-pepper",
+        "ginger"
+      ]
+    },
+    {
+      "id": "recipe-087",
+      "name": "Dr Greger's Special Spice Blend",
+      "page": 339,
+      "servings": "1/2 cup",
+      "difficulty": "Easy",
+      "meal_type": "Spice Blend",
+      "foods_used": [
+        "nutritional-yeast",
+        "garlic-powder",
+        "parsley",
+        "basil",
+        "turmeric",
+        "black-pepper"
+      ],
+      "daily_dozen_coverage": {
+        "greens": 1,
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "nutritional_yeast",
+        "garlic_powder",
+        "curcumin",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "turmeric",
+        "black-pepper"
+      ]
+    },
+    {
+      "id": "recipe-088",
+      "name": "Umami Sauce Redux",
+      "page": 340,
+      "servings": "1.25 cups",
+      "difficulty": "Easy",
+      "meal_type": "Sauce",
+      "foods_used": [
+        "garlic",
+        "ginger",
+        "tomatoes",
+        "black-pepper",
+        "miso",
+        "vinegar",
+        "lemon"
+      ],
+      "daily_dozen_coverage": {
+        "other_veg": 1,
+        "herbs_spices": 1
+      },
+      "tweaks_21_incorporated": [
+        "vinegar",
+        "black_pepper"
+      ],
+      "key_synergies": [
+        "garlic",
+        "vinegar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "food-156",
+  "name": "Pecans",
+  "categories": [
+    "nuts-and-seeds",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Among the highest antioxidant content of all tree nuts",
+    "Rich in monounsaturated fats (oleic acid)",
+    "Excellent source of manganese and copper",
+    "Contains vitamin E, zinc, and B vitamins",
+    "Provides plant-based protein and fiber",
+    "Rich in flavonoids and phenolic compounds",
+    "Contains ellagic acid and other polyphenols"
+  ],
+  "benefits": [
+    "Provides exceptional antioxidant protection",
+    "Supports heart health with healthy monounsaturated fats",
+    "May help lower LDL cholesterol levels",
+    "Contains anti-inflammatory compounds",
+    "Supports brain health and cognitive function",
+    "Aids in blood sugar regulation",
+    "Helps with satiety and weight management",
+    "May reduce oxidative stress"
+  ],
+  "synergies": [
+    "Pairs well with bananas and oats for breakfast",
+    "Combines with walnuts in desserts and toppings",
+    "Works with berries for enhanced antioxidant benefits",
+    "Complements cacao nibs and other nuts"
+  ],
+  "timing": [
+    "any-meal",
+    "breakfast",
+    "snacks"
+  ],
+  "amount": "¼ cup chopped or 2 tablespoons per serving (about 15-30g)",
+  "sources": {
+    "pages": [
+      287,
+      294,
+      1020,
+      1035,
+      1040,
+      313,
+      1068,
+      1310
+    ],
+    "quotes": [
+      "STOVETOP OVERNIGHT OATS WITH BANANAS AND PECANS",
+      "STOVETOP OVERNIGHT OATS WITH BANANAS AND PECANS - MAKES: 4 servings",
+      "2 tablespoons chopped pecans",
+      "sprinkle with chopped pecans and a swirl of Date Syrup (if using)",
+      "chopped pecans, chopped walnuts, sunflower seeds, pumpkin seeds, chia seeds, hemp seeds",
+      "¼ cup/30g coarsely chopped pecans or walnuts (optional)",
+      "¼ cup/30g coarsely chopped pecans or walnuts (optional)",
+      "Stovetop Overnight Oats with Bananas and Pecans"
+    ]
+  },
+  "conflicts": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "recipe-063",
+  "name": "Barley-Stuffed Cabbage Rolls",
+  "page": 282,
+  "servings": "4",
+  "difficulty": "Moderate",
+  "meal_type": "Main Dish",
+  "foods_used": [
+    "cabbage",
+    "barley",
+    "white-beans",
+    "onions",
+    "garlic",
+    "tomatoes",
+    "nutritional-yeast",
+    "miso",
+    "parsley",
+    "oregano-dried",
+    "basil",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "cruciferous": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "garlic",
+    "tomatoes",
+    "basil"
+  ]
+}

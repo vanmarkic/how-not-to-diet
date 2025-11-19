@@ -1,0 +1,28 @@
+{
+  "id": "recipe-009",
+  "name": "Braised Greens",
+  "page": 175,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "bell-peppers-raw",
+    "black-pepper",
+    "carrots",
+    "crushed-red-pepper-flakes",
+    "garlic",
+    "miso",
+    "onion-powder",
+    "onions",
+    "oregano-dried",
+    "parsnips",
+    "sweet-potatoes"
+  ],
+  "daily_dozen": [
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory"
+  ],
+  "synergies": []
+}

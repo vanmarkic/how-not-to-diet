@@ -1,0 +1,35 @@
+{
+  "id": "recipe-046",
+  "name": "Stuffed Winter Squash with Millet and Kale",
+  "page": 262,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Winter squash stuffed with millet, kale and savory seasonings.",
+  "foods_used": [
+    "butternut-squash",
+    "millet",
+    "kale",
+    "onions",
+    "garlic",
+    "mushrooms-white",
+    "cranberries-dried",
+    "walnuts",
+    "thyme-dried",
+    "sage-dried",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "whole-grains",
+    "greens",
+    "cruciferous-vegetables",
+    "other-vegetables",
+    "nuts-and-seeds",
+    "berries"
+  ],
+  "tweaks_incorporated": [
+    "intact-whole-grains",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Millet + kale in squash provides complete nutrition. Cranberries add antioxidants. Walnuts provide omega-3s."
+}

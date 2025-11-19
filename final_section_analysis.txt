@@ -1,0 +1,74 @@
+ANALYSIS OF PAGES 321-386
+================================================================================
+
+Total pages analyzed: 66
+Existing foods in database: 251
+Potential new ingredients found: 58
+
+SECTION BREAKDOWN:
+--------------------------------------------------------------------------------
+Pages 321-330: Recipe endings, desserts
+Pages 331-349: Kitchen Staples (sauces, blends, condiments)
+Pages 350-356: Cooking charts for legumes and grains
+Pages 357-386: References
+
+NEW INGREDIENT CANDIDATES:
+--------------------------------------------------------------------------------
+  - baby portobello mushrooms
+  - boiling water
+  - cayenne
+  - celery seeds
+  - chopped red onion
+  - difficulty: easy
+  - dr greger’s special spice blend
+  - dried basil
+  - dried black lentils
+  - dried oregano
+  - dried parsley
+  - finely chopped fresh coriander or parsley
+  - finely chopped garlic
+  - finely chopped red onion
+  - fresh
+  - fresh hot chillies of your choice
+  - fresh lemon juice
+  - grated ginger
+  - ground allspice
+  - ground black pepper
+  - ground cardamom
+  - ground cinnamon
+  - ground cloves
+  - ground coriander
+  - ground cumin
+  - ground fennel seeds
+  - ground fenugreek seeds
+  - ground flaxseeds
+  - ground ginger
+  - ground nigella seeds
+  - ground nutmeg
+  - ground thyme
+  - ground turmeric
+  - light vegetable broth
+  - miso paste blended into 2 tablespoons water
+  - mustard powder
+  - oat groats
+  - of red pepper flakes and use the optional cayenne.
+  - of the apple cider vinegar and
+  - of water
+  - of water and process
+  - of water on high. (i use the
+  - of water over a medium heat. add
+  - of water. pressure cook for 30 minutes
+  - onion powder
+  - packed fresh basil leaves
+  - paprika
+  - pitted dates
+  - pot barley
+  - raw brazil nuts
+  - raw cashews
+  - raw pumpkin seeds
+  - raw sunflower seeds
+  - raw unsalted cashews
+  - salt-free tomato puree
+  - treacle
+  - walnut pieces
+  - white miso paste

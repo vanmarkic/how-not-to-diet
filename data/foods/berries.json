@@ -1,5 +1,5 @@
 {
-  "id": "food-14",
+  "id": "food-15",
   "name": "Berries",
   "categories": [
     "rich-in-fruits",
@@ -9,16 +9,21 @@
   ],
   "properties": [
     "Part of Daily Dozen - 1 serving daily",
-    "High in antioxidants",
+    "High in anthocyanins (brightly colored pigments)",
+    "Powerful anti-inflammatory effects",
     "Low glycemic load",
     "Rich in phytonutrients",
-    "High water content"
+    "High water content",
+    "Helps with knee osteoarthritis pain and inflammation"
   ],
-  "benefits": "High antioxidant content helps reduce inflammation and oxidative stress. Supports heart health and weight management. Low calorie density with high nutrient density.",
+  "benefits": "Higher intake of anthocyanins (berries' brightly colored pigments) is associated with anti-inflammatory effects, a key component in reduced chronic disease risk. Simply adding berries to one's diet can have a significant impact on pain, inflammation, and overall quality of life, including improvements in knee osteoarthritis. High antioxidant content supports heart health and weight management with low calorie density.",
   "synergies": [
     "oatmeal",
     "flaxseeds",
-    "greens"
+    "greens",
+    "cranberries",
+    "strawberries",
+    "kale"
   ],
   "conflicts": [],
   "timing": [
@@ -26,13 +31,17 @@
     "snacks",
     "any-meal"
   ],
-  "amount": "1 serving daily",
+  "amount": "1 serving daily (1/2 cup fresh or frozen berries, or 1/4 cup dried)",
   "sources": {
     "pages": [
-      15
+      15,
+      202,
+      203
     ],
     "quotes": [
-      "Dr Greger's Daily Dozen: ✓ BERRIES"
+      "Dr Greger's Daily Dozen: ✓ BERRIES (page 15)",
+      "BERRIES FOR INFLAMMATION AND OSTEOARTHRITIS - Higher intake of anthocyanins, berries' brightly coloured pigments, has been associated with anti-inflammatory effects, which may be a key component in reduced chronic disease risk. Can strawberries improve pain and inflammation in knee osteoarthritis? Yes! Simply adding berries to one's diet may have a significant impact on pain, inflammation, and overall quality of life. (page 203)",
+      "1/2 cup/50g cranberries - Roasted Kabocha with Kale-Cranberry Stuffing (page 202)"
     ]
   }
 }

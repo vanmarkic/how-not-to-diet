@@ -1,8 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
-
-// Base URL for GitHub Pages
-const base = import.meta.env.BASE_URL;
+import { getPath } from '@utils/paths';
 ---
 
 <Layout title="How Not To Diet - Weekly Menu Planner">
@@ -23,8 +21,8 @@ const base = import.meta.env.BASE_URL;
   <section class="features">
     <div class="feature-grid">
       <div class="feature-card">
-        <h3><a href={`${base}foods`}>Food Database</a></h3>
-        <p>Explore 10+ foods with synergies, timing, amounts, and source pages from "How Not to Diet"</p>
+        <h3><a href={getPath('foods')}>Food Database</a></h3>
+        <p>Explore 10+ foods with synergies, timing, amounts, and source pages</p>
         <ul>
           <li>Anti-inflammatory foods</li>
           <li>High fiber & low glycemic</li>
@@ -33,7 +31,7 @@ const base = import.meta.env.BASE_URL;
         </ul>
       </div>
       <div class="feature-card">
-        <h3><a href={`${base}combos`}>Food Synergies</a></h3>
+        <h3><a href={getPath('combos')}>Food Synergies</a></h3>
         <p>Discover powerful food combinations that maximize health benefits</p>
         <ul>
           <li>Top triple combos for meals</li>
@@ -43,7 +41,7 @@ const base = import.meta.env.BASE_URL;
         </ul>
       </div>
       <div class="feature-card">
-        <h3><a href={`${base}planner`}>Weekly Planner</a></h3>
+        <h3><a href={getPath('planner')}>Weekly Planner</a></h3>
         <p>AI-generated weekly meal plan optimizing food synergies</p>
         <ul>
           <li>Complete 7-day plan</li>
@@ -55,12 +53,6 @@ const base = import.meta.env.BASE_URL;
     </div>
   </section>
 
-  <section class="data-source">
-    <h2>Data Source</h2>
-    <p><strong>Book:</strong> "The How Not to Diet Cookbook" by Michael Greger, MD</p>
-    <p><strong>Extracted:</strong> 10 foods with complete synergy data, timing recommendations, and source page tracking</p>
-    <p><strong>Coverage:</strong> Anti-inflammatory foods, fiber-rich, low-glycemic, chronobiology principles, Daily Dozen, and 21 Tweaks</p>
-  </section>
 </Layout>
 
 <style>
@@ -286,57 +278,6 @@ const base = import.meta.env.BASE_URL;
     box-shadow: 0 0 0 3px rgba(91, 140, 90, 0.2);
   }
 
-  .data-source {
-    margin-top: var(--spacing-xl);
-    padding: var(--spacing-lg);
-    background: linear-gradient(135deg, var(--color-forest-deep) 0%, var(--color-forest-mid) 100%);
-    border-radius: var(--radius-lg);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    color: var(--color-cream);
-    animation: slideUp 0.6s ease-out 0.6s backwards;
-  }
-
-  .data-source::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(91, 140, 90, 0.2) 0%, transparent 70%);
-    border-radius: 43% 57% 48% 52% / 39% 43% 57% 61%;
-    animation: rotate 30s linear infinite;
-  }
-
-  @keyframes rotate {
-    from { transform: translate(-50%, -50%) rotate(0deg); }
-    to { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-
-  .data-source > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .data-source h2 {
-    color: var(--color-cream);
-    margin-bottom: var(--spacing-md);
-  }
-
-  .data-source p {
-    margin: 0.75rem 0;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--color-sand);
-  }
-
-  .data-source p strong {
-    color: var(--color-carrot);
-    font-weight: 600;
-  }
 
   /* Enhanced Mobile Responsiveness */
   @media (max-width: 768px) {
@@ -362,10 +303,6 @@ const base = import.meta.env.BASE_URL;
     }
 
     .feature-card {
-      padding: var(--spacing-md);
-    }
-
-    .data-source {
       padding: var(--spacing-md);
     }
   }

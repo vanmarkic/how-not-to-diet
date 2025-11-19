@@ -1,0 +1,64 @@
+{
+  "id": "food-154",
+  "name": "Artichokes",
+  "categories": [
+    "rich-in-vegetables",
+    "high-fiber",
+    "antioxidant-rich",
+    "low-calorie-density",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Extremely high in antioxidants (among highest of all vegetables)",
+    "Rich in cynarin and silymarin compounds",
+    "Excellent source of dietary fiber",
+    "Contains folate, vitamin C, and vitamin K",
+    "Provides minerals including magnesium and potassium",
+    "Contains inulin, a prebiotic fiber",
+    "Low in calories, high in nutrients"
+  ],
+  "benefits": [
+    "Supports liver health and detoxification",
+    "Promotes digestive health with high fiber and prebiotics",
+    "Provides exceptional antioxidant protection",
+    "May help lower cholesterol levels",
+    "Supports healthy blood sugar regulation",
+    "Aids in bile production and fat digestion",
+    "Promotes gut microbiome health with inulin",
+    "Helps with satiety and weight management"
+  ],
+  "synergies": [
+    "Pairs well with spinach in stuffed dishes",
+    "Combines with white beans for enhanced nutrition",
+    "Works with cannellini beans in paella dishes",
+    "Complements whole grains like barley"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking"
+  ],
+  "amount": "1 medium artichoke or ½ to 1 cup (400g tin) artichoke hearts per serving",
+  "sources": {
+    "pages": [
+      161,
+      195,
+      196,
+      247,
+      777,
+      799,
+      1268
+    ],
+    "quotes": [
+      "ARTICHOKE AND SPINACH STUFFED PORTOBELLOS",
+      "ARTICHOKE AND SPINACH STUFFED PORTOBELLOS - MAKES: 2 to 4 servings DIFFICULTY: Easy",
+      "If you like artichoke dip, a perennial favourite, you'll love this healthier and more flavour-packed version that we stuff into meaty portobellos. 1 (400g) BPA-free tin or Tetra Pak salt-free artichoke hearts, drained, or 1 (10-ounce/300g) package frozen artichokes, cooked and cooled",
+      "VEGETABLE PAELLA WITH GOLDEN BARLEY",
+      "VEGETABLE PAELLA WITH GOLDEN BARLEY",
+      "1 (400g) BPA-free tin artichoke hearts, drained and quartered",
+      "Artichokes, ref1, ref2 - Artichoke and Spinach Stuffed Portobellos"
+    ]
+  },
+  "conflicts": []
+}

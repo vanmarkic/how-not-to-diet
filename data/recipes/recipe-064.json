@@ -1,0 +1,39 @@
+{
+  "id": "recipe-064",
+  "name": "Ful Medames",
+  "page": 288,
+  "servings": "3-4",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "beans-legumes",
+    "onions",
+    "garlic",
+    "tomatoes",
+    "miso",
+    "cumin",
+    "black-pepper",
+    "lemon",
+    "cucumber",
+    "parsley",
+    "oregano-dried",
+    "nigella-seeds-black-cumin"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "cumin",
+    "black_cumin",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "beans-legumes",
+    "tomatoes",
+    "onions",
+    "garlic"
+  ]
+}

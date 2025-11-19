@@ -1,0 +1,42 @@
+{
+  "id": "food-199",
+  "name": "Coriander/Cilantro (Fresh)",
+  "categories": [
+    "herbs-spices",
+    "anti-inflammatory",
+    "heavy-metal-detox"
+  ],
+  "properties": [
+    "May help with heavy metal detoxification",
+    "Rich in antioxidants and vitamins A, C, and K",
+    "Contains antibacterial compounds",
+    "Traditional digestive aid",
+    "Bright, citrusy flavor enhancer"
+  ],
+  "benefits": "Fresh coriander (cilantro) is one of the most frequently used herbs in the cookbook, appearing in Mexican, Asian, and Middle Eastern-inspired dishes. May help remove heavy metals from the body. Rich in antioxidants and adds bright, fresh flavor to soups, salads, and grain bowls without calories or sodium.",
+  "synergies": [
+    "cumin",
+    "lime",
+    "beans-legumes",
+    "tomatoes"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "any-meal"
+  ],
+  "amount": "2-4 tablespoons fresh chopped, often used as garnish",
+  "sources": {
+    "pages": [
+      35,
+      51,
+      88
+    ],
+    "quotes": [
+      "2 tablespoons chopped fresh coriander or basil",
+      "¼ cup/4 tablespoons chopped fresh coriander or Thai basil - Garnish with coriander and serve hot",
+      "¼ cup/15g chopped fresh coriander or parsley",
+      "Add the carrots, onion, celery, chickpeas, goji berries, almonds, coriander and black pepper"
+    ]
+  }
+}

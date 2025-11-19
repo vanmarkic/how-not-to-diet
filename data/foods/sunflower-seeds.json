@@ -1,0 +1,63 @@
+{
+  "id": "food-155",
+  "name": "Sunflower Seeds",
+  "categories": [
+    "nuts-and-seeds",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Rich in vitamin E (powerful antioxidant)",
+    "Excellent source of selenium and magnesium",
+    "Contains healthy polyunsaturated fats",
+    "Provides plant-based protein and fiber",
+    "Rich in phytosterols",
+    "Contains B vitamins including folate",
+    "Good source of copper and manganese"
+  ],
+  "benefits": [
+    "Provides exceptional vitamin E for antioxidant protection",
+    "Supports cardiovascular health with healthy fats",
+    "May help reduce inflammation",
+    "Promotes healthy cholesterol levels with phytosterols",
+    "Supports immune system function",
+    "Aids in blood sugar regulation",
+    "Helps with satiety and weight management",
+    "Supports skin health with vitamin E"
+  ],
+  "synergies": [
+    "Can substitute for almonds in salads and toppings",
+    "Combines with other seeds (hemp, pumpkin) for nutrition",
+    "Pairs well with vegetables in salads",
+    "Works in mushroom-walnut crumbles for texture"
+  ],
+  "timing": [
+    "any-meal",
+    "snacks",
+    "breakfast",
+    "salads"
+  ],
+  "amount": "1-2 tablespoons per serving (about 15-30g)",
+  "sources": {
+    "pages": [
+      97,
+      101,
+      118,
+      295,
+      318,
+      333,
+      1153
+    ],
+    "quotes": [
+      "½ cup/50g sliced almonds or sunflower seeds",
+      "1 tablespoon sunflower seeds",
+      "1 tablespoon sunflower seeds or hemp hearts",
+      "chopped pecans, chopped walnuts, sunflower seeds, pumpkin seeds, chia seeds, hemp seeds, cacao nibs, ground flaxseeds",
+      "Optional garnishes: diced mango, fresh raspberries, sunflower seeds or pumpkin seeds",
+      "⅓ cup/45g raw sunflower seeds",
+      "MUSHROOM–WALNUT CRUMBLES - ⅓ cup/45g raw sunflower seeds"
+    ]
+  },
+  "conflicts": []
+}

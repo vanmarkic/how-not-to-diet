@@ -234,7 +234,6 @@ export async function demoDataTransformation(): Promise<void> {
 
   console.log('Extraction Metadata:');
   console.log(`  Date: ${data.extraction_metadata.extraction_date}`);
-  console.log(`  Source: ${data.extraction_metadata.source_document}`);
   console.log('  Focus Areas:');
   data.extraction_metadata.focus_areas.forEach(area => {
     console.log(`    - ${area}`);

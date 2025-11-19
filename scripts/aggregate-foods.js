@@ -96,11 +96,11 @@ async function aggregateFoods() {
       foods
     };
 
-    // Ensure dist directory exists
-    await mkdir(`${ROOT}/dist`, { recursive: true });
+    // Ensure public directory exists
+    await mkdir(`${ROOT}/public`, { recursive: true });
 
-    // Write bundle with pretty formatting
-    const outputPath = `${ROOT}/dist/foods-bundle.json`;
+    // Write bundle with pretty formatting (Astro copies public/ to dist/)
+    const outputPath = `${ROOT}/public/foods-bundle.json`;
     await writeFile(outputPath, JSON.stringify(bundle, null, 2));
 
     const endTime = Date.now();

@@ -1,0 +1,49 @@
+{
+  "id": "food-182",
+  "name": "Apple Cider Vinegar",
+  "categories": [
+    "anti-inflammatory",
+    "digestive-support",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Made from fermented apple cider",
+    "Tangy, fruity flavor",
+    "Popular in wellness cooking",
+    "Supports digestion and metabolism",
+    "Versatile in dressings and soups",
+    "Part of vinegar family for weight loss"
+  ],
+  "benefits": "Apple cider vinegar is made from fermented apple cider and provides a tangy, fruity acidity to dishes. It's commonly used in weight-loss recipes for its metabolic benefits. When mixed with miso paste, nutritional yeast, and other umami ingredients, it creates complex flavor profiles in soups and sauces. Like all vinegars, it should be consumed with meals for optimal weight-loss benefits.",
+  "synergies": [
+    "miso",
+    "nutritional-yeast",
+    "turmeric",
+    "ginger",
+    "tomatoes",
+    "spring-onions-scallions"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1-2 tablespoons per recipe (soups, dressings, sauces)",
+  "sources": {
+    "pages": [
+      50,
+      56,
+      57,
+      59,
+      60,
+      81,
+      340
+    ],
+    "quotes": [
+      "2 tablespoons apple cider vinegar",
+      "1 tablespoon apple cider vinegar",
+      "Add the miso mixture to the soup along with the apple cider vinegar",
+      "1 tablespoon apple cider vinegar - in umami sauce"
+    ]
+  }
+}

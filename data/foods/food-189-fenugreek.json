@@ -1,0 +1,48 @@
+{
+  "id": "food-189",
+  "name": "Fenugreek (Ground)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Traditional spice in Ethiopian and Indian cuisine",
+    "Slightly bitter, maple-like flavor",
+    "Part of complex spice blends",
+    "Used in small amounts for depth of flavor",
+    "Complements other warming spices (cumin, coriander, turmeric, cardamom)"
+  ],
+  "benefits": "Fenugreek is a traditional spice with anti-inflammatory properties used in Ethiopian and Indian cuisines. It adds complex, slightly bitter notes to bean and greens dishes. Works synergistically with other anti-inflammatory spices like turmeric, cumin, and coriander to create layered flavor profiles.",
+  "synergies": [
+    "collard-greens",
+    "black-eyed-peas",
+    "cumin",
+    "coriander",
+    "turmeric",
+    "cardamom",
+    "cayenne-pepper",
+    "ginger"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking"
+  ],
+  "amount": "1/4 to 1/2 teaspoon ground fenugreek seeds per recipe (4 servings)",
+  "sources": {
+    "pages": [
+      169,
+      170,
+      222,
+      223,
+      337
+    ],
+    "quotes": [
+      "1/4 teaspoon ground fenugreek seeds - Collard Greens with Black-Eyed Beans (page 169)",
+      "turmeric, fenugreek, cardamom and cayenne (page 170)",
+      "1/2 teaspoon dried fenugreek - Persian Black-Eyed Beans and Greens (page 222)",
+      "Add the cooked black-eyed beans, coriander, cumin, fenugreek, turmeric, black pepper, cardamom, cinnamon and nutmeg (page 223)",
+      "½ teaspoon ground fenugreek seeds - Berbere Spice Blend (page 337)"
+    ]
+  }
+}

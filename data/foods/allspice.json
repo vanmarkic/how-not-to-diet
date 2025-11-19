@@ -1,0 +1,38 @@
+{
+  "id": "allspice",
+  "name": "Allspice",
+  "categories": [
+    "spices",
+    "seasonings",
+    "aromatic-spices"
+  ],
+  "properties": [
+    "Flavor: warm, sweet, aromatic",
+    "Flavor notes: combination of cinnamon, nutmeg, and cloves",
+    "Form: ground",
+    "Botanical name: Pimenta dioica",
+    "Origin: Caribbean, Central America"
+  ],
+  "benefits": "Contributes warm, multi-dimensional flavor that combines characteristics of cinnamon, cloves, and nutmeg Used in Berbere Spice Blend for authentic Ethiopian flavor profile",
+  "synergies": [
+    "cinnamon",
+    "cloves",
+    "nutmeg",
+    "cayenne-pepper",
+    "turmeric"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any time as part of spice blends"
+  ],
+  "amount": "⅛ teaspoon in spice blend recipe",
+  "sources": {
+    "pages": [
+      338
+    ],
+    "quotes": [
+      "Berbere Spice Blend - ⅛ teaspoon ground allspice (page 338)",
+      "Listed as ⅛ teaspoon ground allspice in Berbere Spice Blend recipe"
+    ]
+  }
+}

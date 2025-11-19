@@ -1,0 +1,51 @@
+{
+  "id": "food-166",
+  "name": "Kabocha Squash",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "antioxidant-rich",
+    "anti-inflammatory"
+  ],
+  "properties": [
+    "Japanese winter squash variety",
+    "Sweet, dense flesh similar to pumpkin",
+    "Very high in beta-carotene",
+    "Rich in vitamin A and C",
+    "Natural sweetness without added sugars",
+    "Perfect vessel for whole grain stuffing"
+  ],
+  "benefits": "Kabocha squash is a Japanese winter squash with exceptional nutritional density. Very high in beta-carotene and antioxidants for anti-inflammatory benefits. The natural sweetness and dense texture make it satisfying while maintaining low calorie density. Featured in recipes as a nutrient-dense vessel for kale-cranberry stuffing with whole grains, or in curries for added flavor and nutrition.",
+  "synergies": [
+    "kale",
+    "cranberries",
+    "barley",
+    "rye",
+    "oats",
+    "lentils",
+    "chickpeas",
+    "curry-spices"
+  ],
+  "conflicts": [],
+  "timing": [
+    "lunch",
+    "dinner",
+    "particularly-effective-roasted"
+  ],
+  "amount": "1 large kabocha squash serves 4 people when stuffed",
+  "sources": {
+    "pages": [
+      161,
+      185,
+      202,
+      203,
+      224
+    ],
+    "quotes": [
+      "Rather than starchy, boring bread cubes, the stuffing for this dish is made with my Basic BROL (Barley, Rye, Oats and Lentils), combined with onion, celery, kale and cranberries.",
+      "To make a hard winter squash easier to cut, pierce the skin of the squash with the tip of a sharp knife in several places and microwave on High for about 3 minutes.",
+      "ROASTED KABOCHA WITH KALE–CRANBERRY STUFFING",
+      "RED CURRY CHICKPEAS AND KABOCHA SQUASH"
+    ]
+  }
+}

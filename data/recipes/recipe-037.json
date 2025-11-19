@@ -1,0 +1,28 @@
+{
+  "id": "recipe-037",
+  "name": "Butternut-Black Bean Chilli",
+  "page": 225,
+  "meal_type": "dinner",
+  "servings": "6",
+  "difficulty": "Easy",
+  "description": "Black beans marry chunks of butternut squash in this delicious chilli.",
+  "foods_used": [
+    "black-beans",
+    "butternut-squash",
+    "onions",
+    "bell-peppers",
+    "garlic",
+    "cherry-tomatoes",
+    "turmeric",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "black-pepper-turmeric",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Black beans + squash for sustained energy. Turmeric + black pepper for enhanced absorption."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "food-157",
+  "name": "Hemp Seeds",
+  "categories": [
+    "nuts-and-seeds",
+    "antioxidant-rich",
+    "anti-inflammatory",
+    "appetite-suppression"
+  ],
+  "properties": [
+    "Complete plant-based protein source (all 9 essential amino acids)",
+    "Rich in omega-3 and omega-6 fatty acids (optimal 3:1 ratio)",
+    "Excellent source of GLA (gamma-linolenic acid)",
+    "Contains vitamin E, magnesium, and iron",
+    "Provides both soluble and insoluble fiber",
+    "Rich in arginine amino acid",
+    "Highly digestible protein"
+  ],
+  "benefits": [
+    "Provides complete protein for muscle and tissue health",
+    "Supports heart health with omega-3 fatty acids",
+    "Contains anti-inflammatory GLA compound",
+    "May help reduce PMS symptoms",
+    "Supports skin health and may reduce skin inflammation",
+    "Aids in blood pressure regulation",
+    "Promotes healthy cholesterol levels",
+    "Helps with satiety and weight management"
+  ],
+  "synergies": [
+    "Can substitute for sunflower seeds in recipes",
+    "Combines with other seeds for complete nutrition",
+    "Pairs well with oats and other whole grains",
+    "Works in smoothie bowls for protein boost"
+  ],
+  "timing": [
+    "any-meal",
+    "breakfast",
+    "snacks",
+    "salads"
+  ],
+  "amount": "1-2 tablespoons per serving (about 10-20g)",
+  "sources": {
+    "pages": [
+      118,
+      196,
+      295,
+      1045,
+      326,
+      1123
+    ],
+    "quotes": [
+      "1 tablespoon sunflower seeds or hemp hearts",
+      "1 tablespoon sunflower seeds or hemp hearts",
+      "sunflower seeds, pumpkin seeds, chia seeds, hemp seeds, cacao nibs, ground flaxseeds",
+      "chopped pecans, chopped walnuts, sunflower seeds, pumpkin seeds, chia seeds, hemp seeds",
+      "Optional toppings: goji berries, sliced banana, berries, cacao nibs, ground flaxseeds or hemp seeds",
+      "Optional toppings: goji berries, sliced banana, berries, cacao nibs, ground flaxseeds or hemp seeds"
+    ]
+  },
+  "conflicts": []
+}

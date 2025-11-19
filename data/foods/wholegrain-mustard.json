@@ -1,0 +1,46 @@
+{
+  "id": "food-185",
+  "name": "Wholegrain Mustard (Salt-Free)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Prepared mustard with visible seeds",
+    "Salt-free version preferred",
+    "Tangy, slightly spicy flavor",
+    "Contains intact mustard seeds",
+    "Adds texture and flavor to dressings",
+    "Source of beneficial phytochemicals"
+  ],
+  "benefits": "Salt-free wholegrain mustard is a prepared condiment made from mustard seeds, vinegar, and spices. The wholegrain variety contains visible mustard seeds that add texture and nutritional benefits. It provides tangy, slightly spicy flavor to salad dressings, sauces, and marinades without added sodium. Mustard contains beneficial compounds including glucosinolates that support health while enhancing flavor in weight-loss recipes.",
+  "synergies": [
+    "rye-grains",
+    "chickpeas",
+    "vegetables",
+    "lemon",
+    "miso",
+    "nutritional-yeast"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1-2 teaspoons in dressings and sauces",
+  "sources": {
+    "pages": [
+      88,
+      153,
+      154,
+      186
+    ],
+    "quotes": [
+      "2 teaspoons salt-free wholegrain mustard",
+      "Hearty, chewy rye grains are featured in this salad made with chickpeas, veggies and a zesty mustard dressing",
+      "1 teaspoon salt-free mustard",
+      "Add the Light Vegetable Broth, nutritional yeast, lemon juice, miso paste, mustard"
+    ]
+  }
+}

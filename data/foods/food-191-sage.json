@@ -1,0 +1,48 @@
+{
+  "id": "food-191",
+  "name": "Sage",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Available fresh or dried (ground)",
+    "Strong, earthy, slightly peppery flavor",
+    "Traditional herb for stuffings and root vegetables",
+    "Pairs well with mushrooms and winter vegetables",
+    "Contains compounds with potential cognitive benefits",
+    "Antimicrobial properties"
+  ],
+  "benefits": "Sage is a powerful anti-inflammatory herb with antioxidant and antimicrobial properties. It has been traditionally associated with cognitive support. Works particularly well with mushroom-based dishes, winter squash, and sweet potatoes. Both fresh and ground forms are used in plant-based cooking.",
+  "synergies": [
+    "sweet-potatoes",
+    "mushrooms",
+    "cauliflower",
+    "thyme",
+    "rosemary",
+    "shallots",
+    "nutritional-yeast"
+  ],
+  "conflicts": [],
+  "timing": [
+    "in-cooking"
+  ],
+  "amount": "1/2 teaspoon fresh chopped sage or 1/2 teaspoon dried/ground sage per recipe (4 servings)",
+  "sources": {
+    "pages": [
+      121,
+      178,
+      179,
+      202,
+      208
+    ],
+    "quotes": [
+      "1/2 teaspoon chopped fresh sage - Roasted Vegetable Platter (page 121)",
+      "1/2 teaspoon dried sage - Portobellos and Spinach on Cauliflower Mash with Miso-Mushroom Sauce (page 178)",
+      "Add the nutritional yeast, miso paste, vinegar, thyme, sage, onion powder and black pepper to taste (page 179)",
+      "1 teaspoon finely chopped fresh sage leaves, or 1/2 teaspoon dried - Roasted Kabocha with Kale-Cranberry Stuffing (page 202)",
+      "2 teaspoons ground sage - Sage-Kissed Sweet Potato Wedges with Shallots (page 208)"
+    ]
+  }
+}

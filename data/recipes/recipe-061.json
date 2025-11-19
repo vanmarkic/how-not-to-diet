@@ -1,0 +1,41 @@
+{
+  "id": "recipe-061",
+  "name": "Grain-Stuffed Peppers with Cheesy Tomato Sauce",
+  "page": 275,
+  "servings": "4",
+  "difficulty": "Moderate",
+  "meal_type": "Main Dish",
+  "foods_used": [
+    "bell-peppers",
+    "onions",
+    "garlic",
+    "barley",
+    "chickpeas",
+    "flaxseeds-ground",
+    "miso",
+    "nutritional-yeast",
+    "parsley",
+    "tomatoes",
+    "white-beans",
+    "lemon",
+    "turmeric"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "flaxseeds": 1,
+    "herbs_spices": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "curcumin",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "tomatoes",
+    "onions",
+    "garlic"
+  ]
+}

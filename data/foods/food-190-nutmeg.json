@@ -1,0 +1,47 @@
+{
+  "id": "food-190",
+  "name": "Nutmeg (Ground)",
+  "categories": [
+    "herbs-and-spices",
+    "anti-inflammatory",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Warm, sweet, aromatic spice",
+    "Works well with breakfast foods and sweet applications",
+    "Complements fruits, especially bananas and berries",
+    "Pairs with other warming spices",
+    "Used in both sweet and savory dishes"
+  ],
+  "benefits": "Nutmeg is a warming spice with anti-inflammatory and antioxidant properties. It enhances the flavor of whole grain breakfast dishes and pairs naturally with fruits. Traditionally used in small amounts to add warmth and depth to both sweet and savory preparations.",
+  "synergies": [
+    "oat-groats",
+    "bananas",
+    "pecans",
+    "berries",
+    "cinnamon",
+    "cardamom",
+    "cloves"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "in-cooking"
+  ],
+  "amount": "1/8 to 1/4 teaspoon ground nutmeg per recipe (4 servings)",
+  "sources": {
+    "pages": [
+      222,
+      223,
+      294,
+      295
+    ],
+    "quotes": [
+      "1/8 teaspoon ground nutmeg or cloves - Persian Black-Eyed Beans and Greens (page 222)",
+      "cardamom, cinnamon and nutmeg (page 223)",
+      "1/4 teaspoon ground nutmeg - Stovetop Overnight Oats with Bananas and Pecans (page 294)",
+      "Add the oat groats, cover, and return to the boil... Peel and chop the bananas and add to the oats along with the nutmeg (page 294)",
+      "ground cinnamon, mixed spice, ground nutmeg and any other whole food goodness (page 295)"
+    ]
+  }
+}

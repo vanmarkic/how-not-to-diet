@@ -1,0 +1,26 @@
+{
+  "id": "recipe-078",
+  "name": "Baked Apples with Walnuts and Goji Berries",
+  "page": 324,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "apples",
+    "goji-berries",
+    "walnuts",
+    "cinnamon",
+    "lemon"
+  ],
+  "daily_dozen_coverage": {
+    "berries": 1,
+    "other_fruits": 1,
+    "nuts_seeds": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": [
+    "walnuts",
+    "apples"
+  ]
+}

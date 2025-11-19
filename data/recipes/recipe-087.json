@@ -1,0 +1,31 @@
+{
+  "id": "recipe-087",
+  "name": "Dr Greger's Special Spice Blend",
+  "page": 339,
+  "servings": "1/2 cup",
+  "difficulty": "Easy",
+  "meal_type": "Spice Blend",
+  "foods_used": [
+    "nutritional-yeast",
+    "garlic-powder",
+    "parsley",
+    "basil",
+    "turmeric",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": {
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast",
+    "garlic_powder",
+    "curcumin",
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "turmeric",
+    "black-pepper"
+  ]
+}

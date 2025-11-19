@@ -1,0 +1,31 @@
+{
+  "id": "recipe-007",
+  "name": "Three Sisters Stew",
+  "page": 163,
+  "meal_type": "dinner",
+  "servings": 6,
+  "difficulty": "easy",
+  "foods": [
+    "beans-legumes",
+    "bell-peppers-raw",
+    "black-pepper",
+    "butternut-squash",
+    "cumin",
+    "fresh-herbs",
+    "garlic",
+    "onion-powder",
+    "onions",
+    "oregano-dried",
+    "smoked-paprika"
+  ],
+  "daily_dozen": [
+    "beans",
+    "vegetables"
+  ],
+  "tweaks": [
+    "anti-inflammatory",
+    "cumin",
+    "fiber"
+  ],
+  "synergies": []
+}

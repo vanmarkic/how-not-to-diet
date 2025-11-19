@@ -1,0 +1,47 @@
+{
+  "id": "food-266",
+  "name": "Date Syrup",
+  "categories": [
+    "natural-sweetener",
+    "antioxidant-rich",
+    "whole-food"
+  ],
+  "properties": [
+    "Natural sweetener made from dates",
+    "Whole food sweetener",
+    "Contains fiber from dates",
+    "Recipe provided in cookbook",
+    "Rich, caramel-like flavor",
+    "Room temperature for easy pouring",
+    "No refined sugars"
+  ],
+  "benefits": "Date syrup is a whole food natural sweetener that retains some of the fiber and nutrients from dates. Unlike refined sugars, it provides antioxidants and minerals. When used as a sweetener, it's a better choice than processed sugars, though should still be used in moderation.",
+  "synergies": [
+    "oat-groats",
+    "whole-grains",
+    "cocoa-powder",
+    "pumpkin-puree",
+    "cashews",
+    "fruits"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "occasional-use",
+    "as-sweetener"
+  ],
+  "amount": "1 tablespoon to ⅓ cup/75ml",
+  "sources": {
+    "pages": [
+      294,
+      299,
+      320
+    ],
+    "quotes": [
+      "Date Syrup (here) (optional)",
+      "1 tablespoon Date Syrup (here) or treacle",
+      "⅓ cup/75ml Date Syrup (here), at room temperature",
+      "Sprinkle with the cocoa, then drizzle with Date Syrup."
+    ]
+  }
+}

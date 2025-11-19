@@ -1,0 +1,56 @@
+{
+  "id": "food-224",
+  "name": "Red Chillies (Fresh)",
+  "categories": [
+    "spices",
+    "thermogenic",
+    "antioxidant-rich",
+    "metabolism-boosting"
+  ],
+  "properties": [
+    "Fresh red chillies (ripened version of green chillies)",
+    "Contains capsaicin, the compound responsible for heat",
+    "Rich in vitamin C (higher than citrus fruits)",
+    "Good source of vitamin A and beta-carotene",
+    "Contains antioxidants including flavonoids",
+    "Heat level varies by variety (from mild to very hot)",
+    "Can be de-seeded to reduce heat while keeping flavor",
+    "More complex flavor than dried chilli powder"
+  ],
+  "benefits": [
+    "Boosts metabolism through thermogenic effect of capsaicin",
+    "May increase fat burning and reduce appetite",
+    "Supports immune function with high vitamin C content",
+    "Provides antioxidant and anti-inflammatory compounds",
+    "May improve cardiovascular health",
+    "Promotes endorphin release (natural pain relief)",
+    "Adds intense flavor without calories or sodium",
+    "May help clear congestion and support respiratory health"
+  ],
+  "synergies": [
+    "Essential component of red curry paste with lemongrass and turmeric",
+    "Pairs with ginger and garlic in Asian sauces",
+    "Combines with shallots in curry bases",
+    "Works with lemon juice for bright, spicy flavor"
+  ],
+  "conflicts": [
+    "Can irritate sensitive digestive systems - start with small amounts",
+    "Remove seeds and membranes to reduce heat",
+    "Wash hands after handling or use gloves"
+  ],
+  "timing": [
+    "any-meal",
+    "lunch",
+    "dinner",
+    "in-cooking"
+  ],
+  "amount": "2 red chillies (de-stemmed and de-seeded) per curry paste recipe, adjust to taste",
+  "sources": {
+    "pages": [
+      238
+    ],
+    "quotes": [
+      "2 red chillies, or more, to taste, de-stemmed and de-seeded"
+    ]
+  }
+}

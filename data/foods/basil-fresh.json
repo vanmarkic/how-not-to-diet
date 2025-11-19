@@ -1,0 +1,44 @@
+{
+  "id": "food-198",
+  "name": "Basil (Fresh)",
+  "categories": [
+    "herbs-spices",
+    "anti-inflammatory",
+    "nutrient-dense"
+  ],
+  "properties": [
+    "Contains eugenol and other anti-inflammatory compounds",
+    "Rich in vitamin K and manganese",
+    "Source of antioxidants",
+    "Aromatic herb with sweet, peppery flavor",
+    "Contains essential oils with antimicrobial properties"
+  ],
+  "benefits": "Fresh basil is featured in Italian-inspired dishes and adds aromatic flavor without calories. Contains eugenol, an anti-inflammatory compound also found in cloves. Rich in vitamin K for bone health. Thai basil variety mentioned as alternative in Asian soups. Part of building complex flavors in whole food cooking.",
+  "synergies": [
+    "tomatoes",
+    "garlic",
+    "lemon",
+    "peppers-bell-peppers"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "¼ cup fresh chopped, added near end of cooking to preserve flavor",
+  "sources": {
+    "pages": [
+      35,
+      51,
+      62,
+      90
+    ],
+    "quotes": [
+      "2 tablespoons chopped fresh coriander or basil",
+      "¼ cup/4 tablespoons chopped fresh coriander or Thai basil",
+      "¼ cup/4 tablespoons chopped fresh basil - Stir in the fresh basil. Taste and adjust the seasonings",
+      "ROASTED POTATO SALAD WITH BASIL PESTO DRESSING"
+    ]
+  }
+}

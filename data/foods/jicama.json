@@ -1,0 +1,46 @@
+{
+  "id": "food-165",
+  "name": "Jicama",
+  "categories": [
+    "rich-in-vegetables",
+    "high-water-rich",
+    "low-calorie-density",
+    "digestive-support"
+  ],
+  "properties": [
+    "Mexican root vegetable",
+    "High water content and fiber",
+    "Low calorie density",
+    "Crunchy texture like water chestnut",
+    "Can be eaten raw or baked",
+    "Prebiotic fiber supports gut health"
+  ],
+  "benefits": "Jicama is a Mexican root vegetable with very high water content and low calorie density, making it perfect for weight loss. Rich in prebiotic fiber that feeds beneficial gut bacteria. Can be sliced thin and baked as a healthy alternative to tortilla chips in nachos, providing satisfying crunch without excess calories or fat.",
+  "synergies": [
+    "lime",
+    "black-beans",
+    "avocado",
+    "salsa",
+    "nutritional-yeast"
+  ],
+  "conflicts": [],
+  "timing": [
+    "any-meal",
+    "appetizers",
+    "snacks"
+  ],
+  "amount": "2 medium jicama for nachos serving 4 people",
+  "sources": {
+    "pages": [
+      161,
+      181,
+      182,
+      183
+    ],
+    "quotes": [
+      "Who doesn't love nachos? If you use jicama chips instead of greasy, salty tortilla chips, your heart will be as happy as your palate.",
+      "If you're not a fan of jicama, you can bake sliced potatoes instead. Alternatively, raw veggies, such as sliced peppers, carrots or cucumbers, can also be used to scoop up the tasty toppings.",
+      "Use a mandoline or sharp knife to slice the jicama into thin, crisp-size slices."
+    ]
+  }
+}

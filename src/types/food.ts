@@ -17,7 +17,6 @@ export interface Food {
 export interface FoodDatabase {
   extraction_metadata: {
     extraction_date: string;
-    source_document: string;
     focus_areas: string[];
   };
   extraction_index: Array<{

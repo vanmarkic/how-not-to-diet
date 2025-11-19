@@ -1,0 +1,45 @@
+{
+  "id": "food-263",
+  "name": "Dates (Soft/Medjool)",
+  "categories": [
+    "fruits",
+    "natural-sweetener",
+    "antioxidant-rich"
+  ],
+  "properties": [
+    "Stone fruit (drupe)",
+    "Natural whole food sweetener",
+    "Soft, caramel-like texture",
+    "High in fiber",
+    "Contains natural sugars",
+    "Often soaked before use in recipes",
+    "No added sugars"
+  ],
+  "benefits": "Dates are a whole food natural sweetener that provides fiber along with sweetness, unlike refined sugars. Rich in antioxidants and minerals. When used as a sweetener, dates add nutrition rather than empty calories. The fiber helps moderate blood sugar response compared to refined sugars.",
+  "synergies": [
+    "chia-seeds",
+    "mango",
+    "other-fruits",
+    "nuts",
+    "oat-groats",
+    "whole-grains"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "as-sweetener",
+    "any-time"
+  ],
+  "amount": "2 pitted soft dates, soaked for 10 minutes in hot water",
+  "sources": {
+    "pages": [
+      316,
+      320
+    ],
+    "quotes": [
+      "2 pitted soft dates, soaked for 10 minutes in hot water and then drained",
+      "Many popular stone fruits, such as cherries, plums, peaches, nectarines, mangoes and dates, are in season in late summer.",
+      "In a food processor or blender, combine the mango, lemon juice, dates and the chia mixture and process until smooth."
+    ]
+  }
+}

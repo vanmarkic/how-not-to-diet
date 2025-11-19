@@ -1,0 +1,44 @@
+{
+  "id": "food-187",
+  "name": "Red Wine Vinegar",
+  "categories": [
+    "anti-inflammatory",
+    "antioxidant-rich",
+    "low-in-salt"
+  ],
+  "properties": [
+    "Made from fermented red wine",
+    "Bold, robust flavor",
+    "Contains polyphenols from red grapes",
+    "More acidic than balsamic",
+    "Ideal for Mediterranean dishes",
+    "Deep pink to red color"
+  ],
+  "benefits": "Red wine vinegar is made from fermented red wine and provides a bold, robust acidity to dressings and marinades. It retains some of the beneficial polyphenols from red grapes while offering the metabolic benefits of vinegar for weight loss. The assertive flavor works well in Mediterranean-style salads, bean dishes, and vegetable preparations. It can be used interchangeably with sherry vinegar in many recipes.",
+  "synergies": [
+    "chickpeas",
+    "beans-legumes",
+    "bell-peppers",
+    "onions",
+    "fresh-herbs",
+    "garlic"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking"
+  ],
+  "amount": "1-2 tablespoons in dressings and marinades",
+  "sources": {
+    "pages": [
+      35,
+      44,
+      147
+    ],
+    "quotes": [
+      "2½ tablespoons sherry vinegar or red wine vinegar",
+      "1 to 2 tablespoons red wine vinegar, or to taste",
+      "1 tablespoon red wine vinegar"
+    ]
+  }
+}

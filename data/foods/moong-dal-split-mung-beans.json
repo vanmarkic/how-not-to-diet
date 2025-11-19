@@ -1,0 +1,44 @@
+{
+  "id": "food-253",
+  "name": "Moong Dal (Split Yellow Mung Beans)",
+  "categories": [
+    "beans-legumes",
+    "high-protein",
+    "quick-cooking"
+  ],
+  "properties": [
+    "Split yellow mung beans",
+    "Quick-cooking legume",
+    "Staple in Indian cuisine",
+    "High in protein",
+    "Easily digestible",
+    "Creamy texture when cooked"
+  ],
+  "benefits": "Moong dal is a highly digestible legume rich in protein and fiber. Traditional Ayurvedic food known for being gentle on digestion while providing complete nutrition. Supports weight loss and metabolic health as part of beans and legumes daily serving.",
+  "synergies": [
+    "quinoa",
+    "turmeric",
+    "ginger",
+    "cumin",
+    "coriander",
+    "cauliflower",
+    "peas"
+  ],
+  "conflicts": [],
+  "timing": [
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "amount": "½ cup/100g dry (makes about 4 servings in kitchari)",
+  "sources": {
+    "pages": [
+      297,
+      298
+    ],
+    "quotes": [
+      "½ cup/100g moong dal (split yellow mung beans)",
+      "Soak the moong dal in enough water to cover for 15 minutes, then drain and rinse. In a saucepan, combine the moong dal and quinoa with 4 cups/1 litre of water. Bring to the boil over a medium-high heat, then lower the heat to a low simmer and cook, stirring occasionally, for about 20 minutes."
+    ]
+  }
+}

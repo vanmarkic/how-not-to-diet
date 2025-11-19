@@ -1,0 +1,22 @@
+{
+  "id": "recipe-077",
+  "name": "Black Forest Chia Pudding",
+  "page": 322,
+  "servings": "2",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "cherries",
+    "bananas",
+    "cocoa-powder",
+    "dates",
+    "chia-seeds"
+  ],
+  "daily_dozen_coverage": {
+    "berries": 1,
+    "other_fruits": 1,
+    "nuts_seeds": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "recipe-083",
+  "name": "Fresh Tomato Salsa",
+  "page": 336,
+  "servings": "3 cups",
+  "difficulty": "Easy",
+  "meal_type": "Condiment",
+  "foods_used": [
+    "tomatoes",
+    "bell-peppers",
+    "onions",
+    "jalapeno-peppers",
+    "vinegar",
+    "coriander"
+  ],
+  "daily_dozen_coverage": {
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "vinegar"
+  ],
+  "key_synergies": [
+    "tomatoes",
+    "onions"
+  ]
+}

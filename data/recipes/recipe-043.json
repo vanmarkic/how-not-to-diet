@@ -1,0 +1,34 @@
+{
+  "id": "recipe-043",
+  "name": "Vegetable Paella with Golden Barley",
+  "page": 247,
+  "meal_type": "dinner",
+  "servings": "4-6",
+  "difficulty": "Easy",
+  "description": "Spanish-inspired paella using pot barley instead of rice, with turmeric for golden color.",
+  "foods_used": [
+    "barley",
+    "white-beans-cannellini",
+    "onions",
+    "garlic",
+    "bell-peppers",
+    "cherry-tomatoes",
+    "peas",
+    "smoked-paprika",
+    "turmeric",
+    "black-pepper",
+    "parsley-fresh",
+    "lemon"
+  ],
+  "daily_dozen_coverage": [
+    "whole-grains",
+    "beans",
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "intact-whole-grains",
+    "black-pepper-turmeric",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Barley + beans for sustained energy and fiber. Turmeric + black pepper for anti-inflammatory benefits."
+}

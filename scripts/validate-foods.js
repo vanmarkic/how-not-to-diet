@@ -62,7 +62,19 @@ const VALID_CATEGORIES = [
   'digestive-support',
   'metabolism-boosting',
   'whole-grains',
-  'low-in-salt'
+  'low-in-salt',
+  'sleep-optimization',
+  'behavior-tweak',
+  'timing-strategy',
+  'hydration-strategy',
+  'chronobiology',
+  'evening-beverage',
+  'caffeine-free',
+  'resistant-starch',
+  'herbs-spices',
+  'nutrient-dense',
+  'heavy-metal-detox',
+  'allium-family'
 ];
 
 const VALID_TIMING = [
@@ -96,7 +108,24 @@ const VALID_TIMING = [
   'morning',
   'preferably-raw',
   'eat-early-in-meal',
-  'meal-preload'
+  'meal-preload',
+  'nightly',
+  'regular-bedtime',
+  'consistent-time',
+  'evening-safe',
+  'any-time-of-day',
+  'morning-to-afternoon-emphasis',
+  'reduced-evening',
+  'before-7pm-cutoff',
+  'daily-rhythm-alignment',
+  'consistent-schedule',
+  'morning-to-midday',
+  'avoid-6-hours-before-bed',
+  'particularly-effective-as-pasta-substitute',
+  'particularly-effective-in-dressings',
+  'particularly-effective-roasted',
+  'appetizers',
+  'particularly-effective-in-stuffing'
 ];
 
 class ValidationError {

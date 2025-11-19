@@ -1,0 +1,22 @@
+{
+  "id": "recipe-079",
+  "name": "Tropical Smoothie Bowls",
+  "page": 326,
+  "servings": "2",
+  "difficulty": "Easy",
+  "meal_type": "Dessert",
+  "foods_used": [
+    "chia-seeds",
+    "bananas",
+    "mango-fresh",
+    "pineapple",
+    "goji-berries"
+  ],
+  "daily_dozen_coverage": {
+    "berries": 1,
+    "other_fruits": 1,
+    "nuts_seeds": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "recipe-036",
+  "name": "Persian Black-Eyed Beans and Greens",
+  "page": 222,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Fragrant spices turn simple beans and greens into something special.",
+  "foods_used": [
+    "black-eyed-peas",
+    "kale",
+    "collard-greens",
+    "onions",
+    "carrots",
+    "miso",
+    "coriander-ground",
+    "cumin",
+    "turmeric",
+    "black-pepper",
+    "cardamom",
+    "cinnamon",
+    "lemon"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "greens",
+    "cruciferous-vegetables",
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "cumin-boost",
+    "black-pepper-turmeric",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Black-eyed peas + greens + cumin/turmeric for anti-inflammatory benefits. Multiple spices amplify effects."
+}

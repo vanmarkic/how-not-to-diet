@@ -1,0 +1,22 @@
+{
+  "id": "recipe-084",
+  "name": "Brazil Nut Parm",
+  "page": 336,
+  "servings": "1.5 cups",
+  "difficulty": "Easy",
+  "meal_type": "Condiment",
+  "foods_used": [
+    "brazil-nuts",
+    "cashews",
+    "nutritional-yeast"
+  ],
+  "daily_dozen_coverage": {
+    "nuts_seeds": 1
+  },
+  "tweaks_21_incorporated": [
+    "nutritional_yeast"
+  ],
+  "key_synergies": [
+    "nutritional-yeast"
+  ]
+}

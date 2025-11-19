@@ -137,5 +137,713 @@
     },
     "tags": ["lunch", "salad", "mediterranean", "no-cook", "plant-based", "high-fiber"],
     "category": "lunch"
+  },
+  {
+    "id": "breakfast-groats-bowl",
+    "name": "Whole Oat Groats Power Bowl",
+    "description": "A fiber-rich breakfast featuring whole intact oat groats with berries, flaxseeds, and anti-inflammatory spices",
+    "servings": 2,
+    "prepTime": 5,
+    "cookTime": 45,
+    "ingredients": [
+      {
+        "name": "Oat groats",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "whole, intact kernels"
+      },
+      {
+        "name": "Water",
+        "amount": 3,
+        "unit": "cups"
+      },
+      {
+        "name": "Mixed berries",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "fresh or frozen"
+      },
+      {
+        "name": "Ground flaxseeds",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Walnuts",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "chopped"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "Rinse oat groats thoroughly under cold water",
+      "In a medium pot, bring water to a boil",
+      "Add oat groats, reduce heat to low, and cover",
+      "Simmer for 40-45 minutes until tender and chewy",
+      "While still warm, divide between two bowls",
+      "Top each bowl with berries, ground flaxseeds, walnuts",
+      "Sprinkle with cinnamon and turmeric",
+      "Serve warm with a side of water mixed with apple cider vinegar"
+    ],
+    "nutrition": {
+      "calories": 385,
+      "protein": 12,
+      "carbohydrates": 58,
+      "fat": 14,
+      "fiber": 12,
+      "sodium": 5
+    },
+    "tags": ["breakfast", "whole-grain", "berries", "high-fiber", "anti-inflammatory", "plant-based", "daily-dozen"],
+    "category": "breakfast"
+  },
+  {
+    "id": "kale-cabbage-power-salad",
+    "name": "Cruciferous Power Salad with Vinegar Dressing",
+    "description": "Antioxidant-rich salad featuring kale and cabbage with a metabolism-boosting vinegar dressing",
+    "servings": 2,
+    "prepTime": 15,
+    "cookTime": 0,
+    "ingredients": [
+      {
+        "name": "Kale",
+        "amount": 3,
+        "unit": "cups",
+        "notes": "chopped, tough stems removed"
+      },
+      {
+        "name": "Red cabbage",
+        "amount": 2,
+        "unit": "cups",
+        "notes": "thinly sliced"
+      },
+      {
+        "name": "Green cabbage",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "thinly sliced"
+      },
+      {
+        "name": "Chickpeas",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "cooked or canned, drained"
+      },
+      {
+        "name": "Cherry tomatoes",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "halved"
+      },
+      {
+        "name": "Walnuts",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "chopped"
+      },
+      {
+        "name": "Ground flaxseeds",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Apple cider vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "notes": "minced"
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "Massage kale with a pinch of salt for 2-3 minutes to soften",
+      "In a large bowl, combine massaged kale, both cabbages, chickpeas, and tomatoes",
+      "In a small bowl, whisk together vinegar, lemon juice, garlic, and mustard",
+      "Pour dressing over salad and toss well to combine",
+      "Top with walnuts and ground flaxseeds",
+      "Let sit for 10 minutes for flavors to meld before serving",
+      "Serve as a main dish or hearty side"
+    ],
+    "nutrition": {
+      "calories": 295,
+      "protein": 13,
+      "carbohydrates": 38,
+      "fat": 11,
+      "fiber": 14,
+      "sodium": 180
+    },
+    "tags": ["lunch", "dinner", "salad", "cruciferous", "no-cook", "plant-based", "high-fiber", "anti-inflammatory", "vinegar-boost", "daily-dozen"],
+    "category": "lunch"
+  },
+  {
+    "id": "lentil-turmeric-soup",
+    "name": "Golden Lentil Soup with Anti-Inflammatory Spices",
+    "description": "Warming soup rich in legumes, greens, and anti-inflammatory spices like turmeric and ginger",
+    "servings": 4,
+    "prepTime": 10,
+    "cookTime": 35,
+    "ingredients": [
+      {
+        "name": "Red lentils",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "rinsed"
+      },
+      {
+        "name": "Vegetable broth",
+        "amount": 6,
+        "unit": "cups",
+        "notes": "low-sodium"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "large",
+        "notes": "diced"
+      },
+      {
+        "name": "Garlic",
+        "amount": 4,
+        "unit": "cloves",
+        "notes": "minced"
+      },
+      {
+        "name": "Fresh ginger",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "grated"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Kale",
+        "amount": 3,
+        "unit": "cups",
+        "notes": "chopped"
+      },
+      {
+        "name": "Carrots",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "diced"
+      },
+      {
+        "name": "Celery",
+        "amount": 2,
+        "unit": "stalks",
+        "notes": "diced"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "In a large pot, saute onion in a splash of water or broth until softened, about 5 minutes",
+      "Add garlic, ginger, turmeric, and cumin, cook for 1 minute until fragrant",
+      "Add lentils, broth, carrots, and celery",
+      "Bring to a boil, then reduce heat and simmer for 20 minutes",
+      "Add chopped kale and cook for 10 more minutes until lentils are tender",
+      "Stir in lemon juice and black pepper",
+      "Taste and adjust seasonings as needed",
+      "Serve hot with a side salad dressed with vinegar"
+    ],
+    "nutrition": {
+      "calories": 245,
+      "protein": 15,
+      "carbohydrates": 42,
+      "fat": 1,
+      "fiber": 16,
+      "sodium": 220
+    },
+    "tags": ["lunch", "dinner", "soup", "legumes", "anti-inflammatory", "greens", "high-fiber", "plant-based", "turmeric", "ginger", "daily-dozen"],
+    "category": "dinner"
+  },
+  {
+    "id": "bean-vegetable-bowl",
+    "name": "Rainbow Buddha Bowl with Tahini-Vinegar Sauce",
+    "description": "Colorful plant-based bowl featuring beans, greens, and vegetables with metabolism-boosting vinegar sauce",
+    "servings": 2,
+    "prepTime": 15,
+    "cookTime": 25,
+    "ingredients": [
+      {
+        "name": "Black beans",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "cooked or canned, drained"
+      },
+      {
+        "name": "Sweet potato",
+        "amount": 1,
+        "unit": "large",
+        "notes": "cubed"
+      },
+      {
+        "name": "Kale",
+        "amount": 2,
+        "unit": "cups",
+        "notes": "chopped"
+      },
+      {
+        "name": "Broccoli",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "florets"
+      },
+      {
+        "name": "Red cabbage",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "shredded"
+      },
+      {
+        "name": "Quinoa",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "cooked"
+      },
+      {
+        "name": "Tahini",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Apple cider vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 1,
+        "unit": "clove",
+        "notes": "minced"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 400F (200C)",
+      "Toss sweet potato cubes with a pinch of turmeric and roast for 25 minutes until tender",
+      "Steam broccoli for 5-7 minutes until bright green and tender-crisp",
+      "Lightly massage kale with a pinch of salt",
+      "In a small bowl, whisk together tahini, vinegar, lemon juice, garlic, and 2-3 tbsp water until smooth",
+      "Divide quinoa between two bowls as a base",
+      "Arrange beans, roasted sweet potato, steamed broccoli, kale, and cabbage in sections",
+      "Drizzle with tahini-vinegar sauce",
+      "Sprinkle with sesame seeds and serve"
+    ],
+    "nutrition": {
+      "calories": 465,
+      "protein": 19,
+      "carbohydrates": 68,
+      "fat": 14,
+      "fiber": 18,
+      "sodium": 145
+    },
+    "tags": ["lunch", "dinner", "bowl", "legumes", "cruciferous", "whole-grain", "plant-based", "high-fiber", "vinegar-boost", "daily-dozen"],
+    "category": "dinner"
+  },
+  {
+    "id": "berry-flax-smoothie",
+    "name": "Triple Berry Flax Smoothie",
+    "description": "Antioxidant-packed smoothie with berries, flaxseeds, and greens for a quick nutrient boost",
+    "servings": 1,
+    "prepTime": 5,
+    "cookTime": 0,
+    "ingredients": [
+      {
+        "name": "Mixed berries",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "frozen (blueberries, strawberries, raspberries)"
+      },
+      {
+        "name": "Kale",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "packed"
+      },
+      {
+        "name": "Ground flaxseeds",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Walnuts",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Banana",
+        "amount": 0.5,
+        "unit": "medium",
+        "notes": "frozen"
+      },
+      {
+        "name": "Unsweetened almond milk",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "amount": 0.25,
+        "unit": "tsp",
+        "notes": "fresh grated, or 1/8 tsp ground"
+      }
+    ],
+    "instructions": [
+      "Add all ingredients to a high-speed blender",
+      "Blend on high for 1-2 minutes until completely smooth",
+      "Add more almond milk if needed to reach desired consistency",
+      "Pour into a glass",
+      "Optionally top with additional berries or a sprinkle of flaxseeds",
+      "Serve immediately"
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein": 9,
+      "carbohydrates": 42,
+      "fat": 14,
+      "fiber": 13,
+      "sodium": 90
+    },
+    "tags": ["breakfast", "snack", "smoothie", "berries", "greens", "no-cook", "quick", "plant-based", "high-fiber", "daily-dozen"],
+    "category": "breakfast"
+  },
+  {
+    "id": "spiced-chickpea-bowl",
+    "name": "Cumin-Spiced Chickpea Bowl with Nigella Seeds",
+    "description": "Metabolism-boosting bowl with legumes and weight-loss enhancing spices including nigella seeds",
+    "servings": 2,
+    "prepTime": 10,
+    "cookTime": 20,
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "amount": 2,
+        "unit": "cups",
+        "notes": "cooked or canned, drained"
+      },
+      {
+        "name": "Cumin",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Nigella seeds",
+        "amount": 0.5,
+        "unit": "tsp",
+        "notes": "ground (black cumin)"
+      },
+      {
+        "name": "Garlic",
+        "amount": 3,
+        "unit": "cloves",
+        "notes": "minced"
+      },
+      {
+        "name": "Fresh ginger",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "grated"
+      },
+      {
+        "name": "Kale",
+        "amount": 3,
+        "unit": "cups",
+        "notes": "chopped"
+      },
+      {
+        "name": "Red onion",
+        "amount": 0.5,
+        "unit": "medium",
+        "notes": "sliced"
+      },
+      {
+        "name": "Cherry tomatoes",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "halved"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Apple cider vinegar",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh cilantro",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "chopped"
+      }
+    ],
+    "instructions": [
+      "In a large pan, dry toast cumin, turmeric, and nigella seeds for 1 minute until fragrant",
+      "Add a splash of water or broth, then add onion and garlic",
+      "Saute for 3-4 minutes until softened",
+      "Add ginger and chickpeas, cook for 5 minutes, stirring occasionally",
+      "Add kale and cook until wilted, about 3-4 minutes",
+      "Add cherry tomatoes and cook for 2 minutes more",
+      "Remove from heat and stir in lemon juice and vinegar",
+      "Top with fresh cilantro and serve over greens or whole grains"
+    ],
+    "nutrition": {
+      "calories": 275,
+      "protein": 14,
+      "carbohydrates": 45,
+      "fat": 4,
+      "fiber": 13,
+      "sodium": 140
+    },
+    "tags": ["lunch", "dinner", "legumes", "anti-inflammatory", "greens", "weight-loss", "vinegar-boost", "high-fiber", "plant-based", "daily-dozen"],
+    "category": "dinner"
+  },
+  {
+    "id": "green-lentil-salad",
+    "name": "Green Lentil Salad with Herbs and Vinegar",
+    "description": "Protein-rich lentil salad with fresh herbs and a tangy vinegar dressing",
+    "servings": 3,
+    "prepTime": 10,
+    "cookTime": 25,
+    "ingredients": [
+      {
+        "name": "Green lentils",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "rinsed"
+      },
+      {
+        "name": "Water",
+        "amount": 3,
+        "unit": "cups"
+      },
+      {
+        "name": "Cucumber",
+        "amount": 1,
+        "unit": "large",
+        "notes": "diced"
+      },
+      {
+        "name": "Cherry tomatoes",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "halved"
+      },
+      {
+        "name": "Red onion",
+        "amount": 0.5,
+        "unit": "medium",
+        "notes": "finely chopped"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "chopped"
+      },
+      {
+        "name": "Fresh mint",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "chopped"
+      },
+      {
+        "name": "Red wine vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "notes": "minced"
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "In a pot, bring water to a boil and add lentils",
+      "Reduce heat and simmer for 20-25 minutes until tender but not mushy",
+      "Drain and rinse lentils with cold water to cool",
+      "In a large bowl, combine cooled lentils, cucumber, tomatoes, onion, parsley, and mint",
+      "In a small bowl, whisk together vinegar, lemon juice, garlic, mustard, and cumin",
+      "Pour dressing over lentil mixture and toss well",
+      "Let sit for 15 minutes for flavors to develop",
+      "Serve chilled or at room temperature"
+    ],
+    "nutrition": {
+      "calories": 255,
+      "protein": 16,
+      "carbohydrates": 44,
+      "fat": 1,
+      "fiber": 15,
+      "sodium": 35
+    },
+    "tags": ["lunch", "salad", "legumes", "no-cook", "high-fiber", "plant-based", "vinegar-boost", "herbs", "daily-dozen"],
+    "category": "lunch"
+  },
+  {
+    "id": "broccoli-soup",
+    "name": "Creamy Broccoli Soup with White Beans",
+    "description": "Rich and creamy soup without dairy, featuring cruciferous vegetables and fiber-rich beans",
+    "servings": 4,
+    "prepTime": 10,
+    "cookTime": 25,
+    "ingredients": [
+      {
+        "name": "Broccoli",
+        "amount": 6,
+        "unit": "cups",
+        "notes": "chopped florets and peeled stems"
+      },
+      {
+        "name": "White beans",
+        "amount": 1.5,
+        "unit": "cups",
+        "notes": "cooked or canned, drained"
+      },
+      {
+        "name": "Onion",
+        "amount": 1,
+        "unit": "large",
+        "notes": "diced"
+      },
+      {
+        "name": "Garlic",
+        "amount": 4,
+        "unit": "cloves",
+        "notes": "minced"
+      },
+      {
+        "name": "Vegetable broth",
+        "amount": 4,
+        "unit": "cups",
+        "notes": "low-sodium"
+      },
+      {
+        "name": "Nutritional yeast",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground flaxseeds",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "In a large pot, saute onion in a splash of broth until softened, about 5 minutes",
+      "Add garlic and cook for 1 minute until fragrant",
+      "Add broccoli, beans, remaining broth, and turmeric",
+      "Bring to a boil, then reduce heat and simmer for 15 minutes until broccoli is very tender",
+      "Remove from heat and add nutritional yeast and lemon juice",
+      "Using an immersion blender, blend until smooth and creamy (or transfer to a regular blender in batches)",
+      "Stir in ground flaxseeds and black pepper",
+      "Taste and adjust seasonings as needed",
+      "Serve hot with a side salad dressed with vinegar"
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 13,
+      "carbohydrates": 32,
+      "fat": 3,
+      "fiber": 11,
+      "sodium": 180
+    },
+    "tags": ["lunch", "dinner", "soup", "cruciferous", "legumes", "plant-based", "high-fiber", "creamy", "daily-dozen"],
+    "category": "dinner"
   }
 ]

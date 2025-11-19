@@ -1,0 +1,26 @@
+{
+  "id": "recipe-004",
+  "name": "Pesto-Tossed Spaghetti Squash Noodles\nAnd White Beans",
+  "page": 140,
+  "meal_type": "dinner",
+  "servings": 4,
+  "difficulty": "easy",
+  "foods": [
+    "beans-legumes",
+    "bell-peppers-raw",
+    "brazil-nuts",
+    "crushed-red-pepper-flakes",
+    "fresh-herbs",
+    "spaghetti-squash",
+    "white-beans-cannellini",
+    "zucchini-courgette"
+  ],
+  "daily_dozen": [
+    "beans",
+    "vegetables"
+  ],
+  "tweaks": [
+    "fiber"
+  ],
+  "synergies": []
+}

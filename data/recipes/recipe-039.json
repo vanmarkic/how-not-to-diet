@@ -1,0 +1,31 @@
+{
+  "id": "recipe-039",
+  "name": "Black Lentil Dal",
+  "page": 232,
+  "meal_type": "dinner",
+  "servings": "4-6",
+  "difficulty": "Easy",
+  "description": "Rich, creamy dal made with black lentils and aromatic spices.",
+  "foods_used": [
+    "lentils-black-beluga",
+    "onions",
+    "garlic",
+    "ginger",
+    "cherry-tomatoes",
+    "turmeric",
+    "cumin",
+    "coriander-ground",
+    "black-pepper",
+    "lemon"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "cumin-boost",
+    "black-pepper-turmeric",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Black lentils + cumin + turmeric for anti-inflammatory and weight-loss benefits. Ginger aids digestion."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "recipe-032",
+  "name": "Sage-Kissed Sweet Potato Wedges with Shallots",
+  "page": 208,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Easy",
+  "description": "Roasted sweet potatoes made more flavoursome with malt vinegar, cornmeal and spices.",
+  "foods_used": [
+    "sweet-potatoes",
+    "apple-cider-vinegar",
+    "smoked-paprika",
+    "sage-dried",
+    "shallots"
+  ],
+  "daily_dozen_coverage": [
+    "other-vegetables"
+  ],
+  "tweaks_incorporated": [
+    "vinegar",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Sweet potatoes + vinegar for blood sugar control. Sage adds anti-inflammatory benefits."
+}

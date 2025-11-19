@@ -1,0 +1,30 @@
+{
+  "id": "recipe-065",
+  "name": "Cavolo Nero and Sweet Potato Hash",
+  "page": 291,
+  "servings": "4",
+  "difficulty": "Easy",
+  "meal_type": "Breakfast",
+  "foods_used": [
+    "sweet-potato",
+    "onions",
+    "parsnips",
+    "bell-peppers",
+    "portobello-mushrooms",
+    "cavolo-nero",
+    "peas",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": {
+    "cruciferous": 1,
+    "greens": 1,
+    "other_veg": 1,
+    "herbs_spices": 1
+  },
+  "tweaks_21_incorporated": [
+    "black_pepper"
+  ],
+  "key_synergies": [
+    "onions"
+  ]
+}

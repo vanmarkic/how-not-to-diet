@@ -1,0 +1,45 @@
+{
+  "id": "food-195",
+  "name": "Parsley (Fresh)",
+  "categories": [
+    "herbs-spices",
+    "anti-inflammatory",
+    "nutrient-dense"
+  ],
+  "properties": [
+    "Rich in vitamin K, vitamin C, and vitamin A",
+    "Contains flavonoids and antioxidants",
+    "Natural breath freshener",
+    "Source of folate and iron",
+    "Low calorie herb with concentrated nutrients"
+  ],
+  "benefits": "Fresh parsley is a nutrient-dense herb that adds flavor without calories. Rich in vitamins K, C, and A, as well as antioxidants like apigenin and luteolin. Used extensively throughout the cookbook as a finishing herb and in salads. Part of building flavor without salt in whole food, plant-based cooking.",
+  "synergies": [
+    "lemon",
+    "garlic",
+    "beans-legumes",
+    "whole-grains"
+  ],
+  "conflicts": [],
+  "timing": [
+    "with-meals",
+    "in-cooking",
+    "any-meal"
+  ],
+  "amount": "2-4 tablespoons fresh chopped per recipe, use generously as a garnish",
+  "sources": {
+    "pages": [
+      33,
+      54,
+      57,
+      67,
+      88
+    ],
+    "quotes": [
+      "Optional garnishes: snipped fresh chives, chopped fresh parsley, or coarsely ground nigella seeds",
+      "1 cup/60g chopped fresh parsley - Add the spinach, parsley, spring onions, mint, black pepper",
+      "To serve, ladle the soup into bowls and garnish with parsley or dill",
+      "¼ cup/15g chopped fresh coriander or parsley"
+    ]
+  }
+}

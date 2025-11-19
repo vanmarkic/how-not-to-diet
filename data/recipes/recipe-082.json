@@ -1,0 +1,20 @@
+{
+  "id": "recipe-082",
+  "name": "Basic BROL (Barley, Rye, Oats and Lentils)",
+  "page": 335,
+  "servings": "5 cups",
+  "difficulty": "Easy",
+  "meal_type": "Base",
+  "foods_used": [
+    "lentils-brown-puy",
+    "barley",
+    "rye",
+    "oat-groats-whole-intact-oats"
+  ],
+  "daily_dozen_coverage": {
+    "beans": 1,
+    "whole_grains": 1
+  },
+  "tweaks_21_incorporated": [],
+  "key_synergies": []
+}

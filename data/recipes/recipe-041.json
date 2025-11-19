@@ -1,0 +1,33 @@
+{
+  "id": "recipe-041",
+  "name": "Red Curry Chickpeas and Kabocha Squash",
+  "page": 238,
+  "meal_type": "dinner",
+  "servings": "4",
+  "difficulty": "Moderate",
+  "description": "Thai-inspired curry with chickpeas and kabocha squash in coconut milk.",
+  "foods_used": [
+    "chickpeas",
+    "kabocha-squash",
+    "onions",
+    "garlic",
+    "ginger",
+    "cherry-tomatoes",
+    "kale",
+    "cumin",
+    "coriander-ground",
+    "turmeric",
+    "black-pepper"
+  ],
+  "daily_dozen_coverage": [
+    "beans",
+    "other-vegetables",
+    "greens"
+  ],
+  "tweaks_incorporated": [
+    "cumin-boost",
+    "black-pepper-turmeric",
+    "herbs-and-spices"
+  ],
+  "key_synergies": "Chickpeas + kabocha + curry spices for antioxidant power. Kale adds cruciferous benefits."
+}
