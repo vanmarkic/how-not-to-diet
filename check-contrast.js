@@ -52,6 +52,8 @@ const colors = {
   sage: '#a8b5a0',
   beet: '#8b2e3f',
   carrot: '#e67e22',
+  carrotLight: '#ff914d',
+  carrotLighter: '#ffa366',
   golden: '#d4a574',
   cream: '#faf8f3',
   sand: '#f0ede5',
@@ -67,14 +69,14 @@ console.log('\n=== WCAG Contrast Analysis ===\n');
 const tests = [
   { name: 'Header: Cream text on Forest Deep', fg: colors.cream, bg: colors.forestDeep, large: false },
   { name: 'Header: Cream text on Forest Mid', fg: colors.cream, bg: colors.forestMid, large: false },
-  { name: 'Header Links: Carrot on Forest Deep (hover)', fg: colors.carrot, bg: colors.forestDeep, large: false },
+  { name: 'Header Links: Carrot Light on Forest Deep (hover) ✨ FIXED', fg: colors.carrotLight, bg: colors.forestDeep, large: false },
   { name: 'Body: Charcoal text on Cream', fg: colors.charcoal, bg: colors.cream, large: false },
   { name: 'Body: Slate text on Cream (muted)', fg: colors.slate, bg: colors.cream, large: false },
   { name: 'Footer: Sand text on Forest Mid', fg: colors.sand, bg: colors.forestMid, large: false },
   { name: 'Footer: Sand text on Forest Deep', fg: colors.sand, bg: colors.forestDeep, large: false },
-  { name: 'Footer Developer: Carrot on Forest Deep', fg: colors.carrot, bg: colors.forestDeep, large: false },
+  { name: 'Footer Developer: Carrot Light on Forest Deep ✨ FIXED', fg: colors.carrotLight, bg: colors.forestDeep, large: false },
   { name: 'Footer Links: Cream on Forest Mid', fg: colors.cream, bg: colors.forestMid, large: false },
-  { name: 'Footer Links Hover: Carrot on Forest Mid', fg: colors.carrot, bg: colors.forestMid, large: false },
+  { name: 'Footer Links Hover: Carrot Lighter on Forest Mid ✨ FIXED', fg: colors.carrotLighter, bg: colors.forestMid, large: false },
   { name: 'Logo: Cream on Forest Deep', fg: colors.cream, bg: colors.forestDeep, large: true },
   { name: 'Elevated BG: Charcoal on White', fg: colors.charcoal, bg: colors.white, large: false }
 ];

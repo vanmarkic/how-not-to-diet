@@ -62,6 +62,7 @@ const fullImageUrl = new URL(image, Astro.site);
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
+    <meta name="google-site-verification" content="bqsdtKCk4WynKdZGVFg_PJYnz5859uHeNT7l9QN85MM" />
     <meta name="theme-color" content="#1a3d2e" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -149,6 +150,8 @@ const fullImageUrl = new URL(image, Astro.site);
     --color-sage: #a8b5a0;
     --color-beet: #8b2e3f;
     --color-carrot: #e67e22;
+    --color-carrot-light: #ff914d; /* WCAG AA compliant on dark backgrounds */
+    --color-carrot-lighter: #ffa366; /* WCAG AA compliant on medium-dark backgrounds */
     --color-golden: #d4a574;
 
     /* Neutrals */
@@ -362,7 +365,7 @@ const fullImageUrl = new URL(image, Astro.site);
   }
 
   nav ul li a:hover {
-    color: var(--color-carrot);
+    color: var(--color-carrot-light);
   }
 
   nav ul li a:hover::after {
@@ -418,7 +421,7 @@ const fullImageUrl = new URL(image, Astro.site);
   }
 
   .developer strong {
-    color: var(--color-carrot);
+    color: var(--color-carrot-light);
     font-weight: 600;
   }
 
@@ -451,7 +454,7 @@ const fullImageUrl = new URL(image, Astro.site);
   }
 
   .footer-nav a:hover {
-    color: var(--color-carrot);
+    color: var(--color-carrot-lighter);
   }
 
   .footer-nav a:hover::after {
