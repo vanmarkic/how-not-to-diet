@@ -123,15 +123,22 @@ GET /recipes/recipe-072.json
 
 ### Foods
 
-#### List All Foods
+#### List Foods (Page 1)
 **GET** `/foods.json`
 
-Returns a list of all available foods.
+Returns the first page of foods (25 per page) with pagination metadata.
 
 **Response:**
 ```json
 {
   "count": 209,
+  "page": 1,
+  "pageSize": 25,
+  "totalPages": 9,
+  "hasNextPage": true,
+  "hasPreviousPage": false,
+  "nextPage": "/api/foods/page-2.json",
+  "previousPage": null,
   "data": [
     {
       "id": "food-1",
@@ -153,6 +160,34 @@ Returns a list of all available foods.
       "conflicts": []
     }
   ]
+}
+```
+
+#### Get Foods Page
+**GET** `/foods/page-{page}.json`
+
+Returns a specific page of foods (pages 2-9).
+
+**Parameters:**
+- `page` (integer): Page number (2 or higher)
+
+**Example:**
+```
+GET /foods/page-5.json
+```
+
+**Response:**
+```json
+{
+  "count": 209,
+  "page": 5,
+  "pageSize": 25,
+  "totalPages": 9,
+  "hasNextPage": true,
+  "hasPreviousPage": true,
+  "nextPage": "/api/foods/page-6.json",
+  "previousPage": "/api/foods/page-4.json",
+  "data": [ ...25 foods... ]
 }
 ```
 
@@ -239,13 +274,46 @@ You can use this specification with:
 ### JavaScript (Fetch API)
 
 ```javascript
-// Get all recipes
+// Get first page of recipes
 fetch('https://vanmarkic.github.io/how-not-to-diet/api/recipes.json')
   .then(response => response.json())
   .then(data => {
-    console.log(`Found ${data.count} recipes`);
+    console.log(`Found ${data.count} total recipes`);
+    console.log(`Page ${data.page} of ${data.totalPages}`);
+    console.log(`Showing ${data.data.length} recipes`);
     console.log(data.data);
+
+    // Load next page if available
+    if (data.hasNextPage) {
+      console.log(`Next page: ${data.nextPage}`);
+    }
   });
+
+// Get specific page of recipes
+fetch('https://vanmarkic.github.io/how-not-to-diet/api/recipes/page-2.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(`Page ${data.page}: ${data.data.length} recipes`);
+  });
+
+// Fetch all recipes across all pages
+async function getAllRecipes() {
+  let allRecipes = [];
+  let currentUrl = 'https://vanmarkic.github.io/how-not-to-diet/api/recipes.json';
+
+  while (currentUrl) {
+    const response = await fetch(currentUrl);
+    const data = await response.json();
+    allRecipes.push(...data.data);
+
+    // Get next page URL (prepend base URL if needed)
+    currentUrl = data.hasNextPage
+      ? `https://vanmarkic.github.io/how-not-to-diet${data.nextPage}`
+      : null;
+  }
+
+  return allRecipes;
+}
 
 // Get specific recipe
 fetch('https://vanmarkic.github.io/how-not-to-diet/api/recipes/recipe-072.json')
@@ -254,11 +322,12 @@ fetch('https://vanmarkic.github.io/how-not-to-diet/api/recipes/recipe-072.json')
     console.log(data.data.name);
   });
 
-// Get all foods
+// Get first page of foods
 fetch('https://vanmarkic.github.io/how-not-to-diet/api/foods.json')
   .then(response => response.json())
   .then(data => {
-    console.log(`Found ${data.count} foods`);
+    console.log(`Found ${data.count} total foods`);
+    console.log(`Page ${data.page} of ${data.totalPages}`);
   });
 
 // Get specific food
@@ -275,20 +344,47 @@ fetch('https://vanmarkic.github.io/how-not-to-diet/api/foods/food-158.json')
 ```python
 import requests
 
-# Get all recipes
+# Get first page of recipes
 response = requests.get('https://vanmarkic.github.io/how-not-to-diet/api/recipes.json')
 data = response.json()
-print(f"Found {data['count']} recipes")
+print(f"Found {data['count']} total recipes")
+print(f"Page {data['page']} of {data['totalPages']}")
+print(f"Showing {len(data['data'])} recipes on this page")
+
+# Get specific page
+response = requests.get('https://vanmarkic.github.io/how-not-to-diet/api/recipes/page-2.json')
+data = response.json()
+print(f"Page {data['page']}: {len(data['data'])} recipes")
+
+# Fetch all recipes across all pages
+def get_all_recipes():
+    base_url = 'https://vanmarkic.github.io/how-not-to-diet'
+    all_recipes = []
+    current_url = f'{base_url}/api/recipes.json'
+
+    while current_url:
+        response = requests.get(current_url)
+        data = response.json()
+        all_recipes.extend(data['data'])
+
+        # Get next page URL
+        if data['hasNextPage']:
+            current_url = f"{base_url}{data['nextPage']}"
+        else:
+            current_url = None
+
+    return all_recipes
 
 # Get specific recipe
 response = requests.get('https://vanmarkic.github.io/how-not-to-diet/api/recipes/recipe-072.json')
 recipe = response.json()['data']
 print(recipe['name'])
 
-# Get all foods
+# Get first page of foods
 response = requests.get('https://vanmarkic.github.io/how-not-to-diet/api/foods.json')
 data = response.json()
-print(f"Found {data['count']} foods")
+print(f"Found {data['count']} total foods")
+print(f"Page {data['page']} of {data['totalPages']}")
 
 # Get specific food
 response = requests.get('https://vanmarkic.github.io/how-not-to-diet/api/foods/food-158.json')
@@ -300,14 +396,20 @@ print(food['benefits'])
 ### cURL
 
 ```bash
-# Get all recipes
+# Get first page of recipes
 curl https://vanmarkic.github.io/how-not-to-diet/api/recipes.json
+
+# Get specific page of recipes
+curl https://vanmarkic.github.io/how-not-to-diet/api/recipes/page-2.json
 
 # Get specific recipe
 curl https://vanmarkic.github.io/how-not-to-diet/api/recipes/recipe-072.json
 
-# Get all foods
+# Get first page of foods
 curl https://vanmarkic.github.io/how-not-to-diet/api/foods.json
+
+# Get specific page of foods
+curl https://vanmarkic.github.io/how-not-to-diet/api/foods/page-5.json
 
 # Get specific food
 curl https://vanmarkic.github.io/how-not-to-diet/api/foods/food-158.json
@@ -385,6 +487,14 @@ npm run build
 npx serve dist
 ```
 
+## Pagination Details
+
+- **Page Size**: 25 items per page
+- **Recipes**: 59 total recipes across 3 pages
+- **Foods**: 209 total foods across 9 pages
+- **Navigation**: Use `nextPage` and `previousPage` fields to navigate between pages
+- **Page Numbers**: Page 1 is at `/recipes.json` or `/foods.json`, subsequent pages are at `/recipes/page-{n}.json` or `/foods/page-{n}.json`
+
 ## Notes
 
 - This is a **static API** - all data is pre-generated at build time
@@ -392,6 +502,8 @@ npx serve dist
 - All files are cached for 1 hour for optimal performance
 - The API is automatically deployed to GitHub Pages on push to master
 - Total dataset: 59 recipes and 209 foods
+- List endpoints return paginated results (25 items per page)
+- Detail endpoints (by ID) return single items without pagination
 
 ## License
 
