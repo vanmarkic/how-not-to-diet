@@ -11,9 +11,27 @@ const totalFoods = foodsBundle.build_metadata.total_foods;
 
 // Serialize foods data for client-side use
 const foodsJSON = JSON.stringify(foods);
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Food Synergy Explorer - Discover Powerful Food Combinations",
+  "description": "Interactive tool to discover scientifically documented food synergies and combinations for optimal health benefits",
+  "author": {
+    "@type": "Person",
+    "name": "Dragan Markovic"
+  },
+  "keywords": "food synergies, food combinations, nutrient pairing, anti-inflammatory foods, healthy eating, nutrition science"
+};
 ---
 
-<Layout title="Food Combos - How Not To Diet">
+<Layout 
+  title="Food Synergy Explorer - Discover Powerful Combinations | How Not To Diet"
+  description={`Explore food synergies from ${totalFoods} scientifically documented foods. Find optimal food combinations, pairs, and triples for maximum health benefits.`}
+  keywords="food synergies, food combinations, nutrient pairing, food timing, healthy meal combos, nutrition science, daily dozen combinations"
+  type="article"
+  structuredData={structuredData}
+>
   <div class="combos-page">
     <header class="page-header">
       <div class="header-content">

@@ -12,9 +12,34 @@ const dinnerRecipes = recipes.filter(r => r.category === 'dinner');
 
 // Get all unique tags
 const allTags = [...new Set(recipes.flatMap(r => r.tags))].sort();
+
+// Create Recipe structured data
+const recipeStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Healthy Recipes Collection",
+  "description": "Science-based recipes featuring foods from Dr. Greger's Daily Dozen and 21 Tweaks",
+  "numberOfItems": recipes.length,
+  "itemListElement": recipes.slice(0, 10).map((recipe, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Recipe",
+      "name": recipe.name,
+      "description": recipe.description,
+      "recipeCategory": recipe.category,
+      "keywords": recipe.tags?.join(', ')
+    }
+  }))
+};
 ---
 
-<Layout title="Recipes - How Not To Diet Menu Planner">
+<Layout 
+  title={`${recipes.length} Healthy Recipes - How Not To Diet Menu Planner`}
+  description={`Discover ${recipes.length} evidence-based recipes featuring Dr. Greger's Daily Dozen foods. Includes ${breakfastRecipes.length} breakfast, ${lunchRecipes.length} lunch, and ${dinnerRecipes.length} dinner recipes.`}
+  keywords="healthy recipes, plant-based recipes, daily dozen recipes, anti-inflammatory meals, whole food recipes, nutrition recipes, Dr. Greger recipes"
+  structuredData={recipeStructuredData}
+>
   <div class="recipes-page">
     <header class="page-header">
       <h1>Recipe Collection</h1>

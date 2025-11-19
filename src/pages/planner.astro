@@ -7,9 +7,28 @@
 
 import Layout from '@layouts/Layout.astro';
 import MenuBuilder from '../islands/MenuBuilder';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Weekly Menu Planner",
+  "applicationCategory": "HealthApplication",
+  "description": "Interactive weekly meal planner with AI-powered food suggestions based on synergies and nutrition science",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+};
 ---
 
-<Layout title="Weekly Menu Planner - How Not To Diet">
+<Layout 
+  title="Weekly Menu Planner - AI-Powered Meal Planning | How Not To Diet"
+  description="Create your personalized weekly meal plan with AI-powered food suggestions. Optimize nutrition with food synergies, timing recommendations, and Daily Dozen coverage."
+  keywords="weekly meal planner, meal planning tool, AI meal planner, healthy meal plan, nutrition planning, weekly menu, food synergies planner"
+  structuredData={structuredData}
+>
   <div class="planner-page">
     <MenuBuilder client:only="react" />
   </div>
