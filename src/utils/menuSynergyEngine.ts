@@ -154,14 +154,31 @@ export function calculateSuggestions(
 ): RankedSuggestion[] {
   // Handle edge case: no selected foods yet
   if (selectedFoodIds.length === 0) {
-    // Return meal-appropriate foods with neutral category
-    return filterByMealTiming(allFoods, mealType)
-      .map(food => ({
+    // Return meal-appropriate foods, prioritizing meal-specific over any-meal
+    const mealAppropriateFoods = filterByMealTiming(allFoods, mealType);
+
+    const scoredFoods = mealAppropriateFoods.map(food => {
+      let score = 0;
+      const isMealSpecific = food.timing.includes(mealType);
+      const isAnyMeal = food.timing.includes('any-meal');
+
+      if (isMealSpecific && !isAnyMeal) {
+        score = 15; // Meal-specific foods appear first
+      } else if (isMealSpecific && isAnyMeal) {
+        score = 8; // Both tagged foods appear second
+      }
+      // any-meal only foods get 0 (appear last)
+
+      return {
         food,
-        synergyScore: 0,
+        synergyScore: score,
         category: 'neutral' as SuggestionCategory,
         breakdown: [],
-      }))
+      };
+    });
+
+    return scoredFoods
+      .sort((a, b) => b.synergyScore - a.synergyScore)
       .slice(0, 20); // Limit initial suggestions
   }
 
@@ -199,6 +216,19 @@ export function calculateSuggestions(
         });
       }
     }
+
+    // Boost score for meal-specific foods (prioritize over 'any-meal' foods)
+    const isMealSpecific = candidate.timing.includes(mealType);
+    const isAnyMeal = candidate.timing.includes('any-meal');
+
+    if (isMealSpecific && !isAnyMeal) {
+      // Meal-specific foods get a significant boost
+      totalScore += 15;
+    } else if (isMealSpecific && isAnyMeal) {
+      // Foods tagged for both get a smaller boost
+      totalScore += 8;
+    }
+    // any-meal only foods get no boost (appear last)
 
     return {
       food: candidate,
