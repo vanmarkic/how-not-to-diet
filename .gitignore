@@ -30,3 +30,9 @@ pnpm-debug.log*
 
 # PDF files (keeping cookbook out of git)
 *.pdf
+
+# temporary files
+tmp/
+
+# test coverage reports
+coverage/
