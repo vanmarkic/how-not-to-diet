@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 // Read the development diary markdown file
-const diaryPath = path.join(process.cwd(), 'DEVELOPMENT-DIARY.md');
+const diaryPath = path.join(process.cwd(), 'docs/development/DEVELOPMENT-DIARY.md');
 const diaryContent = fs.readFileSync(diaryPath, 'utf-8');
 
 // Simple markdown to HTML conversion for display
